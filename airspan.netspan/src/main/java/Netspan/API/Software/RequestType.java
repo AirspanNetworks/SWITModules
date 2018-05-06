@@ -49,7 +49,6 @@ public enum RequestType {
             }
         }
         throw new IllegalArgumentException(v);
-        //bla bla bla
     }
 
 }
