@@ -18,7 +18,8 @@ public class RestException extends RuntimeException{
 		return this.responseCode;
 	}
 	
-	public String getRestMessage(){
+	@Override
+	public String getMessage() {
 		return this.message;
 	}
 

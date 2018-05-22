@@ -24,11 +24,14 @@ public class RESTLibrary {
     }
 
     private OkHttpClient _OKhttpClient;
+    private final String moduleSignature = "[Rest Lib]";
+    private final long CONNECT_TIME_OUT = new Long(1000);
+    private final long READ_TIME_OUT = new Long(1000);
+    private final long WRITE_TIME_OUT = new Long(1000);
 
     public RESTLibrary() {
-
-        _OKhttpClient = new OkHttpClient.Builder().connectTimeout(1000, TimeUnit.SECONDS).readTimeout(1000, TimeUnit.SECONDS)
-                .writeTimeout(1000, TimeUnit.SECONDS).build();
+        _OKhttpClient = new OkHttpClient.Builder().connectTimeout(CONNECT_TIME_OUT, TimeUnit.SECONDS).readTimeout(READ_TIME_OUT, TimeUnit.SECONDS)
+                .writeTimeout(WRITE_TIME_OUT, TimeUnit.SECONDS).build();
 
     }
     
@@ -36,7 +39,7 @@ public class RESTLibrary {
     	this.IP = ip;
     }
 
-    public List<String> Get(String resource, int expectedResponseCode, NameValuePair[] valuePairHeaders) throws IOException {
+    public List<String> Get(String resource, ExpectedHttpCode expectedResponseCode, NameValuePair[] valuePairHeaders) throws IOException {
 
         Request.Builder builder = new Request.Builder();
 
@@ -50,10 +53,10 @@ public class RESTLibrary {
                 .url(String.format("http://%s/%s",IP, resource))
                 .build();
 
-        return execute(req, expectedResponseCode);
+        return execute(req, expectedResponseCode.value());
     }
 
-    public List<String> Post(String resource, int expectedResponseCode, NameValuePair[] valuePairHeaders , NameValuePair[] valuePairBody) throws IOException {
+    public List<String> Post(String resource, ExpectedHttpCode expectedResponseCode, NameValuePair[] valuePairHeaders , NameValuePair[] valuePairBody) throws IOException {
 
         MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
         RequestBody reqBody = null;
@@ -77,10 +80,10 @@ public class RESTLibrary {
             builder.post(reqBody);
         Request req = builder.build();
 
-        return execute(req, expectedResponseCode);
+        return execute(req, expectedResponseCode.value());
     }
 
-    public List<String> PostFile(String resource, int expectedResponseCode, byte[] data, BasicNameValuePair ... headers) throws IOException {
+    public List<String> PostFile(String resource, ExpectedHttpCode expectedResponseCode, byte[] data, BasicNameValuePair ... headers) throws IOException {
 
         MediaType mediaType = MediaType.parse("application/octet-stream");
 
@@ -97,11 +100,11 @@ public class RESTLibrary {
                 .post(requestBody)
                 .build();
 
-        return execute(req, expectedResponseCode);
+        return execute(req, expectedResponseCode.value());
     }
 
-    public void Delete(String resource, int expectedResponseCode, BasicNameValuePair ... headers) throws IOException {
-    	delete(resource, expectedResponseCode,headers);
+    public void Delete(String resource, ExpectedHttpCode expectedResponseCode, BasicNameValuePair ... headers) throws IOException {
+    	delete(resource, expectedResponseCode.value(),headers);
     }
 
     public void delete(String resouece, int expectedResponseCode,BasicNameValuePair... headers) throws IOException{
@@ -127,7 +130,7 @@ public class RESTLibrary {
         execute(req, expectedResponseCode);
     }
     
-    public void Put(String resource, int expectedResponseCode, NameValuePair[] valuePairBody,BasicNameValuePair... headers) throws RuntimeException, IOException {
+    public void Put(String resource, ExpectedHttpCode expectedResponseCode, NameValuePair[] valuePairBody,BasicNameValuePair... headers) throws RuntimeException, IOException {
         Request.Builder builder = new Request.Builder();
         RequestBody reqBody = null;
         if (headers!=null && headers.length>0) {
@@ -150,11 +153,11 @@ public class RESTLibrary {
                 .put(reqBody)
                 .build();
 
-        execute(req, expectedResponseCode);
+        execute(req, expectedResponseCode.value());
     }
     
 
-    public void Put(String resource, int expectedResponseCode, BasicNameValuePair ... headers) throws RuntimeException, IOException {
+    public void Put(String resource, ExpectedHttpCode expectedResponseCode, BasicNameValuePair ... headers) throws RuntimeException, IOException {
         Request.Builder builder = new Request.Builder();
         if (headers!=null && headers.length>0) {
             for (NameValuePair header : headers) {
@@ -172,14 +175,14 @@ public class RESTLibrary {
                 .put(reqBody)
                 .build();
 
-        execute(req, expectedResponseCode);
+        execute(req, expectedResponseCode.value());
     }
 
     private void checkResponse(Response response, int expectedResponseCode) {
         if (response != null && !response.isSuccessful())
             if (response.networkResponse().code() != expectedResponseCode){
             	String message = printBody(response);
-            	response.close(); //body must be closed all the time!
+            	response.close();
             	throw new RestException(message, response.networkResponse().code());
             }
     }
@@ -188,7 +191,7 @@ public class RESTLibrary {
     	String result ="";
     	try{
     		result = response.body().string();
-    		System.out.println(result);
+    		System.out.println(moduleSignature+": incorrect method - body response : "+result);
     	}catch(Exception e){
     		e.printStackTrace();
     	}

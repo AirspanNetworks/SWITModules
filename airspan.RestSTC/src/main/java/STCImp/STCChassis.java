@@ -46,6 +46,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	private final String arpNdCommand = "ArpNdStart";
 
 	RESTLibrary restClient;
+	private final String moduleSignature = "[STCChassis]";
 	private String userID = "admin";
 	private String chassisHost = "192.168.58.150";
 	private String machineName = null;
@@ -141,7 +142,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 			BasicNameValuePair[] body = new BasicNameValuePair[2];
 			body[0] = new BasicNameValuePair("userid", getUserID());
 			body[1] = new BasicNameValuePair("sessionname", machineName);
-			List<String> response = restClient.Post(String.format(SESSION_MANAGEMENT, API_PREFIX, ""), 201, null, body);
+			List<String> response = restClient.Post(String.format(SESSION_MANAGEMENT, API_PREFIX, ""), ExpectedHttpCode.Created, null, body);
 			return true;
 	}
 
@@ -196,7 +197,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		BasicNameValuePair[] headers = new BasicNameValuePair[1];
 		try {
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-			restClient.Delete(String.format(SESSION_MANAGEMENT, API_PREFIX, getSessionID().replaceAll(" ", "%20")), 204,
+			restClient.Delete(String.format(SESSION_MANAGEMENT, API_PREFIX, getSessionID().replaceAll(" ", "%20")), ExpectedHttpCode.No_Content,
 					headers);
 			System.out.println("waiting 5 seconds");
 			Thread.sleep(5 * 1000);
@@ -224,8 +225,6 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		// checking stream page Number.
 		int currentPage = getCurrentPage();
 		int streamPageNum = genratePageNumStream(streamName);
-		System.out.println(
-				"for stream - " + streamName + ": stream PNum = " + streamPageNum + " ,page Num = " + currentPage);
 		if (currentPage != streamPageNum) {
 			setPage(streamPageNum);
 		}
@@ -234,8 +233,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
 		// 1. Query the stream object for result objects
 
-		List<String> resultStringToSplit = restClient.Get(String.format(OBJECTS, API_PREFIX, streamName + "?resultchild-Targets"), 200, headers);
-		System.out.println("Result child targets: "+resultStringToSplit.toString());
+		List<String> resultStringToSplit = restClient.Get(String.format(OBJECTS, API_PREFIX, streamName + "?resultchild-Targets"), ExpectedHttpCode.OK, headers);
 		if(resultStringToSplit == null || resultStringToSplit.isEmpty()){
 			System.out.println("Result child targets was null or empty");
 			return null;
@@ -252,7 +250,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		TypeReference<HashMap<String, Object>> typeRef = new TypeReference<HashMap<String, Object>>() {
 		};
 		for (String jsonResult : listOfresults) {
-			String jsonCounters = restClient.Get(String.format(OBJECTS, API_PREFIX, jsonResult), 200, headers).get(0);
+			String jsonCounters = restClient.Get(String.format(OBJECTS, API_PREFIX, jsonResult), ExpectedHttpCode.OK, headers).get(0);
 
 			HashMap<String, Object> result = mapper.readValue(jsonCounters, typeRef);
 			results.put(jsonResult.replaceAll("[0-9]", ""), result);
@@ -342,7 +340,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		headers[1] = new BasicNameValuePair("Accept", "application/octet-stream");
 
 		List<String> res1 = restClient
-				.Get(String.format(FILES_MANAGEMENT, API_PREFIX, "Untitled/" + jsonRes.get("FileName")), 200, headers);
+				.Get(String.format(FILES_MANAGEMENT, API_PREFIX, "Untitled/" + jsonRes.get("FileName")), ExpectedHttpCode.OK, headers);
 		return StringUtils.join(res1);
 	}
 
@@ -351,7 +349,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		BasicNameValuePair[] headers = new BasicNameValuePair[2];
 		headers[0] = new BasicNameValuePair("content-disposition", "attachment; filename=myconfig.tcc");
 		headers[1] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-		restClient.PostFile(String.format(FILES_MANAGEMENT, API_PREFIX, ""), 201, Files.readAllBytes(Paths.get(file)),
+		restClient.PostFile(String.format(FILES_MANAGEMENT, API_PREFIX, ""), ExpectedHttpCode.Created, Files.readAllBytes(Paths.get(file)),
 				headers);
 		// Now, order STC to load it using command
 
@@ -406,7 +404,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public String[] GetPortStreams(String port) throws IOException {
 		BasicNameValuePair[] headers = new BasicNameValuePair[1];
 		headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-		String resu = restClient.Get(String.format(OBJECTS, API_PREFIX, port + "?children-streamblock"), 200, headers)
+		String resu = restClient.Get(String.format(OBJECTS, API_PREFIX, port + "?children-streamblock"), ExpectedHttpCode.OK, headers)
 				.get(0).replaceAll("\"", "");
 		return resu.split(" ");
 	}
@@ -414,7 +412,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void Apply() throws IOException {
 		BasicNameValuePair[] headers = new BasicNameValuePair[1];
 		headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-		restClient.Put(String.format(APPLY, API_PREFIX), 202, headers);
+		restClient.Put(String.format(APPLY, API_PREFIX), ExpectedHttpCode.Confirmed, headers);
 	}
 
 	public void StopTrafficOnAllPorts() throws IOException {
@@ -424,7 +422,6 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void SetActiveStreams(STCPort portToChangeStreamStatus, boolean isActive) {
 		// We need to separate the active streams from all the rest
 		// HashSet<String> changePortStatus = portToChangeStreamStatus.streams;
-
 	}
 
 	public List<STCPort> getAllPorts() {
@@ -442,7 +439,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public List<String> getAllSession() {
 		List<String> response = new ArrayList<String>();
 		try {
-			response = restClient.Get(String.format(SESSION_MANAGEMENT, API_PREFIX, ""), 200, null);
+			response = restClient.Get(String.format(SESSION_MANAGEMENT, API_PREFIX, ""), ExpectedHttpCode.OK, null);
 			System.out.println("Sessions List : "+response);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -453,7 +450,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	private String getProjectName() throws IOException {
 		NameValuePair[] headers = new NameValuePair[1];
 		headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-		return restClient.Get(String.format(OBJECTS, API_PREFIX, "system1?children-project"), 200, headers).get(0)
+		return restClient.Get(String.format(OBJECTS, API_PREFIX, "system1?children-project"), ExpectedHttpCode.OK, headers).get(0)
 				.replaceAll("\"", "");
 	}
 
@@ -462,11 +459,11 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
 		List<STCPort> portsList = new ArrayList<STCPort>();
 		String[] portNumbers = restClient
-				.Get(String.format(OBJECTS, API_PREFIX, project + "?children-port"), 200, headers).get(0)
+				.Get(String.format(OBJECTS, API_PREFIX, project + "?children-port"), ExpectedHttpCode.OK, headers).get(0)
 				.replaceAll("\"", "").split(" ");
 
 		for (String stringPort : portNumbers) {
-			List<String> portRawData = restClient.Get(String.format(OBJECTS, API_PREFIX, stringPort), 200, headers);
+			List<String> portRawData = restClient.Get(String.format(OBJECTS, API_PREFIX, stringPort), ExpectedHttpCode.OK, headers);
 
 			STCPort port = new STCPort();
 			port.setRawDataMapObject(portRawData);
@@ -475,10 +472,10 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 			port.streams = new ArrayList<STCStreamBlock>();
 			for (String stream : streams) {
 				String streamAppName = restClient
-						.Get(String.format(OBJECTS, API_PREFIX, stream + "?Name"), 200, headers).get(0);
+						.Get(String.format(OBJECTS, API_PREFIX, stream + "?Name"), ExpectedHttpCode.OK, headers).get(0);
 				int page = genratePageNumStream(stream.replaceAll("\"", ""));
 				String streamState = restClient
-						.Get(String.format(OBJECTS, API_PREFIX, stream + "?Active"), 200, headers).get(0);
+						.Get(String.format(OBJECTS, API_PREFIX, stream + "?Active"), ExpectedHttpCode.OK, headers).get(0);
 				streamState = streamState.toUpperCase();
 				boolean streamStateBol = streamState.equals("TRUE") ? true : false;
 				port.streams.add(new STCStreamBlock(streamAppName, stream, streamStateBol, page));
@@ -494,7 +491,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		NameValuePair[] body = new NameValuePair[1];
 		body[0] = new BasicNameValuePair(field, value);
 
-		restClient.Post(String.format(OBJECTS, API_PREFIX, objectName), 204, headers, body);
+		restClient.Post(String.format(OBJECTS, API_PREFIX, objectName), ExpectedHttpCode.No_Content, headers, body);
 	}
 
 	// TODO: check method new useage
@@ -504,7 +501,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		BasicNameValuePair[] body = new BasicNameValuePair[1];
 		body[0] = new BasicNameValuePair(field, value);
 
-		restClient.Put(String.format(OBJECTS, API_PREFIX, objectName), 204, body, headers);
+		restClient.Put(String.format(OBJECTS, API_PREFIX, objectName), ExpectedHttpCode.No_Content, body, headers);
 	}
 
 	private List<String> perform(String command, NameValuePair... params) throws IOException {
@@ -514,7 +511,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		body[0] = new BasicNameValuePair("command", command);
 		if (params != null && params.length > 0)
 			body = ArrayUtils.addAll(body, params);
-		return restClient.Post(String.format(PERFORM, API_PREFIX), 200, headers, body);
+		return restClient.Post(String.format(PERFORM, API_PREFIX), ExpectedHttpCode.OK, headers, body);
 	}
 
 	public void SetAllStreamActiveState(boolean state) throws Exception {
@@ -641,7 +638,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 
 		List<String> ret = null;
 		try {
-			ret = restClient.Get(String.format(OBJECTS, API_PREFIX, objectName + "?" + field), 200, headers);
+			ret = restClient.Get(String.format(OBJECTS, API_PREFIX, objectName + "?" + field), ExpectedHttpCode.OK, headers);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -681,7 +678,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public List<String> getSessionBasicInfo() {
 		List<String> result = new ArrayList<String>();
 		try {
-			result = restClient.Get(getSessionID(), 200, null);
+			result = restClient.Get(getSessionID(), ExpectedHttpCode.OK, null);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -763,7 +760,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		BasicNameValuePair[] body = new BasicNameValuePair[1];
 		body[0] = new BasicNameValuePair("command", "SaveAsXmlCommand");
 		try {
-			List<String> response = restClient.Post(String.format(PERFORM, API_PREFIX, ""), 200, headers, body);
+			List<String> response = restClient.Post(String.format(PERFORM, API_PREFIX, ""), ExpectedHttpCode.OK, headers, body);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -792,7 +789,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		headers[1] = new BasicNameValuePair("Accept", "application/octet-stream");
 		StringBuilder result = new StringBuilder();
 		try {
-			List<String> fileAsString = restClient.Get(String.format(FILES_MANAGEMENT, API_PREFIX, fileToDownLoad), 200,
+			List<String> fileAsString = restClient.Get(String.format(FILES_MANAGEMENT, API_PREFIX, fileToDownLoad), ExpectedHttpCode.OK,
 					headers);
 			for (String file : fileAsString) {
 				if (file != null && !(file.isEmpty())) {
@@ -812,7 +809,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try {
 			NameValuePair[] headers = new NameValuePair[1];
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-			filesInSession = restClient.Get(String.format(FILES_MANAGEMENT, API_PREFIX, ""), 200, headers);
+			filesInSession = restClient.Get(String.format(FILES_MANAGEMENT, API_PREFIX, ""), ExpectedHttpCode.OK, headers);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -910,7 +907,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try {
 			NameValuePair[] headers = new NameValuePair[1];
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-			generators = restClient.Get(String.format(OBJECTS, API_PREFIX, portName + "?children-generator"), 200,
+			generators = restClient.Get(String.format(OBJECTS, API_PREFIX, portName + "?children-generator"), ExpectedHttpCode.OK,
 					headers);
 		} catch (Exception e) {
 			System.out.println("Error in getGeneratorForPort method");
@@ -924,7 +921,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try {
 			NameValuePair[] headers = new NameValuePair[1];
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-			configs = restClient.Get(String.format(OBJECTS, API_PREFIX, genName + "?children-generatorconfig"), 200,
+			configs = restClient.Get(String.format(OBJECTS, API_PREFIX, genName + "?children-generatorconfig"), ExpectedHttpCode.OK,
 					headers);
 		} catch (Exception e) {
 			System.out.println("Error in getGeneratorConfig method");
@@ -949,10 +946,10 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try {
 			NameValuePair[] headers = new NameValuePair[1];
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", getSessionID());
-			configs = restClient.Get(String.format(OBJECTS, API_PREFIX, blockName + "?affiliationstreamblockloadprofile-Targets"), 200,
+			configs = restClient.Get(String.format(OBJECTS, API_PREFIX, blockName + "?affiliationstreamblockloadprofile-Targets"), ExpectedHttpCode.OK,
 					headers);
 		} catch (Exception e) {
-			System.out.println("Error in getGeneratorConfig method");
+			System.out.println("Error in getStreamBlockProfile method");
 			e.printStackTrace();
 		}
 		return configs;
@@ -968,7 +965,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 			SetPutObjectField(block, "Load", load);
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("setLoadStream had an error in inner method.");
+			System.out.println("Error in setLoadStreamPerStream method");
 		}
 	}
 	
@@ -1150,6 +1147,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try{
 			Apply();
 		}catch(Exception e){
+			System.out.println(moduleSignature+" : error in apply method - "+e.getMessage());
 			e.printStackTrace();
 		}
 		ArrayList<ArrayList<String>> temp = new ArrayList<ArrayList<String>>();
@@ -1195,6 +1193,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try{
 			Apply();
 		}catch(Exception e){
+			System.out.println(moduleSignature+" : error in apply method - "+e.getMessage());
 			e.printStackTrace();
 		}
 		return streamsListChanged;
@@ -1237,7 +1236,6 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		try{
 		for (STCPort port : ports) {
 			for(STCStreamBlock stream : port.streams){
-				System.out.println("Reading counters for stream "+stream.getApp_name()+"("+stream.getBlockName()+")");
 				HashMap<String, HashMap> resultSet = readCountersForStream(stream.getBlockName());
 				if (resultSet == null){
 					resultSet = readCountersForStream(stream.getBlockName());
@@ -1546,7 +1544,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		BasicNameValuePair[] headers = new BasicNameValuePair[1];
 		try {
 			headers[0] = new BasicNameValuePair("X-STC-API-Session", sessionNameClear);
-			restClient.Delete(String.format(SESSION_MANAGEMENT, API_PREFIX, clearSession.replaceAll(" ", "%20")), 204,
+			restClient.Delete(String.format(SESSION_MANAGEMENT, API_PREFIX, clearSession.replaceAll(" ", "%20")), ExpectedHttpCode.No_Content,
 					headers);
 			System.out.println("waiting 5 seconds");
 			Thread.sleep(5 * 1000);
