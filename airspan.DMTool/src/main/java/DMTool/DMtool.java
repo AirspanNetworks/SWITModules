@@ -1,5 +1,7 @@
 package DMTool;
 
+import java.io.IOException;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -16,50 +18,59 @@ import jsystem.framework.report.Reporter;
 import jsystem.framework.system.SystemObjectImpl;
 
 public class DMtool extends SystemObjectImpl {
+	 private UeClientImpl uec;
+	 private boolean initialize = false;
+	 private boolean started = false;
+	 private DccStdOut out;
+	 private DeviceController dc;
+	 private agscUeImpl cltUE;
+	 private agscDbgImpl cltDB;
+	 private agscEvtImpl cltEVT;
+	 private DbgClient dbg;
+	 private EvtClient evc;
+	 private int PORT = 7772;
+	 private String ueIP;
 
-	private UeClientImpl uec;
-	private boolean initialize = false;
-	private boolean started = false;
-	private DccStdOut out;
-	private DeviceController dc;
-	private agscUeImpl cltUE;
-	private agscDbgImpl cltDB;
-	private DbgClient dbg;
-	private int PORT = 7772;
-	private String ueIP;
-
-	@Override
-	public void init() throws Exception{
-		if(ueIP == null){throw new Exception("ueIP==null");}
-		init(5000);
-	}
+	 @Override
+	 public void init() throws Exception{
+	  if(ueIP == null){throw new Exception("ueIP==null");}
+	  init(5000);
+	 }
+	 
+	 public void init(int waitTime) {
+	  try {
+	   super.init();
+	   DccInitConfig dccinit = new DccInitConfig();
+	   out = new DccStdOut();
+	   dccinit.serverIp = ueIP;
+	   dccinit.serverPort = PORT;
+	   dccinit.consoleOutput = out;
+	   
+	   cltUE = new agscUeImpl();
+	   cltDB = new agscDbgImpl();
+	   cltEVT = new agscEvtImpl();
+	   
+	   uec = new UeClientImpl();
+	   dbg = new DbgClient();
+	   evc = new EvtClient();
+	   dccinit.evt = evc;
+	   dc = new DeviceController(dccinit, true, this);
+	   
+	   cltUE.initialize(uec);
+	   cltDB.initialize(dbg);
+	   cltEVT.initialize(evc);
+	   
+	   Ue.UeInitialize(uec);
+	   Evt.EvtInitialize(evc);
+	   dc.startDc();
+	   Thread.sleep(waitTime);
+	  } catch (Exception e) {
+	   e.printStackTrace();
+	  }
+	  initialize = true;
+	  started = true;
+	 }
 	
-	public void init(int waitTime) {
-		try {
-			super.init();
-			DccInitConfig dccinit = new DccInitConfig();
-			out = new DccStdOut();
-			dccinit.serverIp = ueIP;
-			dccinit.serverPort = PORT;
-			dccinit.consoleOutput = out;
-
-			dc = new DeviceController(dccinit, true, this);
-			cltUE = new agscUeImpl();
-			uec = new UeClientImpl();
-			cltDB = new agscDbgImpl();
-			dbg = new DbgClient();
-
-			cltUE.initialize(uec);
-			cltDB.initialize(dbg);
-			dc.startDc();
-			Thread.sleep(waitTime);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		initialize = true;
-		started = true;
-	}
-
 	private synchronized void reconnect() {
 		if (started && initialize){
 			return;
@@ -513,5 +524,36 @@ public class DMtool extends SystemObjectImpl {
 
 		}
 		return PLMNs;
+	}
+	
+	public int getRrcInfo() throws Exception {
+		Socket MyClient;
+	    try {
+	           MyClient = new Socket("DMTool", 7772);
+	    }
+	    catch (IOException e) {
+	        System.out.println(e);
+	    }
+
+		OutArray<EventDesc> evtDesc = new OutArray<EventDesc>();
+		int dor = Evt.GetEvtList(evtDesc);
+		String cli = cli("help");
+		OutValue<sqnRadioResourceControlInfo> config = new OutValue<sqnRadioResourceControlInfo>(new sqnRadioResourceControlInfo());
+		OutValue<sqnCellReselectionInfo> info = new OutValue<sqnCellReselectionInfo>(new sqnCellReselectionInfo());
+		dor = Ue.GetCellReselectionInfo(info);
+		ArrayList<DmMacroEvent> events = evt.getDmMacroEvents();
+		//byte[] data = ShortToByte(events.get(events.size()).getBytePayload());
+		byte[] data = {40,18,-128,38,9,-8,0,0};
+		ASN1InputStream bIn = new ASN1InputStream(new ByteArrayInputStream(data));
+		DERObject obj = bIn.readObject();
+		System.out.println(ASN1Dump.dumpAsString(obj));
+		return dor;
+	}
+	
+	public int getRrcState() throws Exception {
+		if (!initialize) {
+			init();
+		}
+		return uec.getRrcState();
 	}
 }
