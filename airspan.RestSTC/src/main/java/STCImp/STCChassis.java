@@ -1467,6 +1467,13 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		ArrayList<File> resultFiles = new ArrayList<File>();
 		return resultFiles;
 	}
+	
+	@Override
+	public ArrayList<File> getCommandFiles() {
+		System.out.println("Rest STC doesn't use TP result files.");
+		ArrayList<File> resultFiles = new ArrayList<File>();
+		return resultFiles;
+	}
 
 	@Override
 	public boolean closeAllConnections() {

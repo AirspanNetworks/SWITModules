@@ -129,6 +129,8 @@ public interface ITrafficGenerator {
 	
 	public ArrayList<File> getResultFiles();
 	
+	public ArrayList<File> getCommandFiles();
+	
 	public boolean closeAllConnections();
 	
 	public String setConfigFileWithHOPrefix(String TrafficFile);
@@ -138,4 +140,6 @@ public interface ITrafficGenerator {
 	void takeActionAfterFoundHaltStream();
 
 	ArrayList<File> getTransmitOutputFiles();
+
+	
 }
