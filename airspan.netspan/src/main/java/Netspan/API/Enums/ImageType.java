@@ -36,8 +36,8 @@ public enum ImageType {
     @XmlEnumValue("Relay")
     RELAY("Relay"),
     LTE("LTE"),
-    AirDensity("AirDensity");
-    
+    AirDensity("AirDensity"),
+    COMBINED_LTE_RELAY("CombinedLteRelay");
     private final String value;
 
     ImageType(String v) {

@@ -14,7 +14,9 @@ import javax.xml.bind.annotation.XmlType;
  * <pre>
  * &lt;simpleType name="HardwareCategory">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *     &lt;enumeration value="Air4G"/>
  *     &lt;enumeration value="AirSynergy"/>
+ *     &lt;enumeration value="AirHarmony"/>
  *     &lt;enumeration value="AirVelocity"/>
  *     &lt;enumeration value="iBridge 400/450"/>
  *     &lt;enumeration value="iBridge 440"/>
@@ -23,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="AirUnity"/>
  *     &lt;enumeration value="AirDensity"/>
  *     &lt;enumeration value="AirSpeed"/>
- *     &lt;enumeration value="AirHarmony"/>
+ *     &lt;enumeration value="AirSpeed-Relay"/>
  *     &lt;enumeration value="LTE"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -34,8 +36,12 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum HardwareCategory {
 
+    @XmlEnumValue("Air4G")
+    AIR_4_G("Air4G"),
     @XmlEnumValue("AirSynergy")
     AIR_SYNERGY("AirSynergy"),
+    @XmlEnumValue("AirHarmony")
+    AIR_HARMONY("AirHarmony"),
     @XmlEnumValue("AirVelocity")
     AIR_VELOCITY("AirVelocity"),
     @XmlEnumValue("iBridge 400/450")
@@ -52,8 +58,8 @@ public enum HardwareCategory {
     AIR_DENSITY("AirDensity"),
     @XmlEnumValue("AirSpeed")
     AIR_SPEED("AirSpeed"),
-    @XmlEnumValue("AirHarmony")
-    AIR_HARMONY("AirHarmony"),
+    @XmlEnumValue("AirSpeed-Relay")
+    AIR_SPEED_RELAY("AirSpeed-Relay"),
     LTE("LTE");
     private final String value;
 
