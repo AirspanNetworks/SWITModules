@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.HardwareCategory;
+
 
 /**
  * <p>Java class for SwImageWs complex type.

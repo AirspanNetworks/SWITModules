@@ -18,8 +18,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="AirSynergy"/>
  *     &lt;enumeration value="AirHarmony"/>
  *     &lt;enumeration value="AirVelocity"/>
+ *     &lt;enumeration value="AirVelocityFemto"/>
  *     &lt;enumeration value="AirUnity"/>
  *     &lt;enumeration value="AirDensity"/>
+ *     &lt;enumeration value="AirSpeed-Relay"/>
  *     &lt;enumeration value="AirSpeed"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
@@ -38,10 +40,14 @@ public enum CategoriesLte {
     AIR_HARMONY("AirHarmony"),
     @XmlEnumValue("AirVelocity")
     AIR_VELOCITY("AirVelocity"),
+    @XmlEnumValue("AirVelocityFemto")
+    AIR_VELOCITY_FEMTO("AirVelocityFemto"),
     @XmlEnumValue("AirUnity")
     AIR_UNITY("AirUnity"),
     @XmlEnumValue("AirDensity")
     AIR_DENSITY("AirDensity"),
+    @XmlEnumValue("AirSpeed-Relay")
+    AIR_SPEED_RELAY("AirSpeed-Relay"),
     @XmlEnumValue("AirSpeed")
     AIR_SPEED("AirSpeed");
     private final String value;
