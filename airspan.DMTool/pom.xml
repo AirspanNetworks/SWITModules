@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>airspan</groupId>
 	<artifactId>dmtool</artifactId>
-	<version>1.0.22</version>
+	<version>1.0.23</version>
 	<name>dmtool</name>
 	<properties>
 		<jsystem.version>6.1.06-beta1</jsystem.version>
