@@ -1,13 +1,9 @@
 package DMTool;
 
-import java.io.IOException;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.python.modules.synchronize;
 
 import DMTool.Measurement.MeasurementCfg;
 import DMTool.Measurement.MeasurementCfgObject;
@@ -52,7 +48,7 @@ public class DMtool extends SystemObjectImpl {
 	   
 	   uec = new UeClientImpl();
 	   dbg = new DbgClient();
-	   evc = new EvtClient();
+	  // evc = new EvtClient();
 	   dccinit.evt = evc;
 	   dc = new DeviceController(dccinit, true, this);
 	   
@@ -136,7 +132,11 @@ public class DMtool extends SystemObjectImpl {
 		cltDB.Cli(command, status, result);
 		return result._value;
 	}
-
+	
+	public void addlistenertoEvents(EvtClient lis) {
+		evc = lis;
+	}
+	
 	private HashMap<String, String> getSibViaCli(int sibNumber) throws Exception {
 		reconnect();
 		HashMap<String, String> sibMap = new HashMap<>();
@@ -526,34 +526,4 @@ public class DMtool extends SystemObjectImpl {
 		return PLMNs;
 	}
 	
-	public int getRrcInfo() throws Exception {
-		Socket MyClient;
-	    try {
-	           MyClient = new Socket("DMTool", 7772);
-	    }
-	    catch (IOException e) {
-	        System.out.println(e);
-	    }
-
-		OutArray<EventDesc> evtDesc = new OutArray<EventDesc>();
-		int dor = Evt.GetEvtList(evtDesc);
-		String cli = cli("help");
-		OutValue<sqnRadioResourceControlInfo> config = new OutValue<sqnRadioResourceControlInfo>(new sqnRadioResourceControlInfo());
-		OutValue<sqnCellReselectionInfo> info = new OutValue<sqnCellReselectionInfo>(new sqnCellReselectionInfo());
-		dor = Ue.GetCellReselectionInfo(info);
-		ArrayList<DmMacroEvent> events = evt.getDmMacroEvents();
-		//byte[] data = ShortToByte(events.get(events.size()).getBytePayload());
-		byte[] data = {40,18,-128,38,9,-8,0,0};
-		ASN1InputStream bIn = new ASN1InputStream(new ByteArrayInputStream(data));
-		DERObject obj = bIn.readObject();
-		System.out.println(ASN1Dump.dumpAsString(obj));
-		return dor;
-	}
-	
-	public int getRrcState() throws Exception {
-		if (!initialize) {
-			init();
-		}
-		return uec.getRrcState();
-	}
 }
