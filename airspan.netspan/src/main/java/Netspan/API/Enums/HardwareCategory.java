@@ -44,6 +44,8 @@ public enum HardwareCategory {
     AIR_HARMONY("AirHarmony"),
     @XmlEnumValue("AirVelocity")
     AIR_VELOCITY("AirVelocity"),
+    @XmlEnumValue("AirVelocityFemto")
+    AIR_VELOCITY_FEMTO("AirVelocityFemto"),
     @XmlEnumValue("iBridge 400/450")
     I_BRIDGE_400_450("iBridge 400/450"),
     @XmlEnumValue("iBridge 440")
