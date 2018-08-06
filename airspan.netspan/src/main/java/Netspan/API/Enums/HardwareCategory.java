@@ -74,6 +74,9 @@ public enum HardwareCategory {
     }
 
     public static HardwareCategory fromValue(String v) {
+    	if(v.equals("AirUnity 480")){
+    		return AIR_UNITY;
+    	}
         for (HardwareCategory c: HardwareCategory.values()) {
             if (c.value.equals(v)) {
                 return c;
