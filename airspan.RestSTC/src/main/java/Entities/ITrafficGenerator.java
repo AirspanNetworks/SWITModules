@@ -138,4 +138,6 @@ public interface ITrafficGenerator {
 	void takeActionAfterFoundHaltStream();
 
 	ArrayList<File> getTransmitOutputFiles();
+
+	ArrayList<File> getCommandFiles();
 }

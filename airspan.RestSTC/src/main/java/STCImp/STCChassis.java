@@ -1614,4 +1614,9 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void setWindowSizeInKbs(Double windowSizeInKbs) {
 		System.out.println("Function \'setWindowSizeInKbs\' not implemented in STCChassis");
 	}
+
+	@Override
+	public ArrayList<File> getCommandFiles() {
+		return new ArrayList<File>();
+	}
 }
