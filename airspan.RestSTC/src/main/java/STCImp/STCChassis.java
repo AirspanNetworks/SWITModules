@@ -7,6 +7,8 @@ import Entities.STCPort;
 import Entities.STCStreamBlock;
 import Entities.StreamParams;
 import Entities.Utils;
+import Entities.ITrafficGenerator.Protocol;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -1093,13 +1095,13 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		return true;
 	}
 	
-	public ArrayList<ArrayList<String>> disableStreamsByUeNameQciAndPortDirectionAndEnableTheRest(ArrayList<String> ueNamesNotAllowdInTest,
+	public ArrayList<ArrayList<String>> disableStreamsByUeNameQciAndPortDirectionAndEnableTheRest(Protocol protocol,ArrayList<String> ueNamesNotAllowdInTest,
 			ArrayList<Character> qciListNotAllowdInTest, 
 			TransmitDirection transmitDirection){
 		return setStreamsState(ueNamesNotAllowdInTest, qciListNotAllowdInTest, transmitDirection, false);
 	}
 	
-	public ArrayList<ArrayList<String>> enableStreamsByUeNameQciAndPortDirectionAndDisableTheRest(ArrayList<String> ueNamesAllowdInTest,
+	public ArrayList<ArrayList<String>> enableStreamsByUeNameQciAndPortDirectionAndDisableTheRest(Protocol protocol,ArrayList<String> ueNamesAllowdInTest,
 			ArrayList<Character> qciListAllowdInTest, 
 			TransmitDirection transmitDirection){
 		return setStreamsState(ueNamesAllowdInTest, qciListAllowdInTest, transmitDirection, true);
@@ -1161,7 +1163,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 		return temp;
 	}
 	
-	public ArrayList<String> enableStreamsByUeNameQciAndPortDirection(ArrayList<String> ueNamesAllowdInTest,
+	public ArrayList<String> enableStreamsByUeNameQciAndPortDirection(Protocol protocol, ArrayList<String> ueNamesAllowdInTest,
 			ArrayList<Character> qciListAllowdInTest, 
 			TransmitDirection transmitDirection){
 		return setStreamsStateWithoutChangingOtherStreams(ueNamesAllowdInTest, qciListAllowdInTest, transmitDirection, true);
@@ -1618,5 +1620,11 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	@Override
 	public ArrayList<File> getCommandFiles() {
 		return new ArrayList<File>();
+	}
+
+	@Override
+	public void initStreams(Protocol protocol, ArrayList<String> ues, ArrayList<Character> qciListAllowdInTest,
+			TransmitDirection transmitDirection) throws Exception{
+		System.out.println("Function initStreams not implemented in STCChassis");
 	}
 }

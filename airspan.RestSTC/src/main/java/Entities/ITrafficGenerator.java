@@ -97,11 +97,11 @@ public interface ITrafficGenerator {
 
 	public void setLoadStreamULPort(ArrayList<LoadParam> load);
 	
-	public ArrayList<ArrayList<String>> disableStreamsByUeNameQciAndPortDirectionAndEnableTheRest(ArrayList<String> ueNamesNotAllowdInTest,
+	public ArrayList<ArrayList<String>> disableStreamsByUeNameQciAndPortDirectionAndEnableTheRest(Protocol protocol,ArrayList<String> ueNamesNotAllowdInTest,
 			ArrayList<Character> qciListNotAllowdInTest, 
 			TransmitDirection transmitDirection);
 	
-	public ArrayList<ArrayList<String>> enableStreamsByUeNameQciAndPortDirectionAndDisableTheRest(ArrayList<String> ueNamesAllowdInTest,
+	public ArrayList<ArrayList<String>> enableStreamsByUeNameQciAndPortDirectionAndDisableTheRest(Protocol protocol,ArrayList<String> ueNamesAllowdInTest,
 			ArrayList<Character> qciListAllowdInTest, 
 			TransmitDirection transmitDirection);
 
@@ -121,7 +121,7 @@ public interface ITrafficGenerator {
 
 	public void setFrameSizeStreamULPort(ArrayList<LoadParam> load) throws IOException;
 	
-	public ArrayList<String> enableStreamsByUeNameQciAndPortDirection(ArrayList<String> ueNamesAllowdInTest,
+	public ArrayList<String> enableStreamsByUeNameQciAndPortDirection(Protocol protocol,ArrayList<String> ueNamesAllowdInTest,
 			ArrayList<Character> qciListAllowdInTest, 
 			TransmitDirection transmitDirection);
 
@@ -140,4 +140,7 @@ public interface ITrafficGenerator {
 	ArrayList<File> getTransmitOutputFiles();
 
 	ArrayList<File> getCommandFiles();
+	
+	public void initStreams(Protocol protocol,ArrayList<String> ues,ArrayList<Character> qciListAllowdInTest, 
+			TransmitDirection transmitDirection) throws Exception;
 }
