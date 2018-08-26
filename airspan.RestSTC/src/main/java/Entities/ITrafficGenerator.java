@@ -142,5 +142,5 @@ public interface ITrafficGenerator {
 	ArrayList<File> getCommandFiles();
 	
 	public void initStreams(Protocol protocol,ArrayList<String> ues,ArrayList<Character> qciListAllowdInTest, 
-			TransmitDirection transmitDirection) throws Exception;
+			TransmitDirection transmitDirection, Integer runTime) throws Exception;
 }
