@@ -143,4 +143,6 @@ public interface ITrafficGenerator {
 	
 	public void initStreams(Protocol protocol,ArrayList<String> ues,ArrayList<Character> qciListAllowdInTest, 
 			TransmitDirection transmitDirection, Integer runTime) throws Exception;
+
+	public void stopTraffic(ArrayList<String> streamList);
 }
