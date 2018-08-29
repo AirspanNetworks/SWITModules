@@ -1632,4 +1632,9 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void stopTraffic(ArrayList<String> streamList) {
 		System.out.println("Function stopTraffic with parameter streamList not implemented in STCChassis");
 	}
+
+	@Override
+	public ArrayList<StreamParams> getAllStreamsResults(ArrayList<String> streamList) {
+		return new ArrayList<StreamParams>();
+	}
 }

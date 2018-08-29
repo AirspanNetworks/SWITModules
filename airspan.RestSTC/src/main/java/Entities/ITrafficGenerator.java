@@ -145,4 +145,6 @@ public interface ITrafficGenerator {
 			TransmitDirection transmitDirection, Integer runTime) throws Exception;
 
 	public void stopTraffic(ArrayList<String> streamList);
+
+	public ArrayList<StreamParams> getAllStreamsResults(ArrayList<String> streamList);
 }
