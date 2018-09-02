@@ -146,5 +146,5 @@ public interface ITrafficGenerator {
 
 	public void stopTraffic(ArrayList<String> streamList);
 
-	public ArrayList<StreamParams> getAllStreamsResults(ArrayList<String> streamList);
+	public ArrayList<ArrayList<StreamParams>> getAllStreamsResults(ArrayList<String> streamList);
 }

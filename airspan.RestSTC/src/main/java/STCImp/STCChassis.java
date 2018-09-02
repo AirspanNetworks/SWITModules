@@ -1634,7 +1634,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	}
 
 	@Override
-	public ArrayList<StreamParams> getAllStreamsResults(ArrayList<String> streamList) {
-		return new ArrayList<StreamParams>();
+	public ArrayList<ArrayList<StreamParams>> getAllStreamsResults(ArrayList<String> streamList) {
+		return new ArrayList<ArrayList<StreamParams>>();
 	}
 }
