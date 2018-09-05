@@ -1637,4 +1637,9 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public ArrayList<ArrayList<StreamParams>> getAllStreamsResults(ArrayList<String> streamList) {
 		return new ArrayList<ArrayList<StreamParams>>();
 	}
+	
+	@Override
+	public void resetIperfList(){
+		System.out.println("Function resetIperfList not implemented in STCChassis");
+	}
 }
