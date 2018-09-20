@@ -149,4 +149,6 @@ public interface ITrafficGenerator {
 	public ArrayList<ArrayList<StreamParams>> getAllStreamsResults(ArrayList<String> streamList);
 
 	public void resetIperfList();
+
+	public void getResultFilesByList(ArrayList<String> streamList);
 }
