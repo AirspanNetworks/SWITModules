@@ -1647,4 +1647,9 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void getResultFilesByList(ArrayList<String> streamList){
 		System.out.println("Function getResultFilesByList not implemented in STCChassis");
 	}
+
+	@Override
+	public void removeStreams(ArrayList<String> streamList) {
+		System.out.println("Function removeStreams not implemented in STCChassis");
+	}
 }
