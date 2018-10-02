@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import Entities.ITrafficGenerator.Protocol;
+import Entities.ITrafficGenerator.TransmitDirection;
+
 /**
  * Created by iagmon on 09-Nov-16.
  */
@@ -142,7 +145,7 @@ public interface ITrafficGenerator {
 	ArrayList<File> getCommandFiles();
 	
 	public void initStreams(Protocol protocol,ArrayList<String> ues,ArrayList<Character> qciListAllowdInTest, 
-			TransmitDirection transmitDirection, Integer runTime) throws Exception;
+			TransmitDirection transmitDirection, Integer runTime, boolean resetStreams) throws Exception;
 
 	public void stopTraffic(ArrayList<String> streamList);
 

@@ -1624,7 +1624,7 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 
 	@Override
 	public void initStreams(Protocol protocol, ArrayList<String> ues, ArrayList<Character> qciListAllowdInTest,
-			TransmitDirection transmitDirection, Integer runTime) throws Exception{
+			TransmitDirection transmitDirection, Integer runTime, boolean resetStreams) throws Exception{
 		System.out.println("Function initStreams not implemented in STCChassis");
 	}
 
