@@ -156,4 +156,6 @@ public interface ITrafficGenerator {
 	public void getResultFilesByList(ArrayList<String> streamList);
 
 	void removeStreams(ArrayList<String> streamList);
+
+	ArrayList<ArrayList<StreamParams>> getResultsAfterTest(ArrayList<ArrayList<StreamParams>> listOfStreamList2);
 }

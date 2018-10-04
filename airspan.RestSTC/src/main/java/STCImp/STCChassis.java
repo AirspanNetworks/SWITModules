@@ -1652,4 +1652,10 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	public void removeStreams(ArrayList<String> streamList) {
 		System.out.println("Function removeStreams not implemented in STCChassis");
 	}
+
+	@Override
+	public ArrayList<ArrayList<StreamParams>> getResultsAfterTest(
+			ArrayList<ArrayList<StreamParams>> listOfStreamList2) {
+		return listOfStreamList2;
+	}
 }
