@@ -5,7 +5,9 @@ import java.math.BigDecimal;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
-import javax.xml.namespace.QName;import Netspan.API.Enums.ConnectedModeEventTypes;import Netspan.API.Enums.EnabledDisabledStates;import Netspan.API.Enums.PnpModes;import Netspan.API.Enums.SonAnrStates;import Netspan.API.Enums.StopGapEventTypes;import Netspan.API.Enums.TriggerGapEventTypes;import Netspan.API.Enums.TriggerQuantityTypes;import Netspan.API.Lte.MobilityConnectedModeStopGaps;import Netspan.API.Lte.MobilityConnectedModeTriggerGaps;
+import javax.xml.namespace.QName;import Netspan.API.Enums.ConnectedModeEventTypes;import Netspan.API.Enums.EnabledDisabledStates;import Netspan.API.Enums.PnpModes;import Netspan.API.Enums.SonAnrStates;import Netspan.API.Enums.StopGapEventTypes;import Netspan.API.Enums.TriggerGapEventTypes;import Netspan.API.Enums.TriggerQuantityTypes;
+import Netspan.API.Enums.X2ControlStateTypes;
+import Netspan.API.Lte.MobilityConnectedModeStopGaps;import Netspan.API.Lte.MobilityConnectedModeTriggerGaps;
 
 
 /**

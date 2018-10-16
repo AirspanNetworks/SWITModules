@@ -13,6 +13,8 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.X2ControlStateTypes;
+
 
 /**
  * <p>Java class for LteEnbDetailsSetWsPnp complex type.

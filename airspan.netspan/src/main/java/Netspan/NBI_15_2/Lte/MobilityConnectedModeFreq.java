@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.ConnectedModeEventTypes;
+import Netspan.API.Enums.TriggerQuantityTypes;
 
 
 /**

@@ -14,6 +14,11 @@ import Netspan.API.Enums.CsgModes;
 import Netspan.API.Enums.EnabledDisabledStates;
 import Netspan.API.Enums.EnabledDisabledValues;
 import Netspan.API.Enums.NodeManagementModeType;
+import Netspan.API.Enums.SonAnrStates;
+import Netspan.API.Enums.StopGapEventTypes;
+import Netspan.API.Enums.TriggerGapEventTypes;
+import Netspan.API.Enums.TriggerQuantityTypes;
+import Netspan.API.Enums.X2ControlStateTypes;
 
 
 /**

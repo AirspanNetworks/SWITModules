@@ -23,7 +23,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum TriggerQuantityTypes {
 
-    RSRP;
+	RSRP,
+    RSRQ;
 
     public String value() {
         return name();

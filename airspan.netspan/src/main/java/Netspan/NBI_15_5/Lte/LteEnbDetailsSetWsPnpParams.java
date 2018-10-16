@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.X2ControlStateTypes;
 
 
 /**

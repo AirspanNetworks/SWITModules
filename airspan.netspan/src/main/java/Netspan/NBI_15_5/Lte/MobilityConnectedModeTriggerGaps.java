@@ -8,6 +8,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.TriggerGapEventTypes;
+import Netspan.API.Enums.TriggerQuantityTypes;
+
 
 /**
  * <p>Java class for MobilityConnectedModeTriggerGaps complex type.
