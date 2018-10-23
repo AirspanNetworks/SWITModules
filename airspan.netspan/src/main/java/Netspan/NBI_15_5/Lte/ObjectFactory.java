@@ -10,6 +10,7 @@ import javax.xml.namespace.QName;
 
 import Netspan.API.Enums.CategoriesLte;
 import Netspan.API.Enums.CellBarringPolicies;
+import Netspan.API.Enums.ClockSources;
 import Netspan.API.Enums.ConnectedModeEventTypes;
 import Netspan.API.Enums.CsgModes;
 import Netspan.API.Enums.DicicSchemeType;

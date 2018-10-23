@@ -10,6 +10,7 @@ import javax.xml.namespace.QName;
 import Netspan.API.Lte.MobilityConnectedModeStopGaps;
 import Netspan.API.Lte.MobilityConnectedModeTriggerGaps;
 import Netspan.API.Enums.CategoriesLte;
+import Netspan.API.Enums.ClockSources;
 import Netspan.API.Enums.ConnectedModeEventTypes;
 import Netspan.API.Enums.EnabledDisabledStates;
 import Netspan.API.Enums.EnbTypes;

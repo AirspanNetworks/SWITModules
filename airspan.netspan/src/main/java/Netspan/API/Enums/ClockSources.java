@@ -1,5 +1,5 @@
 
-package Netspan.NBI_16_5.Lte;
+package Netspan.API.Enums;
 
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
@@ -28,6 +28,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum ClockSources {
 
+	@XmlEnumValue("None")
+    NONE("None"),
     GNSS("GNSS"),
     @XmlEnumValue("IEEE1588")
     IEEE_1588("IEEE1588"),

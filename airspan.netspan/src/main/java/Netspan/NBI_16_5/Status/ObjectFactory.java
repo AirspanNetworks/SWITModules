@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 
+import Netspan.API.Enums.ClockSources;
 import Netspan.API.Enums.DiscoveredByValues;
 import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;

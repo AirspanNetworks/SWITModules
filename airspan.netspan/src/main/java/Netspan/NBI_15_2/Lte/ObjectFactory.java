@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
 import Netspan.API.Enums.CategoriesLte;
+import Netspan.API.Enums.ClockSources;
 import Netspan.API.Enums.ConnectedModeEventTypes;
 import Netspan.API.Enums.EnabledDisabledStates;
 import Netspan.API.Enums.EnbTypes;

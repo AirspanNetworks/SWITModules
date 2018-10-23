@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.ClockSources;
+
 
 /**
  * <p>Java class for ClockSource complex type.
