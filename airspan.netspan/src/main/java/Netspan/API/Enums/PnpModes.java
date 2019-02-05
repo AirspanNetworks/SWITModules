@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="PnpModes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Disabled"/>
- *     &lt;enumeration value="EnabledFirstTime"/>
- *     &lt;enumeration value="EnabledAlways"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="PnpModes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Disabled"/&gt;
+ *     &lt;enumeration value="EnabledFirstTime"/&gt;
+ *     &lt;enumeration value="EnabledAlways"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

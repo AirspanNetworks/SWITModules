@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="EnbStates">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="InService"/>
- *     &lt;enumeration value="OutOfService"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="EnbStates"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="InService"/&gt;
+ *     &lt;enumeration value="OutOfService"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -28,9 +28,7 @@ public enum EnbStates {
     @XmlEnumValue("InService")
     IN_SERVICE("InService"),
     @XmlEnumValue("OutOfService")
-    OUT_OF_SERVICE("OutOfService"),
-    @XmlEnumValue("OutOfService")
-    UNKNOWN("UnKnown");
+    OUT_OF_SERVICE("OutOfService");
     private final String value;
 
     EnbStates(String v) {
@@ -51,3 +49,4 @@ public enum EnbStates {
     }
 
 }
+

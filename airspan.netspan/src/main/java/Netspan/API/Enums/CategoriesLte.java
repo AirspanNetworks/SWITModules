@@ -1,4 +1,3 @@
-
 package Netspan.API.Enums;
 
 import javax.xml.bind.annotation.XmlEnum;
@@ -12,19 +11,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CategoriesLte">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Air4G"/>
- *     &lt;enumeration value="AirSynergy"/>
- *     &lt;enumeration value="AirHarmony"/>
- *     &lt;enumeration value="AirVelocity"/>
- *     &lt;enumeration value="AirVelocityFemto"/>
- *     &lt;enumeration value="AirUnity"/>
- *     &lt;enumeration value="AirDensity"/>
- *     &lt;enumeration value="AirSpeed-Relay"/>
- *     &lt;enumeration value="AirSpeed"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CategoriesLte"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Air4G"/&gt;
+ *     &lt;enumeration value="AirSynergy"/&gt;
+ *     &lt;enumeration value="AirHarmony"/&gt;
+ *     &lt;enumeration value="AirVelocity"/&gt;
+ *     &lt;enumeration value="AirVelocityFemto"/&gt;
+ *     &lt;enumeration value="AirUnity"/&gt;
+ *     &lt;enumeration value="AirDensity"/&gt;
+ *     &lt;enumeration value="AirDensityFemto"/&gt;
+ *     &lt;enumeration value="AirSpeed-Relay"/&gt;
+ *     &lt;enumeration value="AirSpeed"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -46,6 +46,8 @@ public enum CategoriesLte {
     AIR_UNITY("AirUnity"),
     @XmlEnumValue("AirDensity")
     AIR_DENSITY("AirDensity"),
+    @XmlEnumValue("AirDensityFemto")
+    AIR_DENSITY_FEMTO("AirDensityFemto"),
     @XmlEnumValue("AirSpeed-Relay")
     AIR_SPEED_RELAY("AirSpeed-Relay"),
     @XmlEnumValue("AirSpeed")

@@ -7,31 +7,28 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for NodeManagementModeType.
+ * <p>Java class for NodeManagementModes.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="NodeManagementModeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unmanaged"/>
- *     &lt;enumeration value="Managed"/>
- *     &lt;enumeration value="None"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="NodeManagementModes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unmanaged"/&gt;
+ *     &lt;enumeration value="Managed"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "NodeManagementModeType")
+@XmlType(name = "NodeManagementModes")
 @XmlEnum
 public enum NodeManagementModes {
 
     @XmlEnumValue("Unmanaged")
     UNMANAGED("Unmanaged"),
     @XmlEnumValue("Managed")
-    MANAGED("Managed"),
-    @XmlEnumValue("None")
-    NONE("None");
+    MANAGED("Managed");
     private final String value;
 
     NodeManagementModes(String v) {
