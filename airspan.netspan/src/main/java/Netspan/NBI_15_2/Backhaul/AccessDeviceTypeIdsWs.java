@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AccessDeviceTypeIdsWs">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Enb1"/>
- *     &lt;enumeration value="Enb2"/>
- *     &lt;enumeration value="Wifi"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AccessDeviceTypeIdsWs"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Enb1"/&gt;
+ *     &lt;enumeration value="Enb2"/&gt;
+ *     &lt;enumeration value="Wifi"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -14,22 +14,22 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MacWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="MaxHarqTxForUlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="MaxHarqTxForUl" type="{http://Airspan.Netspan.WebServices}MaxHarqUlType" minOccurs="0"/>
- *         &lt;element name="PeriodicBsrTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PeriodicBsrTimer" type="{http://Airspan.Netspan.WebServices}BsrType" minOccurs="0"/>
- *         &lt;element name="RetxBsrTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="RetxBsrTimer" type="{http://Airspan.Netspan.WebServices}RetxBsrTimerType" minOccurs="0"/>
- *         &lt;element name="MaxHarqTxForDlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="MaxHarqTxForDl" type="{http://Airspan.Netspan.WebServices}MaxHarqDlType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MacWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="MaxHarqTxForUlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MaxHarqTxForUl" type="{http://Airspan.Netspan.WebServices}MaxHarqUlType" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicBsrTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicBsrTimer" type="{http://Airspan.Netspan.WebServices}BsrType" minOccurs="0"/&gt;
+ *         &lt;element name="RetxBsrTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RetxBsrTimer" type="{http://Airspan.Netspan.WebServices}RetxBsrTimerType" minOccurs="0"/&gt;
+ *         &lt;element name="MaxHarqTxForDlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MaxHarqTxForDl" type="{http://Airspan.Netspan.WebServices}MaxHarqDlType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

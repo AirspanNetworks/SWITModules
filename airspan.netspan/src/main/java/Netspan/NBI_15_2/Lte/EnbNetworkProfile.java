@@ -18,55 +18,55 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbNetworkProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="IsStandardVoLTECodec" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CodecType" type="{http://Airspan.Netspan.WebServices}VoLTECodecType" minOccurs="0"/>
- *         &lt;element name="CodecMode" type="{http://Airspan.Netspan.WebServices}VoLTECodecMode" minOccurs="0"/>
- *         &lt;element name="PacketSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PacketPeriodicity" type="{http://Airspan.Netspan.WebServices}VoLTEPeriodicity" minOccurs="0"/>
- *         &lt;element name="IsRohcProfilesQci1Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="MmeOverloadAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MmeOverloadWaitTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MmeOverloadLoadReductionAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="CbrsMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="CbrsSasAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PlmnList" type="{http://Airspan.Netspan.WebServices}PlmnListContainer" minOccurs="0"/>
- *         &lt;element name="S1X2List" type="{http://Airspan.Netspan.WebServices}S1ListContainer" minOccurs="0"/>
- *         &lt;element name="CSONConfig" type="{http://Airspan.Netspan.WebServices}LteCSonEntryWs" minOccurs="0"/>
- *         &lt;element name="CallTraceSvrPresent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CallTraceSvrIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CallTraceSvrPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2McePresent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="MceIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MceSctpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsS1CVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S1CVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsS1UVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S1UVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsX2CVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="X2CVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsX2UVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="X2UVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsPtpVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PtpVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsCSonVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CSonVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsM2VlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="M2VlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsM1VlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="M1VlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsCallTraceSvrVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="CallTraceSvrVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UlPktDataPriorityList" type="{http://Airspan.Netspan.WebServices}UlPktDataPriorityListContainer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbNetworkProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="IsStandardVoLTECodec" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="CodecType" type="{http://Airspan.Netspan.WebServices}VoLTECodecType" minOccurs="0"/&gt;
+ *         &lt;element name="CodecMode" type="{http://Airspan.Netspan.WebServices}VoLTECodecMode" minOccurs="0"/&gt;
+ *         &lt;element name="PacketSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PacketPeriodicity" type="{http://Airspan.Netspan.WebServices}VoLTEPeriodicity" minOccurs="0"/&gt;
+ *         &lt;element name="IsRohcProfilesQci1Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MmeOverloadAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MmeOverloadWaitTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MmeOverloadLoadReductionAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CbrsMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CbrsSasAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PlmnList" type="{http://Airspan.Netspan.WebServices}PlmnListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="S1X2List" type="{http://Airspan.Netspan.WebServices}S1ListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="CSONConfig" type="{http://Airspan.Netspan.WebServices}LteCSonEntryWs" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceSvrPresent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceSvrIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceSvrPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2McePresent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MceIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MceSctpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1CVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S1CVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1UVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S1UVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2CVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="X2CVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2UVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="X2UVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsPtpVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PtpVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsCSonVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="CSonVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsM2VlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="M2VlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsM1VlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="M1VlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IsCallTraceSvrVlanConfigured" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceSvrVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UlPktDataPriorityList" type="{http://Airspan.Netspan.WebServices}UlPktDataPriorityListContainer" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -193,8 +193,8 @@ public class EnbNetworkProfile {
     protected JAXBElement<Boolean> isM1VlanConfigured;
     @XmlElementRef(name = "M1VlanId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> m1VlanId;
-    @XmlElement(name = "IsCallTraceSvrVlanConfigured", required = true, type = Boolean.class, nillable = true)
-    protected Boolean isCallTraceSvrVlanConfigured;
+    @XmlElementRef(name = "IsCallTraceSvrVlanConfigured", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> isCallTraceSvrVlanConfigured;
     @XmlElementRef(name = "CallTraceSvrVlanId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> callTraceSvrVlanId;
     @XmlElement(name = "UlPktDataPriorityList")
@@ -1117,10 +1117,10 @@ public class EnbNetworkProfile {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isIsCallTraceSvrVlanConfigured() {
+    public JAXBElement<Boolean> getIsCallTraceSvrVlanConfigured() {
         return isCallTraceSvrVlanConfigured;
     }
 
@@ -1129,10 +1129,10 @@ public class EnbNetworkProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setIsCallTraceSvrVlanConfigured(Boolean value) {
+    public void setIsCallTraceSvrVlanConfigured(JAXBElement<Boolean> value) {
         this.isCallTraceSvrVlanConfigured = value;
     }
 

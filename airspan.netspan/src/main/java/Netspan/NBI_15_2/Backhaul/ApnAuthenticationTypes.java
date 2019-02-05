@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ApnAuthenticationTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="Pap"/>
- *     &lt;enumeration value="Chap"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ApnAuthenticationTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="Pap"/&gt;
+ *     &lt;enumeration value="Chap"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

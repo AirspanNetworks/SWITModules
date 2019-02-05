@@ -7,8 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.NodeManagementModeType;
-import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
+import Netspan.API.Enums.NodeManagementModes;
 
 
 /**
@@ -17,15 +16,15 @@ import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbDetailsGet">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}EnbDetailsGetPnp">
- *       &lt;sequence>
- *         &lt;element name="ManagedMode" type="{http://Airspan.Netspan.WebServices}NodeManagementModes" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbDetailsGet"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}EnbDetailsGetPnp"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ManagedMode" type="{http://Airspan.Netspan.WebServices}NodeManagementModes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,11 +34,11 @@ import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
     "managedMode"
 })
 public class EnbDetailsGet
-    extends EnbDetailsGetPnp implements ILteEnbDetailsGet
+    extends EnbDetailsGetPnp
 {
 
     @XmlElementRef(name = "ManagedMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<NodeManagementModeType> managedMode;
+    protected JAXBElement<NodeManagementModes> managedMode;
 
     /**
      * Gets the value of the managedMode property.
@@ -49,7 +48,7 @@ public class EnbDetailsGet
      *     {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}
      *     
      */
-    public JAXBElement<NodeManagementModeType> getManagedMode() {
+    public JAXBElement<NodeManagementModes> getManagedMode() {
         return managedMode;
     }
 
@@ -61,7 +60,7 @@ public class EnbDetailsGet
      *     {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}
      *     
      */
-    public void setManagedMode(JAXBElement<NodeManagementModeType> value) {
+    public void setManagedMode(JAXBElement<NodeManagementModes> value) {
         this.managedMode = value;
     }
 

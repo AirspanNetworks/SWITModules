@@ -15,54 +15,54 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteCellGetWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CellNumber" type="{http://Airspan.Netspan.WebServices}EnbCellNumber" minOccurs="0"/>
- *         &lt;element name="CellIdForEci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellIdentity28Bit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PhysicalLayerCellGroup" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PhysicalLayerIdentity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PhysicalCellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TrackingAreaCode" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EmergencyAreaId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellAdvancedConfigurationProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MobilityProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CustomMobilityProfileParameters" type="{http://Airspan.Netspan.WebServices}EnbMobilityProfileParams" minOccurs="0"/>
- *         &lt;element name="EmbmsProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UtranProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TrafficManagementProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CallTraceProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsAccessClassBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsEmergencyAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SignalingAccessBarringFactor" type="{http://Airspan.Netspan.WebServices}AccessBarringFactorTypes" minOccurs="0"/>
- *         &lt;element name="SignalingAccessBarringTimeInSec" type="{http://Airspan.Netspan.WebServices}AccessBarringTimeTypes" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessClass11Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessClass12Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessClass13Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessClass14Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsSignalingAccessClass15Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsDataAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DataAccessBarringFactor" type="{http://Airspan.Netspan.WebServices}AccessBarringFactorTypes" minOccurs="0"/>
- *         &lt;element name="DataAccessBarringTimeInSec" type="{http://Airspan.Netspan.WebServices}AccessBarringTimeTypes" minOccurs="0"/>
- *         &lt;element name="IsDataAccessClass11Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsDataAccessClass12Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsDataAccessClass13Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsDataAccessClass14Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsDataAccessClass15Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="CsfbCdma2kCellParam" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kCellParams" minOccurs="0"/>
- *         &lt;element name="CsfbCdma2kSib8Param" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kSib8Params" minOccurs="0"/>
- *         &lt;element name="CsfbCdma2kMobilityParam" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kMobilityParams" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteCellGetWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CellNumber" type="{http://Airspan.Netspan.WebServices}EnbCellNumber" minOccurs="0"/&gt;
+ *         &lt;element name="CellIdForEci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellIdentity28Bit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PhysicalLayerCellGroup" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PhysicalLayerIdentity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PhysicalCellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TrackingAreaCode" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EmergencyAreaId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellAdvancedConfigurationProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CustomMobilityProfileParameters" type="{http://Airspan.Netspan.WebServices}EnbMobilityProfileParams" minOccurs="0"/&gt;
+ *         &lt;element name="EmbmsProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UtranProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TrafficManagementProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsAccessClassBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsEmergencyAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SignalingAccessBarringFactor" type="{http://Airspan.Netspan.WebServices}AccessBarringFactorTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SignalingAccessBarringTimeInSec" type="{http://Airspan.Netspan.WebServices}AccessBarringTimeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessClass11Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessClass12Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessClass13Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessClass14Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsSignalingAccessClass15Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessBarred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DataAccessBarringFactor" type="{http://Airspan.Netspan.WebServices}AccessBarringFactorTypes" minOccurs="0"/&gt;
+ *         &lt;element name="DataAccessBarringTimeInSec" type="{http://Airspan.Netspan.WebServices}AccessBarringTimeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessClass11Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessClass12Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessClass13Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessClass14Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsDataAccessClass15Barred" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbCdma2kCellParam" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kCellParams" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbCdma2kSib8Param" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kSib8Params" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbCdma2kMobilityParam" type="{http://Airspan.Netspan.WebServices}CsfbCdma2kMobilityParams" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

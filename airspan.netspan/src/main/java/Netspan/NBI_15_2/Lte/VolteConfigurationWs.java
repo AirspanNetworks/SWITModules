@@ -4,7 +4,6 @@ package Netspan.NBI_15_2.Lte;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
@@ -15,26 +14,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="VolteConfigurationWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ActivateVolteDataInactivityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ActivateVolteDataInactivity" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="AdditionalBitsForFixedAllocationsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="AdditionalBitsForFixedAllocations" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="HeaderOverheadIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="HeaderOverhead" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DlaAckStepDownFactorIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DlaAckStepDownFactor" type="{http://Airspan.Netspan.WebServices}DlAck" minOccurs="0"/>
- *         &lt;element name="MaximumVolteCallsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="MaximumVolteCalls" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RohcCompressionRatioIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="RohcCompressionRatio" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="VolteConfigurationWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ActivateVolteDataInactivityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="ActivateVolteDataInactivity" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="AdditionalBitsForFixedAllocationsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="AdditionalBitsForFixedAllocations" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="HeaderOverheadIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="HeaderOverhead" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DlaAckStepDownFactorIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DlaAckStepDownFactor" type="{http://Airspan.Netspan.WebServices}DlAck" minOccurs="0"/&gt;
+ *         &lt;element name="MaximumVolteCallsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MaximumVolteCalls" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RohcCompressionRatioIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RohcCompressionRatio" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -72,8 +71,8 @@ public class VolteConfigurationWs {
     protected JAXBElement<Boolean> dlaAckStepDownFactorIsDefault;
     @XmlElementRef(name = "DlaAckStepDownFactor", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> dlaAckStepDownFactor;
-    @XmlElement(name = "MaximumVolteCallsIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean maximumVolteCallsIsDefault;
+    @XmlElementRef(name = "MaximumVolteCallsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> maximumVolteCallsIsDefault;
     @XmlElementRef(name = "MaximumVolteCalls", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maximumVolteCalls;
     @XmlElementRef(name = "RohcCompressionRatioIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -278,10 +277,10 @@ public class VolteConfigurationWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isMaximumVolteCallsIsDefault() {
+    public JAXBElement<Boolean> getMaximumVolteCallsIsDefault() {
         return maximumVolteCallsIsDefault;
     }
 
@@ -290,10 +289,10 @@ public class VolteConfigurationWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setMaximumVolteCallsIsDefault(Boolean value) {
+    public void setMaximumVolteCallsIsDefault(JAXBElement<Boolean> value) {
         this.maximumVolteCallsIsDefault = value;
     }
 

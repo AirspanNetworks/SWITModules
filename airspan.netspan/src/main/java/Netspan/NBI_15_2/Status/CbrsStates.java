@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CbrsStates">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unregistered"/>
- *     &lt;enumeration value="Registered"/>
- *     &lt;enumeration value="Granted"/>
- *     &lt;enumeration value="Transmission"/>
- *     &lt;enumeration value="Suspended"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CbrsStates"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unregistered"/&gt;
+ *     &lt;enumeration value="Registered"/&gt;
+ *     &lt;enumeration value="Granted"/&gt;
+ *     &lt;enumeration value="Transmission"/&gt;
+ *     &lt;enumeration value="Suspended"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

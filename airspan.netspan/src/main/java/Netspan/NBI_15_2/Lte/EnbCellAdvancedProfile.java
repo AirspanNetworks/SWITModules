@@ -17,40 +17,40 @@ import Netspan.API.Enums.CategoriesLte;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbCellAdvancedProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="NeighborManagement" type="{http://Airspan.Netspan.WebServices}CellNeighborManagementWs" minOccurs="0"/>
- *         &lt;element name="VolteConfiguration" type="{http://Airspan.Netspan.WebServices}VolteConfigurationWs" minOccurs="0"/>
- *         &lt;element name="MobilityConnectedGeneral" type="{http://Airspan.Netspan.WebServices}MobilityConnectedGeneralWs" minOccurs="0"/>
- *         &lt;element name="MobilityConnectedInterFreq" type="{http://Airspan.Netspan.WebServices}MobilityConnectedInterWs" minOccurs="0"/>
- *         &lt;element name="MobilityConnectedIntraFreq" type="{http://Airspan.Netspan.WebServices}MobilityConnectedWs" minOccurs="0"/>
- *         &lt;element name="MobilityConnectedQos" type="{http://Airspan.Netspan.WebServices}MobilityConnectedQosWs" minOccurs="0"/>
- *         &lt;element name="MobilityIdleInterFreq" type="{http://Airspan.Netspan.WebServices}MobilityIdleInterFreqWs" minOccurs="0"/>
- *         &lt;element name="MobilityIdleIntraFreq" type="{http://Airspan.Netspan.WebServices}MobilityIdleIntraFreqWs" minOccurs="0"/>
- *         &lt;element name="Reselection" type="{http://Airspan.Netspan.WebServices}ReselectionWs" minOccurs="0"/>
- *         &lt;element name="SoftFreqReuse" type="{http://Airspan.Netspan.WebServices}SoftFreqReuseWs" minOccurs="0"/>
- *         &lt;element name="Sib1" type="{http://Airspan.Netspan.WebServices}Sib1Ws" minOccurs="0"/>
- *         &lt;element name="RandomAccess" type="{http://Airspan.Netspan.WebServices}RandomAccessWs" minOccurs="0"/>
- *         &lt;element name="Pusch" type="{http://Airspan.Netspan.WebServices}CellPuschWs" minOccurs="0"/>
- *         &lt;element name="Pucch" type="{http://Airspan.Netspan.WebServices}CellPucchWs" minOccurs="0"/>
- *         &lt;element name="RadioInterface" type="{http://Airspan.Netspan.WebServices}CellRadioInterfaceWs" minOccurs="0"/>
- *         &lt;element name="Mac" type="{http://Airspan.Netspan.WebServices}MacWs" minOccurs="0"/>
- *         &lt;element name="ConnectionControl" type="{http://Airspan.Netspan.WebServices}ConnectionControlWs" minOccurs="0"/>
- *         &lt;element name="UplinkLinkAdaptation" type="{http://Airspan.Netspan.WebServices}UplinkLinkAdaptationWs" minOccurs="0"/>
- *         &lt;element name="AirSon" type="{http://Airspan.Netspan.WebServices}CellAirSonWs" minOccurs="0"/>
- *         &lt;element name="Etws" type="{http://Airspan.Netspan.WebServices}EtwsWs" minOccurs="0"/>
- *         &lt;element name="Embms" type="{http://Airspan.Netspan.WebServices}CellEmbmsWs" minOccurs="0"/>
- *         &lt;element name="CallTrace" type="{http://Airspan.Netspan.WebServices}CellCallTraceWs" minOccurs="0"/>
- *         &lt;element name="ControlChannelOverloadOptimization" type="{http://Airspan.Netspan.WebServices}CellDynamicCfiWs" minOccurs="0"/>
- *         &lt;element name="IntraEnbLoadBalancing" type="{http://Airspan.Netspan.WebServices}IntraEnbLoadBalancingWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbCellAdvancedProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="NeighborManagement" type="{http://Airspan.Netspan.WebServices}CellNeighborManagementWs" minOccurs="0"/&gt;
+ *         &lt;element name="VolteConfiguration" type="{http://Airspan.Netspan.WebServices}VolteConfigurationWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityConnectedGeneral" type="{http://Airspan.Netspan.WebServices}MobilityConnectedGeneralWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityConnectedInterFreq" type="{http://Airspan.Netspan.WebServices}MobilityConnectedInterWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityConnectedIntraFreq" type="{http://Airspan.Netspan.WebServices}MobilityConnectedWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityConnectedQos" type="{http://Airspan.Netspan.WebServices}MobilityConnectedQosWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityIdleInterFreq" type="{http://Airspan.Netspan.WebServices}MobilityIdleInterFreqWs" minOccurs="0"/&gt;
+ *         &lt;element name="MobilityIdleIntraFreq" type="{http://Airspan.Netspan.WebServices}MobilityIdleIntraFreqWs" minOccurs="0"/&gt;
+ *         &lt;element name="Reselection" type="{http://Airspan.Netspan.WebServices}ReselectionWs" minOccurs="0"/&gt;
+ *         &lt;element name="SoftFreqReuse" type="{http://Airspan.Netspan.WebServices}SoftFreqReuseWs" minOccurs="0"/&gt;
+ *         &lt;element name="Sib1" type="{http://Airspan.Netspan.WebServices}Sib1Ws" minOccurs="0"/&gt;
+ *         &lt;element name="RandomAccess" type="{http://Airspan.Netspan.WebServices}RandomAccessWs" minOccurs="0"/&gt;
+ *         &lt;element name="Pusch" type="{http://Airspan.Netspan.WebServices}CellPuschWs" minOccurs="0"/&gt;
+ *         &lt;element name="Pucch" type="{http://Airspan.Netspan.WebServices}CellPucchWs" minOccurs="0"/&gt;
+ *         &lt;element name="RadioInterface" type="{http://Airspan.Netspan.WebServices}CellRadioInterfaceWs" minOccurs="0"/&gt;
+ *         &lt;element name="Mac" type="{http://Airspan.Netspan.WebServices}MacWs" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectionControl" type="{http://Airspan.Netspan.WebServices}ConnectionControlWs" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkLinkAdaptation" type="{http://Airspan.Netspan.WebServices}UplinkLinkAdaptationWs" minOccurs="0"/&gt;
+ *         &lt;element name="AirSon" type="{http://Airspan.Netspan.WebServices}CellAirSonWs" minOccurs="0"/&gt;
+ *         &lt;element name="Etws" type="{http://Airspan.Netspan.WebServices}EtwsWs" minOccurs="0"/&gt;
+ *         &lt;element name="Embms" type="{http://Airspan.Netspan.WebServices}CellEmbmsWs" minOccurs="0"/&gt;
+ *         &lt;element name="CallTrace" type="{http://Airspan.Netspan.WebServices}CellCallTraceWs" minOccurs="0"/&gt;
+ *         &lt;element name="ControlChannelOverloadOptimization" type="{http://Airspan.Netspan.WebServices}CellDynamicCfiWs" minOccurs="0"/&gt;
+ *         &lt;element name="IntraEnbLoadBalancing" type="{http://Airspan.Netspan.WebServices}IntraEnbLoadBalancingWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

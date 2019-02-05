@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ProfileTypeValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="defaultProfile"/>
- *     &lt;enumeration value="ituTG82651"/>
- *     &lt;enumeration value="defaultProfileUnicast"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ProfileTypeValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="defaultProfile"/&gt;
+ *     &lt;enumeration value="ituTG82651"/&gt;
+ *     &lt;enumeration value="defaultProfileUnicast"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

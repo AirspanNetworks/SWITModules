@@ -1,10 +1,11 @@
 
 package Netspan.NBI_15_2.FaultManagement;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
@@ -15,26 +16,27 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Event">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="EventId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="EventTypeId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="EventType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceType" type="{http://Airspan.Netspan.WebServices}SourceType"/>
- *         &lt;element name="SourceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceIfIndex" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="SourceMacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceUniqueId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="EventInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="EventStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ReceivedTime" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Event"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="EventId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EventTypeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EventType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceType" type="{http://Airspan.Netspan.WebServices}SourceType"/&gt;
+ *         &lt;element name="SourceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceIfIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SourceMacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceUniqueId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="EventInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="EventStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ReceivedTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,14 +54,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "sourceUniqueId",
     "eventInfo",
     "eventStatus",
+    "hardwareType",
     "receivedTime"
 })
 public class Event {
 
-    @XmlElement(name = "EventId", required = true, type = Integer.class, nillable = true)
-    protected Integer eventId;
-    @XmlElement(name = "EventTypeId", required = true, type = Integer.class, nillable = true)
-    protected Integer eventTypeId;
+    @XmlElementRef(name = "EventId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> eventId;
+    @XmlElementRef(name = "EventTypeId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> eventTypeId;
     @XmlElement(name = "EventType")
     protected String eventType;
     @XmlElement(name = "SourceType", required = true)
@@ -68,8 +71,8 @@ public class Event {
     protected String sourceName;
     @XmlElement(name = "SourceId")
     protected String sourceId;
-    @XmlElement(name = "SourceIfIndex", required = true, type = Integer.class, nillable = true)
-    protected Integer sourceIfIndex;
+    @XmlElementRef(name = "SourceIfIndex", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> sourceIfIndex;
     @XmlElement(name = "SourceMacAddress")
     protected String sourceMacAddress;
     @XmlElement(name = "SourceUniqueId")
@@ -78,19 +81,20 @@ public class Event {
     protected String eventInfo;
     @XmlElement(name = "EventStatus")
     protected String eventStatus;
-    @XmlElement(name = "ReceivedTime", required = true, nillable = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar receivedTime;
+    @XmlElement(name = "HardwareType")
+    protected String hardwareType;
+    @XmlElementRef(name = "ReceivedTime", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<XMLGregorianCalendar> receivedTime;
 
     /**
      * Gets the value of the eventId property.
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getEventId() {
+    public JAXBElement<Integer> getEventId() {
         return eventId;
     }
 
@@ -99,10 +103,10 @@ public class Event {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setEventId(Integer value) {
+    public void setEventId(JAXBElement<Integer> value) {
         this.eventId = value;
     }
 
@@ -111,10 +115,10 @@ public class Event {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getEventTypeId() {
+    public JAXBElement<Integer> getEventTypeId() {
         return eventTypeId;
     }
 
@@ -123,10 +127,10 @@ public class Event {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setEventTypeId(Integer value) {
+    public void setEventTypeId(JAXBElement<Integer> value) {
         this.eventTypeId = value;
     }
 
@@ -231,10 +235,10 @@ public class Event {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getSourceIfIndex() {
+    public JAXBElement<Integer> getSourceIfIndex() {
         return sourceIfIndex;
     }
 
@@ -243,10 +247,10 @@ public class Event {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setSourceIfIndex(Integer value) {
+    public void setSourceIfIndex(JAXBElement<Integer> value) {
         this.sourceIfIndex = value;
     }
 
@@ -347,14 +351,38 @@ public class Event {
     }
 
     /**
+     * Gets the value of the hardwareType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getHardwareType() {
+        return hardwareType;
+    }
+
+    /**
+     * Sets the value of the hardwareType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setHardwareType(String value) {
+        this.hardwareType = value;
+    }
+
+    /**
      * Gets the value of the receivedTime property.
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public XMLGregorianCalendar getReceivedTime() {
+    public JAXBElement<XMLGregorianCalendar> getReceivedTime() {
         return receivedTime;
     }
 
@@ -363,10 +391,10 @@ public class Event {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public void setReceivedTime(XMLGregorianCalendar value) {
+    public void setReceivedTime(JAXBElement<XMLGregorianCalendar> value) {
         this.receivedTime = value;
     }
 

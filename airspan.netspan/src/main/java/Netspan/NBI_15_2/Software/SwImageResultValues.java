@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SwImageResultValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="OK"/>
- *     &lt;enumeration value="SwImageNotFound"/>
- *     &lt;enumeration value="SwImageError"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="SwImageResultValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="OK"/&gt;
+ *     &lt;enumeration value="SwImageNotFound"/&gt;
+ *     &lt;enumeration value="SwImageError"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

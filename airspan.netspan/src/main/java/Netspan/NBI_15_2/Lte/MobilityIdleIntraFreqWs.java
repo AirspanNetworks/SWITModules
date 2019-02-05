@@ -14,18 +14,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MobilityIdleIntraFreqWs">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityIdleFreqWs">
- *       &lt;sequence>
- *         &lt;element name="QhystSfMediumIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QhystSfMedium" type="{http://Airspan.Netspan.WebServices}Hyst" minOccurs="0"/>
- *         &lt;element name="QhystSfHighIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QhystSfHigh" type="{http://Airspan.Netspan.WebServices}Hyst" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MobilityIdleIntraFreqWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityIdleFreqWs"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="QhystSfMediumIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QhystSfMedium" type="{http://Airspan.Netspan.WebServices}Hyst" minOccurs="0"/&gt;
+ *         &lt;element name="QhystSfHighIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QhystSfHigh" type="{http://Airspan.Netspan.WebServices}Hyst" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -14,32 +14,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ConnectionControlWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="T300IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T300" type="{http://Airspan.Netspan.WebServices}RrcT300" minOccurs="0"/>
- *         &lt;element name="T301IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T301" type="{http://Airspan.Netspan.WebServices}RrcT300" minOccurs="0"/>
- *         &lt;element name="T304IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T304" type="{http://Airspan.Netspan.WebServices}RrcT304" minOccurs="0"/>
- *         &lt;element name="T310IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T310" type="{http://Airspan.Netspan.WebServices}RrcT310" minOccurs="0"/>
- *         &lt;element name="T311IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T311" type="{http://Airspan.Netspan.WebServices}RrcT311" minOccurs="0"/>
- *         &lt;element name="T320IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="T320" type="{http://Airspan.Netspan.WebServices}RrcT320" minOccurs="0"/>
- *         &lt;element name="N310IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="N310" type="{http://Airspan.Netspan.WebServices}RrcN310" minOccurs="0"/>
- *         &lt;element name="N311IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="N311" type="{http://Airspan.Netspan.WebServices}RrcN311" minOccurs="0"/>
- *         &lt;element name="RrcProcedureTimeoutIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="RrcProcedureTimeout" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ConnectionControlWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="T300IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T300" type="{http://Airspan.Netspan.WebServices}RrcT300" minOccurs="0"/&gt;
+ *         &lt;element name="T301IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T301" type="{http://Airspan.Netspan.WebServices}RrcT300" minOccurs="0"/&gt;
+ *         &lt;element name="T304IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T304" type="{http://Airspan.Netspan.WebServices}RrcT304" minOccurs="0"/&gt;
+ *         &lt;element name="T310IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T310" type="{http://Airspan.Netspan.WebServices}RrcT310" minOccurs="0"/&gt;
+ *         &lt;element name="T311IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T311" type="{http://Airspan.Netspan.WebServices}RrcT311" minOccurs="0"/&gt;
+ *         &lt;element name="T320IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="T320" type="{http://Airspan.Netspan.WebServices}RrcT320" minOccurs="0"/&gt;
+ *         &lt;element name="N310IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="N310" type="{http://Airspan.Netspan.WebServices}RrcN310" minOccurs="0"/&gt;
+ *         &lt;element name="N311IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="N311" type="{http://Airspan.Netspan.WebServices}RrcN311" minOccurs="0"/&gt;
+ *         &lt;element name="RrcProcedureTimeoutIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RrcProcedureTimeout" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlType(name = "NodeManagementModeType")
 @XmlEnum
-public enum NodeManagementModeType {
+public enum NodeManagementModes {
 
     @XmlEnumValue("Unmanaged")
     UNMANAGED("Unmanaged"),
@@ -34,7 +34,7 @@ public enum NodeManagementModeType {
     NONE("None");
     private final String value;
 
-    NodeManagementModeType(String v) {
+    NodeManagementModes(String v) {
         value = v;
     }
 
@@ -42,8 +42,8 @@ public enum NodeManagementModeType {
         return value;
     }
 
-    public static NodeManagementModeType fromValue(String v) {
-        for (NodeManagementModeType c: NodeManagementModeType.values()) {
+    public static NodeManagementModes fromValue(String v) {
+        for (NodeManagementModes c: NodeManagementModes.values()) {
             if (c.value.equals(v)) {
                 return c;
             }

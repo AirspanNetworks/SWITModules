@@ -17,30 +17,30 @@ import Netspan.API.Enums.CategoriesLte;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbAdvancedProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="NeighborManagement" type="{http://Airspan.Netspan.WebServices}NeighborManagementWs" minOccurs="0"/>
- *         &lt;element name="Handover" type="{http://Airspan.Netspan.WebServices}HandoverWs" minOccurs="0"/>
- *         &lt;element name="RadioBearers" type="{http://Airspan.Netspan.WebServices}RadioBearersWs" minOccurs="0"/>
- *         &lt;element name="AirSon" type="{http://Airspan.Netspan.WebServices}AirSonWs" minOccurs="0"/>
- *         &lt;element name="EmergencyCall" type="{http://Airspan.Netspan.WebServices}EmergencyCallWs" minOccurs="0"/>
- *         &lt;element name="RadioInterface" type="{http://Airspan.Netspan.WebServices}RadioInterfaceWs" minOccurs="0"/>
- *         &lt;element name="Networking" type="{http://Airspan.Netspan.WebServices}NetworkingWs" minOccurs="0"/>
- *         &lt;element name="Synchronization" type="{http://Airspan.Netspan.WebServices}SynchronizationWs" minOccurs="0"/>
- *         &lt;element name="TrafficManagement" type="{http://Airspan.Netspan.WebServices}TrafficManagementWs" minOccurs="0"/>
- *         &lt;element name="Embms" type="{http://Airspan.Netspan.WebServices}EmbmsWs" minOccurs="0"/>
- *         &lt;element name="UeHandlingEnb" type="{http://Airspan.Netspan.WebServices}UeHandlingEnbWs" minOccurs="0"/>
- *         &lt;element name="CallTraceEnbWs" type="{http://Airspan.Netspan.WebServices}CallTraceEnbWs" minOccurs="0"/>
- *         &lt;element name="RelayChannelQuality" type="{http://Airspan.Netspan.WebServices}RelayChannelQualityEnbWs" minOccurs="0"/>
- *         &lt;element name="Cbrs" type="{http://Airspan.Netspan.WebServices}CbrsEnbWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbAdvancedProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="NeighborManagement" type="{http://Airspan.Netspan.WebServices}NeighborManagementWs" minOccurs="0"/&gt;
+ *         &lt;element name="Handover" type="{http://Airspan.Netspan.WebServices}HandoverWs" minOccurs="0"/&gt;
+ *         &lt;element name="RadioBearers" type="{http://Airspan.Netspan.WebServices}RadioBearersWs" minOccurs="0"/&gt;
+ *         &lt;element name="AirSon" type="{http://Airspan.Netspan.WebServices}AirSonWs" minOccurs="0"/&gt;
+ *         &lt;element name="EmergencyCall" type="{http://Airspan.Netspan.WebServices}EmergencyCallWs" minOccurs="0"/&gt;
+ *         &lt;element name="RadioInterface" type="{http://Airspan.Netspan.WebServices}RadioInterfaceWs" minOccurs="0"/&gt;
+ *         &lt;element name="Networking" type="{http://Airspan.Netspan.WebServices}NetworkingWs" minOccurs="0"/&gt;
+ *         &lt;element name="Synchronization" type="{http://Airspan.Netspan.WebServices}SynchronizationWs" minOccurs="0"/&gt;
+ *         &lt;element name="TrafficManagement" type="{http://Airspan.Netspan.WebServices}TrafficManagementWs" minOccurs="0"/&gt;
+ *         &lt;element name="Embms" type="{http://Airspan.Netspan.WebServices}EmbmsWs" minOccurs="0"/&gt;
+ *         &lt;element name="UeHandlingEnb" type="{http://Airspan.Netspan.WebServices}UeHandlingEnbWs" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceEnbWs" type="{http://Airspan.Netspan.WebServices}CallTraceEnbWs" minOccurs="0"/&gt;
+ *         &lt;element name="RelayChannelQuality" type="{http://Airspan.Netspan.WebServices}RelayChannelQualityEnbWs" minOccurs="0"/&gt;
+ *         &lt;element name="Cbrs" type="{http://Airspan.Netspan.WebServices}CbrsEnbWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

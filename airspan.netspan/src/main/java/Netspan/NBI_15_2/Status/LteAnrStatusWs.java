@@ -19,53 +19,54 @@ import Netspan.API.Enums.X2ControlStateTypes;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteAnrStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Pci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EnbType" type="{http://Airspan.Netspan.WebServices}EnbTypes" minOccurs="0"/>
- *         &lt;element name="EnbId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellIdentity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Tac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DownlinkEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/>
- *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/>
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType" minOccurs="0"/>
- *         &lt;element name="DiscoveredBy" type="{http://Airspan.Netspan.WebServices}DiscoveredByValues" minOccurs="0"/>
- *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="HoSuccessRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Pi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="QOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="ActiveQOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="Mvno1Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno1Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno2Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno2Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno3Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno3Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno4Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno4Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno5Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mvno5Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellIndividualOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="ActiveCellIndividualOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachRsi0CorelZoneConfig" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachCfgIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CommsStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CommsStatusDisplay" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellStatus" type="{http://Airspan.Netspan.WebServices}NghCellStatus" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteAnrStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Pci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EnbType" type="{http://Airspan.Netspan.WebServices}EnbTypes" minOccurs="0"/&gt;
+ *         &lt;element name="EnbId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellIdentity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Tac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType" minOccurs="0"/&gt;
+ *         &lt;element name="DiscoveredBy" type="{http://Airspan.Netspan.WebServices}DiscoveredByValues" minOccurs="0"/&gt;
+ *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="HoSuccessRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Pi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="QOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveQOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno1Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno1Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno2Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno2Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno3Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno3Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno4Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno4Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno5Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mvno5Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellIndividualOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveCellIndividualOffset" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachRsi0CorelZoneConfig" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachCfgIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CommsStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CommsStatusDisplay" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellStatus" type="{http://Airspan.Netspan.WebServices}NghCellStatus" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourOfCell" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -110,7 +111,8 @@ import Netspan.API.Enums.X2ControlStateTypes;
     "prachCfgIndex",
     "commsStatus",
     "commsStatusDisplay",
-    "cellStatus"
+    "cellStatus",
+    "neighbourOfCell"
 })
 public class LteAnrStatusWs {
 
@@ -192,6 +194,8 @@ public class LteAnrStatusWs {
     protected String commsStatusDisplay;
     @XmlElementRef(name = "CellStatus", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<NghCellStatus> cellStatus;
+    @XmlElement(name = "NeighbourOfCell")
+    protected String neighbourOfCell;
 
     /**
      * Gets the value of the name property.
@@ -1127,6 +1131,30 @@ public class LteAnrStatusWs {
      */
     public void setCellStatus(JAXBElement<NghCellStatus> value) {
         this.cellStatus = value;
+    }
+
+    /**
+     * Gets the value of the neighbourOfCell property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNeighbourOfCell() {
+        return neighbourOfCell;
+    }
+
+    /**
+     * Sets the value of the neighbourOfCell property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNeighbourOfCell(String value) {
+        this.neighbourOfCell = value;
     }
 
 }

@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="LteNeighbourTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="LteCell"/>
- *     &lt;enumeration value="BsAir4gLte"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="LteNeighbourTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="LteCell"/&gt;
+ *     &lt;enumeration value="BsAir4gLte"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

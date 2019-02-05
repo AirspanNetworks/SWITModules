@@ -4,7 +4,6 @@ package Netspan.NBI_15_2.Lte;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
@@ -15,24 +14,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CallTraceEnbWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TraceLogStartWaitForACKIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="TraceLogStartWaitForACK" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TraceLogStartEndResumeRetransmissionsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="TraceLogStartEndResumeRetransmissions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DelayBetweenRetriesIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="DelayBetweenRetries" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TraceKeepAliveIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="TraceKeepAlive" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TraceKeepAliveFailuresIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="TraceKeepAliveFailures" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CallTraceEnbWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TraceLogStartWaitForACKIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TraceLogStartWaitForACK" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TraceLogStartEndResumeRetransmissionsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TraceLogStartEndResumeRetransmissions" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DelayBetweenRetriesIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DelayBetweenRetries" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TraceKeepAliveIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TraceKeepAlive" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TraceKeepAliveFailuresIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TraceKeepAliveFailures" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,24 +51,24 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CallTraceEnbWs {
 
-    @XmlElement(name = "TraceLogStartWaitForACKIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean traceLogStartWaitForACKIsDefault;
+    @XmlElementRef(name = "TraceLogStartWaitForACKIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> traceLogStartWaitForACKIsDefault;
     @XmlElementRef(name = "TraceLogStartWaitForACK", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> traceLogStartWaitForACK;
-    @XmlElement(name = "TraceLogStartEndResumeRetransmissionsIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean traceLogStartEndResumeRetransmissionsIsDefault;
+    @XmlElementRef(name = "TraceLogStartEndResumeRetransmissionsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> traceLogStartEndResumeRetransmissionsIsDefault;
     @XmlElementRef(name = "TraceLogStartEndResumeRetransmissions", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> traceLogStartEndResumeRetransmissions;
-    @XmlElement(name = "DelayBetweenRetriesIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean delayBetweenRetriesIsDefault;
+    @XmlElementRef(name = "DelayBetweenRetriesIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> delayBetweenRetriesIsDefault;
     @XmlElementRef(name = "DelayBetweenRetries", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> delayBetweenRetries;
-    @XmlElement(name = "TraceKeepAliveIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean traceKeepAliveIsDefault;
+    @XmlElementRef(name = "TraceKeepAliveIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> traceKeepAliveIsDefault;
     @XmlElementRef(name = "TraceKeepAlive", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> traceKeepAlive;
-    @XmlElement(name = "TraceKeepAliveFailuresIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean traceKeepAliveFailuresIsDefault;
+    @XmlElementRef(name = "TraceKeepAliveFailuresIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> traceKeepAliveFailuresIsDefault;
     @XmlElementRef(name = "TraceKeepAliveFailures", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> traceKeepAliveFailures;
 
@@ -78,10 +77,10 @@ public class CallTraceEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isTraceLogStartWaitForACKIsDefault() {
+    public JAXBElement<Boolean> getTraceLogStartWaitForACKIsDefault() {
         return traceLogStartWaitForACKIsDefault;
     }
 
@@ -90,10 +89,10 @@ public class CallTraceEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setTraceLogStartWaitForACKIsDefault(Boolean value) {
+    public void setTraceLogStartWaitForACKIsDefault(JAXBElement<Boolean> value) {
         this.traceLogStartWaitForACKIsDefault = value;
     }
 
@@ -126,10 +125,10 @@ public class CallTraceEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isTraceLogStartEndResumeRetransmissionsIsDefault() {
+    public JAXBElement<Boolean> getTraceLogStartEndResumeRetransmissionsIsDefault() {
         return traceLogStartEndResumeRetransmissionsIsDefault;
     }
 
@@ -138,10 +137,10 @@ public class CallTraceEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setTraceLogStartEndResumeRetransmissionsIsDefault(Boolean value) {
+    public void setTraceLogStartEndResumeRetransmissionsIsDefault(JAXBElement<Boolean> value) {
         this.traceLogStartEndResumeRetransmissionsIsDefault = value;
     }
 
@@ -174,10 +173,10 @@ public class CallTraceEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isDelayBetweenRetriesIsDefault() {
+    public JAXBElement<Boolean> getDelayBetweenRetriesIsDefault() {
         return delayBetweenRetriesIsDefault;
     }
 
@@ -186,10 +185,10 @@ public class CallTraceEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setDelayBetweenRetriesIsDefault(Boolean value) {
+    public void setDelayBetweenRetriesIsDefault(JAXBElement<Boolean> value) {
         this.delayBetweenRetriesIsDefault = value;
     }
 
@@ -222,10 +221,10 @@ public class CallTraceEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isTraceKeepAliveIsDefault() {
+    public JAXBElement<Boolean> getTraceKeepAliveIsDefault() {
         return traceKeepAliveIsDefault;
     }
 
@@ -234,10 +233,10 @@ public class CallTraceEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setTraceKeepAliveIsDefault(Boolean value) {
+    public void setTraceKeepAliveIsDefault(JAXBElement<Boolean> value) {
         this.traceKeepAliveIsDefault = value;
     }
 
@@ -270,10 +269,10 @@ public class CallTraceEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isTraceKeepAliveFailuresIsDefault() {
+    public JAXBElement<Boolean> getTraceKeepAliveFailuresIsDefault() {
         return traceKeepAliveFailuresIsDefault;
     }
 
@@ -282,10 +281,10 @@ public class CallTraceEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setTraceKeepAliveFailuresIsDefault(Boolean value) {
+    public void setTraceKeepAliveFailuresIsDefault(JAXBElement<Boolean> value) {
         this.traceKeepAliveFailuresIsDefault = value;
     }
 

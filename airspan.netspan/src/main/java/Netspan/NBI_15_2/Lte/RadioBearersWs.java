@@ -13,24 +13,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RadioBearersWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="RlcMode" type="{http://Airspan.Netspan.WebServices}RlcModeWs" minOccurs="0"/>
- *         &lt;element name="TstatusProhibit" type="{http://Airspan.Netspan.WebServices}TstatusProhibitWs" minOccurs="0"/>
- *         &lt;element name="DlTreordering" type="{http://Airspan.Netspan.WebServices}TreorderingWs" minOccurs="0"/>
- *         &lt;element name="UlTreordering" type="{http://Airspan.Netspan.WebServices}TreorderingWs" minOccurs="0"/>
- *         &lt;element name="PollPdu" type="{http://Airspan.Netspan.WebServices}PollPduWs" minOccurs="0"/>
- *         &lt;element name="PollByte" type="{http://Airspan.Netspan.WebServices}PollByteWs" minOccurs="0"/>
- *         &lt;element name="TpollRetransmit" type="{http://Airspan.Netspan.WebServices}TpollRetransmitWs" minOccurs="0"/>
- *         &lt;element name="MaxRetxThreshold" type="{http://Airspan.Netspan.WebServices}MaxRetxThresholdWs" minOccurs="0"/>
- *         &lt;element name="DlDiscardTimer" type="{http://Airspan.Netspan.WebServices}DiscardTimerWs" minOccurs="0"/>
- *         &lt;element name="UlDiscardTimer" type="{http://Airspan.Netspan.WebServices}DiscardTimerWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RadioBearersWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="RlcMode" type="{http://Airspan.Netspan.WebServices}RlcModeWs" minOccurs="0"/&gt;
+ *         &lt;element name="TstatusProhibit" type="{http://Airspan.Netspan.WebServices}TstatusProhibitWs" minOccurs="0"/&gt;
+ *         &lt;element name="DlTreordering" type="{http://Airspan.Netspan.WebServices}TreorderingWs" minOccurs="0"/&gt;
+ *         &lt;element name="UlTreordering" type="{http://Airspan.Netspan.WebServices}TreorderingWs" minOccurs="0"/&gt;
+ *         &lt;element name="PollPdu" type="{http://Airspan.Netspan.WebServices}PollPduWs" minOccurs="0"/&gt;
+ *         &lt;element name="PollByte" type="{http://Airspan.Netspan.WebServices}PollByteWs" minOccurs="0"/&gt;
+ *         &lt;element name="TpollRetransmit" type="{http://Airspan.Netspan.WebServices}TpollRetransmitWs" minOccurs="0"/&gt;
+ *         &lt;element name="MaxRetxThreshold" type="{http://Airspan.Netspan.WebServices}MaxRetxThresholdWs" minOccurs="0"/&gt;
+ *         &lt;element name="DlDiscardTimer" type="{http://Airspan.Netspan.WebServices}DiscardTimerWs" minOccurs="0"/&gt;
+ *         &lt;element name="UlDiscardTimer" type="{http://Airspan.Netspan.WebServices}DiscardTimerWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

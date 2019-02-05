@@ -16,21 +16,21 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteNetworkElementStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NetworkElementType" type="{http://Airspan.Netspan.WebServices}NetworkElementType"/>
- *         &lt;element name="NetworkElement" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Status" type="{http://Airspan.Netspan.WebServices}NetworkElementStatus"/>
- *         &lt;element name="Vlan" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MmeOverloadStatus" type="{http://Airspan.Netspan.WebServices}MmeOverloadStatus" minOccurs="0"/>
- *         &lt;element name="MmeOverloadResponse" type="{http://Airspan.Netspan.WebServices}MmeOverloadResponse" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteNetworkElementStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NetworkElementType" type="{http://Airspan.Netspan.WebServices}NetworkElementType"/&gt;
+ *         &lt;element name="NetworkElement" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Status" type="{http://Airspan.Netspan.WebServices}NetworkElementStatus"/&gt;
+ *         &lt;element name="Vlan" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MmeOverloadStatus" type="{http://Airspan.Netspan.WebServices}MmeOverloadStatus" minOccurs="0"/&gt;
+ *         &lt;element name="MmeOverloadResponse" type="{http://Airspan.Netspan.WebServices}MmeOverloadResponse" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

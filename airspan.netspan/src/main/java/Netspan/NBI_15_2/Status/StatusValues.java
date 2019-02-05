@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="StatusValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Normal"/>
- *     &lt;enumeration value="Abnormal"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="StatusValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Normal"/&gt;
+ *     &lt;enumeration value="Abnormal"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

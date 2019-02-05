@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="TddFrameConfigurationsSupported">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="DL40UL40SP20"/>
- *     &lt;enumeration value="DL60UL20SP20"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="TddFrameConfigurationsSupported"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="DL40UL40SP20"/&gt;
+ *     &lt;enumeration value="DL60UL20SP20"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

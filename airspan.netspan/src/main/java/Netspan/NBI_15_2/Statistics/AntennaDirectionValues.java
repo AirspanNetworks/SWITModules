@@ -12,19 +12,19 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AntennaDirectionValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="degrees45"/>
- *     &lt;enumeration value="degrees135"/>
- *     &lt;enumeration value="degrees225"/>
- *     &lt;enumeration value="degrees315"/>
- *     &lt;enumeration value="degreesOmni"/>
- *     &lt;enumeration value="degrees45And135"/>
- *     &lt;enumeration value="degrees135And225"/>
- *     &lt;enumeration value="degrees225And315"/>
- *     &lt;enumeration value="degrees315And45"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AntennaDirectionValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="degrees45"/&gt;
+ *     &lt;enumeration value="degrees135"/&gt;
+ *     &lt;enumeration value="degrees225"/&gt;
+ *     &lt;enumeration value="degrees315"/&gt;
+ *     &lt;enumeration value="degreesOmni"/&gt;
+ *     &lt;enumeration value="degrees45And135"/&gt;
+ *     &lt;enumeration value="degrees135And225"/&gt;
+ *     &lt;enumeration value="degrees225And315"/&gt;
+ *     &lt;enumeration value="degrees315And45"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

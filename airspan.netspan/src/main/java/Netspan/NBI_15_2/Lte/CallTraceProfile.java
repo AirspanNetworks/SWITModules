@@ -18,29 +18,29 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CallTraceProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="CallTraceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="TraceX2" type="{http://Airspan.Netspan.WebServices}CallTraceMessageDirections" minOccurs="0"/>
- *         &lt;element name="TraceS1" type="{http://Airspan.Netspan.WebServices}CallTraceMessageDirections" minOccurs="0"/>
- *         &lt;element name="TraceUu" type="{http://Airspan.Netspan.WebServices}CallTraceLinkDirections" minOccurs="0"/>
- *         &lt;element name="TraceSib" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="TraceType" type="{http://Airspan.Netspan.WebServices}CallTraceTypes" minOccurs="0"/>
- *         &lt;element name="TimeZone" type="{http://Airspan.Netspan.WebServices}CallTraceTimeZones" minOccurs="0"/>
- *         &lt;element name="StartDateUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="EndDateUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="StartTimeUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="EndTimeUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Recurrence" type="{http://Airspan.Netspan.WebServices}RecurrenceWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CallTraceProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TraceX2" type="{http://Airspan.Netspan.WebServices}CallTraceMessageDirections" minOccurs="0"/&gt;
+ *         &lt;element name="TraceS1" type="{http://Airspan.Netspan.WebServices}CallTraceMessageDirections" minOccurs="0"/&gt;
+ *         &lt;element name="TraceUu" type="{http://Airspan.Netspan.WebServices}CallTraceLinkDirections" minOccurs="0"/&gt;
+ *         &lt;element name="TraceSib" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TraceType" type="{http://Airspan.Netspan.WebServices}CallTraceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="TimeZone" type="{http://Airspan.Netspan.WebServices}CallTraceTimeZones" minOccurs="0"/&gt;
+ *         &lt;element name="StartDateUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="EndDateUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="StartTimeUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="EndTimeUtc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Recurrence" type="{http://Airspan.Netspan.WebServices}RecurrenceWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

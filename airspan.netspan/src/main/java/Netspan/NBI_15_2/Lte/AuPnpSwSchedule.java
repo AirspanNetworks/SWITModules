@@ -1,10 +1,11 @@
 
 package Netspan.NBI_15_2.Lte;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
@@ -15,18 +16,18 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AuPnpSwSchedule">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="DateStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="DateEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="TimeStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TimeEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AuPnpSwSchedule"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="DateStart" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="DateEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="TimeStart" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TimeEnd" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,12 +41,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class AuPnpSwSchedule {
 
-    @XmlElement(name = "DateStart", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateStart;
-    @XmlElement(name = "DateEnd", required = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar dateEnd;
+    @XmlElementRef(name = "DateStart", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<XMLGregorianCalendar> dateStart;
+    @XmlElementRef(name = "DateEnd", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<XMLGregorianCalendar> dateEnd;
     @XmlElement(name = "TimeStart")
     protected String timeStart;
     @XmlElement(name = "TimeEnd")
@@ -56,10 +55,10 @@ public class AuPnpSwSchedule {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public XMLGregorianCalendar getDateStart() {
+    public JAXBElement<XMLGregorianCalendar> getDateStart() {
         return dateStart;
     }
 
@@ -68,10 +67,10 @@ public class AuPnpSwSchedule {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public void setDateStart(XMLGregorianCalendar value) {
+    public void setDateStart(JAXBElement<XMLGregorianCalendar> value) {
         this.dateStart = value;
     }
 
@@ -80,10 +79,10 @@ public class AuPnpSwSchedule {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public XMLGregorianCalendar getDateEnd() {
+    public JAXBElement<XMLGregorianCalendar> getDateEnd() {
         return dateEnd;
     }
 
@@ -92,10 +91,10 @@ public class AuPnpSwSchedule {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public void setDateEnd(XMLGregorianCalendar value) {
+    public void setDateEnd(JAXBElement<XMLGregorianCalendar> value) {
         this.dateEnd = value;
     }
 

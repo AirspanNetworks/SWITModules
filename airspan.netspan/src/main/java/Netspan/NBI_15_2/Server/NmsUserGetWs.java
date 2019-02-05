@@ -15,32 +15,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="NmsUserGetWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FullName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AuthenticationType" type="{http://Airspan.Netspan.WebServices}UserAuthenticationTypes" minOccurs="0"/>
- *         &lt;element name="Domain" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsAdministrator" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsExpertUser" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsInstaller" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsSSInstaller" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsExpertViewer" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsViewer" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsServiceProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsAAAManager" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsAAAUserProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsCallTrace" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsEngineer" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsWSAdministrator" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsWSServiceProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IsCallTraceUser" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="NmsUserGetWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FullName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AuthenticationType" type="{http://Airspan.Netspan.WebServices}UserAuthenticationTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Domain" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsAdministrator" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsExpertUser" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsInstaller" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsSSInstaller" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsExpertViewer" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsViewer" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsServiceProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsAAAManager" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsAAAUserProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsCallTrace" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsEngineer" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsWSAdministrator" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsWSServiceProvisioner" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="IsCallTraceUser" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

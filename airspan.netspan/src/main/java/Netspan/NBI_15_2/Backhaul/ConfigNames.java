@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ConfigNames">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Low Interference Mode"/>
- *     &lt;enumeration value="Factory Mode"/>
- *     &lt;enumeration value="Optimised Mode A"/>
- *     &lt;enumeration value="Optimised Mode B"/>
- *     &lt;enumeration value="Optimised Mode C"/>
- *     &lt;enumeration value="Robust Mode"/>
- *     &lt;enumeration value="Commissioned Configuration"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ConfigNames"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Low Interference Mode"/&gt;
+ *     &lt;enumeration value="Factory Mode"/&gt;
+ *     &lt;enumeration value="Optimized Mode A"/&gt;
+ *     &lt;enumeration value="Optimized Mode B"/&gt;
+ *     &lt;enumeration value="Optimized Mode C"/&gt;
+ *     &lt;enumeration value="Robust Mode"/&gt;
+ *     &lt;enumeration value="Commissioned Configuration"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -34,12 +34,12 @@ public enum ConfigNames {
     LOW_INTERFERENCE_MODE("Low Interference Mode"),
     @XmlEnumValue("Factory Mode")
     FACTORY_MODE("Factory Mode"),
-    @XmlEnumValue("Optimised Mode A")
-    OPTIMISED_MODE_A("Optimised Mode A"),
-    @XmlEnumValue("Optimised Mode B")
-    OPTIMISED_MODE_B("Optimised Mode B"),
-    @XmlEnumValue("Optimised Mode C")
-    OPTIMISED_MODE_C("Optimised Mode C"),
+    @XmlEnumValue("Optimized Mode A")
+    OPTIMIZED_MODE_A("Optimized Mode A"),
+    @XmlEnumValue("Optimized Mode B")
+    OPTIMIZED_MODE_B("Optimized Mode B"),
+    @XmlEnumValue("Optimized Mode C")
+    OPTIMIZED_MODE_C("Optimized Mode C"),
     @XmlEnumValue("Robust Mode")
     ROBUST_MODE("Robust Mode"),
     @XmlEnumValue("Commissioned Configuration")

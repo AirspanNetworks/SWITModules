@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="UserResultValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="OK"/>
- *     &lt;enumeration value="UserNotFound"/>
- *     &lt;enumeration value="ValidationError"/>
- *     &lt;enumeration value="Error"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="UserResultValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="OK"/&gt;
+ *     &lt;enumeration value="UserNotFound"/&gt;
+ *     &lt;enumeration value="ValidationError"/&gt;
+ *     &lt;enumeration value="Error"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

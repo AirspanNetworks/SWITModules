@@ -17,26 +17,26 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteMmeStatsRowWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="GranularityPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SctpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PermitEmrgSessAndMobileTerminatedSrvOnly" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PermitHighPrioSessAndMobileTerminatedSrvOnly" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RejectDelayTolerantAccess" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RejectNonEmergencyMoDt" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="RejectRrcCrSignalling" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Stop" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteMmeStatsRowWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="GranularityPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SctpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PermitEmrgSessAndMobileTerminatedSrvOnly" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PermitHighPrioSessAndMobileTerminatedSrvOnly" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RejectDelayTolerantAccess" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RejectNonEmergencyMoDt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RejectRrcCrSignalling" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Stop" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -78,8 +78,8 @@ public class LteMmeStatsRowWs {
     protected JAXBElement<Integer> permitHighPrioSessAndMobileTerminatedSrvOnly;
     @XmlElementRef(name = "RejectDelayTolerantAccess", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> rejectDelayTolerantAccess;
-    @XmlElement(name = "RejectNonEmergencyMoDt", required = true, type = Integer.class, nillable = true)
-    protected Integer rejectNonEmergencyMoDt;
+    @XmlElementRef(name = "RejectNonEmergencyMoDt", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> rejectNonEmergencyMoDt;
     @XmlElementRef(name = "RejectRrcCrSignalling", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> rejectRrcCrSignalling;
     @XmlElementRef(name = "Stop", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -306,10 +306,10 @@ public class LteMmeStatsRowWs {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getRejectNonEmergencyMoDt() {
+    public JAXBElement<Integer> getRejectNonEmergencyMoDt() {
         return rejectNonEmergencyMoDt;
     }
 
@@ -318,10 +318,10 @@ public class LteMmeStatsRowWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setRejectNonEmergencyMoDt(Integer value) {
+    public void setRejectNonEmergencyMoDt(JAXBElement<Integer> value) {
         this.rejectNonEmergencyMoDt = value;
     }
 

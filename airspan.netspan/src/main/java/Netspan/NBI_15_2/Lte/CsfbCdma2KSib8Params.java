@@ -14,28 +14,28 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CsfbCdma2kSib8Params">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Sid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Nid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MultipleSid" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="MultipleNid" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="HomeReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="ForeignSidReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="ForeignNidReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="ParameterReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="PowerUpReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="PowerDownReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="RegistrationPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RegistrationZone" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TotalZone" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ZoneTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CsfbCdma2kSib8Params"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Sid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Nid" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MultipleSid" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="MultipleNid" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="HomeReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="ForeignSidReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="ForeignNidReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="ParameterReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="PowerUpReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="PowerDownReg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="RegistrationPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RegistrationZone" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TotalZone" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ZoneTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

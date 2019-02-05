@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="WsResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/>
- *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/&gt;
+ *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -36,34 +36,35 @@ import javax.xml.bind.annotation.XmlType;
 })
 @XmlSeeAlso({
     NodeSensorGetResult.class,
-    RelayStatusGetResult.class,
-    LteSonPciGetResult.class,
-    Ib440RfGetResult.class,
-    NodeSoftwareGetResult.class,
-    IBridgeBaseRfGetResult.class,
-    IBridgeTermRfGetResult.class,
-    NodeEmbmsGetResult.class,
     NodeGpsGetResult.class,
-    LteIpThroughputGetResult.class,
-    RelayCdclListGetResult.class,
-    LteNetworkElementGetResult.class,
-    LteSonMcimGetResult.class,
-    LteSonAnrGetResult.class,
-    NodeTimeStatusGetResult.class,
-    EnbResetRequiredStatusGetResult.class,
-    LteSonRsiGetResult.class,
-    LteUeGetResult.class,
-    LteCachedAnrListResult.class,
-    RelayScanListGetResult.class,
-    LteCbrsGetResult.class,
     NodePtpGetResult.class,
+    LteRfGetResult.class,
+    LteSonPciGetResult.class,
+    LteSonAnrGetResult.class,
+    LteSonRsiGetResult.class,
+    LteSonRachGetResult.class,
+    LteSonMcimGetResult.class,
+    LteUeGetResult.class,
+    LteIpThroughputGetResult.class,
+    LteBackhaulIfGetResult.class,
+    NodeSoftwareGetResult.class,
+    NodeEmbmsGetResult.class,
     LteWifiGetResult.class,
+    RelayEnbWifiGetResult.class,
+    LteNetworkElementGetResult.class,
+    LteCbrsGetResult.class,
+    EnbResetRequiredStatusGetResult.class,
+    LteCachedAnrListResult.class,
     LteCellStatusCachedListResult.class,
     Ib440CommissionedPropertiesGetResult.class,
-    LteBackhaulIfGetResult.class,
-    LteSonRachGetResult.class,
+    Ib440RfGetResult.class,
     Ib440InterfaceGetResult.class,
-    LteRfGetResult.class,
+    IBridgeBaseRfGetResult.class,
+    IBridgeTermRfGetResult.class,
+    RelayStatusGetResult.class,
+    RelayScanListGetResult.class,
+    RelayCdclListGetResult.class,
+    NodeTimeStatusGetResult.class,
     LteCellStatusCachedGetResult.class
 })
 public class WsResponse {

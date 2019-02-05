@@ -3,10 +3,11 @@ package Netspan.NBI_15_2.Software;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.HardwareCategory;
@@ -18,18 +19,18 @@ import Netspan.API.Enums.HardwareCategory;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SwImageWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}HardwareCategory"/>
- *         &lt;element name="SoftwareServer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SoftwareFileInfo" type="{http://Airspan.Netspan.WebServices}SwFileInfoWs" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SwImageWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}HardwareCategory" minOccurs="0"/&gt;
+ *         &lt;element name="SoftwareServer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SoftwareFileInfo" type="{http://Airspan.Netspan.WebServices}SwFileInfoWs" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,9 +46,8 @@ public class SwImageWs {
 
     @XmlElement(name = "Name")
     protected String name;
-    @XmlElement(name = "HardwareCategory", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected HardwareCategory hardwareCategory;
+    @XmlElementRef(name = "HardwareCategory", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<HardwareCategory> hardwareCategory;
     @XmlElement(name = "SoftwareServer")
     protected String softwareServer;
     @XmlElement(name = "SoftwareFileInfo")
@@ -82,10 +82,10 @@ public class SwImageWs {
      * 
      * @return
      *     possible object is
-     *     {@link HardwareCategory }
+     *     {@link JAXBElement }{@code <}{@link HardwareCategory }{@code >}
      *     
      */
-    public HardwareCategory getHardwareCategory() {
+    public JAXBElement<HardwareCategory> getHardwareCategory() {
         return hardwareCategory;
     }
 
@@ -94,10 +94,10 @@ public class SwImageWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link HardwareCategory }
+     *     {@link JAXBElement }{@code <}{@link HardwareCategory }{@code >}
      *     
      */
-    public void setHardwareCategory(HardwareCategory value) {
+    public void setHardwareCategory(JAXBElement<HardwareCategory> value) {
         this.hardwareCategory = value;
     }
 

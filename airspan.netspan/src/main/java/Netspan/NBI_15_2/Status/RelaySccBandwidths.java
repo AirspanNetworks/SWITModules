@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="RelaySccBandwidths">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="OneTo4MHz"/>
- *     &lt;enumeration value="ThreeMHz"/>
- *     &lt;enumeration value="FiveMHz"/>
- *     &lt;enumeration value="TenMHz"/>
- *     &lt;enumeration value="FifteenMHz"/>
- *     &lt;enumeration value="TwentyMHz"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="RelaySccBandwidths"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="OneTo4MHz"/&gt;
+ *     &lt;enumeration value="ThreeMHz"/&gt;
+ *     &lt;enumeration value="FiveMHz"/&gt;
+ *     &lt;enumeration value="TenMHz"/&gt;
+ *     &lt;enumeration value="FifteenMHz"/&gt;
+ *     &lt;enumeration value="TwentyMHz"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

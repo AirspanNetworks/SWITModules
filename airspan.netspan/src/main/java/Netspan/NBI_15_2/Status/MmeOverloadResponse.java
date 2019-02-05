@@ -12,16 +12,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="MmeOverloadResponse">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Start Reject Non-emergency MO DT"/>
- *     &lt;enumeration value="Start Reject RRC CR Signalling"/>
- *     &lt;enumeration value="Start Permit Emergency Session and Mobile Terminated Services only"/>
- *     &lt;enumeration value="Start Permit High Priority Session and Mobile Terminated Services only"/>
- *     &lt;enumeration value="Start Reject Delay Tolerant Access"/>
- *     &lt;enumeration value="None"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="MmeOverloadResponse"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Start Reject Non-emergency MO DT"/&gt;
+ *     &lt;enumeration value="Start Reject RRC CR Signalling"/&gt;
+ *     &lt;enumeration value="Start Permit Emergency Session and Mobile Terminated Services only"/&gt;
+ *     &lt;enumeration value="Start Permit High Priority Session and Mobile Terminated Services only"/&gt;
+ *     &lt;enumeration value="Start Reject Delay Tolerant Access"/&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

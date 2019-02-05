@@ -19,29 +19,29 @@ import Netspan.API.Enums.SonAnrStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbSonProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="SonCommissioningEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PnpMode" type="{http://Airspan.Netspan.WebServices}PnpModes" minOccurs="0"/>
- *         &lt;element name="PciEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PciRangeList" type="{http://Airspan.Netspan.WebServices}PciRangeListContainer" minOccurs="0"/>
- *         &lt;element name="AnrState" type="{http://Airspan.Netspan.WebServices}SonAnrStates" minOccurs="0"/>
- *         &lt;element name="IntraFrequencyAnrEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="MinAllowedHoSuccessRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AnrFrequencyList" type="{http://Airspan.Netspan.WebServices}AnrFreqListContainer" minOccurs="0"/>
- *         &lt;element name="AnrEnbPciMode" type="{http://Airspan.Netspan.WebServices}SonAnrEnbPciModes" minOccurs="0"/>
- *         &lt;element name="AnrMacroPciRangeList" type="{http://Airspan.Netspan.WebServices}PciRangeListContainer" minOccurs="0"/>
- *         &lt;element name="RsiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="RsiRangeList" type="{http://Airspan.Netspan.WebServices}RsiRangeListContainer" minOccurs="0"/>
- *         &lt;element name="CSon" type="{http://Airspan.Netspan.WebServices}LteSonCSonWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbSonProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="SonCommissioningEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PnpMode" type="{http://Airspan.Netspan.WebServices}PnpModes" minOccurs="0"/&gt;
+ *         &lt;element name="PciEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PciRangeList" type="{http://Airspan.Netspan.WebServices}PciRangeListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="AnrState" type="{http://Airspan.Netspan.WebServices}SonAnrStates" minOccurs="0"/&gt;
+ *         &lt;element name="IntraFrequencyAnrEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MinAllowedHoSuccessRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AnrFrequencyList" type="{http://Airspan.Netspan.WebServices}AnrFreqListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="AnrEnbPciMode" type="{http://Airspan.Netspan.WebServices}SonAnrEnbPciModes" minOccurs="0"/&gt;
+ *         &lt;element name="AnrMacroPciRangeList" type="{http://Airspan.Netspan.WebServices}PciRangeListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="RsiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RsiRangeList" type="{http://Airspan.Netspan.WebServices}RsiRangeListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="CSon" type="{http://Airspan.Netspan.WebServices}LteSonCSonWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -80,8 +80,8 @@ public class EnbSonProfile {
     protected PciRangeListContainer pciRangeList;
     @XmlElementRef(name = "AnrState", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<SonAnrStates> anrState;
-    @XmlElement(name = "IntraFrequencyAnrEnabled", required = true, type = Boolean.class, nillable = true)
-    protected Boolean intraFrequencyAnrEnabled;
+    @XmlElementRef(name = "IntraFrequencyAnrEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> intraFrequencyAnrEnabled;
     @XmlElementRef(name = "MinAllowedHoSuccessRate", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> minAllowedHoSuccessRate;
     @XmlElement(name = "AnrFrequencyList")
@@ -270,10 +270,10 @@ public class EnbSonProfile {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isIntraFrequencyAnrEnabled() {
+    public JAXBElement<Boolean> getIntraFrequencyAnrEnabled() {
         return intraFrequencyAnrEnabled;
     }
 
@@ -282,10 +282,10 @@ public class EnbSonProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setIntraFrequencyAnrEnabled(Boolean value) {
+    public void setIntraFrequencyAnrEnabled(JAXBElement<Boolean> value) {
         this.intraFrequencyAnrEnabled = value;
     }
 

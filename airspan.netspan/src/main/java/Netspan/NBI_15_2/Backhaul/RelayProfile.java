@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,53 +16,62 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesRelay" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FrameShift" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="StatsGranularityPeriod" type="{http://Airspan.Netspan.WebServices}GranularityPeriod" minOccurs="0"/>
- *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MimoSpectralEfficiencyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}SinrRanking"/>
- *         &lt;element name="DenbSinrThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSeThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="AllowedLocationRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LocationAccuracyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSinrHystersis" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSeHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="PeriodicReScanMode" type="{http://Airspan.Netspan.WebServices}PeriodicReScan" minOccurs="0"/>
- *         &lt;element name="PeriodicReScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PeriodicReScanStartDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AutonomousReScanMode" type="{http://Airspan.Netspan.WebServices}AutonomousRescanModeValues" minOccurs="0"/>
- *         &lt;element name="AutoBackoffScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AutoBackoffMaxScanEvents" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="EnbReportingInterval" type="{http://Airspan.Netspan.WebServices}ReportingIntervals" minOccurs="0"/>
- *         &lt;element name="ConnectedDeviceVciToTypeMatchingRules" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceVciToTypeList" minOccurs="0"/>
- *         &lt;element name="ConnectedDeviceTypeToApnMapping" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceTypeToApnList" minOccurs="0"/>
- *         &lt;element name="Rbv" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="FineAlignMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FineAlignAvgPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesRelay" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FrameShift" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="StatsGranularityPeriod" type="{http://Airspan.Netspan.WebServices}GranularityPeriod" minOccurs="0"/&gt;
+ *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MimoSpectralEfficiencyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}SinrRanking" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSeThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedLocationRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LocationAccuracyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrHystersis" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSeHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DenbRsrpDomThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DenbRsrpDomHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DrmThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DrmHysteresis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicReScanMode" type="{http://Airspan.Netspan.WebServices}PeriodicReScan" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicReScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicReScanStartDate" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AutonomousReScanMode" type="{http://Airspan.Netspan.WebServices}AutonomousRescanModeValues" minOccurs="0"/&gt;
+ *         &lt;element name="AutoBackoffScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AutoBackoffMaxScanEvents" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EnbReportingInterval" type="{http://Airspan.Netspan.WebServices}ReportingIntervals" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedDeviceVciToTypeMatchingRules" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceVciToTypeList" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedDeviceTypeToApnMapping" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceTypeToApnList" minOccurs="0"/&gt;
+ *         &lt;element name="Rbv" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignAvgPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DrmAveragePeriodForScanning" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DrmAveragePeriodForMonitoring" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrimarySyncSource" type="{http://Airspan.Netspan.WebServices}PrimarySyncSourceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="FailoverAction" type="{http://Airspan.Netspan.WebServices}FailoverActionTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SfnInitialisationTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -96,6 +104,10 @@ import javax.xml.bind.annotation.XmlType;
     "locationAccuracyThreshold",
     "denbSinrHystersis",
     "denbSeHystersis",
+    "denbRsrpDomThreshold",
+    "denbRsrpDomHystersis",
+    "drmThreshold",
+    "drmHysteresis",
     "periodicReScanMode",
     "periodicReScanPeriod",
     "periodicReScanStartDate",
@@ -108,7 +120,12 @@ import javax.xml.bind.annotation.XmlType;
     "connectedDeviceTypeToApnMapping",
     "rbv",
     "fineAlignMode",
-    "fineAlignAvgPeriod"
+    "fineAlignAvgPeriod",
+    "drmAveragePeriodForScanning",
+    "drmAveragePeriodForMonitoring",
+    "primarySyncSource",
+    "failoverAction",
+    "sfnInitialisationTime"
 })
 public class RelayProfile {
 
@@ -140,17 +157,16 @@ public class RelayProfile {
     protected String ntpServerIpAddress4;
     @XmlElementRef(name = "UseNms4", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> useNms4;
-    @XmlElement(name = "FrameShift", required = true, type = Integer.class, nillable = true)
-    protected Integer frameShift;
+    @XmlElementRef(name = "FrameShift", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> frameShift;
     @XmlElementRef(name = "StatsGranularityPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> statsGranularityPeriod;
     @XmlElementRef(name = "NodeSshAccess", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> nodeSshAccess;
     @XmlElementRef(name = "MimoSpectralEfficiencyThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mimoSpectralEfficiencyThreshold;
-    @XmlElement(name = "DenbSinrRanking", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected SinrRanking denbSinrRanking;
+    @XmlElementRef(name = "DenbSinrRanking", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<SinrRanking> denbSinrRanking;
     @XmlElementRef(name = "DenbSinrThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> denbSinrThreshold;
     @XmlElementRef(name = "DenbSeThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -165,6 +181,14 @@ public class RelayProfile {
     protected JAXBElement<Integer> denbSinrHystersis;
     @XmlElementRef(name = "DenbSeHystersis", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> denbSeHystersis;
+    @XmlElementRef(name = "DenbRsrpDomThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> denbRsrpDomThreshold;
+    @XmlElementRef(name = "DenbRsrpDomHystersis", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> denbRsrpDomHystersis;
+    @XmlElementRef(name = "DrmThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> drmThreshold;
+    @XmlElementRef(name = "DrmHysteresis", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> drmHysteresis;
     @XmlElementRef(name = "PeriodicReScanMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<PeriodicReScan> periodicReScanMode;
     @XmlElementRef(name = "PeriodicReScanPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -191,6 +215,16 @@ public class RelayProfile {
     protected JAXBElement<Boolean> fineAlignMode;
     @XmlElementRef(name = "FineAlignAvgPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> fineAlignAvgPeriod;
+    @XmlElementRef(name = "DrmAveragePeriodForScanning", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> drmAveragePeriodForScanning;
+    @XmlElementRef(name = "DrmAveragePeriodForMonitoring", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> drmAveragePeriodForMonitoring;
+    @XmlElementRef(name = "PrimarySyncSource", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<PrimarySyncSourceTypes> primarySyncSource;
+    @XmlElementRef(name = "FailoverAction", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<FailoverActionTypes> failoverAction;
+    @XmlElementRef(name = "SfnInitialisationTime", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> sfnInitialisationTime;
 
     /**
      * Gets the value of the name property.
@@ -533,10 +567,10 @@ public class RelayProfile {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getFrameShift() {
+    public JAXBElement<Integer> getFrameShift() {
         return frameShift;
     }
 
@@ -545,10 +579,10 @@ public class RelayProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setFrameShift(Integer value) {
+    public void setFrameShift(JAXBElement<Integer> value) {
         this.frameShift = value;
     }
 
@@ -629,10 +663,10 @@ public class RelayProfile {
      * 
      * @return
      *     possible object is
-     *     {@link SinrRanking }
+     *     {@link JAXBElement }{@code <}{@link SinrRanking }{@code >}
      *     
      */
-    public SinrRanking getDenbSinrRanking() {
+    public JAXBElement<SinrRanking> getDenbSinrRanking() {
         return denbSinrRanking;
     }
 
@@ -641,10 +675,10 @@ public class RelayProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link SinrRanking }
+     *     {@link JAXBElement }{@code <}{@link SinrRanking }{@code >}
      *     
      */
-    public void setDenbSinrRanking(SinrRanking value) {
+    public void setDenbSinrRanking(JAXBElement<SinrRanking> value) {
         this.denbSinrRanking = value;
     }
 
@@ -814,6 +848,102 @@ public class RelayProfile {
      */
     public void setDenbSeHystersis(JAXBElement<BigDecimal> value) {
         this.denbSeHystersis = value;
+    }
+
+    /**
+     * Gets the value of the denbRsrpDomThreshold property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getDenbRsrpDomThreshold() {
+        return denbRsrpDomThreshold;
+    }
+
+    /**
+     * Sets the value of the denbRsrpDomThreshold property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setDenbRsrpDomThreshold(JAXBElement<BigDecimal> value) {
+        this.denbRsrpDomThreshold = value;
+    }
+
+    /**
+     * Gets the value of the denbRsrpDomHystersis property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getDenbRsrpDomHystersis() {
+        return denbRsrpDomHystersis;
+    }
+
+    /**
+     * Sets the value of the denbRsrpDomHystersis property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setDenbRsrpDomHystersis(JAXBElement<BigDecimal> value) {
+        this.denbRsrpDomHystersis = value;
+    }
+
+    /**
+     * Gets the value of the drmThreshold property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getDrmThreshold() {
+        return drmThreshold;
+    }
+
+    /**
+     * Sets the value of the drmThreshold property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setDrmThreshold(JAXBElement<BigDecimal> value) {
+        this.drmThreshold = value;
+    }
+
+    /**
+     * Gets the value of the drmHysteresis property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getDrmHysteresis() {
+        return drmHysteresis;
+    }
+
+    /**
+     * Sets the value of the drmHysteresis property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setDrmHysteresis(JAXBElement<BigDecimal> value) {
+        this.drmHysteresis = value;
     }
 
     /**
@@ -1126,6 +1256,126 @@ public class RelayProfile {
      */
     public void setFineAlignAvgPeriod(JAXBElement<Integer> value) {
         this.fineAlignAvgPeriod = value;
+    }
+
+    /**
+     * Gets the value of the drmAveragePeriodForScanning property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getDrmAveragePeriodForScanning() {
+        return drmAveragePeriodForScanning;
+    }
+
+    /**
+     * Sets the value of the drmAveragePeriodForScanning property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setDrmAveragePeriodForScanning(JAXBElement<Integer> value) {
+        this.drmAveragePeriodForScanning = value;
+    }
+
+    /**
+     * Gets the value of the drmAveragePeriodForMonitoring property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getDrmAveragePeriodForMonitoring() {
+        return drmAveragePeriodForMonitoring;
+    }
+
+    /**
+     * Sets the value of the drmAveragePeriodForMonitoring property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setDrmAveragePeriodForMonitoring(JAXBElement<Integer> value) {
+        this.drmAveragePeriodForMonitoring = value;
+    }
+
+    /**
+     * Gets the value of the primarySyncSource property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link PrimarySyncSourceTypes }{@code >}
+     *     
+     */
+    public JAXBElement<PrimarySyncSourceTypes> getPrimarySyncSource() {
+        return primarySyncSource;
+    }
+
+    /**
+     * Sets the value of the primarySyncSource property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link PrimarySyncSourceTypes }{@code >}
+     *     
+     */
+    public void setPrimarySyncSource(JAXBElement<PrimarySyncSourceTypes> value) {
+        this.primarySyncSource = value;
+    }
+
+    /**
+     * Gets the value of the failoverAction property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link FailoverActionTypes }{@code >}
+     *     
+     */
+    public JAXBElement<FailoverActionTypes> getFailoverAction() {
+        return failoverAction;
+    }
+
+    /**
+     * Sets the value of the failoverAction property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link FailoverActionTypes }{@code >}
+     *     
+     */
+    public void setFailoverAction(JAXBElement<FailoverActionTypes> value) {
+        this.failoverAction = value;
+    }
+
+    /**
+     * Gets the value of the sfnInitialisationTime property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getSfnInitialisationTime() {
+        return sfnInitialisationTime;
+    }
+
+    /**
+     * Sets the value of the sfnInitialisationTime property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setSfnInitialisationTime(JAXBElement<Integer> value) {
+        this.sfnInitialisationTime = value;
     }
 
 }

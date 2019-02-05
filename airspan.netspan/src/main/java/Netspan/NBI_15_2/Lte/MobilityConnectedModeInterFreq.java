@@ -14,15 +14,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MobilityConnectedModeInterFreq">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreq">
- *       &lt;sequence>
- *         &lt;element name="AllowX2NrtUpdate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MobilityConnectedModeInterFreq"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreq"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AllowX2NrtUpdate" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

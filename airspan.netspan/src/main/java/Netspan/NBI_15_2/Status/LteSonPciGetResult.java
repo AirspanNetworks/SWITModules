@@ -18,19 +18,19 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteSonPciGetResult">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse">
- *       &lt;sequence>
- *         &lt;element name="NodeResult" type="{http://Airspan.Netspan.WebServices}NodeStatusResultValues"/>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NodeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PciStatus" type="{http://Airspan.Netspan.WebServices}ManualAutomaticValues" minOccurs="0"/>
- *         &lt;element name="Cell" type="{http://Airspan.Netspan.WebServices}LtePciStatusWs" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteSonPciGetResult"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NodeResult" type="{http://Airspan.Netspan.WebServices}NodeStatusResultValues"/&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NodeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PciStatus" type="{http://Airspan.Netspan.WebServices}ManualAutomaticValues" minOccurs="0"/&gt;
+ *         &lt;element name="Cell" type="{http://Airspan.Netspan.WebServices}LtePciStatusWs" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

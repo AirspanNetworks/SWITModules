@@ -15,28 +15,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteWifiStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="RfNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="StatusInformation" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="OperationalStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RadioStatus2Dot4GHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RadioStatus5GHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannel2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannelBandwidth2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannelTxPower2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannel5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannelBandwidth5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ActiveChannelTxPower5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="WorstSeverityAlarm" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteWifiStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="RfNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="StatusInformation" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="OperationalStatus" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RadioStatus2Dot4GHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RadioStatus5GHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannel2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannelBandwidth2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannelTxPower2Dot4" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannel5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannelBandwidth5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannelTxPower5" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WorstSeverityAlarm" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="FirmwareVersion" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SerialNumber" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="OperationalMode4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="OperationalMode5" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -56,7 +60,11 @@ import javax.xml.bind.annotation.XmlType;
     "activeChannel5",
     "activeChannelBandwidth5",
     "activeChannelTxPower5",
-    "worstSeverityAlarm"
+    "worstSeverityAlarm",
+    "firmwareVersion",
+    "serialNumber",
+    "operationalMode4",
+    "operationalMode5"
 })
 public class LteWifiStatusWs {
 
@@ -88,6 +96,14 @@ public class LteWifiStatusWs {
     protected JAXBElement<Integer> activeChannelTxPower5;
     @XmlElementRef(name = "WorstSeverityAlarm", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> worstSeverityAlarm;
+    @XmlElement(name = "FirmwareVersion")
+    protected String firmwareVersion;
+    @XmlElement(name = "SerialNumber")
+    protected String serialNumber;
+    @XmlElement(name = "OperationalMode4")
+    protected String operationalMode4;
+    @XmlElement(name = "OperationalMode5")
+    protected String operationalMode5;
 
     /**
      * Gets the value of the rfNumber property.
@@ -423,6 +439,102 @@ public class LteWifiStatusWs {
      */
     public void setWorstSeverityAlarm(JAXBElement<Integer> value) {
         this.worstSeverityAlarm = value;
+    }
+
+    /**
+     * Gets the value of the firmwareVersion property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFirmwareVersion() {
+        return firmwareVersion;
+    }
+
+    /**
+     * Sets the value of the firmwareVersion property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFirmwareVersion(String value) {
+        this.firmwareVersion = value;
+    }
+
+    /**
+     * Gets the value of the serialNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSerialNumber() {
+        return serialNumber;
+    }
+
+    /**
+     * Sets the value of the serialNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSerialNumber(String value) {
+        this.serialNumber = value;
+    }
+
+    /**
+     * Gets the value of the operationalMode4 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOperationalMode4() {
+        return operationalMode4;
+    }
+
+    /**
+     * Sets the value of the operationalMode4 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOperationalMode4(String value) {
+        this.operationalMode4 = value;
+    }
+
+    /**
+     * Gets the value of the operationalMode5 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOperationalMode5() {
+        return operationalMode5;
+    }
+
+    /**
+     * Sets the value of the operationalMode5 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOperationalMode5(String value) {
+        this.operationalMode5 = value;
     }
 
 }

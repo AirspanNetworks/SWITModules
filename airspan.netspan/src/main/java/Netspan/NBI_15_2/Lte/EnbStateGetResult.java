@@ -16,18 +16,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbStateGetResult">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse">
- *       &lt;sequence>
- *         &lt;element name="EnbStateGetResultCode" type="{http://Airspan.Netspan.WebServices}NodeResultValues"/>
- *         &lt;element name="EnbStateGetResultString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="eNodeB" type="{http://Airspan.Netspan.WebServices}EnbStateGetWs" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="NodeResult" type="{http://Airspan.Netspan.WebServices}NodeResult" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbStateGetResult"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="EnbStateGetResultCode" type="{http://Airspan.Netspan.WebServices}NodeResultValues"/&gt;
+ *         &lt;element name="EnbStateGetResultString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="eNodeB" type="{http://Airspan.Netspan.WebServices}EnbStateGetWs" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="NodeResult" type="{http://Airspan.Netspan.WebServices}NodeResult" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

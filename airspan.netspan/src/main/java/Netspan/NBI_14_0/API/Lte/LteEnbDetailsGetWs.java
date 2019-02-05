@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.NodeManagementModeType;
+import Netspan.API.Enums.NodeManagementModes;
 import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
 
 
@@ -94,7 +94,7 @@ public class LteEnbDetailsGetWs implements ILteEnbDetailsGet{
     protected String description;
     @XmlElement(name = "ManagedMode", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected NodeManagementModeType managedMode;
+    protected NodeManagementModes managedMode;
     @XmlElement(name = "Site")
     protected String site;
     @XmlElement(name = "Region")
@@ -215,10 +215,10 @@ public class LteEnbDetailsGetWs implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link NodeManagementModeType }
+     *     {@link NodeManagementModes }
      *     
      */
-    public NodeManagementModeType getManagedMode() {
+    public NodeManagementModes getManagedMode() {
         return managedMode;
     }
 
@@ -227,10 +227,10 @@ public class LteEnbDetailsGetWs implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link NodeManagementModeType }
+     *     {@link NodeManagementModes }
      *     
      */
-    public void setManagedMode(NodeManagementModeType value) {
+    public void setManagedMode(NodeManagementModes value) {
         this.managedMode = value;
     }
 

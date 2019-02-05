@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -19,30 +18,30 @@ import Netspan.API.Enums.X2ControlStateTypes;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteNbrConfig">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellIdentity28Bits" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HoControlState" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/>
- *         &lt;element name="X2ControlState" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/>
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes" minOccurs="0"/>
- *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="NodeType" type="{http://Airspan.Netspan.WebServices}NeighbourEnbTypes" minOccurs="0"/>
- *         &lt;element name="NeighbourIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NeighbourEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="NeighbourPci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="NeighbourTac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PlmnList" type="{http://Airspan.Netspan.WebServices}PlmnListContainer" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteNbrConfig"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellIdentity28Bits" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HoControlState" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="X2ControlState" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes" minOccurs="0"/&gt;
+ *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="NodeType" type="{http://Airspan.Netspan.WebServices}NeighbourEnbTypes" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourPci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourTac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PlmnList" type="{http://Airspan.Netspan.WebServices}PlmnListContainer" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -81,7 +80,7 @@ public class LteNbrConfig {
     @XmlElementRef(name = "X2ControlState", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<X2ControlStateTypes> x2ControlState;
     @XmlElementRef(name = "HandoverType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<HandoverType> handoverType;
+    protected JAXBElement<HandoverTypes> handoverType;
     @XmlElementRef(name = "IsStaticNeighbour", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isStaticNeighbour;
     @XmlElementRef(name = "QOffsetRange", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -253,7 +252,7 @@ public class LteNbrConfig {
      *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
      *     
      */
-    public JAXBElement<HandoverType> getHandoverType() {
+    public JAXBElement<HandoverTypes> getHandoverType() {
         return handoverType;
     }
 
@@ -265,7 +264,7 @@ public class LteNbrConfig {
      *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
      *     
      */
-    public void setHandoverType(JAXBElement<HandoverType> value) {
+    public void setHandoverType(JAXBElement<HandoverTypes> value) {
         this.handoverType = value;
     }
 

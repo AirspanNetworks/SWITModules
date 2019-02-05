@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="NetworkElementType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="EPC"/>
- *     &lt;enumeration value="Third Party Servers"/>
- *     &lt;enumeration value="eMBMS"/>
- *     &lt;enumeration value="IPsec"/>
- *     &lt;enumeration value="Neighbours"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="NetworkElementType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="EPC"/&gt;
+ *     &lt;enumeration value="Third Party Servers"/&gt;
+ *     &lt;enumeration value="eMBMS"/&gt;
+ *     &lt;enumeration value="IPsec"/&gt;
+ *     &lt;enumeration value="Neighbours"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

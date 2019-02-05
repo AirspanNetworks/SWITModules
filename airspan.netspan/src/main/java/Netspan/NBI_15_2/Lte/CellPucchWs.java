@@ -14,26 +14,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CellPucchWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="P0NominalPucchIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="P0NominalPucch" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat1" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat1bIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat1b" type="{http://Airspan.Netspan.WebServices}DeltaFormat1b" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2" type="{http://Airspan.Netspan.WebServices}DeltaFormat2" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2aIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2a" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2bIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DeltaFPucchFormat2b" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CellPucchWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="P0NominalPucchIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="P0NominalPucch" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat1" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat1bIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat1b" type="{http://Airspan.Netspan.WebServices}DeltaFormat1b" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2" type="{http://Airspan.Netspan.WebServices}DeltaFormat2" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2aIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2a" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2bIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DeltaFPucchFormat2b" type="{http://Airspan.Netspan.WebServices}DeltaFormat" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

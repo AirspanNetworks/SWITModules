@@ -12,25 +12,25 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="LteNetworkProfileUlPktDataPriority">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="QCI1"/>
- *     &lt;enumeration value="QCI2"/>
- *     &lt;enumeration value="QCI3"/>
- *     &lt;enumeration value="QCI4"/>
- *     &lt;enumeration value="QCI5"/>
- *     &lt;enumeration value="QCI6"/>
- *     &lt;enumeration value="QCI7"/>
- *     &lt;enumeration value="QCI8"/>
- *     &lt;enumeration value="QCI9"/>
- *     &lt;enumeration value="ControlPlane"/>
- *     &lt;enumeration value="Management"/>
- *     &lt;enumeration value="PTPIEEE1588"/>
- *     &lt;enumeration value="CSON"/>
- *     &lt;enumeration value="M2Mce"/>
- *     &lt;enumeration value="CallTrace"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="LteNetworkProfileUlPktDataPriority"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="QCI1"/&gt;
+ *     &lt;enumeration value="QCI2"/&gt;
+ *     &lt;enumeration value="QCI3"/&gt;
+ *     &lt;enumeration value="QCI4"/&gt;
+ *     &lt;enumeration value="QCI5"/&gt;
+ *     &lt;enumeration value="QCI6"/&gt;
+ *     &lt;enumeration value="QCI7"/&gt;
+ *     &lt;enumeration value="QCI8"/&gt;
+ *     &lt;enumeration value="QCI9"/&gt;
+ *     &lt;enumeration value="ControlPlane"/&gt;
+ *     &lt;enumeration value="Management"/&gt;
+ *     &lt;enumeration value="PTPIEEE1588"/&gt;
+ *     &lt;enumeration value="CSON"/&gt;
+ *     &lt;enumeration value="M2Mce"/&gt;
+ *     &lt;enumeration value="CallTrace"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

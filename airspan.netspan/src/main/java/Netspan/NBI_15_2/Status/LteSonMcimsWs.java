@@ -4,9 +4,7 @@ package Netspan.NBI_15_2.Status;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -16,20 +14,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteSonMcimsWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="McimEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MroEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MlbEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="DlTxEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates"/>
- *         &lt;element name="DlTxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteSonMcimsWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="McimEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MroEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MlbEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="DlTxEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="DlTxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,17 +43,16 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class LteSonMcimsWs {
 
-    @XmlElement(name = "CellId", required = true, type = Integer.class, nillable = true)
-    protected Integer cellId;
+    @XmlElementRef(name = "CellId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> cellId;
     @XmlElementRef(name = "McimEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> mcimEnabled;
     @XmlElementRef(name = "MroEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> mroEnabled;
     @XmlElementRef(name = "MlbEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> mlbEnabled;
-    @XmlElement(name = "DlTxEnabled", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates dlTxEnabled;
+    @XmlElementRef(name = "DlTxEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledDisabledStates> dlTxEnabled;
     @XmlElementRef(name = "DlTxPower", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> dlTxPower;
 
@@ -64,10 +61,10 @@ public class LteSonMcimsWs {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getCellId() {
+    public JAXBElement<Integer> getCellId() {
         return cellId;
     }
 
@@ -76,10 +73,10 @@ public class LteSonMcimsWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setCellId(Integer value) {
+    public void setCellId(JAXBElement<Integer> value) {
         this.cellId = value;
     }
 
@@ -160,10 +157,10 @@ public class LteSonMcimsWs {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public EnabledDisabledStates getDlTxEnabled() {
+    public JAXBElement<EnabledDisabledStates> getDlTxEnabled() {
         return dlTxEnabled;
     }
 
@@ -172,10 +169,10 @@ public class LteSonMcimsWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setDlTxEnabled(EnabledDisabledStates value) {
+    public void setDlTxEnabled(JAXBElement<EnabledDisabledStates> value) {
         this.dlTxEnabled = value;
     }
 

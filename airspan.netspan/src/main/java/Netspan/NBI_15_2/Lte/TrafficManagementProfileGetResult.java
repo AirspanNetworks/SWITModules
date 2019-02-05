@@ -15,15 +15,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="TrafficManagementProfileGetResult">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse">
- *       &lt;sequence>
- *         &lt;element name="TrafficManagementProfileResult" type="{http://Airspan.Netspan.WebServices}TrafficManagementProfileResult" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="TrafficManagementProfileGetResult"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}WsResponse"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TrafficManagementProfileResult" type="{http://Airspan.Netspan.WebServices}TrafficManagementProfileResult" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

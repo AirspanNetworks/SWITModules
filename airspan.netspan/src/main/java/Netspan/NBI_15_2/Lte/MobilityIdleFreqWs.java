@@ -17,22 +17,22 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MobilityIdleFreqWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="PresenceAntennaPort1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PresenceAntennaPort1" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NeighCellConfigIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NeighCellConfig" type="{http://Airspan.Netspan.WebServices}NeighbourCellConfig" minOccurs="0"/>
- *         &lt;element name="TreselectionEutraSfMediumIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="TreselectionEutraSfMedium" type="{http://Airspan.Netspan.WebServices}TreselectionEutra" minOccurs="0"/>
- *         &lt;element name="TreselectionEutraSfHighIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="TreselectionEutraSfHigh" type="{http://Airspan.Netspan.WebServices}TreselectionEutra" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MobilityIdleFreqWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="PresenceAntennaPort1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PresenceAntennaPort1" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NeighCellConfigIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NeighCellConfig" type="{http://Airspan.Netspan.WebServices}NeighbourCellConfig" minOccurs="0"/&gt;
+ *         &lt;element name="TreselectionEutraSfMediumIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TreselectionEutraSfMedium" type="{http://Airspan.Netspan.WebServices}TreselectionEutra" minOccurs="0"/&gt;
+ *         &lt;element name="TreselectionEutraSfHighIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TreselectionEutraSfHigh" type="{http://Airspan.Netspan.WebServices}TreselectionEutra" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -49,8 +49,8 @@ import Netspan.API.Enums.EnabledDisabledStates;
     "treselectionEutraSfHigh"
 })
 @XmlSeeAlso({
-    MobilityIdleIntraFreqWs.class,
-    MobilityIdleInterFreqWs.class
+    MobilityIdleInterFreqWs.class,
+    MobilityIdleIntraFreqWs.class
 })
 public class MobilityIdleFreqWs {
 

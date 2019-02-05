@@ -6,7 +6,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -16,20 +15,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CtsGetWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Protocol" type="{http://Airspan.Netspan.WebServices}Protocols" minOccurs="0"/>
- *         &lt;element name="Fqdn" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SnmpIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SnmpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SnmpVersion" type="{http://Airspan.Netspan.WebServices}AgentVersion"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CtsGetWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Protocol" type="{http://Airspan.Netspan.WebServices}Protocols" minOccurs="0"/&gt;
+ *         &lt;element name="Fqdn" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpVersion" type="{http://Airspan.Netspan.WebServices}AgentVersion" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -55,9 +54,8 @@ public class CtsGetWs {
     protected String snmpIpAddress;
     @XmlElementRef(name = "SnmpPort", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> snmpPort;
-    @XmlElement(name = "SnmpVersion", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected AgentVersion snmpVersion;
+    @XmlElementRef(name = "SnmpVersion", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<AgentVersion> snmpVersion;
 
     /**
      * Gets the value of the name property.
@@ -184,10 +182,10 @@ public class CtsGetWs {
      * 
      * @return
      *     possible object is
-     *     {@link AgentVersion }
+     *     {@link JAXBElement }{@code <}{@link AgentVersion }{@code >}
      *     
      */
-    public AgentVersion getSnmpVersion() {
+    public JAXBElement<AgentVersion> getSnmpVersion() {
         return snmpVersion;
     }
 
@@ -196,10 +194,10 @@ public class CtsGetWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link AgentVersion }
+     *     {@link JAXBElement }{@code <}{@link AgentVersion }{@code >}
      *     
      */
-    public void setSnmpVersion(AgentVersion value) {
+    public void setSnmpVersion(JAXBElement<AgentVersion> value) {
         this.snmpVersion = value;
     }
 

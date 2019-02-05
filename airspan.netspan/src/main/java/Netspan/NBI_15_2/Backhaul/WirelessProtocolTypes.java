@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="WirelessProtocolTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Any"/>
- *     &lt;enumeration value="CSMA"/>
- *     &lt;enumeration value="TDMA"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="WirelessProtocolTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Any"/&gt;
+ *     &lt;enumeration value="CSMA"/&gt;
+ *     &lt;enumeration value="TDMA"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

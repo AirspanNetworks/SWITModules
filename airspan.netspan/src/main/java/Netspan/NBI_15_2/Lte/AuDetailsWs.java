@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
@@ -18,23 +17,23 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AuDetailsWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Hardware" type="{http://Airspan.Netspan.WebServices}RelayEnbPnpHardwareTypes"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AuDetailsWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Hardware" type="{http://Airspan.Netspan.WebServices}RelayEnbPnpHardwareTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -58,9 +57,8 @@ public class AuDetailsWs {
 
     @XmlElement(name = "Name")
     protected String name;
-    @XmlElement(name = "Hardware", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected RelayEnbPnpHardwareTypes hardware;
+    @XmlElementRef(name = "Hardware", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<RelayEnbPnpHardwareTypes> hardware;
     @XmlElement(name = "Description")
     protected String description;
     @XmlElement(name = "Region")
@@ -105,10 +103,10 @@ public class AuDetailsWs {
      * 
      * @return
      *     possible object is
-     *     {@link RelayEnbPnpHardwareTypes }
+     *     {@link JAXBElement }{@code <}{@link RelayEnbPnpHardwareTypes }{@code >}
      *     
      */
-    public RelayEnbPnpHardwareTypes getHardware() {
+    public JAXBElement<RelayEnbPnpHardwareTypes> getHardware() {
         return hardware;
     }
 
@@ -117,10 +115,10 @@ public class AuDetailsWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link RelayEnbPnpHardwareTypes }
+     *     {@link JAXBElement }{@code <}{@link RelayEnbPnpHardwareTypes }{@code >}
      *     
      */
-    public void setHardware(RelayEnbPnpHardwareTypes value) {
+    public void setHardware(JAXBElement<RelayEnbPnpHardwareTypes> value) {
         this.hardware = value;
     }
 

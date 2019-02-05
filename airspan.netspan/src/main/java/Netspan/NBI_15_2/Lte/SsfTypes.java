@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SsfTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="SSF5"/>
- *     &lt;enumeration value="SSF7"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="SsfTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="SSF5"/&gt;
+ *     &lt;enumeration value="SSF7"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

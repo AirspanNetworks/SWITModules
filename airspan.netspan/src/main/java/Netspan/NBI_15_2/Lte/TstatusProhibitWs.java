@@ -14,34 +14,34 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="TstatusProhibitWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Qci1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci1" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci2IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci2" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci3IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci3" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci4IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci4" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci5IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci5" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci6IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci6" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci7IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci7" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci8IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci8" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="Qci9IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Qci9" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *         &lt;element name="SrbIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Srb" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="TstatusProhibitWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Qci1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci1" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci2IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci2" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci3IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci3" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci4IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci4" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci5IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci5" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci6IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci6" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci7IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci7" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci8IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci8" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Qci9IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Qci9" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SrbIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Srb" type="{http://Airspan.Netspan.WebServices}TstatusProhibitTypes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

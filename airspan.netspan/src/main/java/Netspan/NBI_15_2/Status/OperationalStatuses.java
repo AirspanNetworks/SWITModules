@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="OperationalStatuses">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Up"/>
- *     &lt;enumeration value="Down"/>
- *     &lt;enumeration value="Testing"/>
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Dormant"/>
- *     &lt;enumeration value="NotPresent"/>
- *     &lt;enumeration value="LowerLayerDown"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="OperationalStatuses"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Up"/&gt;
+ *     &lt;enumeration value="Down"/&gt;
+ *     &lt;enumeration value="Testing"/&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Dormant"/&gt;
+ *     &lt;enumeration value="NotPresent"/&gt;
+ *     &lt;enumeration value="LowerLayerDown"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

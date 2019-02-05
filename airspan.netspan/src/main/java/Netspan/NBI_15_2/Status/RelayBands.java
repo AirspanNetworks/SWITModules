@@ -12,29 +12,29 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="RelayBands">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Bband1"/>
- *     &lt;enumeration value="Bband2"/>
- *     &lt;enumeration value="Bband3"/>
- *     &lt;enumeration value="Bband4"/>
- *     &lt;enumeration value="Bband5"/>
- *     &lt;enumeration value="Bband6"/>
- *     &lt;enumeration value="Bband7"/>
- *     &lt;enumeration value="Bband8"/>
- *     &lt;enumeration value="Bband12"/>
- *     &lt;enumeration value="Band13"/>
- *     &lt;enumeration value="Band20"/>
- *     &lt;enumeration value="Band25"/>
- *     &lt;enumeration value="Band26"/>
- *     &lt;enumeration value="Band29"/>
- *     &lt;enumeration value="Band30"/>
- *     &lt;enumeration value="BandAll"/>
- *     &lt;enumeration value="Band41H"/>
- *     &lt;enumeration value="Band41L"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="RelayBands"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Bband1"/&gt;
+ *     &lt;enumeration value="Bband2"/&gt;
+ *     &lt;enumeration value="Bband3"/&gt;
+ *     &lt;enumeration value="Bband4"/&gt;
+ *     &lt;enumeration value="Bband5"/&gt;
+ *     &lt;enumeration value="Bband6"/&gt;
+ *     &lt;enumeration value="Bband7"/&gt;
+ *     &lt;enumeration value="Bband8"/&gt;
+ *     &lt;enumeration value="Bband12"/&gt;
+ *     &lt;enumeration value="Band13"/&gt;
+ *     &lt;enumeration value="Band20"/&gt;
+ *     &lt;enumeration value="Band25"/&gt;
+ *     &lt;enumeration value="Band26"/&gt;
+ *     &lt;enumeration value="Band29"/&gt;
+ *     &lt;enumeration value="Band30"/&gt;
+ *     &lt;enumeration value="BandAll"/&gt;
+ *     &lt;enumeration value="Band41H"/&gt;
+ *     &lt;enumeration value="Band41L"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

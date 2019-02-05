@@ -1,10 +1,10 @@
 
 package Netspan.NBI_15_2.Status;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -14,18 +14,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="FineAlignShmResult">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Id" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="MotorAzimuth" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="ShmStatus" type="{http://Airspan.Netspan.WebServices}CalculationStatusValues"/>
- *         &lt;element name="Shm" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="FineAlignShmResult"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Id" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MotorAzimuth" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ShmStatus" type="{http://Airspan.Netspan.WebServices}CalculationStatusValues" minOccurs="0"/&gt;
+ *         &lt;element name="Shm" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,25 +39,24 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class FineAlignShmResult {
 
-    @XmlElement(name = "Id", required = true, type = Integer.class, nillable = true)
-    protected Integer id;
-    @XmlElement(name = "MotorAzimuth", required = true, type = Integer.class, nillable = true)
-    protected Integer motorAzimuth;
-    @XmlElement(name = "ShmStatus", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected CalculationStatusValues shmStatus;
-    @XmlElement(name = "Shm", required = true, type = Integer.class, nillable = true)
-    protected Integer shm;
+    @XmlElementRef(name = "Id", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> id;
+    @XmlElementRef(name = "MotorAzimuth", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> motorAzimuth;
+    @XmlElementRef(name = "ShmStatus", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<CalculationStatusValues> shmStatus;
+    @XmlElementRef(name = "Shm", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> shm;
 
     /**
      * Gets the value of the id property.
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getId() {
+    public JAXBElement<Integer> getId() {
         return id;
     }
 
@@ -66,10 +65,10 @@ public class FineAlignShmResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setId(Integer value) {
+    public void setId(JAXBElement<Integer> value) {
         this.id = value;
     }
 
@@ -78,10 +77,10 @@ public class FineAlignShmResult {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getMotorAzimuth() {
+    public JAXBElement<Integer> getMotorAzimuth() {
         return motorAzimuth;
     }
 
@@ -90,10 +89,10 @@ public class FineAlignShmResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setMotorAzimuth(Integer value) {
+    public void setMotorAzimuth(JAXBElement<Integer> value) {
         this.motorAzimuth = value;
     }
 
@@ -102,10 +101,10 @@ public class FineAlignShmResult {
      * 
      * @return
      *     possible object is
-     *     {@link CalculationStatusValues }
+     *     {@link JAXBElement }{@code <}{@link CalculationStatusValues }{@code >}
      *     
      */
-    public CalculationStatusValues getShmStatus() {
+    public JAXBElement<CalculationStatusValues> getShmStatus() {
         return shmStatus;
     }
 
@@ -114,10 +113,10 @@ public class FineAlignShmResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link CalculationStatusValues }
+     *     {@link JAXBElement }{@code <}{@link CalculationStatusValues }{@code >}
      *     
      */
-    public void setShmStatus(CalculationStatusValues value) {
+    public void setShmStatus(JAXBElement<CalculationStatusValues> value) {
         this.shmStatus = value;
     }
 
@@ -126,10 +125,10 @@ public class FineAlignShmResult {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getShm() {
+    public JAXBElement<Integer> getShm() {
         return shm;
     }
 
@@ -138,10 +137,10 @@ public class FineAlignShmResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setShm(Integer value) {
+    public void setShm(JAXBElement<Integer> value) {
         this.shm = value;
     }
 

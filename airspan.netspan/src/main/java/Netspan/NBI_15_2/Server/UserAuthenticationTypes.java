@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="UserAuthenticationTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NMS Server"/>
- *     &lt;enumeration value="Domain"/>
- *     &lt;enumeration value="LDAPS"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="UserAuthenticationTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="NMS Server"/&gt;
+ *     &lt;enumeration value="Domain"/&gt;
+ *     &lt;enumeration value="LDAPS"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

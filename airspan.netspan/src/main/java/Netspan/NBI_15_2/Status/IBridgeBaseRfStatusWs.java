@@ -17,38 +17,38 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IBridgeBaseRfStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TotalCombinedConfiguredTxPower" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ConfiguredEirpDbm" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="FemStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FemStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TiltStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TiltAngle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaImbalanceStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaImbalanceStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaTxMode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaMotorAzimuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RxNulling" type="{http://Airspan.Netspan.WebServices}IBridgeBaseRxNulling" minOccurs="0"/>
- *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignModes" minOccurs="0"/>
- *         &lt;element name="AutoAlignAzimuth" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="OptimalAzimuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SectorHarmonicMean" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CalculationStatus" type="{http://Airspan.Netspan.WebServices}CalculationStatusValues" minOccurs="0"/>
- *         &lt;element name="AutoAlignStatus" type="{http://Airspan.Netspan.WebServices}AutoAlignStatusValues" minOccurs="0"/>
- *         &lt;element name="AutoAlignStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FineAlignStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FineAlignStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RfStatusPath" type="{http://Airspan.Netspan.WebServices}IBridgeBaseRfPathInfo" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="AutoAlignSectorHarmonicMeanList" type="{http://Airspan.Netspan.WebServices}AutoAlignShmResult" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="FineAlignSectorHarmonicMeanList" type="{http://Airspan.Netspan.WebServices}FineAlignShmResult" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IBridgeBaseRfStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TotalCombinedConfiguredTxPower" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ConfiguredEirpDbm" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="FemStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FemStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TiltStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TiltAngle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaImbalanceStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaImbalanceStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaTxMode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaMotorAzimuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RxNulling" type="{http://Airspan.Netspan.WebServices}IBridgeBaseRxNulling" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignModes" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignAzimuth" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="OptimalAzimuth" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SectorHarmonicMean" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CalculationStatus" type="{http://Airspan.Netspan.WebServices}CalculationStatusValues" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignStatus" type="{http://Airspan.Netspan.WebServices}AutoAlignStatusValues" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RfStatusPath" type="{http://Airspan.Netspan.WebServices}IBridgeBaseRfPathInfo" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignSectorHarmonicMeanList" type="{http://Airspan.Netspan.WebServices}AutoAlignShmResult" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignSectorHarmonicMeanList" type="{http://Airspan.Netspan.WebServices}FineAlignShmResult" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SyncStates">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Initialization"/>
- *     &lt;enumeration value="Synchronized"/>
- *     &lt;enumeration value="HoldOver"/>
- *     &lt;enumeration value="HoldOverExpired"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="SyncStates"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Initialization"/&gt;
+ *     &lt;enumeration value="Synchronized"/&gt;
+ *     &lt;enumeration value="HoldOver"/&gt;
+ *     &lt;enumeration value="HoldOverExpired"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

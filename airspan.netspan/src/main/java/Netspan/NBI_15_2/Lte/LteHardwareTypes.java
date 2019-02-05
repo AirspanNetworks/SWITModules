@@ -12,17 +12,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="LteHardwareTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Air4G"/>
- *     &lt;enumeration value="AirSynergy"/>
- *     &lt;enumeration value="AirHarmony"/>
- *     &lt;enumeration value="AirVelocity"/>
- *     &lt;enumeration value="AirUnity"/>
- *     &lt;enumeration value="AirSpeed"/>
- *     &lt;enumeration value="AirDensity"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="LteHardwareTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Air4G"/&gt;
+ *     &lt;enumeration value="AirSynergy"/&gt;
+ *     &lt;enumeration value="AirHarmony"/&gt;
+ *     &lt;enumeration value="AirVelocity"/&gt;
+ *     &lt;enumeration value="AirVelocityFemto"/&gt;
+ *     &lt;enumeration value="AirUnity"/&gt;
+ *     &lt;enumeration value="AirSpeed"/&gt;
+ *     &lt;enumeration value="AirSpeed-Relay"/&gt;
+ *     &lt;enumeration value="AirDensity"/&gt;
+ *     &lt;enumeration value="AirDensityFemto"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -38,12 +41,18 @@ public enum LteHardwareTypes {
     AIR_HARMONY("AirHarmony"),
     @XmlEnumValue("AirVelocity")
     AIR_VELOCITY("AirVelocity"),
+    @XmlEnumValue("AirVelocityFemto")
+    AIR_VELOCITY_FEMTO("AirVelocityFemto"),
     @XmlEnumValue("AirUnity")
     AIR_UNITY("AirUnity"),
     @XmlEnumValue("AirSpeed")
     AIR_SPEED("AirSpeed"),
+    @XmlEnumValue("AirSpeed-Relay")
+    AIR_SPEED_RELAY("AirSpeed-Relay"),
     @XmlEnumValue("AirDensity")
-    AIR_DENSITY("AirDensity");
+    AIR_DENSITY("AirDensity"),
+    @XmlEnumValue("AirDensityFemto")
+    AIR_DENSITY_FEMTO("AirDensityFemto");
     private final String value;
 
     LteHardwareTypes(String v) {

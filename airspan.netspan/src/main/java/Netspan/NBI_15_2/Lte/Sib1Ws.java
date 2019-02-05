@@ -4,7 +4,6 @@ package Netspan.NBI_15_2.Lte;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
@@ -15,50 +14,50 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Sib1Ws">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="QrxLevMinIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QrxLevMin" type="{http://Airspan.Netspan.WebServices}QrxLevelMinValues" minOccurs="0"/>
- *         &lt;element name="PmaxIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Pmax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SiWindowLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SiWindowLength" type="{http://Airspan.Netspan.WebServices}WindowLength" minOccurs="0"/>
- *         &lt;element name="S2PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S2Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S3PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S3Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S4PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S4Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S5PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S5Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S6PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S6Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S7PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S7Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S8PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S8Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S9PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S9Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S10PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S10Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S11PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S11Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S12PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S12Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S13PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="S13Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/>
- *         &lt;element name="S15PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="S15Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity"/>
- *         &lt;element name="QqualMinValueIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QqualMinValue" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="QqualMinOffsetIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QqualMinOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Sib1Ws"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="QrxLevMinIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QrxLevMin" type="{http://Airspan.Netspan.WebServices}QrxLevelMinValues" minOccurs="0"/&gt;
+ *         &lt;element name="PmaxIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Pmax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SiWindowLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SiWindowLength" type="{http://Airspan.Netspan.WebServices}WindowLength" minOccurs="0"/&gt;
+ *         &lt;element name="S2PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S2Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S3PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S3Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S4PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S4Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S5PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S5Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S6PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S6Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S7PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S7Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S8PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S8Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S9PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S9Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S10PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S10Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S11PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S11Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S12PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S12Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S13PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S13Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="S15PeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="S15Periodicity" type="{http://Airspan.Netspan.WebServices}Periodicity" minOccurs="0"/&gt;
+ *         &lt;element name="QqualMinValueIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QqualMinValue" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="QqualMinOffsetIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QqualMinOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -164,10 +163,10 @@ public class Sib1Ws {
     protected JAXBElement<Boolean> s13PeriodicityIsDefault;
     @XmlElementRef(name = "S13Periodicity", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> s13Periodicity;
-    @XmlElement(name = "S15PeriodicityIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean s15PeriodicityIsDefault;
-    @XmlElement(name = "S15Periodicity", required = true, nillable = true)
-    protected String s15Periodicity;
+    @XmlElementRef(name = "S15PeriodicityIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> s15PeriodicityIsDefault;
+    @XmlElementRef(name = "S15Periodicity", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> s15Periodicity;
     @XmlElementRef(name = "QqualMinValueIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qqualMinValueIsDefault;
     @XmlElementRef(name = "QqualMinValue", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -902,10 +901,10 @@ public class Sib1Ws {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isS15PeriodicityIsDefault() {
+    public JAXBElement<Boolean> getS15PeriodicityIsDefault() {
         return s15PeriodicityIsDefault;
     }
 
@@ -914,10 +913,10 @@ public class Sib1Ws {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setS15PeriodicityIsDefault(Boolean value) {
+    public void setS15PeriodicityIsDefault(JAXBElement<Boolean> value) {
         this.s15PeriodicityIsDefault = value;
     }
 
@@ -926,10 +925,10 @@ public class Sib1Ws {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getS15Periodicity() {
+    public JAXBElement<String> getS15Periodicity() {
         return s15Periodicity;
     }
 
@@ -938,10 +937,10 @@ public class Sib1Ws {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setS15Periodicity(String value) {
+    public void setS15Periodicity(JAXBElement<String> value) {
         this.s15Periodicity = value;
     }
 

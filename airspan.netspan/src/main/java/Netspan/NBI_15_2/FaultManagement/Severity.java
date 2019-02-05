@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="Severity">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Indeterminate"/>
- *     &lt;enumeration value="Critical"/>
- *     &lt;enumeration value="Major"/>
- *     &lt;enumeration value="Minor"/>
- *     &lt;enumeration value="Warning"/>
- *     &lt;enumeration value="Normal"/>
- *     &lt;enumeration value="None"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="Severity"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Indeterminate"/&gt;
+ *     &lt;enumeration value="Critical"/&gt;
+ *     &lt;enumeration value="Major"/&gt;
+ *     &lt;enumeration value="Minor"/&gt;
+ *     &lt;enumeration value="Warning"/&gt;
+ *     &lt;enumeration value="Normal"/&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

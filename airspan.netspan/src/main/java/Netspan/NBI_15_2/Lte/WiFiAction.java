@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="WiFiAction">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="AccessPointReset"/>
- *     &lt;enumeration value="AccessPointResetToDefault"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="WiFiAction"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="AccessPointReset"/&gt;
+ *     &lt;enumeration value="AccessPointResetToDefault"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

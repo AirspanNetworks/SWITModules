@@ -12,18 +12,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AlarmHistoryChangeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Created"/>
- *     &lt;enumeration value="Raised"/>
- *     &lt;enumeration value="Cleared"/>
- *     &lt;enumeration value="Acknowledged"/>
- *     &lt;enumeration value="Released"/>
- *     &lt;enumeration value="Deleted"/>
- *     &lt;enumeration value="Updated"/>
- *     &lt;enumeration value="UserClear"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AlarmHistoryChangeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Created"/&gt;
+ *     &lt;enumeration value="Raised"/&gt;
+ *     &lt;enumeration value="Cleared"/&gt;
+ *     &lt;enumeration value="Acknowledged"/&gt;
+ *     &lt;enumeration value="Released"/&gt;
+ *     &lt;enumeration value="Deleted"/&gt;
+ *     &lt;enumeration value="Updated"/&gt;
+ *     &lt;enumeration value="UserClear"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

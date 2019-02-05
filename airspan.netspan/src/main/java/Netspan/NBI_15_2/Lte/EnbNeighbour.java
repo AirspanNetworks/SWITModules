@@ -19,25 +19,25 @@ import Netspan.API.Enums.X2ControlStateTypes;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbNeighbour">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NeighbourType" type="{http://Airspan.Netspan.WebServices}LteNeighbourTypes" minOccurs="0"/>
- *         &lt;element name="NeighbourCellNumber" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Distance" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HoControlState" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/>
- *         &lt;element name="X2ControlState" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/>
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType" minOccurs="0"/>
- *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/>
- *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbNeighbour"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourType" type="{http://Airspan.Netspan.WebServices}LteNeighbourTypes" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourCellNumber" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Distance" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HoControlState" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="X2ControlState" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType" minOccurs="0"/&gt;
+ *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -78,8 +78,8 @@ public class EnbNeighbour {
     protected JAXBElement<Boolean> isStaticNeighbour;
     @XmlElementRef(name = "QOffsetRange", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> qOffsetRange;
-    @XmlElement(name = "CellIndividualOffsetRange", required = true, nillable = true)
-    protected String cellIndividualOffsetRange;
+    @XmlElementRef(name = "CellIndividualOffsetRange", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> cellIndividualOffsetRange;
 
     /**
      * Gets the value of the nodeName property.
@@ -326,10 +326,10 @@ public class EnbNeighbour {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getCellIndividualOffsetRange() {
+    public JAXBElement<String> getCellIndividualOffsetRange() {
         return cellIndividualOffsetRange;
     }
 
@@ -338,10 +338,10 @@ public class EnbNeighbour {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setCellIndividualOffsetRange(String value) {
+    public void setCellIndividualOffsetRange(JAXBElement<String> value) {
         this.cellIndividualOffsetRange = value;
     }
 

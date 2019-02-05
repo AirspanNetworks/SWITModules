@@ -18,29 +18,29 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="GpsStatus">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NodeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Height" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TrackedSatellites" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="VisibleSatellites" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="GpsComms" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsComms" minOccurs="0"/>
- *         &lt;element name="GpsLock" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsLock" minOccurs="0"/>
- *         &lt;element name="GpsSnr" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsSnr" minOccurs="0"/>
- *         &lt;element name="GpsFileStatus" type="{http://Airspan.Netspan.WebServices}GpsFileStatusValues" minOccurs="0"/>
- *         &lt;element name="Satellite" type="{http://Airspan.Netspan.WebServices}Satellite" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="LocationAccuracy" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="PnpRefLongitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="PnpRefLatitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="GpsStatus"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NodeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Height" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TrackedSatellites" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="VisibleSatellites" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="GpsComms" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsComms" minOccurs="0"/&gt;
+ *         &lt;element name="GpsLock" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsLock" minOccurs="0"/&gt;
+ *         &lt;element name="GpsSnr" type="{http://Airspan.Netspan.WebServices}TrapStatusGpsSnr" minOccurs="0"/&gt;
+ *         &lt;element name="GpsFileStatus" type="{http://Airspan.Netspan.WebServices}GpsFileStatusValues" minOccurs="0"/&gt;
+ *         &lt;element name="Satellite" type="{http://Airspan.Netspan.WebServices}Satellite" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="LocationAccuracy" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="PnpRefLongitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="PnpRefLatitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

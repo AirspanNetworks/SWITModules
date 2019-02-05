@@ -1,10 +1,11 @@
 
 package Netspan.NBI_15_2.Status;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -14,18 +15,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayApnWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="State" type="{http://Airspan.Netspan.WebServices}ApnStatusStates"/>
- *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="InterfaceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayApnWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="State" type="{http://Airspan.Netspan.WebServices}ApnStatusStates" minOccurs="0"/&gt;
+ *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,9 +42,8 @@ public class RelayApnWs {
 
     @XmlElement(name = "Name")
     protected String name;
-    @XmlElement(name = "State", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected ApnStatusStates state;
+    @XmlElementRef(name = "State", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<ApnStatusStates> state;
     @XmlElement(name = "IpAddress")
     protected String ipAddress;
     @XmlElement(name = "InterfaceName")
@@ -78,10 +78,10 @@ public class RelayApnWs {
      * 
      * @return
      *     possible object is
-     *     {@link ApnStatusStates }
+     *     {@link JAXBElement }{@code <}{@link ApnStatusStates }{@code >}
      *     
      */
-    public ApnStatusStates getState() {
+    public JAXBElement<ApnStatusStates> getState() {
         return state;
     }
 
@@ -90,10 +90,10 @@ public class RelayApnWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link ApnStatusStates }
+     *     {@link JAXBElement }{@code <}{@link ApnStatusStates }{@code >}
      *     
      */
-    public void setState(ApnStatusStates value) {
+    public void setState(JAXBElement<ApnStatusStates> value) {
         this.state = value;
     }
 

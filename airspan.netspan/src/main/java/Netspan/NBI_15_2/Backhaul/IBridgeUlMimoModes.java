@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="IBridgeUlMimoModes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Disabled"/>
- *     &lt;enumeration value="Dynamic"/>
- *     &lt;enumeration value="Matrix A"/>
- *     &lt;enumeration value="Matrix B"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="IBridgeUlMimoModes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Disabled"/&gt;
+ *     &lt;enumeration value="Dynamic"/&gt;
+ *     &lt;enumeration value="Matrix A"/&gt;
+ *     &lt;enumeration value="Matrix B"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="DonorEnbQuality">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="BelowThreshold"/>
- *     &lt;enumeration value="AboveThreshold"/>
- *     &lt;enumeration value="MonitoringDisabled"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="DonorEnbQuality"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="BelowThreshold"/&gt;
+ *     &lt;enumeration value="AboveThreshold"/&gt;
+ *     &lt;enumeration value="MonitoringDisabled"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

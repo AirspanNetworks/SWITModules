@@ -16,89 +16,89 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IBridgeBaseRadioProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesIbBase" minOccurs="0"/>
- *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AntennaMode" type="{http://Airspan.Netspan.WebServices}SteerableAntennaTxModes" minOccurs="0"/>
- *         &lt;element name="AntennaGain" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="BsEirpTotalCombined" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RxTargetRssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RfGain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="InitialRangingRxLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="FloodUnknownTraffic" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="Ft2FtLocalSwitching" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="BroadcastServiceClassName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FbNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/>
- *         &lt;element name="FtNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/>
- *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignOptions" minOccurs="0"/>
- *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}IbBaseRadioBandwidthValues" minOccurs="0"/>
- *         &lt;element name="BackhaulMode" type="{http://Airspan.Netspan.WebServices}BackhaulModes" minOccurs="0"/>
- *         &lt;element name="Range" type="{http://Airspan.Netspan.WebServices}RangeModes" minOccurs="0"/>
- *         &lt;element name="UplinkPermutation" type="{http://Airspan.Netspan.WebServices}UlPermutationTypes" minOccurs="0"/>
- *         &lt;element name="TddSplit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MaxSisoZoneSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}IBridgeDlMimoModes" minOccurs="0"/>
- *         &lt;element name="UplinkMimo" type="{http://Airspan.Netspan.WebServices}IBridgeUlMimoModes" minOccurs="0"/>
- *         &lt;element name="FrameMode" type="{http://Airspan.Netspan.WebServices}IBridgeFrameModes" minOccurs="0"/>
- *         &lt;element name="Subchannels" type="{http://Airspan.Netspan.WebServices}Ib4x0PuscGroups" minOccurs="0"/>
- *         &lt;element name="CarrierSense" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="BackoffFrames" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CarrierSenseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SecurityMode" type="{http://Airspan.Netspan.WebServices}SecurityModes" minOccurs="0"/>
- *         &lt;element name="UplinkAdaptationEfficiencyMode" type="{http://Airspan.Netspan.WebServices}UlAdaptationEfficiencyModes" minOccurs="0"/>
- *         &lt;element name="DownlinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioDownlink" minOccurs="0"/>
- *         &lt;element name="DownlinkBroadcastMcs" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioBroadcastDownlink" minOccurs="0"/>
- *         &lt;element name="DownlinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkMatrixBThresholdPcinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkMatrixBAdditionalCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioUplink" minOccurs="0"/>
- *         &lt;element name="UplinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkMatrixBThresholdCinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IBridgeBaseRadioProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesIbBase" minOccurs="0"/&gt;
+ *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaMode" type="{http://Airspan.Netspan.WebServices}SteerableAntennaTxModes" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaGain" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="BsEirpTotalCombined" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RxTargetRssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RfGain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="InitialRangingRxLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="FloodUnknownTraffic" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="Ft2FtLocalSwitching" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="BroadcastServiceClassName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FbNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/&gt;
+ *         &lt;element name="FtNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignOptions" minOccurs="0"/&gt;
+ *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}IbBaseRadioBandwidthValues" minOccurs="0"/&gt;
+ *         &lt;element name="BackhaulMode" type="{http://Airspan.Netspan.WebServices}BackhaulModes" minOccurs="0"/&gt;
+ *         &lt;element name="Range" type="{http://Airspan.Netspan.WebServices}RangeModes" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkPermutation" type="{http://Airspan.Netspan.WebServices}UlPermutationTypes" minOccurs="0"/&gt;
+ *         &lt;element name="TddSplit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MaxSisoZoneSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}IBridgeDlMimoModes" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkMimo" type="{http://Airspan.Netspan.WebServices}IBridgeUlMimoModes" minOccurs="0"/&gt;
+ *         &lt;element name="FrameMode" type="{http://Airspan.Netspan.WebServices}IBridgeFrameModes" minOccurs="0"/&gt;
+ *         &lt;element name="Subchannels" type="{http://Airspan.Netspan.WebServices}Ib4x0PuscGroups" minOccurs="0"/&gt;
+ *         &lt;element name="CarrierSense" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="BackoffFrames" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CarrierSenseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SecurityMode" type="{http://Airspan.Netspan.WebServices}SecurityModes" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkAdaptationEfficiencyMode" type="{http://Airspan.Netspan.WebServices}UlAdaptationEfficiencyModes" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioDownlink" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkBroadcastMcs" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioBroadcastDownlink" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMatrixBThresholdPcinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMatrixBAdditionalCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioUplink" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkMatrixBThresholdCinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

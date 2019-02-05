@@ -17,46 +17,46 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="LteEmbmsStatsRowWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="GranularityPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2ConnSetupAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2ConnSetupSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2ConnSetupFailStd" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2ConnSetupFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStartAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStartSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStartFailSpec" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStartFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStartFailUnSpec" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStopAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStopSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStopFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="M2SessionStopFailOther" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncPduCountType0" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncPduCountType1" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncPduCountType3" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncByteType0" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncByteType1" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncByteType3" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncSyncSeqDiscard" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncSyncPduDropWrongTeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncSyncByteDropWrongTeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncSyncSduDropOtherReason" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SyncDiscardedSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellSyncSync2RlcPduCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellSyncSync2RlcByteCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CellSyncSync2RlcSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LteEmbmsStatsRowWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="GranularityPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2ConnSetupAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2ConnSetupSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2ConnSetupFailStd" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2ConnSetupFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStartAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStartSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStartFailSpec" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStartFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStartFailUnSpec" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStopAtt" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStopSucc" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStopFailLinkLoss" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="M2SessionStopFailOther" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncPduCountType0" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncPduCountType1" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncPduCountType3" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncByteType0" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="SyncByteType1" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="SyncByteType3" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="SyncSyncSeqDiscard" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncSyncPduDropWrongTeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncSyncByteDropWrongTeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncSyncSduDropOtherReason" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SyncDiscardedSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellSyncSync2RlcPduCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellSyncSync2RlcByteCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CellSyncSync2RlcSyncSeqCount" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -141,11 +141,11 @@ public class LteEmbmsStatsRowWs {
     @XmlElementRef(name = "SyncPduCountType3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> syncPduCountType3;
     @XmlElementRef(name = "SyncByteType0", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Integer> syncByteType0;
+    protected JAXBElement<Long> syncByteType0;
     @XmlElementRef(name = "SyncByteType1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Integer> syncByteType1;
+    protected JAXBElement<Long> syncByteType1;
     @XmlElementRef(name = "SyncByteType3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Integer> syncByteType3;
+    protected JAXBElement<Long> syncByteType3;
     @XmlElementRef(name = "SyncSyncSeqDiscard", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> syncSyncSeqDiscard;
     @XmlElementRef(name = "SyncSyncPduDropWrongTeId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -650,10 +650,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public JAXBElement<Integer> getSyncByteType0() {
+    public JAXBElement<Long> getSyncByteType0() {
         return syncByteType0;
     }
 
@@ -662,10 +662,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public void setSyncByteType0(JAXBElement<Integer> value) {
+    public void setSyncByteType0(JAXBElement<Long> value) {
         this.syncByteType0 = value;
     }
 
@@ -674,10 +674,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public JAXBElement<Integer> getSyncByteType1() {
+    public JAXBElement<Long> getSyncByteType1() {
         return syncByteType1;
     }
 
@@ -686,10 +686,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public void setSyncByteType1(JAXBElement<Integer> value) {
+    public void setSyncByteType1(JAXBElement<Long> value) {
         this.syncByteType1 = value;
     }
 
@@ -698,10 +698,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public JAXBElement<Integer> getSyncByteType3() {
+    public JAXBElement<Long> getSyncByteType3() {
         return syncByteType3;
     }
 
@@ -710,10 +710,10 @@ public class LteEmbmsStatsRowWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Long }{@code >}
      *     
      */
-    public void setSyncByteType3(JAXBElement<Integer> value) {
+    public void setSyncByteType3(JAXBElement<Long> value) {
         this.syncByteType3 = value;
     }
 

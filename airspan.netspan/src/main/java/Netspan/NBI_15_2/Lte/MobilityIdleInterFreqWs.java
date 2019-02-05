@@ -14,16 +14,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MobilityIdleInterFreqWs">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityIdleFreqWs">
- *       &lt;sequence>
- *         &lt;element name="AllowedMeasurementBandwidthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="AllowedMeasurementBandwidth" type="{http://Airspan.Netspan.WebServices}AllowMeasBandwidth" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MobilityIdleInterFreqWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}MobilityIdleFreqWs"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AllowedMeasurementBandwidthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedMeasurementBandwidth" type="{http://Airspan.Netspan.WebServices}AllowMeasBandwidth" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

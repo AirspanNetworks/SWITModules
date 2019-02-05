@@ -12,12 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ScanStartStatus">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Started"/>
- *     &lt;enumeration value="Completed"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ScanStartStatus"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Started"/&gt;
+ *     &lt;enumeration value="Completed"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -25,6 +26,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum ScanStartStatus {
 
+    @XmlEnumValue("Unknown")
+    UNKNOWN("Unknown"),
     @XmlEnumValue("Started")
     STARTED("Started"),
     @XmlEnumValue("Completed")

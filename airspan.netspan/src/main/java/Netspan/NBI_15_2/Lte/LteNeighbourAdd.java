@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -19,22 +18,22 @@ import Netspan.API.Enums.X2ControlStateTypes;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes"/>
- *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes"/>
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes"/>
- *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/>
- *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes"/&gt;
+ *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes"/&gt;
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes"/&gt;
+ *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/&gt;
+ *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -65,7 +64,7 @@ public class LteNeighbourAdd {
     protected X2ControlStateTypes x2ControlStatus;
     @XmlElement(name = "HandoverType", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected HandoverType handoverType;
+    protected HandoverTypes handoverType;
     @XmlElement(name = "IsStaticNeighbour", required = true, type = Boolean.class, nillable = true)
     protected Boolean isStaticNeighbour;
     @XmlElement(name = "QOffsetRange", required = true, nillable = true)
@@ -177,7 +176,7 @@ public class LteNeighbourAdd {
      *     {@link HandoverTypes }
      *     
      */
-    public HandoverType getHandoverType() {
+    public HandoverTypes getHandoverType() {
         return handoverType;
     }
 
@@ -189,7 +188,7 @@ public class LteNeighbourAdd {
      *     {@link HandoverTypes }
      *     
      */
-    public void setHandoverType(HandoverType value) {
+    public void setHandoverType(HandoverTypes value) {
         this.handoverType = value;
     }
 

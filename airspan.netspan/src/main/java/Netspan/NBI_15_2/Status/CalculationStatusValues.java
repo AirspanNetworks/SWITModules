@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CalculationStatusValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="In Progress"/>
- *     &lt;enumeration value="Completed"/>
- *     &lt;enumeration value="Completed"/>
- *     &lt;enumeration value="Aborted"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CalculationStatusValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="In Progress"/&gt;
+ *     &lt;enumeration value="Completed"/&gt;
+ *     &lt;enumeration value="Completed"/&gt;
+ *     &lt;enumeration value="Aborted"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

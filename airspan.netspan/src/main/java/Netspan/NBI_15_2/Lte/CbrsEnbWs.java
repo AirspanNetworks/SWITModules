@@ -4,7 +4,6 @@ package Netspan.NBI_15_2.Lte;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
@@ -17,30 +16,30 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CbrsEnbWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="UseSpectrumInquiryIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="UseSpectrumInquiry" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MaximumGrantsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="MaximumGrants" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IndoorDeploymentIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="IndoorDeployment" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="RegistrationRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="RegistrationRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="GrantRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="GrantRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SpectrumInquiryRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="SpectrumInquiryRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="GrantGuardPeriodIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="GrantGuardPeriod" type="{http://Airspan.Netspan.WebServices}CbrsGrantGuardValues" minOccurs="0"/>
- *         &lt;element name="HeartbeatKeepAliveCounterIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="HeartbeatKeepAliveCounter" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CbrsEnbWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="UseSpectrumInquiryIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UseSpectrumInquiry" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MaximumGrantsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MaximumGrants" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IndoorDeploymentIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IndoorDeployment" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="RegistrationRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RegistrationRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="GrantRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="GrantRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SpectrumInquiryRetryTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SpectrumInquiryRetryTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="GrantGuardPeriodIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="GrantGuardPeriod" type="{http://Airspan.Netspan.WebServices}CbrsGrantGuardValues" minOccurs="0"/&gt;
+ *         &lt;element name="HeartbeatKeepAliveCounterIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="HeartbeatKeepAliveCounter" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -66,36 +65,36 @@ import Netspan.API.Enums.EnabledDisabledStates;
 })
 public class CbrsEnbWs {
 
-    @XmlElement(name = "UseSpectrumInquiryIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean useSpectrumInquiryIsDefault;
+    @XmlElementRef(name = "UseSpectrumInquiryIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> useSpectrumInquiryIsDefault;
     @XmlElementRef(name = "UseSpectrumInquiry", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> useSpectrumInquiry;
-    @XmlElement(name = "MaximumGrantsIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean maximumGrantsIsDefault;
+    @XmlElementRef(name = "MaximumGrantsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> maximumGrantsIsDefault;
     @XmlElementRef(name = "MaximumGrants", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maximumGrants;
-    @XmlElement(name = "IndoorDeploymentIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean indoorDeploymentIsDefault;
+    @XmlElementRef(name = "IndoorDeploymentIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> indoorDeploymentIsDefault;
     @XmlElementRef(name = "IndoorDeployment", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> indoorDeployment;
-    @XmlElement(name = "RegistrationRetryTimerIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean registrationRetryTimerIsDefault;
+    @XmlElementRef(name = "RegistrationRetryTimerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> registrationRetryTimerIsDefault;
     @XmlElementRef(name = "RegistrationRetryTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> registrationRetryTimer;
-    @XmlElement(name = "GrantRetryTimerIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean grantRetryTimerIsDefault;
+    @XmlElementRef(name = "GrantRetryTimerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> grantRetryTimerIsDefault;
     @XmlElementRef(name = "GrantRetryTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> grantRetryTimer;
-    @XmlElement(name = "SpectrumInquiryRetryTimerIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean spectrumInquiryRetryTimerIsDefault;
+    @XmlElementRef(name = "SpectrumInquiryRetryTimerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> spectrumInquiryRetryTimerIsDefault;
     @XmlElementRef(name = "SpectrumInquiryRetryTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> spectrumInquiryRetryTimer;
-    @XmlElement(name = "GrantGuardPeriodIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean grantGuardPeriodIsDefault;
+    @XmlElementRef(name = "GrantGuardPeriodIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> grantGuardPeriodIsDefault;
     @XmlElementRef(name = "GrantGuardPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> grantGuardPeriod;
-    @XmlElement(name = "HeartbeatKeepAliveCounterIsDefault", required = true, type = Boolean.class, nillable = true)
-    protected Boolean heartbeatKeepAliveCounterIsDefault;
+    @XmlElementRef(name = "HeartbeatKeepAliveCounterIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> heartbeatKeepAliveCounterIsDefault;
     @XmlElementRef(name = "HeartbeatKeepAliveCounter", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> heartbeatKeepAliveCounter;
 
@@ -104,10 +103,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isUseSpectrumInquiryIsDefault() {
+    public JAXBElement<Boolean> getUseSpectrumInquiryIsDefault() {
         return useSpectrumInquiryIsDefault;
     }
 
@@ -116,10 +115,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setUseSpectrumInquiryIsDefault(Boolean value) {
+    public void setUseSpectrumInquiryIsDefault(JAXBElement<Boolean> value) {
         this.useSpectrumInquiryIsDefault = value;
     }
 
@@ -152,10 +151,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isMaximumGrantsIsDefault() {
+    public JAXBElement<Boolean> getMaximumGrantsIsDefault() {
         return maximumGrantsIsDefault;
     }
 
@@ -164,10 +163,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setMaximumGrantsIsDefault(Boolean value) {
+    public void setMaximumGrantsIsDefault(JAXBElement<Boolean> value) {
         this.maximumGrantsIsDefault = value;
     }
 
@@ -200,10 +199,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isIndoorDeploymentIsDefault() {
+    public JAXBElement<Boolean> getIndoorDeploymentIsDefault() {
         return indoorDeploymentIsDefault;
     }
 
@@ -212,10 +211,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setIndoorDeploymentIsDefault(Boolean value) {
+    public void setIndoorDeploymentIsDefault(JAXBElement<Boolean> value) {
         this.indoorDeploymentIsDefault = value;
     }
 
@@ -248,10 +247,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isRegistrationRetryTimerIsDefault() {
+    public JAXBElement<Boolean> getRegistrationRetryTimerIsDefault() {
         return registrationRetryTimerIsDefault;
     }
 
@@ -260,10 +259,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setRegistrationRetryTimerIsDefault(Boolean value) {
+    public void setRegistrationRetryTimerIsDefault(JAXBElement<Boolean> value) {
         this.registrationRetryTimerIsDefault = value;
     }
 
@@ -296,10 +295,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isGrantRetryTimerIsDefault() {
+    public JAXBElement<Boolean> getGrantRetryTimerIsDefault() {
         return grantRetryTimerIsDefault;
     }
 
@@ -308,10 +307,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setGrantRetryTimerIsDefault(Boolean value) {
+    public void setGrantRetryTimerIsDefault(JAXBElement<Boolean> value) {
         this.grantRetryTimerIsDefault = value;
     }
 
@@ -344,10 +343,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isSpectrumInquiryRetryTimerIsDefault() {
+    public JAXBElement<Boolean> getSpectrumInquiryRetryTimerIsDefault() {
         return spectrumInquiryRetryTimerIsDefault;
     }
 
@@ -356,10 +355,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setSpectrumInquiryRetryTimerIsDefault(Boolean value) {
+    public void setSpectrumInquiryRetryTimerIsDefault(JAXBElement<Boolean> value) {
         this.spectrumInquiryRetryTimerIsDefault = value;
     }
 
@@ -392,10 +391,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isGrantGuardPeriodIsDefault() {
+    public JAXBElement<Boolean> getGrantGuardPeriodIsDefault() {
         return grantGuardPeriodIsDefault;
     }
 
@@ -404,10 +403,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setGrantGuardPeriodIsDefault(Boolean value) {
+    public void setGrantGuardPeriodIsDefault(JAXBElement<Boolean> value) {
         this.grantGuardPeriodIsDefault = value;
     }
 
@@ -440,10 +439,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public Boolean isHeartbeatKeepAliveCounterIsDefault() {
+    public JAXBElement<Boolean> getHeartbeatKeepAliveCounterIsDefault() {
         return heartbeatKeepAliveCounterIsDefault;
     }
 
@@ -452,10 +451,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link Boolean }
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
      *     
      */
-    public void setHeartbeatKeepAliveCounterIsDefault(Boolean value) {
+    public void setHeartbeatKeepAliveCounterIsDefault(JAXBElement<Boolean> value) {
         this.heartbeatKeepAliveCounterIsDefault = value;
     }
 

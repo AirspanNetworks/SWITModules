@@ -11,13 +11,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="MessageTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="RFC"/>
- *     &lt;enumeration value="IR"/>
- *     &lt;enumeration value="KUR"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="MessageTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="RFC"/&gt;
+ *     &lt;enumeration value="IR"/&gt;
+ *     &lt;enumeration value="KUR"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

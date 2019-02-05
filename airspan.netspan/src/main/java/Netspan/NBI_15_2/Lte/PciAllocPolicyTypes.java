@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="PciAllocPolicyTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ULDmrs"/>
- *     &lt;enumeration value="DLCollidingRs"/>
- *     &lt;enumeration value="DLNonCollidingRs"/>
- *     &lt;enumeration value="ULDmrsAndDLCollidingRs"/>
- *     &lt;enumeration value="NoAllocation"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="PciAllocPolicyTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="ULDmrs"/&gt;
+ *     &lt;enumeration value="DLCollidingRs"/&gt;
+ *     &lt;enumeration value="DLNonCollidingRs"/&gt;
+ *     &lt;enumeration value="ULDmrsAndDLCollidingRs"/&gt;
+ *     &lt;enumeration value="NoAllocation"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

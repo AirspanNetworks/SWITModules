@@ -16,31 +16,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IBridgeTermDetailsPnp">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ServiceAllowed" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ServiceProduct" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="EnableHomeBs" type="{http://Airspan.Netspan.WebServices}EnableDisableOptions" minOccurs="0"/>
- *         &lt;element name="HomeBsFbName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MaxLockPeriodForSignOn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ManagementVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UseManagementIfForPtp" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="PtpIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PtpSubnetCidr" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PtpVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LedEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IBridgeTermDetailsPnp"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ServiceAllowed" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="ServiceProduct" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="EnableHomeBs" type="{http://Airspan.Netspan.WebServices}HomeBsOptions" minOccurs="0"/&gt;
+ *         &lt;element name="HomeBsFbName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SignOnLockMode" type="{http://Airspan.Netspan.WebServices}SignonLockModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="MaxLockPeriodForSignOn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ManagementVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UseManagementIfForPtp" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/&gt;
+ *         &lt;element name="PtpIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PtpSubnetCidr" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PtpVlanId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LedEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,6 +58,7 @@ import javax.xml.bind.annotation.XmlType;
     "radioProfile",
     "enableHomeBs",
     "homeBsFbName",
+    "signOnLockMode",
     "maxLockPeriodForSignOn",
     "managementVlanId",
     "useManagementIfForPtp",
@@ -87,9 +89,11 @@ public class IBridgeTermDetailsPnp {
     @XmlElement(name = "RadioProfile")
     protected String radioProfile;
     @XmlElementRef(name = "EnableHomeBs", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnableDisableOptions> enableHomeBs;
+    protected JAXBElement<HomeBsOptions> enableHomeBs;
     @XmlElement(name = "HomeBsFbName")
     protected String homeBsFbName;
+    @XmlElementRef(name = "SignOnLockMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<SignonLockModesWs> signOnLockMode;
     @XmlElementRef(name = "MaxLockPeriodForSignOn", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maxLockPeriodForSignOn;
     @XmlElementRef(name = "ManagementVlanId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -302,10 +306,10 @@ public class IBridgeTermDetailsPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnableDisableOptions }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HomeBsOptions }{@code >}
      *     
      */
-    public JAXBElement<EnableDisableOptions> getEnableHomeBs() {
+    public JAXBElement<HomeBsOptions> getEnableHomeBs() {
         return enableHomeBs;
     }
 
@@ -314,10 +318,10 @@ public class IBridgeTermDetailsPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnableDisableOptions }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HomeBsOptions }{@code >}
      *     
      */
-    public void setEnableHomeBs(JAXBElement<EnableDisableOptions> value) {
+    public void setEnableHomeBs(JAXBElement<HomeBsOptions> value) {
         this.enableHomeBs = value;
     }
 
@@ -343,6 +347,30 @@ public class IBridgeTermDetailsPnp {
      */
     public void setHomeBsFbName(String value) {
         this.homeBsFbName = value;
+    }
+
+    /**
+     * Gets the value of the signOnLockMode property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link SignonLockModesWs }{@code >}
+     *     
+     */
+    public JAXBElement<SignonLockModesWs> getSignOnLockMode() {
+        return signOnLockMode;
+    }
+
+    /**
+     * Sets the value of the signOnLockMode property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link SignonLockModesWs }{@code >}
+     *     
+     */
+    public void setSignOnLockMode(JAXBElement<SignonLockModesWs> value) {
+        this.signOnLockMode = value;
     }
 
     /**

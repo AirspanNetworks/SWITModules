@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ClockSourceTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Gps"/>
- *     &lt;enumeration value="Internal"/>
- *     &lt;enumeration value="ReceivedChannel"/>
- *     &lt;enumeration value="Ptp"/>
- *     &lt;enumeration value="External"/>
- *     &lt;enumeration value="DonorENodeB"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ClockSourceTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Gps"/&gt;
+ *     &lt;enumeration value="Internal"/&gt;
+ *     &lt;enumeration value="ReceivedChannel"/&gt;
+ *     &lt;enumeration value="Ptp"/&gt;
+ *     &lt;enumeration value="External"/&gt;
+ *     &lt;enumeration value="DonorENodeB"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="GpsFileStatusValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NotApplicable"/>
- *     &lt;enumeration value="Missing"/>
- *     &lt;enumeration value="Valid"/>
- *     &lt;enumeration value="Expired"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="GpsFileStatusValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="NotApplicable"/&gt;
+ *     &lt;enumeration value="Missing"/&gt;
+ *     &lt;enumeration value="Valid"/&gt;
+ *     &lt;enumeration value="Expired"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

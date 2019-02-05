@@ -14,30 +14,30 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RandomAccessWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NumberOfRaPreamblesIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NumberOfRaPreambles" type="{http://Airspan.Netspan.WebServices}RaPreambles" minOccurs="0"/>
- *         &lt;element name="PowerRampingStepIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PowerRampingStep" type="{http://Airspan.Netspan.WebServices}PowerRampStep" minOccurs="0"/>
- *         &lt;element name="PreambleInitialReceivedTargetPowerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PreambleInitialReceivedTargetPower" type="{http://Airspan.Netspan.WebServices}PreambleTargetPower" minOccurs="0"/>
- *         &lt;element name="PreambleTransMaxIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PreambleTransMax" type="{http://Airspan.Netspan.WebServices}PreambleTrans" minOccurs="0"/>
- *         &lt;element name="RaResponseWindowSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="RaResponseWindowSize" type="{http://Airspan.Netspan.WebServices}RaResponseWindow" minOccurs="0"/>
- *         &lt;element name="MacContentionResolutionTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="MacContentionResolutionTimer" type="{http://Airspan.Netspan.WebServices}MacContention" minOccurs="0"/>
- *         &lt;element name="ZeroCorrelationZoneConfigIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="ZeroCorrelationZoneConfig" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrachConfigIndexIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PrachConfigIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RandomAccessWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NumberOfRaPreamblesIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NumberOfRaPreambles" type="{http://Airspan.Netspan.WebServices}RaPreambles" minOccurs="0"/&gt;
+ *         &lt;element name="PowerRampingStepIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PowerRampingStep" type="{http://Airspan.Netspan.WebServices}PowerRampStep" minOccurs="0"/&gt;
+ *         &lt;element name="PreambleInitialReceivedTargetPowerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PreambleInitialReceivedTargetPower" type="{http://Airspan.Netspan.WebServices}PreambleTargetPower" minOccurs="0"/&gt;
+ *         &lt;element name="PreambleTransMaxIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PreambleTransMax" type="{http://Airspan.Netspan.WebServices}PreambleTrans" minOccurs="0"/&gt;
+ *         &lt;element name="RaResponseWindowSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="RaResponseWindowSize" type="{http://Airspan.Netspan.WebServices}RaResponseWindow" minOccurs="0"/&gt;
+ *         &lt;element name="MacContentionResolutionTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="MacContentionResolutionTimer" type="{http://Airspan.Netspan.WebServices}MacContention" minOccurs="0"/&gt;
+ *         &lt;element name="ZeroCorrelationZoneConfigIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="ZeroCorrelationZoneConfig" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrachConfigIndexIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PrachConfigIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

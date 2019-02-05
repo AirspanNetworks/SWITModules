@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="WsResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/>
- *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/&gt;
+ *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,40 +35,40 @@ import javax.xml.bind.annotation.XmlType;
     "errorString"
 })
 @XmlSeeAlso({
-    StatsLteHarqResponse.class,
-    StatsLteRadioResourceUtilizationResponse.class,
-    StatsBsIbBaseTermRfResponse.class,
-    StatsLteCellLevelRadioBearerQosResponse.class,
-    StatsBsIbBaseAirInterfaceUsageResponse.class,
-    StatsIb440IpResponse.class,
     StatsLteUeAssociatedLogicalS1ConnectionResponse.class,
-    StatsLteRachPreamblesSentResponse.class,
-    StatsBsIbBaseTermDataResponse.class,
-    StatsLteIntraEnbLoadBalancingResponse.class,
-    StatsLteRrcConnectionResponse.class,
-    StatsLteRfMeasureResponse.class,
-    StatsLteCsfbResponse.class,
-    StatsLteHandoverPerTargetCellResponse.class,
-    StatsLteMmeResponse.class,
-    StatsLtePagingResponse.class,
-    StatsBsIbBaseAirInterfaceResponse.class,
-    StatsLteErabPerQciResponse.class,
-    StatsLteRruPerQciResponse.class,
-    StatsLteEquipmentMeasureResponse.class,
-    StatsLteLiteCompResponse.class,
-    StatsLteHandoverResponse.class,
-    StatsIb440QosPerQciResponse.class,
-    StatsIb440RfResponse.class,
+    StatsLteCellLevelRadioBearerQosResponse.class,
     StatsLteCellLevelRadioBearerQosPerQciResponse.class,
-    StatsLteMcsResponse.class,
-    StatsLteRachAccessDelayResponse.class,
-    StatsServerProcessResponse.class,
+    StatsLteErabResponse.class,
+    StatsLteErabPerQciResponse.class,
+    StatsLteHandoverResponse.class,
+    StatsLteHandoverPerTargetCellResponse.class,
+    StatsLteRadioResourceUtilizationResponse.class,
+    StatsLteRrcConnectionResponse.class,
+    StatsLteRruPerQciResponse.class,
     StatsLtePosMeasurementsResponse.class,
-    StatsBsIRelayResponse.class,
-    StatsServerDiskResponse.class,
+    StatsLteLiteCompResponse.class,
+    StatsLteEquipmentMeasureResponse.class,
+    StatsLteRfMeasureResponse.class,
     StatsLteCarrierAggregationResponse.class,
+    StatsLtePagingResponse.class,
+    StatsLteCsfbResponse.class,
     StatsLteEmbmsResponse.class,
-    StatsLteErabResponse.class
+    StatsLteHarqResponse.class,
+    StatsLteIntraEnbLoadBalancingResponse.class,
+    StatsLteMcsResponse.class,
+    StatsLteMmeResponse.class,
+    StatsLteRachAccessDelayResponse.class,
+    StatsLteRachPreamblesSentResponse.class,
+    StatsIb440RfResponse.class,
+    StatsIb440IpResponse.class,
+    StatsIb440QosPerQciResponse.class,
+    StatsBsIbBaseAirInterfaceResponse.class,
+    StatsBsIbBaseAirInterfaceUsageResponse.class,
+    StatsBsIbBaseTermDataResponse.class,
+    StatsBsIbBaseTermRfResponse.class,
+    StatsServerProcessResponse.class,
+    StatsServerDiskResponse.class,
+    StatsBsIRelayResponse.class
 })
 public class WsResponse {
 

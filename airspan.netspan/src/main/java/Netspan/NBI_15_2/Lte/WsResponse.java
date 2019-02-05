@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="WsResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/>
- *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/&gt;
+ *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,38 +35,38 @@ import javax.xml.bind.annotation.XmlType;
     "errorString"
 })
 @XmlSeeAlso({
-    ProfileResponse.class,
-    NameResult.class,
-    NodeListResult.class,
+    RelayEnodeBConfigGetResult.class,
     NodeActionResult.class,
-    LteSyncProfileGetResult.class,
-    Lte3RdPartyGetResult.class,
-    LteNetworkProfileGetResult.class,
+    NodeListResult.class,
+    UnityPnpConfigGetResult.class,
+    NameResult.class,
     LteSystemDefaultGetResult.class,
-    CallTraceProfileGetResult.class,
-    Lte3RdPartyResponse.class,
-    LteNeighbourResponse.class,
-    LteManagementProfileGetResult.class,
+    ProfileResponse.class,
+    LteRadioProfileGetResult.class,
+    MultiCellProfileGetResult.class,
+    LteNetworkProfileGetResult.class,
     LteEmbmsProfileGetResult.class,
-    LteAdvancedProfileGetResult.class,
-    LteCellAdvancedProfileGetResult.class,
+    UtranProfileGetResult.class,
+    LteSonProfileGetResult.class,
     LteSecurityProfileGetResult.class,
+    LteSyncProfileGetResult.class,
     LteMobilityProfileGetResult.class,
     TrafficManagementProfileGetResult.class,
-    LtePnpConfigGetResult.class,
-    MultiCellProfileGetResult.class,
-    LteRadioProfileGetResult.class,
-    LteSonProfileGetResult.class,
+    LteManagementProfileGetResult.class,
+    LteAdvancedProfileGetResult.class,
+    LteCellAdvancedProfileGetResult.class,
+    Lte3RdPartyResponse.class,
+    Lte3RdPartyGetResult.class,
     LteEnbConfigGetResult.class,
-    LteNeighbourListResult.class,
-    RelayEnodeBConfigGetResult.class,
-    UtranProfileGetResult.class,
-    LteAnrNeighbourResponse.class,
-    NodeEnodebIdResult.class,
-    NodeAlarmResult.class,
-    LteNbrConfigResponse.class,
-    UnityPnpConfigGetResult.class,
     EnbStateGetResult.class,
+    LteNeighbourListResult.class,
+    LteNeighbourResponse.class,
+    LteAnrNeighbourResponse.class,
+    LteNbrConfigResponse.class,
+    LtePnpConfigGetResult.class,
+    NodeAlarmResult.class,
+    NodeEnodebIdResult.class,
+    CallTraceProfileGetResult.class,
     RelayEnbPnpConfigGetResult.class
 })
 public class WsResponse {

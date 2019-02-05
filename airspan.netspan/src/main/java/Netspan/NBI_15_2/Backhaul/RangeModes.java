@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="RangeModes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Normal"/>
- *     &lt;enumeration value="Long"/>
- *     &lt;enumeration value="Very Long"/>
- *     &lt;enumeration value="Extreme"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="RangeModes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Normal"/&gt;
+ *     &lt;enumeration value="Long"/&gt;
+ *     &lt;enumeration value="Very Long"/&gt;
+ *     &lt;enumeration value="Extreme"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CellToUseValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="LiteComp"/>
- *     &lt;enumeration value="Indoor"/>
- *     &lt;enumeration value="Outdoor"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CellToUseValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="LiteComp"/&gt;
+ *     &lt;enumeration value="Indoor"/&gt;
+ *     &lt;enumeration value="Outdoor"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

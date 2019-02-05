@@ -12,18 +12,18 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="TrapStatusGpsLock">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Locked"/>
- *     &lt;enumeration value="Degraded"/>
- *     &lt;enumeration value="Expired"/>
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="Lost"/>
- *     &lt;enumeration value="Init"/>
- *     &lt;enumeration value="Holdover"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="TrapStatusGpsLock"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Locked"/&gt;
+ *     &lt;enumeration value="Degraded"/&gt;
+ *     &lt;enumeration value="Expired"/&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="Lost"/&gt;
+ *     &lt;enumeration value="Init"/&gt;
+ *     &lt;enumeration value="Holdover"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

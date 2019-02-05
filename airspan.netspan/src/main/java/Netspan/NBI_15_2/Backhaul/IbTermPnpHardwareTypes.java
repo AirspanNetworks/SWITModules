@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="IbTermPnpHardwareTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="IBridge400"/>
- *     &lt;enumeration value="IBridge450"/>
- *     &lt;enumeration value="IBridge460"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="IbTermPnpHardwareTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="IBridge400"/&gt;
+ *     &lt;enumeration value="IBridge450"/&gt;
+ *     &lt;enumeration value="IBridge460"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

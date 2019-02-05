@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="DpdActions">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="None"/>
- *     &lt;enumeration value="Clear"/>
- *     &lt;enumeration value="Hold"/>
- *     &lt;enumeration value="Restart"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="DpdActions"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="None"/&gt;
+ *     &lt;enumeration value="Clear"/&gt;
+ *     &lt;enumeration value="Hold"/&gt;
+ *     &lt;enumeration value="Restart"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

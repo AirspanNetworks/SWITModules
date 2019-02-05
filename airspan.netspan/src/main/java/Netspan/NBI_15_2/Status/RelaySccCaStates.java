@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="RelaySccCaStates">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Deconfigured"/>
- *     &lt;enumeration value="ConfiguredDeactivated"/>
- *     &lt;enumeration value="ConfiguredActivated"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="RelaySccCaStates"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Deconfigured"/&gt;
+ *     &lt;enumeration value="ConfiguredDeactivated"/&gt;
+ *     &lt;enumeration value="ConfiguredActivated"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

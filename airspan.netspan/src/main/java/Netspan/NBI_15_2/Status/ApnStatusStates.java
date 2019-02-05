@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ApnStatusStates">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Idle"/>
- *     &lt;enumeration value="Pending"/>
- *     &lt;enumeration value="Setup"/>
- *     &lt;enumeration value="Release"/>
- *     &lt;enumeration value="Active"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ApnStatusStates"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Idle"/&gt;
+ *     &lt;enumeration value="Pending"/&gt;
+ *     &lt;enumeration value="Setup"/&gt;
+ *     &lt;enumeration value="Release"/&gt;
+ *     &lt;enumeration value="Active"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

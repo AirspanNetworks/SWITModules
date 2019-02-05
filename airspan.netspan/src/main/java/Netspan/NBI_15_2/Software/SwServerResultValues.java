@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SwServerResultValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="OK"/>
- *     &lt;enumeration value="SwServerNotFound"/>
- *     &lt;enumeration value="SwServerError"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="SwServerResultValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="OK"/&gt;
+ *     &lt;enumeration value="SwServerNotFound"/&gt;
+ *     &lt;enumeration value="SwServerError"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -14,22 +14,22 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="CellRadioInterfaceWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="PcchnBIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PcchnB" type="{http://Airspan.Netspan.WebServices}PcchnBType" minOccurs="0"/>
- *         &lt;element name="PdschPaIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PdschPa" type="{http://Airspan.Netspan.WebServices}PdschPaType" minOccurs="0"/>
- *         &lt;element name="PdschPbIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PdschPb" type="{http://Airspan.Netspan.WebServices}PdschPbType" minOccurs="0"/>
- *         &lt;element name="FilterCoefficientIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FilterCoefficient" type="{http://Airspan.Netspan.WebServices}FilterCoefficientType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="CellRadioInterfaceWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="PcchnBIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PcchnB" type="{http://Airspan.Netspan.WebServices}PcchnBType" minOccurs="0"/&gt;
+ *         &lt;element name="PdschPaIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PdschPa" type="{http://Airspan.Netspan.WebServices}PdschPaType" minOccurs="0"/&gt;
+ *         &lt;element name="PdschPbIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PdschPb" type="{http://Airspan.Netspan.WebServices}PdschPbType" minOccurs="0"/&gt;
+ *         &lt;element name="FilterCoefficientIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FilterCoefficient" type="{http://Airspan.Netspan.WebServices}FilterCoefficientType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

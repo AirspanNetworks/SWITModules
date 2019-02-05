@@ -17,55 +17,64 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Eci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Earfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Band" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Pci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LteBandwidth" type="{http://Airspan.Netspan.WebServices}BandwidthValues" minOccurs="0"/>
- *         &lt;element name="Tac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SccCaState" type="{http://Airspan.Netspan.WebServices}RelaySccCaStates" minOccurs="0"/>
- *         &lt;element name="SccBand" type="{http://Airspan.Netspan.WebServices}RelayBands" minOccurs="0"/>
- *         &lt;element name="SccBandwidth" type="{http://Airspan.Netspan.WebServices}RelaySccBandwidths" minOccurs="0"/>
- *         &lt;element name="SccPci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SccEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RelayState" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Imsi" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Imei" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SupportedBands" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UsedBands" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="P1CdclUsedStatus" type="{http://Airspan.Netspan.WebServices}P1CdclUsed" minOccurs="0"/>
- *         &lt;element name="P1CdclStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="P1PdclUsedStatus" type="{http://Airspan.Netspan.WebServices}P1PdclUsed" minOccurs="0"/>
- *         &lt;element name="P1PdclStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ScanStart" type="{http://Airspan.Netspan.WebServices}ScanStartStatus" minOccurs="0"/>
- *         &lt;element name="ScanStartInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="LastScanStartTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="IsEnbConnected" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="LogicalAngle" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="HeadingAngle" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Rsrq" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Rsrp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Rssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Sinr" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="RadioTxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DonorEnbQuality" type="{http://Airspan.Netspan.WebServices}DonorEnbQuality" minOccurs="0"/>
- *         &lt;element name="DonorEnbQualityInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RankIndicator" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SpectralEfficiency" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="Drm" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="APNs" type="{http://Airspan.Netspan.WebServices}RelayApnList" minOccurs="0"/>
- *         &lt;element name="ConnectedDevices" type="{http://Airspan.Netspan.WebServices}RelayConnectedDevicesList" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Mcc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Mnc" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Eci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Earfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Band" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Pci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LteBandwidth" type="{http://Airspan.Netspan.WebServices}BandwidthValues" minOccurs="0"/&gt;
+ *         &lt;element name="Tac" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SccCaState" type="{http://Airspan.Netspan.WebServices}RelaySccCaStates" minOccurs="0"/&gt;
+ *         &lt;element name="SccBand" type="{http://Airspan.Netspan.WebServices}RelayBands" minOccurs="0"/&gt;
+ *         &lt;element name="SccBandwidth" type="{http://Airspan.Netspan.WebServices}RelaySccBandwidths" minOccurs="0"/&gt;
+ *         &lt;element name="SccPci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SccEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RelayState" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Imsi" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Imei" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SupportedBands" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UsedBands" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="P1CdclUsedStatus" type="{http://Airspan.Netspan.WebServices}P1CdclUsed" minOccurs="0"/&gt;
+ *         &lt;element name="P1CdclStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="P1PdclUsedStatus" type="{http://Airspan.Netspan.WebServices}P1PdclUsed" minOccurs="0"/&gt;
+ *         &lt;element name="P1PdclStatusInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ScanStart" type="{http://Airspan.Netspan.WebServices}ScanStartStatus" minOccurs="0"/&gt;
+ *         &lt;element name="ScanStartInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="LastScanStartTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *         &lt;element name="IsEnbConnected" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="LogicalAngle" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="HeadingAngle" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrq" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Sinr" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *         &lt;element name="RadioTxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DonorEnbQuality" type="{http://Airspan.Netspan.WebServices}DonorEnbQuality" minOccurs="0"/&gt;
+ *         &lt;element name="DonorEnbQualityInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RankIndicator" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SpectralEfficiency" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *         &lt;element name="Drm" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Pci1" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrp1" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrq1" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Pci2" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrp2" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrq2" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Pci3" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrp3" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Rsrq3" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="APNs" type="{http://Airspan.Netspan.WebServices}RelayApnList" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedDevices" type="{http://Airspan.Netspan.WebServices}RelayConnectedDevicesList" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -111,6 +120,15 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "rankIndicator",
     "spectralEfficiency",
     "drm",
+    "pci1",
+    "rsrp1",
+    "rsrq1",
+    "pci2",
+    "rsrp2",
+    "rsrq2",
+    "pci3",
+    "rsrp3",
+    "rsrq3",
     "apNs",
     "connectedDevices"
 })
@@ -194,6 +212,24 @@ public class RelayStatusWs {
     protected JAXBElement<Double> spectralEfficiency;
     @XmlElementRef(name = "Drm", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> drm;
+    @XmlElementRef(name = "Pci1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> pci1;
+    @XmlElementRef(name = "Rsrp1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrp1;
+    @XmlElementRef(name = "Rsrq1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrq1;
+    @XmlElementRef(name = "Pci2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> pci2;
+    @XmlElementRef(name = "Rsrp2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrp2;
+    @XmlElementRef(name = "Rsrq2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrq2;
+    @XmlElementRef(name = "Pci3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> pci3;
+    @XmlElementRef(name = "Rsrp3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrp3;
+    @XmlElementRef(name = "Rsrq3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> rsrq3;
     @XmlElement(name = "APNs")
     protected RelayApnList apNs;
     @XmlElement(name = "ConnectedDevices")
@@ -1133,6 +1169,222 @@ public class RelayStatusWs {
      */
     public void setDrm(JAXBElement<BigDecimal> value) {
         this.drm = value;
+    }
+
+    /**
+     * Gets the value of the pci1 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getPci1() {
+        return pci1;
+    }
+
+    /**
+     * Sets the value of the pci1 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setPci1(JAXBElement<Integer> value) {
+        this.pci1 = value;
+    }
+
+    /**
+     * Gets the value of the rsrp1 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrp1() {
+        return rsrp1;
+    }
+
+    /**
+     * Sets the value of the rsrp1 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrp1(JAXBElement<BigDecimal> value) {
+        this.rsrp1 = value;
+    }
+
+    /**
+     * Gets the value of the rsrq1 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrq1() {
+        return rsrq1;
+    }
+
+    /**
+     * Sets the value of the rsrq1 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrq1(JAXBElement<BigDecimal> value) {
+        this.rsrq1 = value;
+    }
+
+    /**
+     * Gets the value of the pci2 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getPci2() {
+        return pci2;
+    }
+
+    /**
+     * Sets the value of the pci2 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setPci2(JAXBElement<Integer> value) {
+        this.pci2 = value;
+    }
+
+    /**
+     * Gets the value of the rsrp2 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrp2() {
+        return rsrp2;
+    }
+
+    /**
+     * Sets the value of the rsrp2 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrp2(JAXBElement<BigDecimal> value) {
+        this.rsrp2 = value;
+    }
+
+    /**
+     * Gets the value of the rsrq2 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrq2() {
+        return rsrq2;
+    }
+
+    /**
+     * Sets the value of the rsrq2 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrq2(JAXBElement<BigDecimal> value) {
+        this.rsrq2 = value;
+    }
+
+    /**
+     * Gets the value of the pci3 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getPci3() {
+        return pci3;
+    }
+
+    /**
+     * Sets the value of the pci3 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setPci3(JAXBElement<Integer> value) {
+        this.pci3 = value;
+    }
+
+    /**
+     * Gets the value of the rsrp3 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrp3() {
+        return rsrp3;
+    }
+
+    /**
+     * Sets the value of the rsrp3 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrp3(JAXBElement<BigDecimal> value) {
+        this.rsrp3 = value;
+    }
+
+    /**
+     * Gets the value of the rsrq3 property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getRsrq3() {
+        return rsrq3;
+    }
+
+    /**
+     * Sets the value of the rsrq3 property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setRsrq3(JAXBElement<BigDecimal> value) {
+        this.rsrq3 = value;
     }
 
     /**

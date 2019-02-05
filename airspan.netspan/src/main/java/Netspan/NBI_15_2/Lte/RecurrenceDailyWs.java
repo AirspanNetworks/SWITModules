@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RecurrenceDailyWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="SelectedOption" type="{http://Airspan.Netspan.WebServices}CallTraceRecurrenceOptions" minOccurs="0"/>
- *         &lt;element name="DailyOption1" type="{http://Airspan.Netspan.WebServices}DailyOption1" minOccurs="0"/>
- *         &lt;element name="DailyOption2" type="{http://Airspan.Netspan.WebServices}DailyOption2" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RecurrenceDailyWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="SelectedOption" type="{http://Airspan.Netspan.WebServices}CallTraceRecurrenceOptions" minOccurs="0"/&gt;
+ *         &lt;element name="DailyOption1" type="{http://Airspan.Netspan.WebServices}DailyOption1" minOccurs="0"/&gt;
+ *         &lt;element name="DailyOption2" type="{http://Airspan.Netspan.WebServices}DailyOption2" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

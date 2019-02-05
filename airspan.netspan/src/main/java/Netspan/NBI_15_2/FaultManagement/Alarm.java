@@ -16,25 +16,25 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Alarm">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AlarmId" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/>
- *         &lt;element name="AlarmType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AlarmTypeId" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/>
- *         &lt;element name="AlarmSource" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AlarmInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Severity" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="FirstReceived" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="LastReceived" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="AlarmCount" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="Acknowledged" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
- *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Alarm"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AlarmId" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/&gt;
+ *         &lt;element name="AlarmType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AlarmTypeId" type="{http://www.w3.org/2001/XMLSchema}unsignedLong"/&gt;
+ *         &lt;element name="AlarmSource" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AlarmInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Severity" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="FirstReceived" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="LastReceived" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="AlarmCount" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="Acknowledged" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
+ *         &lt;element name="UserName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

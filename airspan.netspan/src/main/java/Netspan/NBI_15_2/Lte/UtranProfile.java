@@ -18,28 +18,28 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="UtranProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="UtranEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PrimaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PrimaryDuplexMode" type="{http://Airspan.Netspan.WebServices}UtranDuplexModes" minOccurs="0"/>
- *         &lt;element name="PrimaryArfcnBand" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SecondaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SecondaryDuplexMode" type="{http://Airspan.Netspan.WebServices}UtranDuplexModes" minOccurs="0"/>
- *         &lt;element name="SecondaryArfcnBand" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="GeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="GeranPrimaryArfcnBand" type="{http://Airspan.Netspan.WebServices}GeranBands" minOccurs="0"/>
- *         &lt;element name="GeranPrimaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="GeranSecondaryArfcnBand" type="{http://Airspan.Netspan.WebServices}GeranBands" minOccurs="0"/>
- *         &lt;element name="GeranSecondaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="UtranProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="UtranEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PrimaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PrimaryDuplexMode" type="{http://Airspan.Netspan.WebServices}UtranDuplexModes" minOccurs="0"/&gt;
+ *         &lt;element name="PrimaryArfcnBand" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SecondaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SecondaryDuplexMode" type="{http://Airspan.Netspan.WebServices}UtranDuplexModes" minOccurs="0"/&gt;
+ *         &lt;element name="SecondaryArfcnBand" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="GeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="GeranPrimaryArfcnBand" type="{http://Airspan.Netspan.WebServices}GeranBands" minOccurs="0"/&gt;
+ *         &lt;element name="GeranPrimaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="GeranSecondaryArfcnBand" type="{http://Airspan.Netspan.WebServices}GeranBands" minOccurs="0"/&gt;
+ *         &lt;element name="GeranSecondaryArfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

@@ -15,24 +15,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IBridgeTermRfStatusWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TotalCombinedConfiguredTxPower" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FemStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FemStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TiltStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="TiltAngle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AntennaType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ConfiguredChannels" type="{http://Airspan.Netspan.WebServices}IBridgeTermChannelProfile" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ActiveChannel" type="{http://Airspan.Netspan.WebServices}IBridgeTermActiveChannel" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ScannedChannels" type="{http://Airspan.Netspan.WebServices}IBridgeTermScannedChannel" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="RxNulling" type="{http://Airspan.Netspan.WebServices}IBridgeTermRxNulling" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IBridgeTermRfStatusWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TotalCombinedConfiguredTxPower" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FemStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FemStatusInformation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TiltStatus" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="TiltAngle" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ConfiguredChannels" type="{http://Airspan.Netspan.WebServices}IBridgeTermChannelProfile" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveChannel" type="{http://Airspan.Netspan.WebServices}IBridgeTermActiveChannel" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="ScannedChannels" type="{http://Airspan.Netspan.WebServices}IBridgeTermScannedChannel" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="RxNulling" type="{http://Airspan.Netspan.WebServices}IBridgeTermRxNulling" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

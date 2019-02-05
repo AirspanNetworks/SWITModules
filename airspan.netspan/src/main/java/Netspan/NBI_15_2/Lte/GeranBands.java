@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="GeranBands">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="gsm850"/>
- *     &lt;enumeration value="gsm900"/>
- *     &lt;enumeration value="dcs1800"/>
- *     &lt;enumeration value="pcs1900"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="GeranBands"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="gsm850"/&gt;
+ *     &lt;enumeration value="gsm900"/&gt;
+ *     &lt;enumeration value="dcs1800"/&gt;
+ *     &lt;enumeration value="pcs1900"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

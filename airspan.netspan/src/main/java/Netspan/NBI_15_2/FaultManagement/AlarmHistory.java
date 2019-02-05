@@ -1,9 +1,11 @@
 
 package Netspan.NBI_15_2.FaultManagement;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -15,27 +17,27 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="AlarmHistory">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AlarmId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="AlarmTypeId" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="AlarmType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceType" type="{http://Airspan.Netspan.WebServices}SourceType"/>
- *         &lt;element name="SourceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceIfIndex" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="SourceMacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SourceUniqueId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AlarmInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Severity" type="{http://Airspan.Netspan.WebServices}Severity"/>
- *         &lt;element name="ChangeType" type="{http://Airspan.Netspan.WebServices}AlarmHistoryChangeType"/>
- *         &lt;element name="ChangeTime" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="AlarmHistory"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AlarmId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AlarmTypeId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AlarmType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceType" type="{http://Airspan.Netspan.WebServices}SourceType" minOccurs="0"/&gt;
+ *         &lt;element name="SourceName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceIfIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SourceMacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SourceUniqueId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AlarmInfo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Severity" type="{http://Airspan.Netspan.WebServices}Severity"/&gt;
+ *         &lt;element name="ChangeType" type="{http://Airspan.Netspan.WebServices}AlarmHistoryChangeType"/&gt;
+ *         &lt;element name="ChangeTime" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -58,20 +60,20 @@ import javax.xml.datatype.XMLGregorianCalendar;
 })
 public class AlarmHistory {
 
-    @XmlElement(name = "AlarmId", required = true, type = Integer.class, nillable = true)
-    protected Integer alarmId;
-    @XmlElement(name = "AlarmTypeId", required = true, type = Integer.class, nillable = true)
-    protected Integer alarmTypeId;
+    @XmlElementRef(name = "AlarmId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> alarmId;
+    @XmlElementRef(name = "AlarmTypeId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> alarmTypeId;
     @XmlElement(name = "AlarmType")
     protected String alarmType;
-    @XmlElement(name = "SourceType", required = true, nillable = true)
-    protected String sourceType;
+    @XmlElementRef(name = "SourceType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> sourceType;
     @XmlElement(name = "SourceName")
     protected String sourceName;
     @XmlElement(name = "SourceId")
     protected String sourceId;
-    @XmlElement(name = "SourceIfIndex", required = true, type = Integer.class, nillable = true)
-    protected Integer sourceIfIndex;
+    @XmlElementRef(name = "SourceIfIndex", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> sourceIfIndex;
     @XmlElement(name = "SourceMacAddress")
     protected String sourceMacAddress;
     @XmlElement(name = "SourceUniqueId")
@@ -84,19 +86,18 @@ public class AlarmHistory {
     @XmlElement(name = "ChangeType", required = true)
     @XmlSchemaType(name = "string")
     protected AlarmHistoryChangeType changeType;
-    @XmlElement(name = "ChangeTime", required = true, nillable = true)
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar changeTime;
+    @XmlElementRef(name = "ChangeTime", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<XMLGregorianCalendar> changeTime;
 
     /**
      * Gets the value of the alarmId property.
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getAlarmId() {
+    public JAXBElement<Integer> getAlarmId() {
         return alarmId;
     }
 
@@ -105,10 +106,10 @@ public class AlarmHistory {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setAlarmId(Integer value) {
+    public void setAlarmId(JAXBElement<Integer> value) {
         this.alarmId = value;
     }
 
@@ -117,10 +118,10 @@ public class AlarmHistory {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getAlarmTypeId() {
+    public JAXBElement<Integer> getAlarmTypeId() {
         return alarmTypeId;
     }
 
@@ -129,10 +130,10 @@ public class AlarmHistory {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setAlarmTypeId(Integer value) {
+    public void setAlarmTypeId(JAXBElement<Integer> value) {
         this.alarmTypeId = value;
     }
 
@@ -165,10 +166,10 @@ public class AlarmHistory {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getSourceType() {
+    public JAXBElement<String> getSourceType() {
         return sourceType;
     }
 
@@ -177,10 +178,10 @@ public class AlarmHistory {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setSourceType(String value) {
+    public void setSourceType(JAXBElement<String> value) {
         this.sourceType = value;
     }
 
@@ -237,10 +238,10 @@ public class AlarmHistory {
      * 
      * @return
      *     possible object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public Integer getSourceIfIndex() {
+    public JAXBElement<Integer> getSourceIfIndex() {
         return sourceIfIndex;
     }
 
@@ -249,10 +250,10 @@ public class AlarmHistory {
      * 
      * @param value
      *     allowed object is
-     *     {@link Integer }
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setSourceIfIndex(Integer value) {
+    public void setSourceIfIndex(JAXBElement<Integer> value) {
         this.sourceIfIndex = value;
     }
 
@@ -381,10 +382,10 @@ public class AlarmHistory {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public XMLGregorianCalendar getChangeTime() {
+    public JAXBElement<XMLGregorianCalendar> getChangeTime() {
         return changeTime;
     }
 
@@ -393,10 +394,10 @@ public class AlarmHistory {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link JAXBElement }{@code <}{@link XMLGregorianCalendar }{@code >}
      *     
      */
-    public void setChangeTime(XMLGregorianCalendar value) {
+    public void setChangeTime(JAXBElement<XMLGregorianCalendar> value) {
         this.changeTime = value;
     }
 

@@ -9,8 +9,6 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
-
 
 /**
  * <p>Java class for EnbMobilityProfileParams complex type.
@@ -18,38 +16,38 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbMobilityProfileParams">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="IdleModeIntraFrequency" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeIntraFreq" minOccurs="0"/>
- *         &lt;element name="IdleModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterFreq" minOccurs="0"/>
- *         &lt;element name="IdleModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterBandListContainer" minOccurs="0"/>
- *         &lt;element name="IdleModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterEarfcnListContainer" minOccurs="0"/>
- *         &lt;element name="ConnectedModeIntraFrequency" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreq" minOccurs="0"/>
- *         &lt;element name="ConnectedModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeInterFreq" minOccurs="0"/>
- *         &lt;element name="ConnectedModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeBandListContainer" minOccurs="0"/>
- *         &lt;element name="ConnectedModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreqListContainer" minOccurs="0"/>
- *         &lt;element name="IsQosBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="ConnectedModeQos" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeQosFreq" minOccurs="0"/>
- *         &lt;element name="IsThresholdBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="ConnectedModeThresholdTriggerGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeTriggerGaps" minOccurs="0"/>
- *         &lt;element name="ConnectedModeThresholdStopGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeStopGaps" minOccurs="0"/>
- *         &lt;element name="IsInterRatUtranCoverageBasedRedirectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterRatUtranCoverageBasedRedirection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranCoverageRedirection" minOccurs="0"/>
- *         &lt;element name="FwdHoEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="IsInterRatUtranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterRatUtranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranReselection" minOccurs="0"/>
- *         &lt;element name="IsInterRatGeranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterRatGeranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatGeranReselection" minOccurs="0"/>
- *         &lt;element name="CsfbEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="CsfbUtranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="CsfbCdma2kEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="CsfbGeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbMobilityProfileParams"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="IdleModeIntraFrequency" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeIntraFreq" minOccurs="0"/&gt;
+ *         &lt;element name="IdleModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterFreq" minOccurs="0"/&gt;
+ *         &lt;element name="IdleModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterBandListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="IdleModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterEarfcnListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeIntraFrequency" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreq" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeInterFreq" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeBandListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreqListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeQos" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeQosFreq" minOccurs="0"/&gt;
+ *         &lt;element name="IsThresholdBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeThresholdTriggerGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeTriggerGaps" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedModeThresholdStopGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeStopGaps" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatUtranCoverageBasedRedirectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterRatUtranCoverageBasedRedirection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranCoverageRedirection" minOccurs="0"/&gt;
+ *         &lt;element name="FwdHoEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatUtranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterRatUtranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranReselection" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatGeranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterRatGeranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatGeranReselection" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbUtranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbCdma2kEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbGeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -103,37 +101,37 @@ public class EnbMobilityProfileParams {
     @XmlElement(name = "ConnectedModeInterFrequencyPerEarfcnList")
     protected MobilityConnectedModeFreqListContainer connectedModeInterFrequencyPerEarfcnList;
     @XmlElementRef(name = "IsQosBasedMeasurementEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isQosBasedMeasurementEnabled;
+    protected JAXBElement<EnabledStates> isQosBasedMeasurementEnabled;
     @XmlElement(name = "ConnectedModeQos")
     protected MobilityConnectedModeQosFreq connectedModeQos;
     @XmlElementRef(name = "IsThresholdBasedMeasurementEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isThresholdBasedMeasurementEnabled;
+    protected JAXBElement<EnabledStates> isThresholdBasedMeasurementEnabled;
     @XmlElement(name = "ConnectedModeThresholdTriggerGaps")
     protected MobilityConnectedModeTriggerGaps connectedModeThresholdTriggerGaps;
     @XmlElement(name = "ConnectedModeThresholdStopGaps")
     protected MobilityConnectedModeStopGaps connectedModeThresholdStopGaps;
     @XmlElementRef(name = "IsInterRatUtranCoverageBasedRedirectionModeEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isInterRatUtranCoverageBasedRedirectionModeEnabled;
+    protected JAXBElement<EnabledStates> isInterRatUtranCoverageBasedRedirectionModeEnabled;
     @XmlElement(name = "InterRatUtranCoverageBasedRedirection")
     protected MobilityInterRatUtranCoverageRedirection interRatUtranCoverageBasedRedirection;
     @XmlElementRef(name = "FwdHoEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> fwdHoEnabled;
+    protected JAXBElement<EnabledStates> fwdHoEnabled;
     @XmlElementRef(name = "IsInterRatUtranReselectionModeEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isInterRatUtranReselectionModeEnabled;
+    protected JAXBElement<EnabledStates> isInterRatUtranReselectionModeEnabled;
     @XmlElement(name = "InterRatUtranReselection")
     protected MobilityInterRatUtranReselection interRatUtranReselection;
     @XmlElementRef(name = "IsInterRatGeranReselectionModeEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isInterRatGeranReselectionModeEnabled;
+    protected JAXBElement<EnabledStates> isInterRatGeranReselectionModeEnabled;
     @XmlElement(name = "InterRatGeranReselection")
     protected MobilityInterRatGeranReselection interRatGeranReselection;
     @XmlElementRef(name = "CsfbEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbEnabled;
+    protected JAXBElement<EnabledStates> csfbEnabled;
     @XmlElementRef(name = "CsfbUtranEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbUtranEnabled;
+    protected JAXBElement<EnabledStates> csfbUtranEnabled;
     @XmlElementRef(name = "CsfbCdma2kEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbCdma2KEnabled;
+    protected JAXBElement<EnabledStates> csfbCdma2KEnabled;
     @XmlElementRef(name = "CsfbGeranEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbGeranEnabled;
+    protected JAXBElement<EnabledStates> csfbGeranEnabled;
 
     /**
      * Gets the value of the idleModeIntraFrequency property.
@@ -332,10 +330,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsQosBasedMeasurementEnabled() {
+    public JAXBElement<EnabledStates> getIsQosBasedMeasurementEnabled() {
         return isQosBasedMeasurementEnabled;
     }
 
@@ -344,10 +342,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsQosBasedMeasurementEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsQosBasedMeasurementEnabled(JAXBElement<EnabledStates> value) {
         this.isQosBasedMeasurementEnabled = value;
     }
 
@@ -380,10 +378,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsThresholdBasedMeasurementEnabled() {
+    public JAXBElement<EnabledStates> getIsThresholdBasedMeasurementEnabled() {
         return isThresholdBasedMeasurementEnabled;
     }
 
@@ -392,10 +390,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsThresholdBasedMeasurementEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsThresholdBasedMeasurementEnabled(JAXBElement<EnabledStates> value) {
         this.isThresholdBasedMeasurementEnabled = value;
     }
 
@@ -452,10 +450,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsInterRatUtranCoverageBasedRedirectionModeEnabled() {
+    public JAXBElement<EnabledStates> getIsInterRatUtranCoverageBasedRedirectionModeEnabled() {
         return isInterRatUtranCoverageBasedRedirectionModeEnabled;
     }
 
@@ -464,10 +462,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsInterRatUtranCoverageBasedRedirectionModeEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsInterRatUtranCoverageBasedRedirectionModeEnabled(JAXBElement<EnabledStates> value) {
         this.isInterRatUtranCoverageBasedRedirectionModeEnabled = value;
     }
 
@@ -500,10 +498,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getFwdHoEnabled() {
+    public JAXBElement<EnabledStates> getFwdHoEnabled() {
         return fwdHoEnabled;
     }
 
@@ -512,10 +510,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setFwdHoEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setFwdHoEnabled(JAXBElement<EnabledStates> value) {
         this.fwdHoEnabled = value;
     }
 
@@ -524,10 +522,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsInterRatUtranReselectionModeEnabled() {
+    public JAXBElement<EnabledStates> getIsInterRatUtranReselectionModeEnabled() {
         return isInterRatUtranReselectionModeEnabled;
     }
 
@@ -536,10 +534,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsInterRatUtranReselectionModeEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsInterRatUtranReselectionModeEnabled(JAXBElement<EnabledStates> value) {
         this.isInterRatUtranReselectionModeEnabled = value;
     }
 
@@ -572,10 +570,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsInterRatGeranReselectionModeEnabled() {
+    public JAXBElement<EnabledStates> getIsInterRatGeranReselectionModeEnabled() {
         return isInterRatGeranReselectionModeEnabled;
     }
 
@@ -584,10 +582,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsInterRatGeranReselectionModeEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsInterRatGeranReselectionModeEnabled(JAXBElement<EnabledStates> value) {
         this.isInterRatGeranReselectionModeEnabled = value;
     }
 
@@ -620,10 +618,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbEnabled() {
+    public JAXBElement<EnabledStates> getCsfbEnabled() {
         return csfbEnabled;
     }
 
@@ -632,10 +630,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbEnabled(JAXBElement<EnabledStates> value) {
         this.csfbEnabled = value;
     }
 
@@ -644,10 +642,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbUtranEnabled() {
+    public JAXBElement<EnabledStates> getCsfbUtranEnabled() {
         return csfbUtranEnabled;
     }
 
@@ -656,10 +654,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbUtranEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbUtranEnabled(JAXBElement<EnabledStates> value) {
         this.csfbUtranEnabled = value;
     }
 
@@ -668,10 +666,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbCdma2KEnabled() {
+    public JAXBElement<EnabledStates> getCsfbCdma2KEnabled() {
         return csfbCdma2KEnabled;
     }
 
@@ -680,10 +678,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbCdma2KEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbCdma2KEnabled(JAXBElement<EnabledStates> value) {
         this.csfbCdma2KEnabled = value;
     }
 
@@ -692,10 +690,10 @@ public class EnbMobilityProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbGeranEnabled() {
+    public JAXBElement<EnabledStates> getCsfbGeranEnabled() {
         return csfbGeranEnabled;
     }
 
@@ -704,10 +702,10 @@ public class EnbMobilityProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbGeranEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbGeranEnabled(JAXBElement<EnabledStates> value) {
         this.csfbGeranEnabled = value;
     }
 

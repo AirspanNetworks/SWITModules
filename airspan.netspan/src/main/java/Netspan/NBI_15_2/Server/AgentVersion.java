@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AgentVersion">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Version 2C"/>
- *     &lt;enumeration value="Version 3"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AgentVersion"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="v2C"/&gt;
+ *     &lt;enumeration value="v3"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -25,10 +25,10 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum AgentVersion {
 
-    @XmlEnumValue("Version 2C")
-    VERSION_2_C("Version 2C"),
-    @XmlEnumValue("Version 3")
-    VERSION_3("Version 3");
+    @XmlEnumValue("v2C")
+    V_2_C("v2C"),
+    @XmlEnumValue("v3")
+    V_3("v3");
     private final String value;
 
     AgentVersion(String v) {

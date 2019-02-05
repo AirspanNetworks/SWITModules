@@ -12,20 +12,20 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="VoLTEPeriodicity">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="P10"/>
- *     &lt;enumeration value="P20"/>
- *     &lt;enumeration value="P30"/>
- *     &lt;enumeration value="P40"/>
- *     &lt;enumeration value="P50"/>
- *     &lt;enumeration value="P60"/>
- *     &lt;enumeration value="P70"/>
- *     &lt;enumeration value="P80"/>
- *     &lt;enumeration value="P90"/>
- *     &lt;enumeration value="P100"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="VoLTEPeriodicity"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="P10"/&gt;
+ *     &lt;enumeration value="P20"/&gt;
+ *     &lt;enumeration value="P30"/&gt;
+ *     &lt;enumeration value="P40"/&gt;
+ *     &lt;enumeration value="P50"/&gt;
+ *     &lt;enumeration value="P60"/&gt;
+ *     &lt;enumeration value="P70"/&gt;
+ *     &lt;enumeration value="P80"/&gt;
+ *     &lt;enumeration value="P90"/&gt;
+ *     &lt;enumeration value="P100"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

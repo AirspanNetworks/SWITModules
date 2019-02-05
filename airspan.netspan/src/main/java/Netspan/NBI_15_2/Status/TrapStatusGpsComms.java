@@ -12,14 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="TrapStatusGpsComms">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Unknown"/>
- *     &lt;enumeration value="Active"/>
- *     &lt;enumeration value="Inactive"/>
- *     &lt;enumeration value="Resetting"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="TrapStatusGpsComms"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
+ *     &lt;enumeration value="Active"/&gt;
+ *     &lt;enumeration value="Inactive"/&gt;
+ *     &lt;enumeration value="Resetting"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

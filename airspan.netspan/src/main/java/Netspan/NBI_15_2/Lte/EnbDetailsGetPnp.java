@@ -22,90 +22,90 @@ import Netspan.API.Enums.X2ControlStateTypes;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbDetailsGetPnp">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Hardware" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ENodeBID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AdvancedConfigProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="NetworkProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SyncProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CustomSyncProfileParameters" type="{http://Airspan.Netspan.WebServices}EnbSyncProfileParams" minOccurs="0"/>
- *         &lt;element name="SecurityProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SonProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ManagementProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MultiCellProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CellToUse" type="{http://Airspan.Netspan.WebServices}CellToUseValues" minOccurs="0"/>
- *         &lt;element name="Min20MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Max20MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Min40MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Max40MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LteCell" type="{http://Airspan.Netspan.WebServices}LteCellGetWs" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="ActiveAntenna" type="{http://Airspan.Netspan.WebServices}ActiveAntenna" minOccurs="0"/>
- *         &lt;element name="LongSbaEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="LongAntennaBeam" type="{http://Airspan.Netspan.WebServices}SupportedAntennaBeams" minOccurs="0"/>
- *         &lt;element name="LongAntenna45" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/>
- *         &lt;element name="LongAntenna135" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/>
- *         &lt;element name="LongAntenna225" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/>
- *         &lt;element name="LongAntenna315" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForManagement" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="ManagementIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ManagementSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsS1CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForS1C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="S1CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="S1CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsS1UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForS1U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="S1UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="S1USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsX2CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForX2C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="X2CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="X2CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsX2UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForX2U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="X2UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="X2USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsCallTraceInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForCallTrace" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="CallTraceIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CallTraceSubNetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsPtpSlaveInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForPtpSlave" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="PtpSlaveIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PtpSlaveSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsCSonServerInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForCSonServer" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="CSonServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CSonServerSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsM2InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForM2" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="M2IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="M2SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsM1InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="InterfaceToUseForM1" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/>
- *         &lt;element name="M1IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="M1SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IpRouteList" type="{http://Airspan.Netspan.WebServices}IpRouteListContainer" minOccurs="0"/>
- *         &lt;element name="IsAutoX2ControlForNeighboursEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="IsX2ConfigurationUpdateForNeighboursEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DefaultX2ControlStateForNeighbours" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/>
- *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}LedModeValues" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbDetailsGetPnp"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Hardware" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ENodeBID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AdvancedConfigProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NetworkProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SyncProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CustomSyncProfileParameters" type="{http://Airspan.Netspan.WebServices}EnbSyncProfileParams" minOccurs="0"/&gt;
+ *         &lt;element name="SecurityProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SonProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ManagementProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MultiCellProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CellToUse" type="{http://Airspan.Netspan.WebServices}CellToUseValues" minOccurs="0"/&gt;
+ *         &lt;element name="Min20MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Max20MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Min40MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Max40MHzChannel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LteCell" type="{http://Airspan.Netspan.WebServices}LteCellGetWs" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="ActiveAntenna" type="{http://Airspan.Netspan.WebServices}ActiveAntenna" minOccurs="0"/&gt;
+ *         &lt;element name="LongSbaEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LongAntennaBeam" type="{http://Airspan.Netspan.WebServices}SupportedAntennaBeams" minOccurs="0"/&gt;
+ *         &lt;element name="LongAntenna45" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/&gt;
+ *         &lt;element name="LongAntenna135" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/&gt;
+ *         &lt;element name="LongAntenna225" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/&gt;
+ *         &lt;element name="LongAntenna315" type="{http://Airspan.Netspan.WebServices}ActiveValues" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForManagement" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="ManagementIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ManagementSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForS1C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="S1CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="S1CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForS1U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="S1UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="S1USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForX2C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="X2CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="X2CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForX2U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="X2UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="X2USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsCallTraceInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForCallTrace" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CallTraceSubNetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsPtpSlaveInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForPtpSlave" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="PtpSlaveIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PtpSlaveSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsCSonServerInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForCSonServer" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="CSonServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CSonServerSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsM2InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForM2" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="M2IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="M2SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsM1InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterfaceToUseForM1" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="M1IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="M1SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IpRouteList" type="{http://Airspan.Netspan.WebServices}IpRouteListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="IsAutoX2ControlForNeighboursEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2ConfigurationUpdateForNeighboursEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DefaultX2ControlStateForNeighbours" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes" minOccurs="0"/&gt;
+ *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}LedModeValues" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

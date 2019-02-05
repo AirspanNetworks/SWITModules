@@ -18,21 +18,22 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayDetailsParams">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ManagementModeOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RelayProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsPdclLocked" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="Pdcl" type="{http://Airspan.Netspan.WebServices}PdclList" minOccurs="0"/>
- *         &lt;element name="AllowedBands" type="{http://Airspan.Netspan.WebServices}AllowedBandWs" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayDetailsParams"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ManagementModeOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RelayProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsPdclLocked" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Pdcl" type="{http://Airspan.Netspan.WebServices}PdclList" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedBandsPriority" type="{http://Airspan.Netspan.WebServices}BandPriorityValuesWs" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedBands" type="{http://Airspan.Netspan.WebServices}AllowedBandWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,6 +46,7 @@ import Netspan.API.Enums.EnabledDisabledStates;
     "isPdclLocked",
     "ledMode",
     "pdcl",
+    "allowedBandsPriority",
     "allowedBands"
 })
 @XmlSeeAlso({
@@ -64,6 +66,8 @@ public class RelayDetailsParams {
     protected JAXBElement<EnabledDisabledStates> ledMode;
     @XmlElement(name = "Pdcl")
     protected PdclList pdcl;
+    @XmlElementRef(name = "AllowedBandsPriority", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BandPriorityValuesWs> allowedBandsPriority;
     @XmlElement(name = "AllowedBands")
     protected AllowedBandWs allowedBands;
 
@@ -209,6 +213,30 @@ public class RelayDetailsParams {
      */
     public void setPdcl(PdclList value) {
         this.pdcl = value;
+    }
+
+    /**
+     * Gets the value of the allowedBandsPriority property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BandPriorityValuesWs }{@code >}
+     *     
+     */
+    public JAXBElement<BandPriorityValuesWs> getAllowedBandsPriority() {
+        return allowedBandsPriority;
+    }
+
+    /**
+     * Sets the value of the allowedBandsPriority property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BandPriorityValuesWs }{@code >}
+     *     
+     */
+    public void setAllowedBandsPriority(JAXBElement<BandPriorityValuesWs> value) {
+        this.allowedBandsPriority = value;
     }
 
     /**

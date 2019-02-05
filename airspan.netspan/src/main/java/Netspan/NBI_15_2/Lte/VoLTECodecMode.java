@@ -12,19 +12,19 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="VoLTECodecMode">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="M0"/>
- *     &lt;enumeration value="M1"/>
- *     &lt;enumeration value="M2"/>
- *     &lt;enumeration value="M3"/>
- *     &lt;enumeration value="M4"/>
- *     &lt;enumeration value="M5"/>
- *     &lt;enumeration value="M6"/>
- *     &lt;enumeration value="M7"/>
- *     &lt;enumeration value="M8"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="VoLTECodecMode"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="M0"/&gt;
+ *     &lt;enumeration value="M1"/&gt;
+ *     &lt;enumeration value="M2"/&gt;
+ *     &lt;enumeration value="M3"/&gt;
+ *     &lt;enumeration value="M4"/&gt;
+ *     &lt;enumeration value="M5"/&gt;
+ *     &lt;enumeration value="M6"/&gt;
+ *     &lt;enumeration value="M7"/&gt;
+ *     &lt;enumeration value="M8"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

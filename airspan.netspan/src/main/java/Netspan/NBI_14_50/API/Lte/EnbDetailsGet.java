@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.EnabledDisabledStates;
-import Netspan.API.Enums.NodeManagementModeType;
+import Netspan.API.Enums.NodeManagementModes;
 import Netspan.API.Enums.X2ControlStateTypes;
 import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
 
@@ -164,7 +164,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "Description")
     protected String description;
     @XmlElementRef(name = "ManagedMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<NodeManagementModeType> managedMode;
+    protected JAXBElement<NodeManagementModes> managedMode;
     @XmlElement(name = "Site")
     protected String site;
     @XmlElement(name = "Region")
@@ -353,10 +353,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link NodeManagementModeType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}
      *     
      */
-    public JAXBElement<NodeManagementModeType> getManagedMode() {
+    public JAXBElement<NodeManagementModes> getManagedMode() {
         return managedMode;
     }
 
@@ -365,10 +365,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link NodeManagementModeType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}
      *     
      */
-    public void setManagedMode(JAXBElement<NodeManagementModeType> value) {
+    public void setManagedMode(JAXBElement<NodeManagementModes> value) {
         this.managedMode = value;
     }
 

@@ -6,7 +6,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
@@ -19,36 +18,36 @@ import Netspan.API.Enums.EnabledDisabledStates;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EnbRadioProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/>
- *         &lt;element name="Earfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DownlinkFreqKHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UplinkFreqKHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Band" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DuplexMode" type="{http://Airspan.Netspan.WebServices}RfProfileDuplexModes" minOccurs="0"/>
- *         &lt;element name="BandwidthMhz" type="{http://Airspan.Netspan.WebServices}BandwidthsSupported" minOccurs="0"/>
- *         &lt;element name="MfbiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FrameConfig" type="{http://Airspan.Netspan.WebServices}TddFrameConfigurationsSupported" minOccurs="0"/>
- *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RmMode" type="{http://Airspan.Netspan.WebServices}ResourceManagementTypes"/>
- *         &lt;element name="SfrSegments" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SfrIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SfrThresholdType" type="{http://Airspan.Netspan.WebServices}SfrThresholdTypes" minOccurs="0"/>
- *         &lt;element name="SfrThresholdValue" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SfrMaxMcsCellEdge" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SfrMinMcsCellCenter" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SsfType" type="{http://Airspan.Netspan.WebServices}SsfTypes" minOccurs="0"/>
- *         &lt;element name="AddlSpectrumEmission" type="{http://Airspan.Netspan.WebServices}AddlSpectrumEmissions" minOccurs="0"/>
- *         &lt;element name="EcidMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="EcidTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EnbRadioProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" minOccurs="0"/&gt;
+ *         &lt;element name="Earfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkFreqKHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkFreqKHz" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Band" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DuplexMode" type="{http://Airspan.Netspan.WebServices}RfProfileDuplexModes" minOccurs="0"/&gt;
+ *         &lt;element name="BandwidthMhz" type="{http://Airspan.Netspan.WebServices}BandwidthsSupported" minOccurs="0"/&gt;
+ *         &lt;element name="MfbiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FrameConfig" type="{http://Airspan.Netspan.WebServices}TddFrameConfigurationsSupported" minOccurs="0"/&gt;
+ *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RmMode" type="{http://Airspan.Netspan.WebServices}ResourceManagementTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SfrSegments" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SfrIndex" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SfrThresholdType" type="{http://Airspan.Netspan.WebServices}SfrThresholdTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SfrThresholdValue" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SfrMaxMcsCellEdge" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SfrMinMcsCellCenter" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SsfType" type="{http://Airspan.Netspan.WebServices}SsfTypes" minOccurs="0"/&gt;
+ *         &lt;element name="AddlSpectrumEmission" type="{http://Airspan.Netspan.WebServices}AddlSpectrumEmissions" minOccurs="0"/&gt;
+ *         &lt;element name="EcidMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EcidTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -102,9 +101,8 @@ public class EnbRadioProfile {
     protected JAXBElement<TddFrameConfigurationsSupported> frameConfig;
     @XmlElementRef(name = "TxPower", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> txPower;
-    @XmlElement(name = "RmMode", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected ResourceManagementTypes rmMode;
+    @XmlElementRef(name = "RmMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<ResourceManagementTypes> rmMode;
     @XmlElementRef(name = "SfrSegments", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> sfrSegments;
     @XmlElementRef(name = "SfrIndex", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -395,10 +393,10 @@ public class EnbRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link ResourceManagementTypes }
+     *     {@link JAXBElement }{@code <}{@link ResourceManagementTypes }{@code >}
      *     
      */
-    public ResourceManagementTypes getRmMode() {
+    public JAXBElement<ResourceManagementTypes> getRmMode() {
         return rmMode;
     }
 
@@ -407,10 +405,10 @@ public class EnbRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link ResourceManagementTypes }
+     *     {@link JAXBElement }{@code <}{@link ResourceManagementTypes }{@code >}
      *     
      */
-    public void setRmMode(ResourceManagementTypes value) {
+    public void setRmMode(JAXBElement<ResourceManagementTypes> value) {
         this.rmMode = value;
     }
 

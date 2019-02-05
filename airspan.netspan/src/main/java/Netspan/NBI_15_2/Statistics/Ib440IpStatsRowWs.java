@@ -18,31 +18,31 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Ib440IpStatsRowWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Node" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="InBytes" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="InUnicastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="InMulticastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="InDiscards" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="InErrors" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="OutBytes" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="OutUnicastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="OutMulticastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/>
- *         &lt;element name="OutDiscards" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="OutErrors" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="RxThroughput" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="TxThroughput" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Ib440IpStatsRowWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Node" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="DateAndTimeStart" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="DateAndTimeEnd" type="{http://www.w3.org/2001/XMLSchema}dateTime"/&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MacAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="InBytes" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="InUnicastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="InMulticastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="InDiscards" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="InErrors" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="OutBytes" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="OutUnicastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="OutMulticastPackets" type="{http://www.w3.org/2001/XMLSchema}unsignedLong" minOccurs="0"/&gt;
+ *         &lt;element name="OutDiscards" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="OutErrors" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/&gt;
+ *         &lt;element name="RxThroughput" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *         &lt;element name="TxThroughput" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

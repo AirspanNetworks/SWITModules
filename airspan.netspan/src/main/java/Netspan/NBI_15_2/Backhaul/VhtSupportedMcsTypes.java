@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="VhtSupportedMcsTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="MCS 0-7"/>
- *     &lt;enumeration value="MCS 0-8"/>
- *     &lt;enumeration value="MCS 0-9"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="VhtSupportedMcsTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="MCS 0-7"/&gt;
+ *     &lt;enumeration value="MCS 0-8"/&gt;
+ *     &lt;enumeration value="MCS 0-9"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

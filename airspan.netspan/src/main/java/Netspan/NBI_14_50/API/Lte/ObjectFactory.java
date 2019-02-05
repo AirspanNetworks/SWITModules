@@ -16,7 +16,7 @@ import Netspan.API.Enums.EnabledDisabledStates;
 import Netspan.API.Enums.EnbTypes;
 import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
-import Netspan.API.Enums.NodeManagementModeType;
+import Netspan.API.Enums.NodeManagementModes;
 import Netspan.API.Enums.PnpModes;
 import Netspan.API.Enums.SecurityProfileOptionalOrMandatory;
 import Netspan.API.Enums.SnmpAgentVersion;
@@ -4512,12 +4512,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link NodeManagementModeType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "ManagedMode", scope = EnbDetailsGet.class)
-    public JAXBElement<NodeManagementModeType> createEnbDetailsGetManagedMode(NodeManagementModeType value) {
-        return new JAXBElement<NodeManagementModeType>(_EnbDetailsGetManagedMode_QNAME, NodeManagementModeType.class, EnbDetailsGet.class, value);
+    public JAXBElement<NodeManagementModes> createEnbDetailsGetManagedMode(NodeManagementModes value) {
+        return new JAXBElement<NodeManagementModes>(_EnbDetailsGetManagedMode_QNAME, NodeManagementModes.class, EnbDetailsGet.class, value);
     }
 
     /**
@@ -9912,12 +9912,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link NodeManagementModeType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link NodeManagementModes }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "ManagedMode", scope = LteEnbDetailsSetWs.class)
-    public JAXBElement<NodeManagementModeType> createLteEnbDetailsSetWsManagedMode(NodeManagementModeType value) {
-        return new JAXBElement<NodeManagementModeType>(_EnbDetailsGetManagedMode_QNAME, NodeManagementModeType.class, LteEnbDetailsSetWs.class, value);
+    public JAXBElement<NodeManagementModes> createLteEnbDetailsSetWsManagedMode(NodeManagementModes value) {
+        return new JAXBElement<NodeManagementModes>(_EnbDetailsGetManagedMode_QNAME, NodeManagementModes.class, LteEnbDetailsSetWs.class, value);
     }
 
     /**

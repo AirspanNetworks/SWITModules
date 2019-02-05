@@ -12,15 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="Ib4x0PuscGroups">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="GroupA"/>
- *     &lt;enumeration value="GroupB"/>
- *     &lt;enumeration value="GroupC"/>
- *     &lt;enumeration value="GroupAB"/>
- *     &lt;enumeration value="GroupBC"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="Ib4x0PuscGroups"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="GroupA"/&gt;
+ *     &lt;enumeration value="GroupB"/&gt;
+ *     &lt;enumeration value="GroupC"/&gt;
+ *     &lt;enumeration value="GroupAB"/&gt;
+ *     &lt;enumeration value="GroupBC"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
