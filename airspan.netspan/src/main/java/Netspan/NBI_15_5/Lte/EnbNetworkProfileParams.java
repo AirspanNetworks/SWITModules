@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -222,25 +222,25 @@ public class EnbNetworkProfileParams {
     @XmlElementRef(name = "IsRohcUdpQci2Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isRohcUdpQci2Enabled;
     @XmlElementRef(name = "MmeOverloadAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mmeOverloadAdmin;
+    protected JAXBElement<EnabledStates> mmeOverloadAdmin;
     @XmlElementRef(name = "MmeOverloadWaitTime", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mmeOverloadWaitTime;
     @XmlElementRef(name = "MmeOverloadLoadReductionAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mmeOverloadLoadReductionAdmin;
+    protected JAXBElement<EnabledStates> mmeOverloadLoadReductionAdmin;
     @XmlElementRef(name = "ConnectedModeDrx", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> connectedModeDrx;
+    protected JAXBElement<EnabledStates> connectedModeDrx;
     @XmlElement(name = "DrxData")
     protected LteDrxEntryWs drxData;
     @XmlElementRef(name = "DrxModeQci1And2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> drxModeQci1And2;
+    protected JAXBElement<EnabledStates> drxModeQci1And2;
     @XmlElement(name = "DrxQci1And2")
     protected LteDrxEntryWs drxQci1And2;
     @XmlElementRef(name = "DrxModeQci5", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> drxModeQci5;
+    protected JAXBElement<EnabledStates> drxModeQci5;
     @XmlElement(name = "DrxQci5")
     protected LteDrxEntryWs drxQci5;
     @XmlElementRef(name = "TwampAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> twampAdmin;
+    protected JAXBElement<EnabledStates> twampAdmin;
     @XmlElementRef(name = "TwampReflectorMaxPps", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> twampReflectorMaxPps;
     @XmlElementRef(name = "TwampReflectorRenewalInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -250,7 +250,7 @@ public class EnbNetworkProfileParams {
     @XmlElement(name = "PlmnList")
     protected PlmnListContainer plmnList;
     @XmlElementRef(name = "OperateBehindHenbGw", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> operateBehindHenbGw;
+    protected JAXBElement<EnabledStates> operateBehindHenbGw;
     @XmlElement(name = "S1X2List")
     protected S1ListContainer s1X2List;
     @XmlElement(name = "CSONConfig")
@@ -304,11 +304,11 @@ public class EnbNetworkProfileParams {
     @XmlElementRef(name = "CallTraceSvrVlanId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> callTraceSvrVlanId;
     @XmlElementRef(name = "BhQosAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosAdmin;
+    protected JAXBElement<EnabledStates> bhQosAdmin;
     @XmlElementRef(name = "BhQosProfile", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<BhQosProfileTypes> bhQosProfile;
     @XmlElementRef(name = "BhQosVolteBh", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosVolteBh;
+    protected JAXBElement<EnabledStates> bhQosVolteBh;
     @XmlElementRef(name = "BhQosBearerResponseTimeoutBwReservationServer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosBearerResponseTimeoutBwReservationServer;
     @XmlElementRef(name = "BhQosBearerResponseTimeoutCpe", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -322,25 +322,25 @@ public class EnbNetworkProfileParams {
     @XmlElementRef(name = "BhQosMaxCreateBearerRetries", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMaxCreateBearerRetries;
     @XmlElementRef(name = "BhQosMeasDelayAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosMeasDelayAdmin;
+    protected JAXBElement<EnabledStates> bhQosMeasDelayAdmin;
     @XmlElementRef(name = "BhQosMeasDelayThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMeasDelayThreshold;
     @XmlElementRef(name = "BhQosMeasJitterAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosMeasJitterAdmin;
+    protected JAXBElement<EnabledStates> bhQosMeasJitterAdmin;
     @XmlElementRef(name = "BhQosMeasJitterThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMeasJitterThreshold;
     @XmlElementRef(name = "BhQosMeasPacketLossAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosMeasPacketLossAdmin;
+    protected JAXBElement<EnabledStates> bhQosMeasPacketLossAdmin;
     @XmlElementRef(name = "BhQosMeasPacketLossThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMeasPacketLossThreshold;
     @XmlElementRef(name = "BhQosMeasRtdAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosMeasRtdAdmin;
+    protected JAXBElement<EnabledStates> bhQosMeasRtdAdmin;
     @XmlElementRef(name = "BhQosMeasRtdThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMeasRtdThreshold;
     @XmlElementRef(name = "BhQosMinReservedForCallsNotYetAttempted", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosMinReservedForCallsNotYetAttempted;
     @XmlElementRef(name = "BhQosMeasRfOff", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> bhQosMeasRfOff;
+    protected JAXBElement<EnabledStates> bhQosMeasRfOff;
     @XmlElementRef(name = "BhQosPeriodicInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> bhQosPeriodicInterval;
     @XmlElementRef(name = "BhQosRecoveryInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -354,13 +354,13 @@ public class EnbNetworkProfileParams {
     @XmlElement(name = "BhQosReservationServerIpAddressList")
     protected LteBhQosReservationServerIpAddressListContainer bhQosReservationServerIpAddressList;
     @XmlElementRef(name = "TwampSenderAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> twampSenderAdmin;
+    protected JAXBElement<EnabledStates> twampSenderAdmin;
     @XmlElement(name = "TwampSender")
     protected LteTwampSenderContainer twampSender;
     @XmlElement(name = "UlPktDataPriorityList")
     protected UlPktDataPriorityListContainer ulPktDataPriorityList;
     @XmlElementRef(name = "EtwsEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> etwsEnabled;
+    protected JAXBElement<EnabledStates> etwsEnabled;
     @XmlElementRef(name = "EtwsUploadPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> etwsUploadPeriod;
     @XmlElementRef(name = "EtwsUploadPeriodNoData", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -589,10 +589,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMmeOverloadAdmin() {
+    public JAXBElement<EnabledStates> getMmeOverloadAdmin() {
         return mmeOverloadAdmin;
     }
 
@@ -601,10 +601,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMmeOverloadAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setMmeOverloadAdmin(JAXBElement<EnabledStates> value) {
         this.mmeOverloadAdmin = value;
     }
 
@@ -637,10 +637,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMmeOverloadLoadReductionAdmin() {
+    public JAXBElement<EnabledStates> getMmeOverloadLoadReductionAdmin() {
         return mmeOverloadLoadReductionAdmin;
     }
 
@@ -649,10 +649,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMmeOverloadLoadReductionAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setMmeOverloadLoadReductionAdmin(JAXBElement<EnabledStates> value) {
         this.mmeOverloadLoadReductionAdmin = value;
     }
 
@@ -661,10 +661,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getConnectedModeDrx() {
+    public JAXBElement<EnabledStates> getConnectedModeDrx() {
         return connectedModeDrx;
     }
 
@@ -673,10 +673,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setConnectedModeDrx(JAXBElement<EnabledDisabledStates> value) {
+    public void setConnectedModeDrx(JAXBElement<EnabledStates> value) {
         this.connectedModeDrx = value;
     }
 
@@ -709,10 +709,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getDrxModeQci1And2() {
+    public JAXBElement<EnabledStates> getDrxModeQci1And2() {
         return drxModeQci1And2;
     }
 
@@ -721,10 +721,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setDrxModeQci1And2(JAXBElement<EnabledDisabledStates> value) {
+    public void setDrxModeQci1And2(JAXBElement<EnabledStates> value) {
         this.drxModeQci1And2 = value;
     }
 
@@ -757,10 +757,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getDrxModeQci5() {
+    public JAXBElement<EnabledStates> getDrxModeQci5() {
         return drxModeQci5;
     }
 
@@ -769,10 +769,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setDrxModeQci5(JAXBElement<EnabledDisabledStates> value) {
+    public void setDrxModeQci5(JAXBElement<EnabledStates> value) {
         this.drxModeQci5 = value;
     }
 
@@ -805,10 +805,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTwampAdmin() {
+    public JAXBElement<EnabledStates> getTwampAdmin() {
         return twampAdmin;
     }
 
@@ -817,10 +817,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTwampAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setTwampAdmin(JAXBElement<EnabledStates> value) {
         this.twampAdmin = value;
     }
 
@@ -925,10 +925,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getOperateBehindHenbGw() {
+    public JAXBElement<EnabledStates> getOperateBehindHenbGw() {
         return operateBehindHenbGw;
     }
 
@@ -937,10 +937,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setOperateBehindHenbGw(JAXBElement<EnabledDisabledStates> value) {
+    public void setOperateBehindHenbGw(JAXBElement<EnabledStates> value) {
         this.operateBehindHenbGw = value;
     }
 
@@ -1573,10 +1573,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosAdmin() {
+    public JAXBElement<EnabledStates> getBhQosAdmin() {
         return bhQosAdmin;
     }
 
@@ -1585,10 +1585,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosAdmin(JAXBElement<EnabledStates> value) {
         this.bhQosAdmin = value;
     }
 
@@ -1621,10 +1621,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosVolteBh() {
+    public JAXBElement<EnabledStates> getBhQosVolteBh() {
         return bhQosVolteBh;
     }
 
@@ -1633,10 +1633,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosVolteBh(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosVolteBh(JAXBElement<EnabledStates> value) {
         this.bhQosVolteBh = value;
     }
 
@@ -1789,10 +1789,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosMeasDelayAdmin() {
+    public JAXBElement<EnabledStates> getBhQosMeasDelayAdmin() {
         return bhQosMeasDelayAdmin;
     }
 
@@ -1801,10 +1801,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosMeasDelayAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosMeasDelayAdmin(JAXBElement<EnabledStates> value) {
         this.bhQosMeasDelayAdmin = value;
     }
 
@@ -1837,10 +1837,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosMeasJitterAdmin() {
+    public JAXBElement<EnabledStates> getBhQosMeasJitterAdmin() {
         return bhQosMeasJitterAdmin;
     }
 
@@ -1849,10 +1849,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosMeasJitterAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosMeasJitterAdmin(JAXBElement<EnabledStates> value) {
         this.bhQosMeasJitterAdmin = value;
     }
 
@@ -1885,10 +1885,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosMeasPacketLossAdmin() {
+    public JAXBElement<EnabledStates> getBhQosMeasPacketLossAdmin() {
         return bhQosMeasPacketLossAdmin;
     }
 
@@ -1897,10 +1897,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosMeasPacketLossAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosMeasPacketLossAdmin(JAXBElement<EnabledStates> value) {
         this.bhQosMeasPacketLossAdmin = value;
     }
 
@@ -1933,10 +1933,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosMeasRtdAdmin() {
+    public JAXBElement<EnabledStates> getBhQosMeasRtdAdmin() {
         return bhQosMeasRtdAdmin;
     }
 
@@ -1945,10 +1945,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosMeasRtdAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosMeasRtdAdmin(JAXBElement<EnabledStates> value) {
         this.bhQosMeasRtdAdmin = value;
     }
 
@@ -2005,10 +2005,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getBhQosMeasRfOff() {
+    public JAXBElement<EnabledStates> getBhQosMeasRfOff() {
         return bhQosMeasRfOff;
     }
 
@@ -2017,10 +2017,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setBhQosMeasRfOff(JAXBElement<EnabledDisabledStates> value) {
+    public void setBhQosMeasRfOff(JAXBElement<EnabledStates> value) {
         this.bhQosMeasRfOff = value;
     }
 
@@ -2173,10 +2173,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTwampSenderAdmin() {
+    public JAXBElement<EnabledStates> getTwampSenderAdmin() {
         return twampSenderAdmin;
     }
 
@@ -2185,10 +2185,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTwampSenderAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setTwampSenderAdmin(JAXBElement<EnabledStates> value) {
         this.twampSenderAdmin = value;
     }
 
@@ -2245,10 +2245,10 @@ public class EnbNetworkProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getEtwsEnabled() {
+    public JAXBElement<EnabledStates> getEtwsEnabled() {
         return etwsEnabled;
     }
 
@@ -2257,10 +2257,10 @@ public class EnbNetworkProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setEtwsEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setEtwsEnabled(JAXBElement<EnabledStates> value) {
         this.etwsEnabled = value;
     }
 

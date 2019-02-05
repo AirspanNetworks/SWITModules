@@ -7,31 +7,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for HandoverType.
+ * <p>Java class for EnabledDisabledStates.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="HandoverType">
+ * &lt;simpleType name="EnabledDisabledStates">
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="S1Only"/>
- *     &lt;enumeration value="TriggerX2"/>
+ *     &lt;enumeration value="Disabled"/>
+ *     &lt;enumeration value="Enabled"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
  * 
  */
-@XmlType(name = "HandoverType")
+@XmlType(name = "EnabledDisabledStates")
 @XmlEnum
-public enum HandoverType {
+public enum EnabledStates {
 
-    @XmlEnumValue("S1Only")
-    S_1_ONLY("S1Only"),
-    @XmlEnumValue("TriggerX2")
-    TRIGGER_X_2("TriggerX2");
+    @XmlEnumValue("Disabled")
+    DISABLED("Disabled"),
+    @XmlEnumValue("Enabled")
+    ENABLED("Enabled");
     private final String value;
 
-    HandoverType(String v) {
+    EnabledStates(String v) {
         value = v;
     }
 
@@ -39,22 +39,13 @@ public enum HandoverType {
         return value;
     }
 
-    public static HandoverType fromValue(String v) {
-        for (HandoverType c: HandoverType.values()) {
+    public static EnabledStates fromValue(String v) {
+        for (EnabledStates c: EnabledStates.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
         }
         throw new IllegalArgumentException(v);
-    }
-    
-    public String convertEnum(){
-    	if (value == "TriggerX2")
-    		return "1";
-    	if(value == "S1Only")
-    		return "0";
-    	
-    	return "0"; //default
     }
 
 }

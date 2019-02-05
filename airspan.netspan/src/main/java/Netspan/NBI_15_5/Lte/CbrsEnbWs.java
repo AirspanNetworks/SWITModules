@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -69,7 +69,7 @@ public class CbrsEnbWs {
     @XmlElement(name = "UseSpectrumInquiryIsDefault", required = true, type = Boolean.class, nillable = true)
     protected Boolean useSpectrumInquiryIsDefault;
     @XmlElementRef(name = "UseSpectrumInquiry", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> useSpectrumInquiry;
+    protected JAXBElement<EnabledStates> useSpectrumInquiry;
     @XmlElement(name = "MaximumGrantsIsDefault", required = true, type = Boolean.class, nillable = true)
     protected Boolean maximumGrantsIsDefault;
     @XmlElementRef(name = "MaximumGrants", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -77,7 +77,7 @@ public class CbrsEnbWs {
     @XmlElement(name = "IndoorDeploymentIsDefault", required = true, type = Boolean.class, nillable = true)
     protected Boolean indoorDeploymentIsDefault;
     @XmlElementRef(name = "IndoorDeployment", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> indoorDeployment;
+    protected JAXBElement<EnabledStates> indoorDeployment;
     @XmlElement(name = "RegistrationRetryTimerIsDefault", required = true, type = Boolean.class, nillable = true)
     protected Boolean registrationRetryTimerIsDefault;
     @XmlElementRef(name = "RegistrationRetryTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -128,10 +128,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUseSpectrumInquiry() {
+    public JAXBElement<EnabledStates> getUseSpectrumInquiry() {
         return useSpectrumInquiry;
     }
 
@@ -140,10 +140,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUseSpectrumInquiry(JAXBElement<EnabledDisabledStates> value) {
+    public void setUseSpectrumInquiry(JAXBElement<EnabledStates> value) {
         this.useSpectrumInquiry = value;
     }
 
@@ -224,10 +224,10 @@ public class CbrsEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIndoorDeployment() {
+    public JAXBElement<EnabledStates> getIndoorDeployment() {
         return indoorDeployment;
     }
 
@@ -236,10 +236,10 @@ public class CbrsEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIndoorDeployment(JAXBElement<EnabledDisabledStates> value) {
+    public void setIndoorDeployment(JAXBElement<EnabledStates> value) {
         this.indoorDeployment = value;
     }
 

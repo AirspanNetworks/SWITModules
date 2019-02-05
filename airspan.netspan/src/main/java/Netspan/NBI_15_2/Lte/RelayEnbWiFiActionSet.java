@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -50,10 +50,10 @@ public class RelayEnbWiFiActionSet {
     protected WiFiAction action;
     @XmlElement(name = "Radio2Dot4GHz", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates radio2Dot4GHz;
+    protected EnabledStates radio2Dot4GHz;
     @XmlElement(name = "Radio5GHz", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates radio5GHz;
+    protected EnabledStates radio5GHz;
 
     /**
      * Gets the value of the nodeName property.
@@ -108,10 +108,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getRadio2Dot4GHz() {
+    public EnabledStates getRadio2Dot4GHz() {
         return radio2Dot4GHz;
     }
 
@@ -120,10 +120,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setRadio2Dot4GHz(EnabledDisabledStates value) {
+    public void setRadio2Dot4GHz(EnabledStates value) {
         this.radio2Dot4GHz = value;
     }
 
@@ -132,10 +132,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getRadio5GHz() {
+    public EnabledStates getRadio5GHz() {
         return radio5GHz;
     }
 
@@ -144,10 +144,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setRadio5GHz(EnabledDisabledStates value) {
+    public void setRadio5GHz(EnabledStates value) {
         this.radio5GHz = value;
     }
 

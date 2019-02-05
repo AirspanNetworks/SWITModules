@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
+import Netspan.API.Enums.NodeManagementModes;
+
 
 /**
  * This object contains factory methods for each 

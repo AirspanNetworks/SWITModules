@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -92,7 +92,7 @@ public class ReselectionWs {
     @XmlElementRef(name = "UtraSpeedStateScaleFactorsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> utraSpeedStateScaleFactorsIsDefault;
     @XmlElementRef(name = "UtraSpeedStateScaleFactors", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> utraSpeedStateScaleFactors;
+    protected JAXBElement<EnabledStates> utraSpeedStateScaleFactors;
     @XmlElementRef(name = "ReselectionUtraSfMediumIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> reselectionUtraSfMediumIsDefault;
     @XmlElementRef(name = "ReselectionUtraSfMedium", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -104,39 +104,39 @@ public class ReselectionWs {
     @XmlElementRef(name = "NccPermittedBit1IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit1IsDefault;
     @XmlElementRef(name = "NccPermittedBit1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit1;
+    protected JAXBElement<EnabledStates> nccPermittedBit1;
     @XmlElementRef(name = "NccPermittedBit2IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit2IsDefault;
     @XmlElementRef(name = "NccPermittedBit2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit2;
+    protected JAXBElement<EnabledStates> nccPermittedBit2;
     @XmlElementRef(name = "NccPermittedBit3IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit3IsDefault;
     @XmlElementRef(name = "NccPermittedBit3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit3;
+    protected JAXBElement<EnabledStates> nccPermittedBit3;
     @XmlElementRef(name = "NccPermittedBit4IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit4IsDefault;
     @XmlElementRef(name = "NccPermittedBit4", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit4;
+    protected JAXBElement<EnabledStates> nccPermittedBit4;
     @XmlElementRef(name = "NccPermittedBit5IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit5IsDefault;
     @XmlElementRef(name = "NccPermittedBit5", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit5;
+    protected JAXBElement<EnabledStates> nccPermittedBit5;
     @XmlElementRef(name = "NccPermittedBit6IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit6IsDefault;
     @XmlElementRef(name = "NccPermittedBit6", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit6;
+    protected JAXBElement<EnabledStates> nccPermittedBit6;
     @XmlElementRef(name = "NccPermittedBit7IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit7IsDefault;
     @XmlElementRef(name = "NccPermittedBit7", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit7;
+    protected JAXBElement<EnabledStates> nccPermittedBit7;
     @XmlElementRef(name = "NccPermittedBit8IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nccPermittedBit8IsDefault;
     @XmlElementRef(name = "NccPermittedBit8", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nccPermittedBit8;
+    protected JAXBElement<EnabledStates> nccPermittedBit8;
     @XmlElementRef(name = "GeranSpeedStateScaleFactorsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> geranSpeedStateScaleFactorsIsDefault;
     @XmlElementRef(name = "GeranSpeedStateScaleFactors", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> geranSpeedStateScaleFactors;
+    protected JAXBElement<EnabledStates> geranSpeedStateScaleFactors;
     @XmlElementRef(name = "ReselectionGeranSfMediumIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> reselectionGeranSfMediumIsDefault;
     @XmlElementRef(name = "ReselectionGeranSfMedium", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -175,10 +175,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUtraSpeedStateScaleFactors() {
+    public JAXBElement<EnabledStates> getUtraSpeedStateScaleFactors() {
         return utraSpeedStateScaleFactors;
     }
 
@@ -187,10 +187,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUtraSpeedStateScaleFactors(JAXBElement<EnabledDisabledStates> value) {
+    public void setUtraSpeedStateScaleFactors(JAXBElement<EnabledStates> value) {
         this.utraSpeedStateScaleFactors = value;
     }
 
@@ -319,10 +319,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit1() {
+    public JAXBElement<EnabledStates> getNccPermittedBit1() {
         return nccPermittedBit1;
     }
 
@@ -331,10 +331,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit1(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit1(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit1 = value;
     }
 
@@ -367,10 +367,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit2() {
+    public JAXBElement<EnabledStates> getNccPermittedBit2() {
         return nccPermittedBit2;
     }
 
@@ -379,10 +379,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit2(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit2(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit2 = value;
     }
 
@@ -415,10 +415,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit3() {
+    public JAXBElement<EnabledStates> getNccPermittedBit3() {
         return nccPermittedBit3;
     }
 
@@ -427,10 +427,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit3(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit3(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit3 = value;
     }
 
@@ -463,10 +463,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit4() {
+    public JAXBElement<EnabledStates> getNccPermittedBit4() {
         return nccPermittedBit4;
     }
 
@@ -475,10 +475,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit4(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit4(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit4 = value;
     }
 
@@ -511,10 +511,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit5() {
+    public JAXBElement<EnabledStates> getNccPermittedBit5() {
         return nccPermittedBit5;
     }
 
@@ -523,10 +523,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit5(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit5(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit5 = value;
     }
 
@@ -559,10 +559,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit6() {
+    public JAXBElement<EnabledStates> getNccPermittedBit6() {
         return nccPermittedBit6;
     }
 
@@ -571,10 +571,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit6(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit6(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit6 = value;
     }
 
@@ -607,10 +607,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit7() {
+    public JAXBElement<EnabledStates> getNccPermittedBit7() {
         return nccPermittedBit7;
     }
 
@@ -619,10 +619,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit7(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit7(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit7 = value;
     }
 
@@ -655,10 +655,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNccPermittedBit8() {
+    public JAXBElement<EnabledStates> getNccPermittedBit8() {
         return nccPermittedBit8;
     }
 
@@ -667,10 +667,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNccPermittedBit8(JAXBElement<EnabledDisabledStates> value) {
+    public void setNccPermittedBit8(JAXBElement<EnabledStates> value) {
         this.nccPermittedBit8 = value;
     }
 
@@ -703,10 +703,10 @@ public class ReselectionWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getGeranSpeedStateScaleFactors() {
+    public JAXBElement<EnabledStates> getGeranSpeedStateScaleFactors() {
         return geranSpeedStateScaleFactors;
     }
 
@@ -715,10 +715,10 @@ public class ReselectionWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setGeranSpeedStateScaleFactors(JAXBElement<EnabledDisabledStates> value) {
+    public void setGeranSpeedStateScaleFactors(JAXBElement<EnabledStates> value) {
         this.geranSpeedStateScaleFactors = value;
     }
 

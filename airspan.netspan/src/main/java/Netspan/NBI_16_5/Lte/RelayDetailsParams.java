@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -89,7 +89,7 @@ public class RelayDetailsParams {
     @XmlElementRef(name = "IsPdclLocked", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isPdclLocked;
     @XmlElementRef(name = "LedMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ledMode;
+    protected JAXBElement<EnabledStates> ledMode;
     @XmlElement(name = "Pdcl")
     protected PdclList pdcl;
     @XmlElementRef(name = "AllowedBandsPriority", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -99,7 +99,7 @@ public class RelayDetailsParams {
     @XmlElementRef(name = "CaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CaModeValues> caMode;
     @XmlElementRef(name = "IsSeGwInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isSeGwInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isSeGwInterfaceEnabled;
     @XmlElement(name = "SeGwAddress")
     protected String seGwAddress;
     @XmlElementRef(name = "RelaySbaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -284,10 +284,10 @@ public class RelayDetailsParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLedMode() {
+    public JAXBElement<EnabledStates> getLedMode() {
         return ledMode;
     }
 
@@ -296,10 +296,10 @@ public class RelayDetailsParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLedMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLedMode(JAXBElement<EnabledStates> value) {
         this.ledMode = value;
     }
 
@@ -404,10 +404,10 @@ public class RelayDetailsParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsSeGwInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsSeGwInterfaceEnabled() {
         return isSeGwInterfaceEnabled;
     }
 
@@ -416,10 +416,10 @@ public class RelayDetailsParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsSeGwInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsSeGwInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isSeGwInterfaceEnabled = value;
     }
 

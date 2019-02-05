@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
 
 import Netspan.API.Enums.ClockSources;
-import Netspan.API.Enums.ConnectedModeEventTypes;import Netspan.API.Enums.EnabledDisabledStates;import Netspan.API.Enums.PnpModes;import Netspan.API.Enums.SonAnrStates;import Netspan.API.Enums.StopGapEventTypes;import Netspan.API.Enums.TriggerGapEventTypes;import Netspan.API.Enums.TriggerQuantityTypes;
+import Netspan.API.Enums.ConnectedModeEventTypes;import Netspan.API.Enums.EnabledStates;import Netspan.API.Enums.PnpModes;import Netspan.API.Enums.SonAnrStates;import Netspan.API.Enums.StopGapEventTypes;import Netspan.API.Enums.TriggerGapEventTypes;import Netspan.API.Enums.TriggerQuantityTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 import Netspan.API.Lte.MobilityConnectedModeStopGaps;import Netspan.API.Lte.MobilityConnectedModeTriggerGaps;
 
@@ -4786,12 +4786,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM1InterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsM1InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsM1InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -4813,21 +4813,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1UInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsS1UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsS1UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2UInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsX2UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsX2UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -4840,12 +4840,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCSonServerInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsCSonServerInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsCSonServerInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -4903,12 +4903,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsPtpSlaveInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsPtpSlaveInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsPtpSlaveInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -4957,12 +4957,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCallTraceInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsCallTraceInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsCallTraceInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -4975,21 +4975,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM2InterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsM2InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsM2InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1CInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsS1CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsS1CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -5020,12 +5020,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2CInterfaceEnabled", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpIsX2CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpIsX2CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -5038,12 +5038,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "LongSbaEnable", scope = EnbDetailsGetPnp.class)
-    public JAXBElement<EnabledDisabledStates> createEnbDetailsGetPnpLongSbaEnable(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpLongSbaEnable_QNAME, EnabledDisabledStates.class, EnbDetailsGetPnp.class, value);
+    public JAXBElement<EnabledStates> createEnbDetailsGetPnpLongSbaEnable(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpLongSbaEnable_QNAME, EnabledStates.class, EnbDetailsGetPnp.class, value);
     }
 
     /**
@@ -5308,21 +5308,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "TraceSib", scope = CallTraceProfile.class)
-    public JAXBElement<EnabledDisabledStates> createCallTraceProfileTraceSib(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_CallTraceProfileTraceSib_QNAME, EnabledDisabledStates.class, CallTraceProfile.class, value);
+    public JAXBElement<EnabledStates> createCallTraceProfileTraceSib(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_CallTraceProfileTraceSib_QNAME, EnabledStates.class, CallTraceProfile.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CallTraceEnabled", scope = CallTraceProfile.class)
-    public JAXBElement<EnabledDisabledStates> createCallTraceProfileCallTraceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_CallTraceProfileCallTraceEnabled_QNAME, EnabledDisabledStates.class, CallTraceProfile.class, value);
+    public JAXBElement<EnabledStates> createCallTraceProfileCallTraceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_CallTraceProfileCallTraceEnabled_QNAME, EnabledStates.class, CallTraceProfile.class, value);
     }
 
     /**
@@ -5749,12 +5749,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "LastUlSymSuppression", scope = SynchronizationWs.class)
-    public JAXBElement<EnabledDisabledStates> createSynchronizationWsLastUlSymSuppression(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_SynchronizationWsLastUlSymSuppression_QNAME, EnabledDisabledStates.class, SynchronizationWs.class, value);
+    public JAXBElement<EnabledStates> createSynchronizationWsLastUlSymSuppression(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_SynchronizationWsLastUlSymSuppression_QNAME, EnabledStates.class, SynchronizationWs.class, value);
     }
 
     /**
@@ -5893,12 +5893,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "MmeOverloadAdmin", scope = EnbNetworkProfile.class)
-    public JAXBElement<EnabledDisabledStates> createEnbNetworkProfileMmeOverloadAdmin(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbNetworkProfileMmeOverloadAdmin_QNAME, EnabledDisabledStates.class, EnbNetworkProfile.class, value);
+    public JAXBElement<EnabledStates> createEnbNetworkProfileMmeOverloadAdmin(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbNetworkProfileMmeOverloadAdmin_QNAME, EnabledStates.class, EnbNetworkProfile.class, value);
     }
 
     /**
@@ -5974,12 +5974,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "MmeOverloadLoadReductionAdmin", scope = EnbNetworkProfile.class)
-    public JAXBElement<EnabledDisabledStates> createEnbNetworkProfileMmeOverloadLoadReductionAdmin(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbNetworkProfileMmeOverloadLoadReductionAdmin_QNAME, EnabledDisabledStates.class, EnbNetworkProfile.class, value);
+    public JAXBElement<EnabledStates> createEnbNetworkProfileMmeOverloadLoadReductionAdmin(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbNetworkProfileMmeOverloadLoadReductionAdmin_QNAME, EnabledStates.class, EnbNetworkProfile.class, value);
     }
 
     /**
@@ -6802,12 +6802,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "LoadSheddingMode", scope = TrafficManagementProfile.class)
-    public JAXBElement<EnabledDisabledStates> createTrafficManagementProfileLoadSheddingMode(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_TrafficManagementProfileLoadSheddingMode_QNAME, EnabledDisabledStates.class, TrafficManagementProfile.class, value);
+    public JAXBElement<EnabledStates> createTrafficManagementProfileLoadSheddingMode(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_TrafficManagementProfileLoadSheddingMode_QNAME, EnabledStates.class, TrafficManagementProfile.class, value);
     }
 
     /**
@@ -6892,12 +6892,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI3", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI3(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI3_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI3(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI3_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -6910,39 +6910,39 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI4", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI4(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI4_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI4(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI4_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI5", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI5(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI5_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI5(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI5_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI6", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI6(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI6_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI6(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI6_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI1", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI1(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI1_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI1(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI1_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -6955,12 +6955,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI2", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI2(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI2_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI2(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI2_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -6973,12 +6973,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI10", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI10(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI10_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI10(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI10_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -6991,12 +6991,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI7", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI7(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI7_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI7(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI7_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -7009,12 +7009,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI8", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI8(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI8_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI8(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI8_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -7027,12 +7027,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "QCI9", scope = EmergencyCallQciWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallQciWsQCI9(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallQciWsQCI9_QNAME, EnabledDisabledStates.class, EmergencyCallQciWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallQciWsQCI9(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallQciWsQCI9_QNAME, EnabledStates.class, EmergencyCallQciWs.class, value);
     }
 
     /**
@@ -7198,12 +7198,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PresenceAntennaPort1", scope = MobilityConnectedWs.class)
-    public JAXBElement<EnabledDisabledStates> createMobilityConnectedWsPresenceAntennaPort1(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_MobilityConnectedWsPresenceAntennaPort1_QNAME, EnabledDisabledStates.class, MobilityConnectedWs.class, value);
+    public JAXBElement<EnabledStates> createMobilityConnectedWsPresenceAntennaPort1(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_MobilityConnectedWsPresenceAntennaPort1_QNAME, EnabledStates.class, MobilityConnectedWs.class, value);
     }
 
     /**
@@ -10366,12 +10366,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PacketForwardingEnabled", scope = HandoverWs.class)
-    public JAXBElement<EnabledDisabledStates> createHandoverWsPacketForwardingEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_HandoverWsPacketForwardingEnabled_QNAME, EnabledDisabledStates.class, HandoverWs.class, value);
+    public JAXBElement<EnabledStates> createHandoverWsPacketForwardingEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_HandoverWsPacketForwardingEnabled_QNAME, EnabledStates.class, HandoverWs.class, value);
     }
 
     /**
@@ -10420,12 +10420,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "AllowHoWithoutHrl", scope = HandoverWs.class)
-    public JAXBElement<EnabledDisabledStates> createHandoverWsAllowHoWithoutHrl(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_HandoverWsAllowHoWithoutHrl_QNAME, EnabledDisabledStates.class, HandoverWs.class, value);
+    public JAXBElement<EnabledStates> createHandoverWsAllowHoWithoutHrl(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_HandoverWsAllowHoWithoutHrl_QNAME, EnabledStates.class, HandoverWs.class, value);
     }
 
     /**
@@ -10645,12 +10645,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PreemptionVulnerability", scope = EmergencyCallWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallWsPreemptionVulnerability(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallWsPreemptionVulnerability_QNAME, EnabledDisabledStates.class, EmergencyCallWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallWsPreemptionVulnerability(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallWsPreemptionVulnerability_QNAME, EnabledStates.class, EmergencyCallWs.class, value);
     }
 
     /**
@@ -10672,12 +10672,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PreemptionCapability", scope = EmergencyCallWs.class)
-    public JAXBElement<EnabledDisabledStates> createEmergencyCallWsPreemptionCapability(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EmergencyCallWsPreemptionCapability_QNAME, EnabledDisabledStates.class, EmergencyCallWs.class, value);
+    public JAXBElement<EnabledStates> createEmergencyCallWsPreemptionCapability(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EmergencyCallWsPreemptionCapability_QNAME, EnabledStates.class, EmergencyCallWs.class, value);
     }
 
     /**
@@ -10897,12 +10897,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM1InterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsM1InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsM1InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -10924,21 +10924,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1UInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsS1UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsS1UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2UInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsX2UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsX2UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -10951,12 +10951,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCSonServerInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsCSonServerInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsCSonServerInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -11014,12 +11014,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsPtpSlaveInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsPtpSlaveInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsPtpSlaveInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -11059,12 +11059,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCallTraceInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsCallTraceInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsCallTraceInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -11077,21 +11077,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM2InterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsM2InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsM2InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1CInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsS1CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsS1CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -11122,12 +11122,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2CInterfaceEnabled", scope = LteEnbDetailsSetWsPnp.class)
-    public JAXBElement<EnabledDisabledStates> createLteEnbDetailsSetWsPnpIsX2CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledDisabledStates.class, LteEnbDetailsSetWsPnp.class, value);
+    public JAXBElement<EnabledStates> createLteEnbDetailsSetWsPnpIsX2CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledStates.class, LteEnbDetailsSetWsPnp.class, value);
     }
 
     /**
@@ -11770,12 +11770,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM1InterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsM1InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsM1InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM1InterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11797,21 +11797,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1UInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsS1UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsS1UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1UInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2UInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsX2UInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsX2UInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2UInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11824,12 +11824,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCSonServerInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsCSonServerInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsCSonServerInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCSonServerInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11878,12 +11878,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsPtpSlaveInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsPtpSlaveInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsPtpSlaveInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsPtpSlaveInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11923,12 +11923,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsCallTraceInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsCallTraceInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsCallTraceInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsCallTraceInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11941,21 +11941,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsM2InterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsM2InterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsM2InterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsM2InterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsS1CInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsS1CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsS1CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsS1CInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -11986,12 +11986,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsX2CInterfaceEnabled", scope = AuEnbDetailWs.class)
-    public JAXBElement<EnabledDisabledStates> createAuEnbDetailWsIsX2CInterfaceEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledDisabledStates.class, AuEnbDetailWs.class, value);
+    public JAXBElement<EnabledStates> createAuEnbDetailWsIsX2CInterfaceEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpIsX2CInterfaceEnabled_QNAME, EnabledStates.class, AuEnbDetailWs.class, value);
     }
 
     /**
@@ -12940,12 +12940,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit2", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit2(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit2_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit2(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit2_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -12958,12 +12958,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit1", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit1(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit1_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit1(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit1_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -13003,30 +13003,30 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit8", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit8(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit8_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit8(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit8_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit7", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit7(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit7_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit7(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit7_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "GeranSpeedStateScaleFactors", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsGeranSpeedStateScaleFactors(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsGeranSpeedStateScaleFactors_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsGeranSpeedStateScaleFactors(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsGeranSpeedStateScaleFactors_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -13039,30 +13039,30 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit4", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit4(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit4_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit4(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit4_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit3", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit3(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit3_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit3(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit3_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit6", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit6(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit6_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit6(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit6_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -13084,12 +13084,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "NccPermittedBit5", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsNccPermittedBit5(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsNccPermittedBit5_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsNccPermittedBit5(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsNccPermittedBit5_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -13138,12 +13138,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "UtraSpeedStateScaleFactors", scope = ReselectionWs.class)
-    public JAXBElement<EnabledDisabledStates> createReselectionWsUtraSpeedStateScaleFactors(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_ReselectionWsUtraSpeedStateScaleFactors_QNAME, EnabledDisabledStates.class, ReselectionWs.class, value);
+    public JAXBElement<EnabledStates> createReselectionWsUtraSpeedStateScaleFactors(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_ReselectionWsUtraSpeedStateScaleFactors_QNAME, EnabledStates.class, ReselectionWs.class, value);
     }
 
     /**
@@ -13759,12 +13759,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "LedMode", scope = AuRelayDetails.class)
-    public JAXBElement<EnabledDisabledStates> createAuRelayDetailsLedMode(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbDetailsGetPnpLedMode_QNAME, EnabledDisabledStates.class, AuRelayDetails.class, value);
+    public JAXBElement<EnabledStates> createAuRelayDetailsLedMode(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbDetailsGetPnpLedMode_QNAME, EnabledStates.class, AuRelayDetails.class, value);
     }
 
     /**
@@ -14029,12 +14029,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "AutoSoftwareDownload", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsAutoSoftwareDownload(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsAutoSoftwareDownload_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsAutoSoftwareDownload(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsAutoSoftwareDownload_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -14119,12 +14119,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "ConfigurationProvisioning", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsConfigurationProvisioning(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsConfigurationProvisioning_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsConfigurationProvisioning(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsConfigurationProvisioning_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -14254,12 +14254,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "AutoInventoryUpdate", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsAutoInventoryUpdate(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsAutoInventoryUpdate_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsAutoInventoryUpdate(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsAutoInventoryUpdate_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -14272,12 +14272,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "WarmResetModeAdmin", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsWarmResetModeAdmin(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsWarmResetModeAdmin_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsWarmResetModeAdmin(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsWarmResetModeAdmin_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -14443,12 +14443,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "FullDynamicRadioConfiguration", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsFullDynamicRadioConfiguration(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsFullDynamicRadioConfiguration_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsFullDynamicRadioConfiguration(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsFullDynamicRadioConfiguration_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -14551,12 +14551,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PciConfusionAllowed", scope = AirSonWs.class)
-    public JAXBElement<EnabledDisabledStates> createAirSonWsPciConfusionAllowed(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_AirSonWsPciConfusionAllowed_QNAME, EnabledDisabledStates.class, AirSonWs.class, value);
+    public JAXBElement<EnabledStates> createAirSonWsPciConfusionAllowed(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_AirSonWsPciConfusionAllowed_QNAME, EnabledStates.class, AirSonWs.class, value);
     }
 
     /**
@@ -15091,84 +15091,84 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CsfbCdma2kEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsCsfbCdma2KEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsCsfbCdma2KEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsCsfbCdma2KEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsCsfbCdma2KEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsInterRatUtranCoverageBasedRedirectionModeEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsIsInterRatUtranCoverageBasedRedirectionModeEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsIsInterRatUtranCoverageBasedRedirectionModeEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsInterRatUtranCoverageBasedRedirectionModeEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsIsInterRatUtranCoverageBasedRedirectionModeEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CsfbUtranEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsCsfbUtranEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsCsfbUtranEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsCsfbUtranEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsCsfbUtranEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsInterRatGeranReselectionModeEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsIsInterRatGeranReselectionModeEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsIsInterRatGeranReselectionModeEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsInterRatGeranReselectionModeEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsIsInterRatGeranReselectionModeEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsQosBasedMeasurementEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsIsQosBasedMeasurementEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsIsQosBasedMeasurementEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsQosBasedMeasurementEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsIsQosBasedMeasurementEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsThresholdBasedMeasurementEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsIsThresholdBasedMeasurementEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsIsThresholdBasedMeasurementEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsThresholdBasedMeasurementEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsIsThresholdBasedMeasurementEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsInterRatUtranReselectionModeEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsIsInterRatUtranReselectionModeEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsIsInterRatUtranReselectionModeEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsInterRatUtranReselectionModeEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsIsInterRatUtranReselectionModeEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "FwdHoEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsFwdHoEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsFwdHoEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsFwdHoEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsFwdHoEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CsfbEnabled", scope = EnbMobilityProfileParams.class)
-    public JAXBElement<EnabledDisabledStates> createEnbMobilityProfileParamsCsfbEnabled(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbMobilityProfileParamsCsfbEnabled_QNAME, EnabledDisabledStates.class, EnbMobilityProfileParams.class, value);
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsCsfbEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbMobilityProfileParamsCsfbEnabled_QNAME, EnabledStates.class, EnbMobilityProfileParams.class, value);
     }
 
     /**
@@ -15253,12 +15253,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "EcidMode", scope = EnbRadioProfile.class)
-    public JAXBElement<EnabledDisabledStates> createEnbRadioProfileEcidMode(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_EnbRadioProfileEcidMode_QNAME, EnabledDisabledStates.class, EnbRadioProfile.class, value);
+    public JAXBElement<EnabledStates> createEnbRadioProfileEcidMode(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_EnbRadioProfileEcidMode_QNAME, EnabledStates.class, EnbRadioProfile.class, value);
     }
 
     /**
@@ -15496,12 +15496,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "ControlChannelOverloadOptimization", scope = CellDynamicCfiWs.class)
-    public JAXBElement<EnabledDisabledStates> createCellDynamicCfiWsControlChannelOverloadOptimization(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_CellDynamicCfiWsControlChannelOverloadOptimization_QNAME, EnabledDisabledStates.class, CellDynamicCfiWs.class, value);
+    public JAXBElement<EnabledStates> createCellDynamicCfiWsControlChannelOverloadOptimization(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_CellDynamicCfiWsControlChannelOverloadOptimization_QNAME, EnabledStates.class, CellDynamicCfiWs.class, value);
     }
 
     /**
@@ -15739,12 +15739,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PresenceAntennaPort1", scope = MobilityIdleFreqWs.class)
-    public JAXBElement<EnabledDisabledStates> createMobilityIdleFreqWsPresenceAntennaPort1(EnabledDisabledStates value) {
-        return new JAXBElement<EnabledDisabledStates>(_MobilityConnectedWsPresenceAntennaPort1_QNAME, EnabledDisabledStates.class, MobilityIdleFreqWs.class, value);
+    public JAXBElement<EnabledStates> createMobilityIdleFreqWsPresenceAntennaPort1(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_MobilityConnectedWsPresenceAntennaPort1_QNAME, EnabledStates.class, MobilityIdleFreqWs.class, value);
     }
 
     /**

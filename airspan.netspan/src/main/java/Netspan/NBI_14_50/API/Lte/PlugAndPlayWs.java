@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -188,7 +188,7 @@ public class PlugAndPlayWs {
     @XmlElementRef(name = "WarmResetModeAdminIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> warmResetModeAdminIsDefault;
     @XmlElementRef(name = "WarmResetModeAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> warmResetModeAdmin;
+    protected JAXBElement<EnabledStates> warmResetModeAdmin;
     @XmlElementRef(name = "WarmResetAutoInventoryFailTimerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> warmResetAutoInventoryFailTimerIsDefault;
     @XmlElementRef(name = "WarmResetAutoInventoryFailTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1047,10 +1047,10 @@ public class PlugAndPlayWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getWarmResetModeAdmin() {
+    public JAXBElement<EnabledStates> getWarmResetModeAdmin() {
         return warmResetModeAdmin;
     }
 
@@ -1059,10 +1059,10 @@ public class PlugAndPlayWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setWarmResetModeAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setWarmResetModeAdmin(JAXBElement<EnabledStates> value) {
         this.warmResetModeAdmin = value;
     }
 

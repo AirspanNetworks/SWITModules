@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -253,7 +253,7 @@ public class CellDynamicIcicWs {
     @XmlElementRef(name = "NonContiguousCERIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nonContiguousCERIsDefault;
     @XmlElementRef(name = "NonContiguousCER", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nonContiguousCER;
+    protected JAXBElement<EnabledStates> nonContiguousCER;
     @XmlElementRef(name = "UnmanagedIntThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> unmanagedIntThresholdIsDefault;
     @XmlElementRef(name = "UnmanagedIntThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1496,10 +1496,10 @@ public class CellDynamicIcicWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNonContiguousCER() {
+    public JAXBElement<EnabledStates> getNonContiguousCER() {
         return nonContiguousCER;
     }
 
@@ -1508,10 +1508,10 @@ public class CellDynamicIcicWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNonContiguousCER(JAXBElement<EnabledDisabledStates> value) {
+    public void setNonContiguousCER(JAXBElement<EnabledStates> value) {
         this.nonContiguousCER = value;
     }
 

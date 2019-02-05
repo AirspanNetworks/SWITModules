@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -44,7 +44,7 @@ public class TpmEnbWs {
     @XmlElementRef(name = "MroMetricIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> mroMetricIsDefault;
     @XmlElementRef(name = "MroMetric", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mroMetric;
+    protected JAXBElement<EnabledStates> mroMetric;
     @XmlElementRef(name = "NlPeriodIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nlPeriodIsDefault;
     @XmlElementRef(name = "NlPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -79,10 +79,10 @@ public class TpmEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMroMetric() {
+    public JAXBElement<EnabledStates> getMroMetric() {
         return mroMetric;
     }
 
@@ -91,10 +91,10 @@ public class TpmEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMroMetric(JAXBElement<EnabledDisabledStates> value) {
+    public void setMroMetric(JAXBElement<EnabledStates> value) {
         this.mroMetric = value;
     }
 

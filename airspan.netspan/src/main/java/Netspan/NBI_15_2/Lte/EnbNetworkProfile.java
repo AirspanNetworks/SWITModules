@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -134,13 +134,13 @@ public class EnbNetworkProfile {
     @XmlElementRef(name = "IsRohcProfilesQci1Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isRohcProfilesQci1Enabled;
     @XmlElementRef(name = "MmeOverloadAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mmeOverloadAdmin;
+    protected JAXBElement<EnabledStates> mmeOverloadAdmin;
     @XmlElementRef(name = "MmeOverloadWaitTime", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mmeOverloadWaitTime;
     @XmlElementRef(name = "MmeOverloadLoadReductionAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mmeOverloadLoadReductionAdmin;
+    protected JAXBElement<EnabledStates> mmeOverloadLoadReductionAdmin;
     @XmlElementRef(name = "CbrsMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> cbrsMode;
+    protected JAXBElement<EnabledStates> cbrsMode;
     @XmlElement(name = "CbrsSasAddress")
     protected String cbrsSasAddress;
     @XmlElement(name = "PlmnList")
@@ -397,10 +397,10 @@ public class EnbNetworkProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMmeOverloadAdmin() {
+    public JAXBElement<EnabledStates> getMmeOverloadAdmin() {
         return mmeOverloadAdmin;
     }
 
@@ -409,10 +409,10 @@ public class EnbNetworkProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMmeOverloadAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setMmeOverloadAdmin(JAXBElement<EnabledStates> value) {
         this.mmeOverloadAdmin = value;
     }
 
@@ -445,10 +445,10 @@ public class EnbNetworkProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMmeOverloadLoadReductionAdmin() {
+    public JAXBElement<EnabledStates> getMmeOverloadLoadReductionAdmin() {
         return mmeOverloadLoadReductionAdmin;
     }
 
@@ -457,10 +457,10 @@ public class EnbNetworkProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMmeOverloadLoadReductionAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setMmeOverloadLoadReductionAdmin(JAXBElement<EnabledStates> value) {
         this.mmeOverloadLoadReductionAdmin = value;
     }
 
@@ -469,10 +469,10 @@ public class EnbNetworkProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCbrsMode() {
+    public JAXBElement<EnabledStates> getCbrsMode() {
         return cbrsMode;
     }
 
@@ -481,10 +481,10 @@ public class EnbNetworkProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCbrsMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setCbrsMode(JAXBElement<EnabledStates> value) {
         this.cbrsMode = value;
     }
 

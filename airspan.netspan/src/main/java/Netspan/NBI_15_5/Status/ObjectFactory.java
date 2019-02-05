@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 
 import Netspan.API.Enums.DiscoveredByValues;
 import Netspan.API.Enums.EnbTypes;
-import Netspan.API.Enums.HandoverType;
+import Netspan.API.Enums.HandoverTypes;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.NghCellStatus;
 import Netspan.API.Enums.X2ControlStateTypes;
@@ -3870,12 +3870,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "HandoverType", scope = LteAnrStatusWs.class)
-    public JAXBElement<HandoverType> createLteAnrStatusWsHandoverType(HandoverType value) {
-        return new JAXBElement<HandoverType>(_LteAnrStatusWsHandoverType_QNAME, HandoverType.class, LteAnrStatusWs.class, value);
+    public JAXBElement<HandoverTypes> createLteAnrStatusWsHandoverType(HandoverTypes value) {
+        return new JAXBElement<HandoverTypes>(_LteAnrStatusWsHandoverType_QNAME, HandoverTypes.class, LteAnrStatusWs.class, value);
     }
 
     /**

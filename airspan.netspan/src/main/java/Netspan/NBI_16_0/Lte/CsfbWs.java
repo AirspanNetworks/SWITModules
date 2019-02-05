@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -85,7 +85,7 @@ public class CsfbWs {
     @XmlElementRef(name = "DualTransmissionModeCapabilityIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> dualTransmissionModeCapabilityIsDefault;
     @XmlElementRef(name = "DualTransmissionModeCapability", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> dualTransmissionModeCapability;
+    protected JAXBElement<EnabledStates> dualTransmissionModeCapability;
     @XmlElementRef(name = "NetworkControlOrderIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> networkControlOrderIsDefault;
     @XmlElementRef(name = "NetworkControlOrder", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -200,10 +200,10 @@ public class CsfbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getDualTransmissionModeCapability() {
+    public JAXBElement<EnabledStates> getDualTransmissionModeCapability() {
         return dualTransmissionModeCapability;
     }
 
@@ -212,10 +212,10 @@ public class CsfbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setDualTransmissionModeCapability(JAXBElement<EnabledDisabledStates> value) {
+    public void setDualTransmissionModeCapability(JAXBElement<EnabledStates> value) {
         this.dualTransmissionModeCapability = value;
     }
 

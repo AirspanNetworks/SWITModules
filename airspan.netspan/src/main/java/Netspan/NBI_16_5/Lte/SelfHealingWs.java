@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -56,7 +56,7 @@ public class SelfHealingWs {
     @XmlElementRef(name = "SelfHealingEnabledIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> selfHealingEnabledIsDefault;
     @XmlElementRef(name = "SelfHealingEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> selfHealingEnabled;
+    protected JAXBElement<EnabledStates> selfHealingEnabled;
     @XmlElementRef(name = "RachReceivedIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> rachReceivedIsDefault;
     @XmlElementRef(name = "RachReceived", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -72,7 +72,7 @@ public class SelfHealingWs {
     @XmlElementRef(name = "NonActivityRebootIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nonActivityRebootIsDefault;
     @XmlElementRef(name = "NonActivityReboot", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nonActivityReboot;
+    protected JAXBElement<EnabledStates> nonActivityReboot;
 
     /**
      * Gets the value of the selfHealingEnabledIsDefault property.
@@ -103,10 +103,10 @@ public class SelfHealingWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSelfHealingEnabled() {
+    public JAXBElement<EnabledStates> getSelfHealingEnabled() {
         return selfHealingEnabled;
     }
 
@@ -115,10 +115,10 @@ public class SelfHealingWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSelfHealingEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setSelfHealingEnabled(JAXBElement<EnabledStates> value) {
         this.selfHealingEnabled = value;
     }
 
@@ -295,10 +295,10 @@ public class SelfHealingWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNonActivityReboot() {
+    public JAXBElement<EnabledStates> getNonActivityReboot() {
         return nonActivityReboot;
     }
 
@@ -307,10 +307,10 @@ public class SelfHealingWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNonActivityReboot(JAXBElement<EnabledDisabledStates> value) {
+    public void setNonActivityReboot(JAXBElement<EnabledStates> value) {
         this.nonActivityReboot = value;
     }
 

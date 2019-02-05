@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -97,7 +97,7 @@ public class TwampSenderWs {
     @XmlElementRef(name = "ZeroPaddingAdminIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> zeroPaddingAdminIsDefault;
     @XmlElementRef(name = "ZeroPaddingAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> zeroPaddingAdmin;
+    protected JAXBElement<EnabledStates> zeroPaddingAdmin;
     @XmlElementRef(name = "RtdMetricIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> rtdMetricIsDefault;
     @XmlElementRef(name = "RtdMetric", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -224,10 +224,10 @@ public class TwampSenderWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getZeroPaddingAdmin() {
+    public JAXBElement<EnabledStates> getZeroPaddingAdmin() {
         return zeroPaddingAdmin;
     }
 
@@ -236,10 +236,10 @@ public class TwampSenderWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setZeroPaddingAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setZeroPaddingAdmin(JAXBElement<EnabledStates> value) {
         this.zeroPaddingAdmin = value;
     }
 

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -72,39 +72,39 @@ public class EmergencyCallQciWs {
     @XmlElementRef(name = "QCI1IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci1IsDefault;
     @XmlElementRef(name = "QCI1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci1;
+    protected JAXBElement<EnabledStates> qci1;
     @XmlElementRef(name = "QCI2IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci2IsDefault;
     @XmlElementRef(name = "QCI2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci2;
+    protected JAXBElement<EnabledStates> qci2;
     @XmlElementRef(name = "QCI3IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci3IsDefault;
     @XmlElementRef(name = "QCI3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci3;
+    protected JAXBElement<EnabledStates> qci3;
     @XmlElementRef(name = "QCI4IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci4IsDefault;
     @XmlElementRef(name = "QCI4", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci4;
+    protected JAXBElement<EnabledStates> qci4;
     @XmlElementRef(name = "QCI5IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci5IsDefault;
     @XmlElementRef(name = "QCI5", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci5;
+    protected JAXBElement<EnabledStates> qci5;
     @XmlElementRef(name = "QCI6IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci6IsDefault;
     @XmlElementRef(name = "QCI6", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci6;
+    protected JAXBElement<EnabledStates> qci6;
     @XmlElementRef(name = "QCI7IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci7IsDefault;
     @XmlElementRef(name = "QCI7", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci7;
+    protected JAXBElement<EnabledStates> qci7;
     @XmlElementRef(name = "QCI8IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci8IsDefault;
     @XmlElementRef(name = "QCI8", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci8;
+    protected JAXBElement<EnabledStates> qci8;
     @XmlElementRef(name = "QCI9IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci9IsDefault;
     @XmlElementRef(name = "QCI9", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci9;
+    protected JAXBElement<EnabledStates> qci9;
 
     /**
      * Gets the value of the qci1IsDefault property.
@@ -135,10 +135,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI1() {
+    public JAXBElement<EnabledStates> getQCI1() {
         return qci1;
     }
 
@@ -147,10 +147,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI1(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI1(JAXBElement<EnabledStates> value) {
         this.qci1 = value;
     }
 
@@ -183,10 +183,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI2() {
+    public JAXBElement<EnabledStates> getQCI2() {
         return qci2;
     }
 
@@ -195,10 +195,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI2(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI2(JAXBElement<EnabledStates> value) {
         this.qci2 = value;
     }
 
@@ -231,10 +231,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI3() {
+    public JAXBElement<EnabledStates> getQCI3() {
         return qci3;
     }
 
@@ -243,10 +243,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI3(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI3(JAXBElement<EnabledStates> value) {
         this.qci3 = value;
     }
 
@@ -279,10 +279,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI4() {
+    public JAXBElement<EnabledStates> getQCI4() {
         return qci4;
     }
 
@@ -291,10 +291,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI4(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI4(JAXBElement<EnabledStates> value) {
         this.qci4 = value;
     }
 
@@ -327,10 +327,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI5() {
+    public JAXBElement<EnabledStates> getQCI5() {
         return qci5;
     }
 
@@ -339,10 +339,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI5(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI5(JAXBElement<EnabledStates> value) {
         this.qci5 = value;
     }
 
@@ -375,10 +375,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI6() {
+    public JAXBElement<EnabledStates> getQCI6() {
         return qci6;
     }
 
@@ -387,10 +387,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI6(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI6(JAXBElement<EnabledStates> value) {
         this.qci6 = value;
     }
 
@@ -423,10 +423,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI7() {
+    public JAXBElement<EnabledStates> getQCI7() {
         return qci7;
     }
 
@@ -435,10 +435,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI7(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI7(JAXBElement<EnabledStates> value) {
         this.qci7 = value;
     }
 
@@ -471,10 +471,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI8() {
+    public JAXBElement<EnabledStates> getQCI8() {
         return qci8;
     }
 
@@ -483,10 +483,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI8(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI8(JAXBElement<EnabledStates> value) {
         this.qci8 = value;
     }
 
@@ -519,10 +519,10 @@ public class EmergencyCallQciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQCI9() {
+    public JAXBElement<EnabledStates> getQCI9() {
         return qci9;
     }
 
@@ -531,10 +531,10 @@ public class EmergencyCallQciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQCI9(JAXBElement<EnabledDisabledStates> value) {
+    public void setQCI9(JAXBElement<EnabledStates> value) {
         this.qci9 = value;
     }
 

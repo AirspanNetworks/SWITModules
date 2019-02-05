@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -290,28 +290,28 @@ public class AirSonWs {
     @XmlElementRef(name = "WarmResetModeAdminIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> warmResetModeAdminIsDefault;
     @XmlElementRef(name = "WarmResetModeAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> warmResetModeAdmin;
+    protected JAXBElement<EnabledStates> warmResetModeAdmin;
     @XmlElement(name = "SiteIdentificationIsDefault", required = true, type = Boolean.class, nillable = true)
     protected Boolean siteIdentificationIsDefault;
     @XmlElement(name = "SiteIdentification", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates siteIdentification;
+    protected EnabledStates siteIdentification;
     @XmlElementRef(name = "AutoInventoryUpdateIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> autoInventoryUpdateIsDefault;
     @XmlElementRef(name = "AutoInventoryUpdate", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> autoInventoryUpdate;
+    protected JAXBElement<EnabledStates> autoInventoryUpdate;
     @XmlElementRef(name = "AutoSoftwareDownloadIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> autoSoftwareDownloadIsDefault;
     @XmlElementRef(name = "AutoSoftwareDownload", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> autoSoftwareDownload;
+    protected JAXBElement<EnabledStates> autoSoftwareDownload;
     @XmlElementRef(name = "ConfigurationProvisioningIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> configurationProvisioningIsDefault;
     @XmlElementRef(name = "ConfigurationProvisioning", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> configurationProvisioning;
+    protected JAXBElement<EnabledStates> configurationProvisioning;
     @XmlElementRef(name = "FullDynamicRadioConfigurationIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> fullDynamicRadioConfigurationIsDefault;
     @XmlElementRef(name = "FullDynamicRadioConfiguration", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> fullDynamicRadioConfiguration;
+    protected JAXBElement<EnabledStates> fullDynamicRadioConfiguration;
     @XmlElementRef(name = "LowPowerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> lowPowerIsDefault;
     @XmlElementRef(name = "LowPower", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -355,7 +355,7 @@ public class AirSonWs {
     @XmlElementRef(name = "PciConfusionAllowedIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> pciConfusionAllowedIsDefault;
     @XmlElementRef(name = "PciConfusionAllowed", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> pciConfusionAllowed;
+    protected JAXBElement<EnabledStates> pciConfusionAllowed;
     @XmlElementRef(name = "InitialPciListSizeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> initialPciListSizeIsDefault;
     @XmlElementRef(name = "InitialPciListSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1410,10 +1410,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getWarmResetModeAdmin() {
+    public JAXBElement<EnabledStates> getWarmResetModeAdmin() {
         return warmResetModeAdmin;
     }
 
@@ -1422,10 +1422,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setWarmResetModeAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setWarmResetModeAdmin(JAXBElement<EnabledStates> value) {
         this.warmResetModeAdmin = value;
     }
 
@@ -1458,10 +1458,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getSiteIdentification() {
+    public EnabledStates getSiteIdentification() {
         return siteIdentification;
     }
 
@@ -1470,10 +1470,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setSiteIdentification(EnabledDisabledStates value) {
+    public void setSiteIdentification(EnabledStates value) {
         this.siteIdentification = value;
     }
 
@@ -1506,10 +1506,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAutoInventoryUpdate() {
+    public JAXBElement<EnabledStates> getAutoInventoryUpdate() {
         return autoInventoryUpdate;
     }
 
@@ -1518,10 +1518,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAutoInventoryUpdate(JAXBElement<EnabledDisabledStates> value) {
+    public void setAutoInventoryUpdate(JAXBElement<EnabledStates> value) {
         this.autoInventoryUpdate = value;
     }
 
@@ -1554,10 +1554,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAutoSoftwareDownload() {
+    public JAXBElement<EnabledStates> getAutoSoftwareDownload() {
         return autoSoftwareDownload;
     }
 
@@ -1566,10 +1566,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAutoSoftwareDownload(JAXBElement<EnabledDisabledStates> value) {
+    public void setAutoSoftwareDownload(JAXBElement<EnabledStates> value) {
         this.autoSoftwareDownload = value;
     }
 
@@ -1602,10 +1602,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getConfigurationProvisioning() {
+    public JAXBElement<EnabledStates> getConfigurationProvisioning() {
         return configurationProvisioning;
     }
 
@@ -1614,10 +1614,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setConfigurationProvisioning(JAXBElement<EnabledDisabledStates> value) {
+    public void setConfigurationProvisioning(JAXBElement<EnabledStates> value) {
         this.configurationProvisioning = value;
     }
 
@@ -1650,10 +1650,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getFullDynamicRadioConfiguration() {
+    public JAXBElement<EnabledStates> getFullDynamicRadioConfiguration() {
         return fullDynamicRadioConfiguration;
     }
 
@@ -1662,10 +1662,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setFullDynamicRadioConfiguration(JAXBElement<EnabledDisabledStates> value) {
+    public void setFullDynamicRadioConfiguration(JAXBElement<EnabledStates> value) {
         this.fullDynamicRadioConfiguration = value;
     }
 
@@ -2178,10 +2178,10 @@ public class AirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPciConfusionAllowed() {
+    public JAXBElement<EnabledStates> getPciConfusionAllowed() {
         return pciConfusionAllowed;
     }
 
@@ -2190,10 +2190,10 @@ public class AirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPciConfusionAllowed(JAXBElement<EnabledDisabledStates> value) {
+    public void setPciConfusionAllowed(JAXBElement<EnabledStates> value) {
         this.pciConfusionAllowed = value;
     }
 

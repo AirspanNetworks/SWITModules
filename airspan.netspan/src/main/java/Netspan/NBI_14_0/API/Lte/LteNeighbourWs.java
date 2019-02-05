@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverType;
+import Netspan.API.Enums.HandoverTypes;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -68,7 +68,7 @@ public class LteNeighbourWs {
     protected X2ControlStateTypes x2ControlState;
     @XmlElement(name = "HandoverType", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected HandoverType handoverType;
+    protected HandoverTypes handoverType;
     @XmlElement(name = "IsStaticNeighbour", required = true, type = Boolean.class, nillable = true)
     protected Boolean isStaticNeighbour;
 
@@ -221,10 +221,10 @@ public class LteNeighbourWs {
      * 
      * @return
      *     possible object is
-     *     {@link HandoverType }
+     *     {@link HandoverTypes }
      *     
      */
-    public HandoverType getHandoverType() {
+    public HandoverTypes getHandoverType() {
         return handoverType;
     }
 
@@ -233,10 +233,10 @@ public class LteNeighbourWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link HandoverType }
+     *     {@link HandoverTypes }
      *     
      */
-    public void setHandoverType(HandoverType value) {
+    public void setHandoverType(HandoverTypes value) {
         this.handoverType = value;
     }
 

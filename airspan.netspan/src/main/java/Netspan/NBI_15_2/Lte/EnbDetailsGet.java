@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.NodeManagementModes;
+import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
 
 
 /**
@@ -34,7 +35,7 @@ import Netspan.API.Enums.NodeManagementModes;
     "managedMode"
 })
 public class EnbDetailsGet
-    extends EnbDetailsGetPnp
+    extends EnbDetailsGetPnp implements ILteEnbDetailsGet
 {
 
     @XmlElementRef(name = "ManagedMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)

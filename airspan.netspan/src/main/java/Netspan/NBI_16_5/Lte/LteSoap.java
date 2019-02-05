@@ -9,7 +9,7 @@ import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnbStates;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
@@ -1327,9 +1327,9 @@ public interface LteSoap {
         @WebParam(name = "Action", targetNamespace = "http://Airspan.Netspan.WebServices")
         Netspan.NBI_16_5.Lte.WiFiAction action,
         @WebParam(name = "Radio2Dot4GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        EnabledDisabledStates radio2Dot4GHz,
+        EnabledStates radio2Dot4GHz,
         @WebParam(name = "Radio5GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        EnabledDisabledStates radio5GHz,
+        EnabledStates radio5GHz,
         @WebParam(name = "Credentials", targetNamespace = "http://Airspan.Netspan.WebServices", header = true)
         Credentials credentials
     );
@@ -2009,9 +2009,9 @@ public interface LteSoap {
         @WebParam(name = "Action", targetNamespace = "http://Airspan.Netspan.WebServices")
         Netspan.NBI_16_5.Lte.WiFiAction action,
         @WebParam(name = "Radio2Dot4GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        EnabledDisabledStates radio2Dot4GHz,
+        EnabledStates radio2Dot4GHz,
         @WebParam(name = "Radio5GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        EnabledDisabledStates radio5GHz,
+        EnabledStates radio5GHz,
         @WebParam(name = "Credentials", targetNamespace = "http://Airspan.Netspan.WebServices", header = true)
         Credentials credentials
     );

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -236,7 +236,7 @@ public class ClockMngrWs {
     @XmlElementRef(name = "ForceTimeSyncIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> forceTimeSyncIsDefault;
     @XmlElementRef(name = "ForceTimeSync", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> forceTimeSync;
+    protected JAXBElement<EnabledStates> forceTimeSync;
     @XmlElementRef(name = "PtpSyncSrcDisqualificationThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> ptpSyncSrcDisqualificationThresholdIsDefault;
     @XmlElementRef(name = "PtpSyncSrcDisqualificationThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -336,7 +336,7 @@ public class ClockMngrWs {
     @XmlElementRef(name = "SourceSwitchIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> sourceSwitchIsDefault;
     @XmlElementRef(name = "SourceSwitch", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> sourceSwitch;
+    protected JAXBElement<EnabledStates> sourceSwitch;
     @XmlElementRef(name = "PrimarySyncSourceIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> primarySyncSourceIsDefault;
     @XmlElementRef(name = "PrimarySyncSource", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -743,10 +743,10 @@ public class ClockMngrWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getForceTimeSync() {
+    public JAXBElement<EnabledStates> getForceTimeSync() {
         return forceTimeSync;
     }
 
@@ -755,10 +755,10 @@ public class ClockMngrWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setForceTimeSync(JAXBElement<EnabledDisabledStates> value) {
+    public void setForceTimeSync(JAXBElement<EnabledStates> value) {
         this.forceTimeSync = value;
     }
 
@@ -1943,10 +1943,10 @@ public class ClockMngrWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSourceSwitch() {
+    public JAXBElement<EnabledStates> getSourceSwitch() {
         return sourceSwitch;
     }
 
@@ -1955,10 +1955,10 @@ public class ClockMngrWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSourceSwitch(JAXBElement<EnabledDisabledStates> value) {
+    public void setSourceSwitch(JAXBElement<EnabledStates> value) {
         this.sourceSwitch = value;
     }
 

@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -67,7 +67,7 @@ public class LteMobilityProfileWs {
     protected MobilityConnectedModeFreq connectedModeInterFrequency;
     @XmlElement(name = "CsfbEnabled", required = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates csfbEnabled;
+    protected EnabledStates csfbEnabled;
 
     /**
      * Gets the value of the name property.
@@ -242,10 +242,10 @@ public class LteMobilityProfileWs {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getCsfbEnabled() {
+    public EnabledStates getCsfbEnabled() {
         return csfbEnabled;
     }
 
@@ -254,10 +254,10 @@ public class LteMobilityProfileWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setCsfbEnabled(EnabledDisabledStates value) {
+    public void setCsfbEnabled(EnabledStates value) {
         this.csfbEnabled = value;
     }
 

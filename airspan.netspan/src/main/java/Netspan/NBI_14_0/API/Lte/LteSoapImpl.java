@@ -8,7 +8,7 @@ package Netspan.NBI_14_0.API.Lte;
 
 import java.util.logging.Logger;
 
-import Netspan.API.Enums.HandoverType;
+import Netspan.API.Enums.HandoverTypes;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -1103,7 +1103,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_14_0.API.Lte.LteSoap#lteNeighbourAdd(java.lang.String  nodeName ,)java.lang.String  neighbourName ,)Netspan.NBI_14_0.API.Lte.HoControlStateTypes  hoControlStatus ,)Netspan.NBI_14_0.API.Lte.X2ControlStateTypes  x2ControlStatus ,)Netspan.NBI_14_0.API.Lte.HandoverType  handoverType ,)java.lang.Boolean  isStaticNeighbour ,)Netspan.NBI_14_0.API.Lte.Credentials  credentials )*
      */
-    public Netspan.NBI_14_0.API.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName,java.lang.String neighbourName,HoControlStateTypes hoControlStatus,X2ControlStateTypes x2ControlStatus,HandoverType handoverType,java.lang.Boolean isStaticNeighbour,Credentials credentials) { 
+    public Netspan.NBI_14_0.API.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName,java.lang.String neighbourName,HoControlStateTypes hoControlStatus,X2ControlStateTypes x2ControlStatus,HandoverTypes handoverType,java.lang.Boolean isStaticNeighbour,Credentials credentials) { 
         LOG.info("Executing operation lteNeighbourAdd");
         System.out.println(nodeName);
         System.out.println(neighbourName);

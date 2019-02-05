@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -65,7 +65,7 @@ public class LteTwampSenderContainer {
     @XmlElementRef(name = "TestDuration", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> testDuration;
     @XmlElementRef(name = "SkipDiscardUnsyncedReflectorTestPackets", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> skipDiscardUnsyncedReflectorTestPackets;
+    protected JAXBElement<EnabledStates> skipDiscardUnsyncedReflectorTestPackets;
     @XmlElement(name = "IpAddress")
     protected String ipAddress;
     @XmlElementRef(name = "Port", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -220,10 +220,10 @@ public class LteTwampSenderContainer {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSkipDiscardUnsyncedReflectorTestPackets() {
+    public JAXBElement<EnabledStates> getSkipDiscardUnsyncedReflectorTestPackets() {
         return skipDiscardUnsyncedReflectorTestPackets;
     }
 
@@ -232,10 +232,10 @@ public class LteTwampSenderContainer {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSkipDiscardUnsyncedReflectorTestPackets(JAXBElement<EnabledDisabledStates> value) {
+    public void setSkipDiscardUnsyncedReflectorTestPackets(JAXBElement<EnabledStates> value) {
         this.skipDiscardUnsyncedReflectorTestPackets = value;
     }
 

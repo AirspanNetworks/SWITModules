@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -56,7 +56,7 @@ public class MobilityConnectedWs {
     @XmlElementRef(name = "PresenceAntennaPort1IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> presenceAntennaPort1IsDefault;
     @XmlElementRef(name = "PresenceAntennaPort1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> presenceAntennaPort1;
+    protected JAXBElement<EnabledStates> presenceAntennaPort1;
     @XmlElementRef(name = "NeighCellConfigIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> neighCellConfigIsDefault;
     @XmlElementRef(name = "NeighCellConfig", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -99,10 +99,10 @@ public class MobilityConnectedWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPresenceAntennaPort1() {
+    public JAXBElement<EnabledStates> getPresenceAntennaPort1() {
         return presenceAntennaPort1;
     }
 
@@ -111,10 +111,10 @@ public class MobilityConnectedWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPresenceAntennaPort1(JAXBElement<EnabledDisabledStates> value) {
+    public void setPresenceAntennaPort1(JAXBElement<EnabledStates> value) {
         this.presenceAntennaPort1 = value;
     }
 

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -46,7 +46,7 @@ import Netspan.API.Enums.EnabledDisabledStates;
 public class LteSonDynIcic {
 
     @XmlElementRef(name = "IcicMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> icicMode;
+    protected JAXBElement<EnabledStates> icicMode;
     @XmlElementRef(name = "IcicSchemeType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<DicicSchemeType> icicSchemeType;
     @XmlElementRef(name = "MinThresholdCeu", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -54,7 +54,7 @@ public class LteSonDynIcic {
     @XmlElementRef(name = "MaxThresholdCeu", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maxThresholdCeu;
     @XmlElementRef(name = "UnmanagedInterferenceHandling", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> unmanagedInterferenceHandling;
+    protected JAXBElement<EnabledStates> unmanagedInterferenceHandling;
     @XmlElementRef(name = "NumberOfColors", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> numberOfColors;
 
@@ -63,10 +63,10 @@ public class LteSonDynIcic {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIcicMode() {
+    public JAXBElement<EnabledStates> getIcicMode() {
         return icicMode;
     }
 
@@ -75,10 +75,10 @@ public class LteSonDynIcic {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIcicMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setIcicMode(JAXBElement<EnabledStates> value) {
         this.icicMode = value;
     }
 
@@ -159,10 +159,10 @@ public class LteSonDynIcic {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUnmanagedInterferenceHandling() {
+    public JAXBElement<EnabledStates> getUnmanagedInterferenceHandling() {
         return unmanagedInterferenceHandling;
     }
 
@@ -171,10 +171,10 @@ public class LteSonDynIcic {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUnmanagedInterferenceHandling(JAXBElement<EnabledDisabledStates> value) {
+    public void setUnmanagedInterferenceHandling(JAXBElement<EnabledStates> value) {
         this.unmanagedInterferenceHandling = value;
     }
 

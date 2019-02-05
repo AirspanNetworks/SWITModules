@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -100,19 +100,19 @@ public class HandoverWs {
     @XmlElementRef(name = "PacketForwardingEnabledIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> packetForwardingEnabledIsDefault;
     @XmlElementRef(name = "PacketForwardingEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> packetForwardingEnabled;
+    protected JAXBElement<EnabledStates> packetForwardingEnabled;
     @XmlElementRef(name = "AllowHoWithoutHrlIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> allowHoWithoutHrlIsDefault;
     @XmlElementRef(name = "AllowHoWithoutHrl", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> allowHoWithoutHrl;
+    protected JAXBElement<EnabledStates> allowHoWithoutHrl;
     @XmlElementRef(name = "ForceFullConfigIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> forceFullConfigIsDefault;
     @XmlElementRef(name = "ForceFullConfig", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> forceFullConfig;
+    protected JAXBElement<EnabledStates> forceFullConfig;
     @XmlElementRef(name = "ReleaseCsiRsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> releaseCsiRsIsDefault;
     @XmlElementRef(name = "ReleaseCsiRs", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> releaseCsiRs;
+    protected JAXBElement<EnabledStates> releaseCsiRs;
 
     /**
      * Gets the value of the sourceTx2ReloCprepIsDefault property.
@@ -431,10 +431,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPacketForwardingEnabled() {
+    public JAXBElement<EnabledStates> getPacketForwardingEnabled() {
         return packetForwardingEnabled;
     }
 
@@ -443,10 +443,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPacketForwardingEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setPacketForwardingEnabled(JAXBElement<EnabledStates> value) {
         this.packetForwardingEnabled = value;
     }
 
@@ -479,10 +479,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAllowHoWithoutHrl() {
+    public JAXBElement<EnabledStates> getAllowHoWithoutHrl() {
         return allowHoWithoutHrl;
     }
 
@@ -491,10 +491,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAllowHoWithoutHrl(JAXBElement<EnabledDisabledStates> value) {
+    public void setAllowHoWithoutHrl(JAXBElement<EnabledStates> value) {
         this.allowHoWithoutHrl = value;
     }
 
@@ -527,10 +527,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getForceFullConfig() {
+    public JAXBElement<EnabledStates> getForceFullConfig() {
         return forceFullConfig;
     }
 
@@ -539,10 +539,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setForceFullConfig(JAXBElement<EnabledDisabledStates> value) {
+    public void setForceFullConfig(JAXBElement<EnabledStates> value) {
         this.forceFullConfig = value;
     }
 
@@ -575,10 +575,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getReleaseCsiRs() {
+    public JAXBElement<EnabledStates> getReleaseCsiRs() {
         return releaseCsiRs;
     }
 
@@ -587,10 +587,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setReleaseCsiRs(JAXBElement<EnabledDisabledStates> value) {
+    public void setReleaseCsiRs(JAXBElement<EnabledStates> value) {
         this.releaseCsiRs = value;
     }
 

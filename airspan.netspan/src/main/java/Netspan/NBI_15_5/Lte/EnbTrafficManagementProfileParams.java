@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -58,7 +58,7 @@ import Netspan.API.Enums.EnabledDisabledStates;
 public class EnbTrafficManagementProfileParams {
 
     @XmlElementRef(name = "LoadSheddingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> loadSheddingMode;
+    protected JAXBElement<EnabledStates> loadSheddingMode;
     @XmlElementRef(name = "MonitorInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> monitorInterval;
     @XmlElementRef(name = "StepDown", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -83,10 +83,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLoadSheddingMode() {
+    public JAXBElement<EnabledStates> getLoadSheddingMode() {
         return loadSheddingMode;
     }
 
@@ -95,10 +95,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLoadSheddingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLoadSheddingMode(JAXBElement<EnabledStates> value) {
         this.loadSheddingMode = value;
     }
 

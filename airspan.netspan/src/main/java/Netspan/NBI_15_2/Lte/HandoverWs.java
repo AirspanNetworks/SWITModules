@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -92,11 +92,11 @@ public class HandoverWs {
     @XmlElementRef(name = "PacketForwardingEnabledIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> packetForwardingEnabledIsDefault;
     @XmlElementRef(name = "PacketForwardingEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> packetForwardingEnabled;
+    protected JAXBElement<EnabledStates> packetForwardingEnabled;
     @XmlElementRef(name = "AllowHoWithoutHrlIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> allowHoWithoutHrlIsDefault;
     @XmlElementRef(name = "AllowHoWithoutHrl", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> allowHoWithoutHrl;
+    protected JAXBElement<EnabledStates> allowHoWithoutHrl;
 
     /**
      * Gets the value of the sourceTx2ReloCprepIsDefault property.
@@ -415,10 +415,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPacketForwardingEnabled() {
+    public JAXBElement<EnabledStates> getPacketForwardingEnabled() {
         return packetForwardingEnabled;
     }
 
@@ -427,10 +427,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPacketForwardingEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setPacketForwardingEnabled(JAXBElement<EnabledStates> value) {
         this.packetForwardingEnabled = value;
     }
 
@@ -463,10 +463,10 @@ public class HandoverWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAllowHoWithoutHrl() {
+    public JAXBElement<EnabledStates> getAllowHoWithoutHrl() {
         return allowHoWithoutHrl;
     }
 
@@ -475,10 +475,10 @@ public class HandoverWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAllowHoWithoutHrl(JAXBElement<EnabledDisabledStates> value) {
+    public void setAllowHoWithoutHrl(JAXBElement<EnabledStates> value) {
         this.allowHoWithoutHrl = value;
     }
 

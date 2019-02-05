@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -220,7 +220,7 @@ public class NlSyncWs {
     @XmlElementRef(name = "PriorityReversionIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> priorityReversionIsDefault;
     @XmlElementRef(name = "PriorityReversion", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> priorityReversion;
+    protected JAXBElement<EnabledStates> priorityReversion;
     @XmlElementRef(name = "NumberofSib1ReadingRetriesIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> numberofSib1ReadingRetriesIsDefault;
     @XmlElementRef(name = "NumberofSib1ReadingRetries", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1111,10 +1111,10 @@ public class NlSyncWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPriorityReversion() {
+    public JAXBElement<EnabledStates> getPriorityReversion() {
         return priorityReversion;
     }
 
@@ -1123,10 +1123,10 @@ public class NlSyncWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPriorityReversion(JAXBElement<EnabledDisabledStates> value) {
+    public void setPriorityReversion(JAXBElement<EnabledStates> value) {
         this.priorityReversion = value;
     }
 

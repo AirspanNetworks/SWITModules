@@ -1373,7 +1373,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_16_0.Lte.LteSoap#relayEnbWiFiActionSet(java.lang.String  nodeName ,)Netspan.NBI_16_0.Lte.WiFiAction  action ,)Netspan.NBI_16_0.Lte.EnabledDisabledStates  radio2Dot4GHz ,)Netspan.NBI_16_0.Lte.EnabledDisabledStates  radio5GHz ,)Netspan.NBI_16_0.Lte.Credentials  credentials )*
      */
-    public Netspan.NBI_16_0.Lte.NodeActionResult relayEnbWiFiActionSet(java.lang.String nodeName,Netspan.NBI_16_0.Lte.WiFiAction action,Netspan.API.Enums.EnabledDisabledStates radio2Dot4GHz,Netspan.API.Enums.EnabledDisabledStates radio5GHz,Credentials credentials) { 
+    public Netspan.NBI_16_0.Lte.NodeActionResult relayEnbWiFiActionSet(java.lang.String nodeName,Netspan.NBI_16_0.Lte.WiFiAction action,Netspan.API.Enums.EnabledStates radio2Dot4GHz,Netspan.API.Enums.EnabledStates radio5GHz,Credentials credentials) { 
         LOG.info("Executing operation relayEnbWiFiActionSet");
         System.out.println(nodeName);
         System.out.println(action);
@@ -2075,7 +2075,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_16_0.Lte.LteSoap#enbWiFiActionSet(java.lang.String  nodeName ,)Netspan.NBI_16_0.Lte.WiFiAction  action ,)Netspan.NBI_16_0.Lte.EnabledDisabledStates  radio2Dot4GHz ,)Netspan.NBI_16_0.Lte.EnabledDisabledStates  radio5GHz ,)Netspan.NBI_16_0.Lte.Credentials  credentials )*
      */
-    public Netspan.NBI_16_0.Lte.NodeActionResult enbWiFiActionSet(java.lang.String nodeName,Netspan.NBI_16_0.Lte.WiFiAction action,Netspan.API.Enums.EnabledDisabledStates radio2Dot4GHz,Netspan.API.Enums.EnabledDisabledStates radio5GHz,Credentials credentials) { 
+    public Netspan.NBI_16_0.Lte.NodeActionResult enbWiFiActionSet(java.lang.String nodeName,Netspan.NBI_16_0.Lte.WiFiAction action,Netspan.API.Enums.EnabledStates radio2Dot4GHz,Netspan.API.Enums.EnabledStates radio5GHz,Credentials credentials) { 
         LOG.info("Executing operation enbWiFiActionSet");
         System.out.println(nodeName);
         System.out.println(action);

@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -62,7 +62,7 @@ public class TrafficManagementProfile {
     @XmlElementRef(name = "HardwareCategory", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CategoriesLte> hardwareCategory;
     @XmlElementRef(name = "LoadSheddingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> loadSheddingMode;
+    protected JAXBElement<EnabledStates> loadSheddingMode;
     @XmlElementRef(name = "MonitorInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> monitorInterval;
     @XmlElementRef(name = "StepDown", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -133,10 +133,10 @@ public class TrafficManagementProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLoadSheddingMode() {
+    public JAXBElement<EnabledStates> getLoadSheddingMode() {
         return loadSheddingMode;
     }
 
@@ -145,10 +145,10 @@ public class TrafficManagementProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLoadSheddingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLoadSheddingMode(JAXBElement<EnabledStates> value) {
         this.loadSheddingMode = value;
     }
 

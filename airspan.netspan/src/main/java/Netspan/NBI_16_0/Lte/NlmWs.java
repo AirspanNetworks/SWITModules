@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -47,7 +47,7 @@ public class NlmWs {
     @XmlElementRef(name = "NetworkListeningModuleIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> networkListeningModuleIsDefault;
     @XmlElementRef(name = "NetworkListeningModule", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> networkListeningModule;
+    protected JAXBElement<EnabledStates> networkListeningModule;
     @XmlElementRef(name = "RSRPThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> rsrpThresholdIsDefault;
     @XmlElementRef(name = "RSRPThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -84,10 +84,10 @@ public class NlmWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNetworkListeningModule() {
+    public JAXBElement<EnabledStates> getNetworkListeningModule() {
         return networkListeningModule;
     }
 
@@ -96,10 +96,10 @@ public class NlmWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNetworkListeningModule(JAXBElement<EnabledDisabledStates> value) {
+    public void setNetworkListeningModule(JAXBElement<EnabledStates> value) {
         this.networkListeningModule = value;
     }
 

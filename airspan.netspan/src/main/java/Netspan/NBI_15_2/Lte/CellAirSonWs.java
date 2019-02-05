@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -172,7 +172,7 @@ public class CellAirSonWs {
     @XmlElementRef(name = "MroPerModeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> mroPerModeIsDefault;
     @XmlElementRef(name = "MroPerMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mroPerMode;
+    protected JAXBElement<EnabledStates> mroPerMode;
     @XmlElementRef(name = "OcnDeadBandIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> ocnDeadBandIsDefault;
     @XmlElementRef(name = "OcnDeadBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -975,10 +975,10 @@ public class CellAirSonWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMroPerMode() {
+    public JAXBElement<EnabledStates> getMroPerMode() {
         return mroPerMode;
     }
 
@@ -987,10 +987,10 @@ public class CellAirSonWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMroPerMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setMroPerMode(JAXBElement<EnabledStates> value) {
         this.mroPerMode = value;
     }
 

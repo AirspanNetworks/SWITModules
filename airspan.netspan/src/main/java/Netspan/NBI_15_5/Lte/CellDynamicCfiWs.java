@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -68,7 +68,7 @@ public class CellDynamicCfiWs {
     @XmlElementRef(name = "ControlChannelOverloadOptimizationIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> controlChannelOverloadOptimizationIsDefault;
     @XmlElementRef(name = "ControlChannelOverloadOptimization", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> controlChannelOverloadOptimization;
+    protected JAXBElement<EnabledStates> controlChannelOverloadOptimization;
     @XmlElementRef(name = "ChannelFormatIndicatorIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> channelFormatIndicatorIsDefault;
     @XmlElementRef(name = "ChannelFormatIndicator", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -127,10 +127,10 @@ public class CellDynamicCfiWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getControlChannelOverloadOptimization() {
+    public JAXBElement<EnabledStates> getControlChannelOverloadOptimization() {
         return controlChannelOverloadOptimization;
     }
 
@@ -139,10 +139,10 @@ public class CellDynamicCfiWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setControlChannelOverloadOptimization(JAXBElement<EnabledDisabledStates> value) {
+    public void setControlChannelOverloadOptimization(JAXBElement<EnabledStates> value) {
         this.controlChannelOverloadOptimization = value;
     }
 

@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -256,7 +256,7 @@ public class CellDynamicIcicWs {
     protected Boolean nonContiguousCERIsDefault;
     @XmlElement(name = "NonContiguousCER", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates nonContiguousCER;
+    protected EnabledStates nonContiguousCER;
     @XmlElementRef(name = "UnmanagedIntThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> unmanagedIntThresholdIsDefault;
     @XmlElementRef(name = "UnmanagedIntThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1499,10 +1499,10 @@ public class CellDynamicIcicWs {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getNonContiguousCER() {
+    public EnabledStates getNonContiguousCER() {
         return nonContiguousCER;
     }
 
@@ -1511,10 +1511,10 @@ public class CellDynamicIcicWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setNonContiguousCER(EnabledDisabledStates value) {
+    public void setNonContiguousCER(EnabledStates value) {
         this.nonContiguousCER = value;
     }
 

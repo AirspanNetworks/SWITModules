@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Lte.CarrierAggregationModes;
 
 
@@ -53,7 +53,7 @@ public class EnbMultiCellProfileParams {
     @XmlElementRef(name = "CarrierAggMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CarrierAggregationModes> carrierAggMode;
     @XmlElementRef(name = "IntraEnbLoadBalancingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> intraEnbLoadBalancingMode;
+    protected JAXBElement<EnabledStates> intraEnbLoadBalancingMode;
     @XmlElementRef(name = "CompositeLoadDiffMax", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> compositeLoadDiffMax;
     @XmlElementRef(name = "CompositeLoadDiffMin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -61,7 +61,7 @@ public class EnbMultiCellProfileParams {
     @XmlElementRef(name = "CalculationInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> calculationInterval;
     @XmlElementRef(name = "IntraEnbLoadBalancingConfigMeas", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> intraEnbLoadBalancingConfigMeas;
+    protected JAXBElement<EnabledStates> intraEnbLoadBalancingConfigMeas;
 
     /**
      * Gets the value of the carrierAggMode property.
@@ -92,10 +92,10 @@ public class EnbMultiCellProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIntraEnbLoadBalancingMode() {
+    public JAXBElement<EnabledStates> getIntraEnbLoadBalancingMode() {
         return intraEnbLoadBalancingMode;
     }
 
@@ -104,10 +104,10 @@ public class EnbMultiCellProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIntraEnbLoadBalancingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setIntraEnbLoadBalancingMode(JAXBElement<EnabledStates> value) {
         this.intraEnbLoadBalancingMode = value;
     }
 
@@ -188,10 +188,10 @@ public class EnbMultiCellProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIntraEnbLoadBalancingConfigMeas() {
+    public JAXBElement<EnabledStates> getIntraEnbLoadBalancingConfigMeas() {
         return intraEnbLoadBalancingConfigMeas;
     }
 
@@ -200,10 +200,10 @@ public class EnbMultiCellProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIntraEnbLoadBalancingConfigMeas(JAXBElement<EnabledDisabledStates> value) {
+    public void setIntraEnbLoadBalancingConfigMeas(JAXBElement<EnabledStates> value) {
         this.intraEnbLoadBalancingConfigMeas = value;
     }
 

@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -84,7 +84,7 @@ public class MobilityIdleModeInterFreq {
     @XmlElementRef(name = "QOffsetFreq", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> qOffsetFreq;
     @XmlElementRef(name = "ImmciMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> immciMode;
+    protected JAXBElement<EnabledStates> immciMode;
 
     /**
      * Gets the value of the qRxLevelMin property.
@@ -379,10 +379,10 @@ public class MobilityIdleModeInterFreq {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getImmciMode() {
+    public JAXBElement<EnabledStates> getImmciMode() {
         return immciMode;
     }
 
@@ -391,10 +391,10 @@ public class MobilityIdleModeInterFreq {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setImmciMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setImmciMode(JAXBElement<EnabledStates> value) {
         this.immciMode = value;
     }
 

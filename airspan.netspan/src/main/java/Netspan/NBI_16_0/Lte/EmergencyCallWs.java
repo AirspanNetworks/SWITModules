@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -71,11 +71,11 @@ public class EmergencyCallWs {
     @XmlElementRef(name = "PreemptionCapabilityIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> preemptionCapabilityIsDefault;
     @XmlElementRef(name = "PreemptionCapability", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> preemptionCapability;
+    protected JAXBElement<EnabledStates> preemptionCapability;
     @XmlElementRef(name = "PreemptionVulnerabilityIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> preemptionVulnerabilityIsDefault;
     @XmlElementRef(name = "PreemptionVulnerability", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> preemptionVulnerability;
+    protected JAXBElement<EnabledStates> preemptionVulnerability;
     @XmlElementRef(name = "EmergencyResetTimeoutTimerIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> emergencyResetTimeoutTimerIsDefault;
     @XmlElementRef(name = "EmergencyResetTimeoutTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -212,10 +212,10 @@ public class EmergencyCallWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPreemptionCapability() {
+    public JAXBElement<EnabledStates> getPreemptionCapability() {
         return preemptionCapability;
     }
 
@@ -224,10 +224,10 @@ public class EmergencyCallWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPreemptionCapability(JAXBElement<EnabledDisabledStates> value) {
+    public void setPreemptionCapability(JAXBElement<EnabledStates> value) {
         this.preemptionCapability = value;
     }
 
@@ -260,10 +260,10 @@ public class EmergencyCallWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPreemptionVulnerability() {
+    public JAXBElement<EnabledStates> getPreemptionVulnerability() {
         return preemptionVulnerability;
     }
 
@@ -272,10 +272,10 @@ public class EmergencyCallWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPreemptionVulnerability(JAXBElement<EnabledDisabledStates> value) {
+    public void setPreemptionVulnerability(JAXBElement<EnabledStates> value) {
         this.preemptionVulnerability = value;
     }
 

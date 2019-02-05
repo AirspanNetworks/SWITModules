@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -82,7 +82,7 @@ public class UtranProfile {
     @XmlElementRef(name = "SecondaryArfcnBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> secondaryArfcnBand;
     @XmlElementRef(name = "GeranEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> geranEnabled;
+    protected JAXBElement<EnabledStates> geranEnabled;
     @XmlElementRef(name = "GeranPrimaryArfcnBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<GeranBands> geranPrimaryArfcnBand;
     @XmlElementRef(name = "GeranPrimaryArfcn", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -313,10 +313,10 @@ public class UtranProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getGeranEnabled() {
+    public JAXBElement<EnabledStates> getGeranEnabled() {
         return geranEnabled;
     }
 
@@ -325,10 +325,10 @@ public class UtranProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setGeranEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setGeranEnabled(JAXBElement<EnabledStates> value) {
         this.geranEnabled = value;
     }
 

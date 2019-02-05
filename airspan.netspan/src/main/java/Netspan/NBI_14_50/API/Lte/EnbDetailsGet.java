@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.NodeManagementModes;
 import Netspan.API.Enums.X2ControlStateTypes;
 import Netspan.API.Lte.IRetunTypes.ILteEnbDetailsGet;
@@ -204,7 +204,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "ManagementSubnetMask")
     protected String managementSubnetMask;
     @XmlElementRef(name = "IsS1CInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isS1CInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isS1CInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForS1C", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForS1C;
     @XmlElement(name = "S1CIpAddress")
@@ -212,7 +212,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "S1CSubnetMask")
     protected String s1CSubnetMask;
     @XmlElementRef(name = "IsS1UInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isS1UInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isS1UInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForS1U", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForS1U;
     @XmlElement(name = "S1UIpAddress")
@@ -220,7 +220,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "S1USubnetMask")
     protected String s1USubnetMask;
     @XmlElementRef(name = "IsX2CInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isX2CInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isX2CInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForX2C", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForX2C;
     @XmlElement(name = "X2CIpAddress")
@@ -228,7 +228,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "X2CSubnetMask")
     protected String x2CSubnetMask;
     @XmlElementRef(name = "IsX2UInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isX2UInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isX2UInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForX2U", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForX2U;
     @XmlElement(name = "X2UIpAddress")
@@ -236,7 +236,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "X2USubnetMask")
     protected String x2USubnetMask;
     @XmlElementRef(name = "IsPtpSlaveInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isPtpSlaveInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isPtpSlaveInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForPtpSlave", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForPtpSlave;
     @XmlElement(name = "PtpSlaveIpAddress")
@@ -244,7 +244,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "PtpSlaveSubnetMask")
     protected String ptpSlaveSubnetMask;
     @XmlElementRef(name = "IsCSonServerInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isCSonServerInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isCSonServerInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForCSonServer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForCSonServer;
     @XmlElement(name = "CSonServerIpAddress")
@@ -252,7 +252,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "CSonServerSubnetMask")
     protected String cSonServerSubnetMask;
     @XmlElementRef(name = "IsM2InterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isM2InterfaceEnabled;
+    protected JAXBElement<EnabledStates> isM2InterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForM2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForM2;
     @XmlElement(name = "M2IpAddress")
@@ -260,7 +260,7 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
     @XmlElement(name = "M2SubnetMask")
     protected String m2SubnetMask;
     @XmlElementRef(name = "IsM1InterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isM1InterfaceEnabled;
+    protected JAXBElement<EnabledStates> isM1InterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForM1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForM1;
     @XmlElement(name = "M1IpAddress")
@@ -838,10 +838,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsS1CInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsS1CInterfaceEnabled() {
         return isS1CInterfaceEnabled;
     }
 
@@ -850,10 +850,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsS1CInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsS1CInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isS1CInterfaceEnabled = value;
     }
 
@@ -934,10 +934,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsS1UInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsS1UInterfaceEnabled() {
         return isS1UInterfaceEnabled;
     }
 
@@ -946,10 +946,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsS1UInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsS1UInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isS1UInterfaceEnabled = value;
     }
 
@@ -1030,10 +1030,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsX2CInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsX2CInterfaceEnabled() {
         return isX2CInterfaceEnabled;
     }
 
@@ -1042,10 +1042,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsX2CInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsX2CInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isX2CInterfaceEnabled = value;
     }
 
@@ -1126,10 +1126,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsX2UInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsX2UInterfaceEnabled() {
         return isX2UInterfaceEnabled;
     }
 
@@ -1138,10 +1138,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsX2UInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsX2UInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isX2UInterfaceEnabled = value;
     }
 
@@ -1222,10 +1222,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsPtpSlaveInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsPtpSlaveInterfaceEnabled() {
         return isPtpSlaveInterfaceEnabled;
     }
 
@@ -1234,10 +1234,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsPtpSlaveInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsPtpSlaveInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isPtpSlaveInterfaceEnabled = value;
     }
 
@@ -1318,10 +1318,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsCSonServerInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsCSonServerInterfaceEnabled() {
         return isCSonServerInterfaceEnabled;
     }
 
@@ -1330,10 +1330,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsCSonServerInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsCSonServerInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isCSonServerInterfaceEnabled = value;
     }
 
@@ -1414,10 +1414,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsM2InterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsM2InterfaceEnabled() {
         return isM2InterfaceEnabled;
     }
 
@@ -1426,10 +1426,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsM2InterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsM2InterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isM2InterfaceEnabled = value;
     }
 
@@ -1510,10 +1510,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsM1InterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsM1InterfaceEnabled() {
         return isM1InterfaceEnabled;
     }
 
@@ -1522,10 +1522,10 @@ public class EnbDetailsGet implements ILteEnbDetailsGet{
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsM1InterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsM1InterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isM1InterfaceEnabled = value;
     }
 

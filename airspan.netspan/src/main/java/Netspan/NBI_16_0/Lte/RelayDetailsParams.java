@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -77,7 +77,7 @@ public class RelayDetailsParams {
     @XmlElementRef(name = "IsPdclLocked", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isPdclLocked;
     @XmlElementRef(name = "LedMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ledMode;
+    protected JAXBElement<EnabledStates> ledMode;
     @XmlElement(name = "Pdcl")
     protected PdclList pdcl;
     @XmlElementRef(name = "AllowedBandsPriority", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -85,7 +85,7 @@ public class RelayDetailsParams {
     @XmlElement(name = "AllowedBands")
     protected AllowedBandWs allowedBands;
     @XmlElementRef(name = "LcdDimmingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> lcdDimmingMode;
+    protected JAXBElement<EnabledStates> lcdDimmingMode;
 
     /**
      * Gets the value of the managementModeOnly property.
@@ -260,10 +260,10 @@ public class RelayDetailsParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLedMode() {
+    public JAXBElement<EnabledStates> getLedMode() {
         return ledMode;
     }
 
@@ -272,10 +272,10 @@ public class RelayDetailsParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLedMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLedMode(JAXBElement<EnabledStates> value) {
         this.ledMode = value;
     }
 
@@ -356,10 +356,10 @@ public class RelayDetailsParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLcdDimmingMode() {
+    public JAXBElement<EnabledStates> getLcdDimmingMode() {
         return lcdDimmingMode;
     }
 
@@ -368,10 +368,10 @@ public class RelayDetailsParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLcdDimmingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLcdDimmingMode(JAXBElement<EnabledStates> value) {
         this.lcdDimmingMode = value;
     }
 

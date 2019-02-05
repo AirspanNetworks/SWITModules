@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -56,7 +56,7 @@ public class CellQosBasedHoWs {
     @XmlElementRef(name = "PreferredVolteIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> preferredVolteIsDefault;
     @XmlElementRef(name = "PreferredVolte", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> preferredVolte;
+    protected JAXBElement<EnabledStates> preferredVolte;
     @XmlElementRef(name = "TimeoutFromLastMsgIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> timeoutFromLastMsgIsDefault;
     @XmlElementRef(name = "TimeoutFromLastMsg", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -103,10 +103,10 @@ public class CellQosBasedHoWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPreferredVolte() {
+    public JAXBElement<EnabledStates> getPreferredVolte() {
         return preferredVolte;
     }
 
@@ -115,10 +115,10 @@ public class CellQosBasedHoWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPreferredVolte(JAXBElement<EnabledDisabledStates> value) {
+    public void setPreferredVolte(JAXBElement<EnabledStates> value) {
         this.preferredVolte = value;
     }
 

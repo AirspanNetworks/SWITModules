@@ -16,7 +16,7 @@ import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnbStates;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
@@ -1443,7 +1443,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_16_5.Lte.LteSoap#relayEnbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, Netspan.NBI_16_5.Lte.EnabledDisabledStates radio2Dot4GHz, Netspan.NBI_16_5.Lte.EnabledDisabledStates radio5GHz, Netspan.NBI_16_5.Lte.Credentials credentials)*
      */
-    public Netspan.NBI_16_5.Lte.NodeActionResult relayEnbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, EnabledDisabledStates radio2Dot4GHz, EnabledDisabledStates radio5GHz, Credentials credentials) {
+    public Netspan.NBI_16_5.Lte.NodeActionResult relayEnbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, EnabledStates radio2Dot4GHz, EnabledStates radio5GHz, Credentials credentials) {
         LOG.info("Executing operation relayEnbWiFiActionSet");
         System.out.println(nodeName);
         System.out.println(action);
@@ -2162,7 +2162,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_16_5.Lte.LteSoap#enbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, Netspan.NBI_16_5.Lte.EnabledDisabledStates radio2Dot4GHz, Netspan.NBI_16_5.Lte.EnabledDisabledStates radio5GHz, Netspan.NBI_16_5.Lte.Credentials credentials)*
      */
-    public Netspan.NBI_16_5.Lte.NodeActionResult enbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, EnabledDisabledStates radio2Dot4GHz, EnabledDisabledStates radio5GHz, Credentials credentials) {
+    public Netspan.NBI_16_5.Lte.NodeActionResult enbWiFiActionSet(java.lang.String nodeName, Netspan.NBI_16_5.Lte.WiFiAction action, EnabledStates radio2Dot4GHz, EnabledStates radio5GHz, Credentials credentials) {
         LOG.info("Executing operation enbWiFiActionSet");
         System.out.println(nodeName);
         System.out.println(action);

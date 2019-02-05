@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -168,7 +168,7 @@ public class CellNeighborManagementWs {
     @XmlElementRef(name = "AddCsgInfoToCgiQueryIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> addCsgInfoToCgiQueryIsDefault;
     @XmlElementRef(name = "AddCsgInfoToCgiQuery", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> addCsgInfoToCgiQuery;
+    protected JAXBElement<EnabledStates> addCsgInfoToCgiQuery;
 
     /**
      * Gets the value of the onDurationTimerIsDefault property.
@@ -967,10 +967,10 @@ public class CellNeighborManagementWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAddCsgInfoToCgiQuery() {
+    public JAXBElement<EnabledStates> getAddCsgInfoToCgiQuery() {
         return addCsgInfoToCgiQuery;
     }
 
@@ -979,10 +979,10 @@ public class CellNeighborManagementWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAddCsgInfoToCgiQuery(JAXBElement<EnabledDisabledStates> value) {
+    public void setAddCsgInfoToCgiQuery(JAXBElement<EnabledStates> value) {
         this.addCsgInfoToCgiQuery = value;
     }
 

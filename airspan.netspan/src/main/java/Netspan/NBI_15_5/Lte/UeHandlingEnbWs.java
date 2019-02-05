@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -48,7 +48,7 @@ public class UeHandlingEnbWs {
     @XmlElementRef(name = "Sr80RachModeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> sr80RachModeIsDefault;
     @XmlElementRef(name = "Sr80RachMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> sr80RachMode;
+    protected JAXBElement<EnabledStates> sr80RachMode;
 
     /**
      * Gets the value of the maxUeIsDefault property.
@@ -127,10 +127,10 @@ public class UeHandlingEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSr80RachMode() {
+    public JAXBElement<EnabledStates> getSr80RachMode() {
         return sr80RachMode;
     }
 
@@ -139,10 +139,10 @@ public class UeHandlingEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSr80RachMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setSr80RachMode(JAXBElement<EnabledStates> value) {
         this.sr80RachMode = value;
     }
 

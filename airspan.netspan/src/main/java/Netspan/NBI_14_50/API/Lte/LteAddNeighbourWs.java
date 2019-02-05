@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverType;
+import Netspan.API.Enums.HandoverTypes;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -63,7 +63,7 @@ public class LteAddNeighbourWs {
     @XmlElementRef(name = "X2ControlState", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<X2ControlStateTypes> x2ControlState;
     @XmlElementRef(name = "HandoverType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<HandoverType> handoverType;
+    protected JAXBElement<HandoverTypes> handoverType;
     @XmlElementRef(name = "IsStaticNeighbour", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isStaticNeighbour;
     @XmlElement(name = "AssignByCellNumber")
@@ -172,10 +172,10 @@ public class LteAddNeighbourWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
      *     
      */
-    public JAXBElement<HandoverType> getHandoverType() {
+    public JAXBElement<HandoverTypes> getHandoverType() {
         return handoverType;
     }
 
@@ -184,10 +184,10 @@ public class LteAddNeighbourWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
      *     
      */
-    public void setHandoverType(JAXBElement<HandoverType> value) {
+    public void setHandoverType(JAXBElement<HandoverTypes> value) {
         this.handoverType = value;
     }
 

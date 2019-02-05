@@ -9,7 +9,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
+import Netspan.API.Lte.CarrierAggregationModes;
 
 
 /**
@@ -56,7 +57,7 @@ public class EnbMultiCellProfile {
     @XmlElementRef(name = "CarrierAggMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CarrierAggregationModes> carrierAggMode;
     @XmlElementRef(name = "IntraEnbLoadBalancingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> intraEnbLoadBalancingMode;
+    protected JAXBElement<EnabledStates> intraEnbLoadBalancingMode;
     @XmlElementRef(name = "CompositeLoadDiffMax", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> compositeLoadDiffMax;
     @XmlElementRef(name = "CompositeLoadDiffMin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -141,10 +142,10 @@ public class EnbMultiCellProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIntraEnbLoadBalancingMode() {
+    public JAXBElement<EnabledStates> getIntraEnbLoadBalancingMode() {
         return intraEnbLoadBalancingMode;
     }
 
@@ -153,10 +154,10 @@ public class EnbMultiCellProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIntraEnbLoadBalancingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setIntraEnbLoadBalancingMode(JAXBElement<EnabledStates> value) {
         this.intraEnbLoadBalancingMode = value;
     }
 

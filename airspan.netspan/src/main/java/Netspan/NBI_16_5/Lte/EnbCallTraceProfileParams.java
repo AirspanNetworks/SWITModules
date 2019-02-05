@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 
-import Netspan.API.Enums.EnabledDisabledStates;
+import Netspan.API.Enums.EnabledStates;
 
 
 /**
@@ -88,7 +88,7 @@ public class EnbCallTraceProfileParams {
     @XmlElement(name = "Description")
     protected String description;
     @XmlElementRef(name = "CallTraceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> callTraceEnabled;
+    protected JAXBElement<EnabledStates> callTraceEnabled;
     @XmlElementRef(name = "TraceX2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CallTraceMessageDirections> traceX2;
     @XmlElementRef(name = "TraceS1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -96,9 +96,9 @@ public class EnbCallTraceProfileParams {
     @XmlElementRef(name = "TraceUu", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CallTraceLinkDirections> traceUu;
     @XmlElementRef(name = "TraceSib", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> traceSib;
+    protected JAXBElement<EnabledStates> traceSib;
     @XmlElementRef(name = "TraceL1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> traceL1;
+    protected JAXBElement<EnabledStates> traceL1;
     @XmlElementRef(name = "TraceType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<CallTraceTypes> traceType;
     @XmlElementRef(name = "TimeZone", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -112,19 +112,19 @@ public class EnbCallTraceProfileParams {
     @XmlElement(name = "Recurrence")
     protected RecurrenceWs recurrence;
     @XmlElementRef(name = "UeTraceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ueTraceEnabled;
+    protected JAXBElement<EnabledStates> ueTraceEnabled;
     @XmlElementRef(name = "ActivationMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<ActivationModesWs> activationMode;
     @XmlElementRef(name = "TraceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> traceEnabled;
+    protected JAXBElement<EnabledStates> traceEnabled;
     @XmlElementRef(name = "MdtEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mdtEnabled;
+    protected JAXBElement<EnabledStates> mdtEnabled;
     @XmlElementRef(name = "UeTraceX2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ueTraceX2;
+    protected JAXBElement<EnabledStates> ueTraceX2;
     @XmlElementRef(name = "UeTraceS1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ueTraceS1;
+    protected JAXBElement<EnabledStates> ueTraceS1;
     @XmlElementRef(name = "UeTraceUu", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ueTraceUu;
+    protected JAXBElement<EnabledStates> ueTraceUu;
     @XmlElementRef(name = "NumberOfUes", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> numberOfUes;
     @XmlElementRef(name = "ManagementActivationMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -161,10 +161,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCallTraceEnabled() {
+    public JAXBElement<EnabledStates> getCallTraceEnabled() {
         return callTraceEnabled;
     }
 
@@ -173,10 +173,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCallTraceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setCallTraceEnabled(JAXBElement<EnabledStates> value) {
         this.callTraceEnabled = value;
     }
 
@@ -257,10 +257,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTraceSib() {
+    public JAXBElement<EnabledStates> getTraceSib() {
         return traceSib;
     }
 
@@ -269,10 +269,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTraceSib(JAXBElement<EnabledDisabledStates> value) {
+    public void setTraceSib(JAXBElement<EnabledStates> value) {
         this.traceSib = value;
     }
 
@@ -281,10 +281,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTraceL1() {
+    public JAXBElement<EnabledStates> getTraceL1() {
         return traceL1;
     }
 
@@ -293,10 +293,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTraceL1(JAXBElement<EnabledDisabledStates> value) {
+    public void setTraceL1(JAXBElement<EnabledStates> value) {
         this.traceL1 = value;
     }
 
@@ -449,10 +449,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUeTraceEnabled() {
+    public JAXBElement<EnabledStates> getUeTraceEnabled() {
         return ueTraceEnabled;
     }
 
@@ -461,10 +461,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUeTraceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setUeTraceEnabled(JAXBElement<EnabledStates> value) {
         this.ueTraceEnabled = value;
     }
 
@@ -497,10 +497,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTraceEnabled() {
+    public JAXBElement<EnabledStates> getTraceEnabled() {
         return traceEnabled;
     }
 
@@ -509,10 +509,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTraceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setTraceEnabled(JAXBElement<EnabledStates> value) {
         this.traceEnabled = value;
     }
 
@@ -521,10 +521,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMdtEnabled() {
+    public JAXBElement<EnabledStates> getMdtEnabled() {
         return mdtEnabled;
     }
 
@@ -533,10 +533,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMdtEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setMdtEnabled(JAXBElement<EnabledStates> value) {
         this.mdtEnabled = value;
     }
 
@@ -545,10 +545,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUeTraceX2() {
+    public JAXBElement<EnabledStates> getUeTraceX2() {
         return ueTraceX2;
     }
 
@@ -557,10 +557,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUeTraceX2(JAXBElement<EnabledDisabledStates> value) {
+    public void setUeTraceX2(JAXBElement<EnabledStates> value) {
         this.ueTraceX2 = value;
     }
 
@@ -569,10 +569,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUeTraceS1() {
+    public JAXBElement<EnabledStates> getUeTraceS1() {
         return ueTraceS1;
     }
 
@@ -581,10 +581,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUeTraceS1(JAXBElement<EnabledDisabledStates> value) {
+    public void setUeTraceS1(JAXBElement<EnabledStates> value) {
         this.ueTraceS1 = value;
     }
 
@@ -593,10 +593,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUeTraceUu() {
+    public JAXBElement<EnabledStates> getUeTraceUu() {
         return ueTraceUu;
     }
 
@@ -605,10 +605,10 @@ public class EnbCallTraceProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUeTraceUu(JAXBElement<EnabledDisabledStates> value) {
+    public void setUeTraceUu(JAXBElement<EnabledStates> value) {
         this.ueTraceUu = value;
     }
 
