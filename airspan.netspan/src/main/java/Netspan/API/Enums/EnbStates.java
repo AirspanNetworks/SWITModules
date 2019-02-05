@@ -16,6 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *     &lt;enumeration value="InService"/&gt;
  *     &lt;enumeration value="OutOfService"/&gt;
+ *     &lt;enumeration value="Unknown"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
@@ -28,7 +29,9 @@ public enum EnbStates {
     @XmlEnumValue("InService")
     IN_SERVICE("InService"),
     @XmlEnumValue("OutOfService")
-    OUT_OF_SERVICE("OutOfService");
+    OUT_OF_SERVICE("OutOfService"),
+    @XmlEnumValue("Unknown")
+    UNKNOWN("Unknown");
     private final String value;
 
     EnbStates(String v) {
