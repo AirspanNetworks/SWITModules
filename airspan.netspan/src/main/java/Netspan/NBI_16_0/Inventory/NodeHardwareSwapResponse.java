@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="NodeResetForcedColdResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
+ *         &lt;element name="NodeHardwareSwapResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "nodeResetForcedColdResult"
+    "nodeHardwareSwapResult"
 })
-@XmlRootElement(name = "NodeResetForcedColdResponse")
-public class NodeResetForcedColdResponse {
+@XmlRootElement(name = "NodeHardwareSwapResponse")
+public class NodeHardwareSwapResponse {
 
-    @XmlElement(name = "NodeResetForcedColdResult")
-    protected NodeActionResult nodeResetForcedColdResult;
+    @XmlElement(name = "NodeHardwareSwapResult")
+    protected NodeActionResult nodeHardwareSwapResult;
 
     /**
-     * Gets the value of the nodeResetForcedColdResult property.
+     * Gets the value of the nodeHardwareSwapResult property.
      * 
      * @return
      *     possible object is
      *     {@link NodeActionResult }
      *     
      */
-    public NodeActionResult getNodeResetForcedColdResult() {
-        return nodeResetForcedColdResult;
+    public NodeActionResult getNodeHardwareSwapResult() {
+        return nodeHardwareSwapResult;
     }
 
     /**
-     * Sets the value of the nodeResetForcedColdResult property.
+     * Sets the value of the nodeHardwareSwapResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link NodeActionResult }
      *     
      */
-    public void setNodeResetForcedColdResult(NodeActionResult value) {
-        this.nodeResetForcedColdResult = value;
+    public void setNodeHardwareSwapResult(NodeActionResult value) {
+        this.nodeHardwareSwapResult = value;
     }
 
 }

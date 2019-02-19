@@ -4,21 +4,22 @@ package Netspan.NBI_16_0.Inventory;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Region complex type.
+ * <p>Java class for anonymous complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Region"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="OldNode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NewNode" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -28,63 +29,64 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Region", propOrder = {
-    "name",
-    "description"
+@XmlType(name = "", propOrder = {
+    "oldNode",
+    "newNode"
 })
-public class Region {
+@XmlRootElement(name = "NodeHardwareSwap")
+public class NodeHardwareSwap {
 
-    @XmlElement(name = "Name")
-    protected String name;
-    @XmlElement(name = "Description")
-    protected String description;
+    @XmlElement(name = "OldNode")
+    protected String oldNode;
+    @XmlElement(name = "NewNode")
+    protected String newNode;
 
     /**
-     * Gets the value of the name property.
+     * Gets the value of the oldNode property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getOldNode() {
+        return oldNode;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the value of the oldNode property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
+    public void setOldNode(String value) {
+        this.oldNode = value;
     }
 
     /**
-     * Gets the value of the description property.
+     * Gets the value of the newNode property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getDescription() {
-        return description;
+    public String getNewNode() {
+        return newNode;
     }
 
     /**
-     * Sets the value of the description property.
+     * Sets the value of the newNode property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setDescription(String value) {
-        this.description = value;
+    public void setNewNode(String value) {
+        this.newNode = value;
     }
 
 }

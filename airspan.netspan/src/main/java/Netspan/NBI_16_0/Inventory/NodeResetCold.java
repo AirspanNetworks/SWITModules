@@ -35,8 +35,8 @@ import javax.xml.bind.annotation.XmlType;
     "nodeName",
     "nodeId"
 })
-@XmlRootElement(name = "NodeReprovision")
-public class NodeReprovision {
+@XmlRootElement(name = "NodeResetCold")
+public class NodeResetCold {
 
     @XmlElement(name = "NodeName")
     protected List<String> nodeName;

@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="NodeResetForcedColdResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
+ *         &lt;element name="NodeResetColdResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "nodeResetForcedColdResult"
+    "nodeResetColdResult"
 })
-@XmlRootElement(name = "NodeResetForcedColdResponse")
-public class NodeResetForcedColdResponse {
+@XmlRootElement(name = "NodeResetColdResponse")
+public class NodeResetColdResponse {
 
-    @XmlElement(name = "NodeResetForcedColdResult")
-    protected NodeActionResult nodeResetForcedColdResult;
+    @XmlElement(name = "NodeResetColdResult")
+    protected NodeActionResult nodeResetColdResult;
 
     /**
-     * Gets the value of the nodeResetForcedColdResult property.
+     * Gets the value of the nodeResetColdResult property.
      * 
      * @return
      *     possible object is
      *     {@link NodeActionResult }
      *     
      */
-    public NodeActionResult getNodeResetForcedColdResult() {
-        return nodeResetForcedColdResult;
+    public NodeActionResult getNodeResetColdResult() {
+        return nodeResetColdResult;
     }
 
     /**
-     * Sets the value of the nodeResetForcedColdResult property.
+     * Sets the value of the nodeResetColdResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link NodeActionResult }
      *     
      */
-    public void setNodeResetForcedColdResult(NodeActionResult value) {
-        this.nodeResetForcedColdResult = value;
+    public void setNodeResetColdResult(NodeActionResult value) {
+        this.nodeResetColdResult = value;
     }
 
 }

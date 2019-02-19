@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="NodeResetForcedColdResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
+ *         &lt;element name="NodeResetForcedColdFactoryResult" type="{http://Airspan.Netspan.WebServices}NodeActionResult" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +29,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "nodeResetForcedColdResult"
+    "nodeResetForcedColdFactoryResult"
 })
-@XmlRootElement(name = "NodeResetForcedColdResponse")
-public class NodeResetForcedColdResponse {
+@XmlRootElement(name = "NodeResetForcedColdFactoryResponse")
+public class NodeResetForcedColdFactoryResponse {
 
-    @XmlElement(name = "NodeResetForcedColdResult")
-    protected NodeActionResult nodeResetForcedColdResult;
+    @XmlElement(name = "NodeResetForcedColdFactoryResult")
+    protected NodeActionResult nodeResetForcedColdFactoryResult;
 
     /**
-     * Gets the value of the nodeResetForcedColdResult property.
+     * Gets the value of the nodeResetForcedColdFactoryResult property.
      * 
      * @return
      *     possible object is
      *     {@link NodeActionResult }
      *     
      */
-    public NodeActionResult getNodeResetForcedColdResult() {
-        return nodeResetForcedColdResult;
+    public NodeActionResult getNodeResetForcedColdFactoryResult() {
+        return nodeResetForcedColdFactoryResult;
     }
 
     /**
-     * Sets the value of the nodeResetForcedColdResult property.
+     * Sets the value of the nodeResetForcedColdFactoryResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link NodeActionResult }
      *     
      */
-    public void setNodeResetForcedColdResult(NodeActionResult value) {
-        this.nodeResetForcedColdResult = value;
+    public void setNodeResetForcedColdFactoryResult(NodeActionResult value) {
+        this.nodeResetForcedColdFactoryResult = value;
     }
 
 }
