@@ -17,7 +17,7 @@ import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnabledDisabledValues;
 import Netspan.API.Enums.EnbStates;
 import Netspan.API.Enums.EnbTypes;
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.NrtHoTypes;
 import Netspan.API.Enums.PnpModes;
@@ -18153,12 +18153,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "HandoverType", scope = EnbNeighbour.class)
-    public JAXBElement<HandoverTypes> createEnbNeighbourHandoverType(HandoverTypes value) {
-        return new JAXBElement<HandoverTypes>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverTypes.class, EnbNeighbour.class, value);
+    public JAXBElement<HandoverType> createEnbNeighbourHandoverType(HandoverType value) {
+        return new JAXBElement<HandoverType>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverType.class, EnbNeighbour.class, value);
     }
 
     /**
@@ -27297,12 +27297,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "HandoverType", scope = LteNbrConfig.class)
-    public JAXBElement<HandoverTypes> createLteNbrConfigHandoverType(HandoverTypes value) {
-        return new JAXBElement<HandoverTypes>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverTypes.class, LteNbrConfig.class, value);
+    public JAXBElement<HandoverType> createLteNbrConfigHandoverType(HandoverType value) {
+        return new JAXBElement<HandoverType>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverType.class, LteNbrConfig.class, value);
     }
 
     /**
@@ -27387,12 +27387,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverType }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "HandoverType", scope = LteAddNeighbourWs.class)
-    public JAXBElement<HandoverTypes> createLteAddNeighbourWsHandoverType(HandoverTypes value) {
-        return new JAXBElement<HandoverTypes>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverTypes.class, LteAddNeighbourWs.class, value);
+    public JAXBElement<HandoverType> createLteAddNeighbourWsHandoverType(HandoverType value) {
+        return new JAXBElement<HandoverType>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverType.class, LteAddNeighbourWs.class, value);
     }
 
     /**

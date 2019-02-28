@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>airspan</groupId>
 	<artifactId>netspan</artifactId>
-	<version>1.1.51</version>
+	<version>1.1.52</version>
 	<name>netspan</name>
 	<distributionManagement>
 		<repository>

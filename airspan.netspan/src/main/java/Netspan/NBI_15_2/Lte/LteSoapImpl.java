@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
 
 import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnbStates;
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -1895,7 +1895,7 @@ public class LteSoapImpl implements LteSoap {
     /* (non-Javadoc)
      * @see Netspan.NBI_15_2.Lte.LteSoap#lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, Netspan.NBI_15_2.Lte.HoControlStateTypes hoControlStatus, Netspan.NBI_15_2.Lte.X2ControlStateTypes x2ControlStatus, Netspan.NBI_15_2.Lte.HandoverTypes handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Netspan.NBI_15_2.Lte.Credentials credentials)*
      */
-    public Netspan.NBI_15_2.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, X2ControlStateTypes x2ControlStatus, HandoverTypes handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Credentials credentials) {
+    public Netspan.NBI_15_2.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, X2ControlStateTypes x2ControlStatus, HandoverType handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Credentials credentials) {
         LOG.info("Executing operation lteNeighbourAdd");
         System.out.println(nodeName);
         System.out.println(neighbourName);

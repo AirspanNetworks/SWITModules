@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -117,7 +117,7 @@ public class LteAnrStatusWs {
     @XmlElementRef(name = "X2ControlStatus", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<X2ControlStateTypes> x2ControlStatus;
     @XmlElementRef(name = "HandoverType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<HandoverTypes> handoverType;
+    protected JAXBElement<HandoverType> handoverType;
     @XmlElementRef(name = "DiscoveredBy", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<DiscoveredByValues> discoveredBy;
     @XmlElementRef(name = "IsStaticNeighbour", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -462,10 +462,10 @@ public class LteAnrStatusWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
      *     
      */
-    public JAXBElement<HandoverTypes> getHandoverType() {
+    public JAXBElement<HandoverType> getHandoverType() {
         return handoverType;
     }
 
@@ -474,10 +474,10 @@ public class LteAnrStatusWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
      *     
      */
-    public void setHandoverType(JAXBElement<HandoverTypes> value) {
+    public void setHandoverType(JAXBElement<HandoverType> value) {
         this.handoverType = value;
     }
 

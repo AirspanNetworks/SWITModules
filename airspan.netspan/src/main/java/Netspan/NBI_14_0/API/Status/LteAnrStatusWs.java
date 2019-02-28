@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -98,7 +98,7 @@ public class LteAnrStatusWs {
     protected X2ControlStateTypes x2ControlStatus;
     @XmlElement(name = "HandoverType", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected HandoverTypes handoverType;
+    protected HandoverType handoverType;
     @XmlElement(name = "DiscoveredBy", required = true, nillable = true)
     @XmlSchemaType(name = "string")
     protected DiscoveredByValues discoveredBy;
@@ -422,10 +422,10 @@ public class LteAnrStatusWs {
      * 
      * @return
      *     possible object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public HandoverTypes getHandoverType() {
+    public HandoverType getHandoverType() {
         return handoverType;
     }
 
@@ -434,10 +434,10 @@ public class LteAnrStatusWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public void setHandoverType(HandoverTypes value) {
+    public void setHandoverType(HandoverType value) {
         this.handoverType = value;
     }
 

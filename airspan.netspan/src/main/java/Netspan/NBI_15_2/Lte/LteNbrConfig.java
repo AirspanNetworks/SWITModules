@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -81,7 +81,7 @@ public class LteNbrConfig {
     @XmlElementRef(name = "X2ControlState", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<X2ControlStateTypes> x2ControlState;
     @XmlElementRef(name = "HandoverType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<HandoverTypes> handoverType;
+    protected JAXBElement<HandoverType> handoverType;
     @XmlElementRef(name = "IsStaticNeighbour", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isStaticNeighbour;
     @XmlElementRef(name = "QOffsetRange", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -250,10 +250,10 @@ public class LteNbrConfig {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
      *     
      */
-    public JAXBElement<HandoverTypes> getHandoverType() {
+    public JAXBElement<HandoverType> getHandoverType() {
         return handoverType;
     }
 
@@ -262,10 +262,10 @@ public class LteNbrConfig {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link HandoverType }{@code >}
      *     
      */
-    public void setHandoverType(JAXBElement<HandoverTypes> value) {
+    public void setHandoverType(JAXBElement<HandoverType> value) {
         this.handoverType = value;
     }
 

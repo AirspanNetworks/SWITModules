@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
-import Netspan.API.Enums.HandoverTypes;
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -1207,7 +1207,7 @@ public interface LteSoap {
         @WebParam(name = "X2ControlStatus", targetNamespace = "http://Airspan.Netspan.WebServices")
         X2ControlStateTypes x2ControlStatus,
         @WebParam(name = "HandoverType", targetNamespace = "http://Airspan.Netspan.WebServices")
-        HandoverTypes handoverType,
+        HandoverType handoverType,
         @WebParam(name = "IsStaticNeighbour", targetNamespace = "http://Airspan.Netspan.WebServices")
         java.lang.Boolean isStaticNeighbour,
         @WebParam(name = "QOffsetRange", targetNamespace = "http://Airspan.Netspan.WebServices")
