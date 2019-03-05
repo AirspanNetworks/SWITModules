@@ -1756,7 +1756,7 @@ public interface LteSoap {
         @WebParam(name = "X2ControlStatus", targetNamespace = "http://Airspan.Netspan.WebServices")
         X2ControlStateTypes x2ControlStatus,
         @WebParam(name = "HandoverType", targetNamespace = "http://Airspan.Netspan.WebServices")
-        Netspan.NBI_15_5.Lte.HandoverTypes handoverType,
+        Netspan.NBI_15_5.Lte.HandoverType handoverType,
         @WebParam(name = "IsStaticNeighbour", targetNamespace = "http://Airspan.Netspan.WebServices")
         java.lang.Boolean isStaticNeighbour,
         @WebParam(name = "QOffsetRange", targetNamespace = "http://Airspan.Netspan.WebServices")

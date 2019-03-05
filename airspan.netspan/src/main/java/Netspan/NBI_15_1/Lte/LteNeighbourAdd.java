@@ -25,7 +25,7 @@ import Netspan.API.Enums.X2ControlStateTypes;
  *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes"/>
  *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes"/>
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes"/>
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType"/>
  *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/>
  *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/>
@@ -63,7 +63,7 @@ public class LteNeighbourAdd {
     protected X2ControlStateTypes x2ControlStatus;
     @XmlElement(name = "HandoverType", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected HandoverTypes handoverType;
+    protected HandoverType handoverType;
     @XmlElement(name = "IsStaticNeighbour", required = true, type = Boolean.class, nillable = true)
     protected Boolean isStaticNeighbour;
     @XmlElement(name = "QOffsetRange", required = true, nillable = true)
@@ -172,10 +172,10 @@ public class LteNeighbourAdd {
      * 
      * @return
      *     possible object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public HandoverTypes getHandoverType() {
+    public HandoverType getHandoverType() {
         return handoverType;
     }
 
@@ -184,10 +184,10 @@ public class LteNeighbourAdd {
      * 
      * @param value
      *     allowed object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public void setHandoverType(HandoverTypes value) {
+    public void setHandoverType(HandoverType value) {
         this.handoverType = value;
     }
 

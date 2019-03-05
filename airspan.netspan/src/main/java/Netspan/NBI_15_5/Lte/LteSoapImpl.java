@@ -1887,9 +1887,9 @@ public class LteSoapImpl implements LteSoap {
     }
 
     /* (non-Javadoc)
-     * @see Netspan.NBI_15_5.Lte.LteSoap#lteNeighbourAdd(java.lang.String  nodeName ,)java.lang.String  neighbourName ,)Netspan.NBI_15_5.Lte.HoControlStateTypes  hoControlStatus ,)Netspan.NBI_15_5.Lte.X2ControlStateTypes  x2ControlStatus ,)Netspan.NBI_15_5.Lte.HandoverTypes  handoverType ,)java.lang.Boolean  isStaticNeighbour ,)java.lang.String  qOffsetRange ,)java.lang.String  cellIndividualOffsetRange ,)Netspan.NBI_15_5.Lte.Credentials  credentials )*
+     * @see Netspan.NBI_15_5.Lte.LteSoap#lteNeighbourAdd(java.lang.String  nodeName ,)java.lang.String  neighbourName ,)Netspan.NBI_15_5.Lte.HoControlStateTypes  hoControlStatus ,)Netspan.NBI_15_5.Lte.X2ControlStateTypes  x2ControlStatus ,)Netspan.NBI_15_5.Lte.HandoverType  handoverType ,)java.lang.Boolean  isStaticNeighbour ,)java.lang.String  qOffsetRange ,)java.lang.String  cellIndividualOffsetRange ,)Netspan.NBI_15_5.Lte.Credentials  credentials )*
      */
-    public Netspan.NBI_15_5.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName,java.lang.String neighbourName,Netspan.NBI_15_5.Lte.HoControlStateTypes hoControlStatus,X2ControlStateTypes x2ControlStatus,Netspan.NBI_15_5.Lte.HandoverTypes handoverType,java.lang.Boolean isStaticNeighbour,java.lang.String qOffsetRange,java.lang.String cellIndividualOffsetRange,Credentials credentials) { 
+    public Netspan.NBI_15_5.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName,java.lang.String neighbourName,Netspan.NBI_15_5.Lte.HoControlStateTypes hoControlStatus,X2ControlStateTypes x2ControlStatus,Netspan.NBI_15_5.Lte.HandoverType handoverType,java.lang.Boolean isStaticNeighbour,java.lang.String qOffsetRange,java.lang.String cellIndividualOffsetRange,Credentials credentials) { 
         LOG.info("Executing operation lteNeighbourAdd");
         System.out.println(nodeName);
         System.out.println(neighbourName);

@@ -2034,9 +2034,9 @@ public class LteSoapImpl implements LteSoap {
     }
 
     /* (non-Javadoc)
-     * @see Netspan.NBI_17_0.Lte.LteSoap#lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, Netspan.NBI_17_0.Lte.X2ControlStateTypes x2ControlStatus, Netspan.NBI_17_0.Lte.HandoverTypes handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Netspan.NBI_17_0.Lte.Credentials credentials)*
+     * @see Netspan.NBI_17_0.Lte.LteSoap#lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, Netspan.NBI_17_0.Lte.X2ControlStateTypes x2ControlStatus, Netspan.NBI_17_0.Lte.HandoverType handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Netspan.NBI_17_0.Lte.Credentials credentials)*
      */
-    public Netspan.NBI_17_0.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, X2ControlStateTypes x2ControlStatus, Netspan.NBI_17_0.Lte.HandoverTypes handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Credentials credentials) {
+    public Netspan.NBI_17_0.Lte.LteNeighbourResponse lteNeighbourAdd(java.lang.String nodeName, java.lang.String neighbourName, HoControlStateTypes hoControlStatus, X2ControlStateTypes x2ControlStatus, Netspan.NBI_17_0.Lte.HandoverType handoverType, java.lang.Boolean isStaticNeighbour, java.lang.String qOffsetRange, java.lang.String cellIndividualOffsetRange, Credentials credentials) {
         LOG.info("Executing operation lteNeighbourAdd");
         System.out.println(nodeName);
         System.out.println(neighbourName);

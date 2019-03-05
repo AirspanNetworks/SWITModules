@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
@@ -26,7 +27,7 @@ import Netspan.API.Enums.X2ControlStateTypes;
  *         &lt;element name="NeighbourName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="HoControlStatus" type="{http://Airspan.Netspan.WebServices}HoControlStateTypes"/&gt;
  *         &lt;element name="X2ControlStatus" type="{http://Airspan.Netspan.WebServices}X2ControlStateTypes"/&gt;
- *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverTypes"/&gt;
+ *         &lt;element name="HandoverType" type="{http://Airspan.Netspan.WebServices}HandoverType"/&gt;
  *         &lt;element name="IsStaticNeighbour" type="{http://www.w3.org/2001/XMLSchema}boolean"/&gt;
  *         &lt;element name="QOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/&gt;
  *         &lt;element name="CellIndividualOffsetRange" type="{http://Airspan.Netspan.WebServices}QOffsetRangeTypes"/&gt;
@@ -64,7 +65,7 @@ public class LteNeighbourAdd {
     protected X2ControlStateTypes x2ControlStatus;
     @XmlElement(name = "HandoverType", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected HandoverTypes handoverType;
+    protected HandoverType handoverType;
     @XmlElement(name = "IsStaticNeighbour", required = true, type = Boolean.class, nillable = true)
     protected Boolean isStaticNeighbour;
     @XmlElement(name = "QOffsetRange", required = true, nillable = true)
@@ -173,10 +174,10 @@ public class LteNeighbourAdd {
      * 
      * @return
      *     possible object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public HandoverTypes getHandoverType() {
+    public HandoverType getHandoverType() {
         return handoverType;
     }
 
@@ -185,10 +186,10 @@ public class LteNeighbourAdd {
      * 
      * @param value
      *     allowed object is
-     *     {@link HandoverTypes }
+     *     {@link HandoverType }
      *     
      */
-    public void setHandoverType(HandoverTypes value) {
+    public void setHandoverType(HandoverType value) {
         this.handoverType = value;
     }
 
