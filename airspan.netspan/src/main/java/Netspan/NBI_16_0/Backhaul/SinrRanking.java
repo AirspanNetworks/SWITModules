@@ -2,6 +2,7 @@
 package Netspan.NBI_16_0.Backhaul;
 
 import javax.xml.bind.annotation.XmlEnum;
+import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -11,12 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="SinrRanking">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="SE"/>
- *     &lt;enumeration value="SINR"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="SinrRanking"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="SE"/&gt;
+ *     &lt;enumeration value="SINR"/&gt;
+ *     &lt;enumeration value="NoAverageDRM"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -24,15 +26,27 @@ import javax.xml.bind.annotation.XmlType;
 @XmlEnum
 public enum SinrRanking {
 
-    SE,
-    SINR;
+    SE("SE"),
+    SINR("SINR"),
+    @XmlEnumValue("NoAverageDRM")
+    NO_AVERAGE_DRM("NoAverageDRM");
+    private final String value;
+
+    SinrRanking(String v) {
+        value = v;
+    }
 
     public String value() {
-        return name();
+        return value;
     }
 
     public static SinrRanking fromValue(String v) {
-        return valueOf(v);
+        for (SinrRanking c: SinrRanking.values()) {
+            if (c.value.equals(v)) {
+                return c;
+            }
+        }
+        throw new IllegalArgumentException(v);
     }
 
 }

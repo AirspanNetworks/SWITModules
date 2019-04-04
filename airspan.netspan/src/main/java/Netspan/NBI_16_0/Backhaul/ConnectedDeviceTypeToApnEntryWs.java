@@ -15,22 +15,24 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ConnectedDeviceTypeToApnEntryWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TypeId" type="{http://Airspan.Netspan.WebServices}AccessDeviceTypeIdsWs" minOccurs="0"/>
- *         &lt;element name="IsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="AccessPointName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="AuthType" type="{http://Airspan.Netspan.WebServices}ApnAuthenticationTypes" minOccurs="0"/>
- *         &lt;element name="Username" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PdnConnectionType" type="{http://Airspan.Netspan.WebServices}PdnConnectionTypes" minOccurs="0"/>
- *         &lt;element name="ProviderXlatPrefixIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ConnectedDeviceTypeToApnEntryWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TypeId" type="{http://Airspan.Netspan.WebServices}AccessDeviceTypeIdsWs" minOccurs="0"/&gt;
+ *         &lt;element name="IsEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="AccessPointName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AuthType" type="{http://Airspan.Netspan.WebServices}ApnAuthenticationTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Username" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PdnConnectionType" type="{http://Airspan.Netspan.WebServices}PdnConnectionTypes" minOccurs="0"/&gt;
+ *         &lt;element name="ProviderXlatPrefixIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="AddressAllocationMethod" type="{http://Airspan.Netspan.WebServices}AddressAllocationMethodTypes" minOccurs="0"/&gt;
+ *         &lt;element name="PnpMethod" type="{http://Airspan.Netspan.WebServices}PnpMethodTypes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -44,7 +46,9 @@ import javax.xml.bind.annotation.XmlType;
     "username",
     "password",
     "pdnConnectionType",
-    "providerXlatPrefixIpAddress"
+    "providerXlatPrefixIpAddress",
+    "addressAllocationMethod",
+    "pnpMethod"
 })
 public class ConnectedDeviceTypeToApnEntryWs {
 
@@ -64,6 +68,10 @@ public class ConnectedDeviceTypeToApnEntryWs {
     protected JAXBElement<String> pdnConnectionType;
     @XmlElement(name = "ProviderXlatPrefixIpAddress")
     protected String providerXlatPrefixIpAddress;
+    @XmlElementRef(name = "AddressAllocationMethod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<AddressAllocationMethodTypes> addressAllocationMethod;
+    @XmlElementRef(name = "PnpMethod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<PnpMethodTypes> pnpMethod;
 
     /**
      * Gets the value of the typeId property.
@@ -255,6 +263,54 @@ public class ConnectedDeviceTypeToApnEntryWs {
      */
     public void setProviderXlatPrefixIpAddress(String value) {
         this.providerXlatPrefixIpAddress = value;
+    }
+
+    /**
+     * Gets the value of the addressAllocationMethod property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link AddressAllocationMethodTypes }{@code >}
+     *     
+     */
+    public JAXBElement<AddressAllocationMethodTypes> getAddressAllocationMethod() {
+        return addressAllocationMethod;
+    }
+
+    /**
+     * Sets the value of the addressAllocationMethod property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link AddressAllocationMethodTypes }{@code >}
+     *     
+     */
+    public void setAddressAllocationMethod(JAXBElement<AddressAllocationMethodTypes> value) {
+        this.addressAllocationMethod = value;
+    }
+
+    /**
+     * Gets the value of the pnpMethod property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link PnpMethodTypes }{@code >}
+     *     
+     */
+    public JAXBElement<PnpMethodTypes> getPnpMethod() {
+        return pnpMethod;
+    }
+
+    /**
+     * Sets the value of the pnpMethod property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link PnpMethodTypes }{@code >}
+     *     
+     */
+    public void setPnpMethod(JAXBElement<PnpMethodTypes> value) {
+        this.pnpMethod = value;
     }
 
 }

@@ -1,10 +1,10 @@
 
 package Netspan.NBI_16_0.Backhaul;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlSchemaType;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -14,15 +14,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayEnbErrorDetailWs">
- *   &lt;complexContent>
- *     &lt;extension base="{http://Airspan.Netspan.WebServices}BaseRedirect">
- *       &lt;sequence>
- *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}EnbErrorCodes"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayEnbErrorDetailWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://Airspan.Netspan.WebServices}BaseRedirect"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}EnbErrorCodes" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,19 +35,18 @@ public class RelayEnbErrorDetailWs
     extends BaseRedirect
 {
 
-    @XmlElement(name = "ErrorCode", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected EnbErrorCodes errorCode;
+    @XmlElementRef(name = "ErrorCode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnbErrorCodes> errorCode;
 
     /**
      * Gets the value of the errorCode property.
      * 
      * @return
      *     possible object is
-     *     {@link EnbErrorCodes }
+     *     {@link JAXBElement }{@code <}{@link EnbErrorCodes }{@code >}
      *     
      */
-    public EnbErrorCodes getErrorCode() {
+    public JAXBElement<EnbErrorCodes> getErrorCode() {
         return errorCode;
     }
 
@@ -56,10 +55,10 @@ public class RelayEnbErrorDetailWs
      * 
      * @param value
      *     allowed object is
-     *     {@link EnbErrorCodes }
+     *     {@link JAXBElement }{@code <}{@link EnbErrorCodes }{@code >}
      *     
      */
-    public void setErrorCode(EnbErrorCodes value) {
+    public void setErrorCode(JAXBElement<EnbErrorCodes> value) {
         this.errorCode = value;
     }
 

@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CellRadiusRanges">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Short"/>
- *     &lt;enumeration value="Medium"/>
- *     &lt;enumeration value="Long"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CellRadiusRanges"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Short"/&gt;
+ *     &lt;enumeration value="Medium"/&gt;
+ *     &lt;enumeration value="Long"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

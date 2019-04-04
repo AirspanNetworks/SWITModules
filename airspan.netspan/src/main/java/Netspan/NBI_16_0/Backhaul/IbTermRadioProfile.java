@@ -15,47 +15,48 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IbTermRadioProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesIbTerm" minOccurs="0"/>
- *         &lt;element name="TiltProtectionEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="TiltProtectionDelay" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TiltProtectionThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TiltAlarmEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="TiltAlarmRaiseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="ClockSynchronisation" type="{http://Airspan.Netspan.WebServices}FTClockSourceTypes" minOccurs="0"/>
- *         &lt;element name="PtpMasterEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="PtpDomain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PtpAnnounceRate" type="{http://Airspan.Netspan.WebServices}AnnounceRateValues" minOccurs="0"/>
- *         &lt;element name="PtpSyncRate" type="{http://Airspan.Netspan.WebServices}SyncRateValues" minOccurs="0"/>
- *         &lt;element name="PtpDelayReqRespRate" type="{http://Airspan.Netspan.WebServices}DelayRateValues" minOccurs="0"/>
- *         &lt;element name="PtpLeaseDuration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UseIbBaseSettings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownlinkModulation" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridge" minOccurs="0"/>
- *         &lt;element name="UplinkModulation" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridge" minOccurs="0"/>
- *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}MatrixConfig" minOccurs="0"/>
- *         &lt;element name="UplinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}MatrixConfig" minOccurs="0"/>
- *         &lt;element name="ChannelBandwidth" type="{http://Airspan.Netspan.WebServices}IbTermRadioProfileBandwidth" minOccurs="0"/>
- *         &lt;element name="ChannelProfileListEntry" type="{http://Airspan.Netspan.WebServices}ArrayOfChannelProfileEntry" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IbTermRadioProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}IBridgeTermHardwareTypes" minOccurs="0"/&gt;
+ *         &lt;element name="TiltProtectionEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TiltProtectionDelay" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TiltProtectionThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TiltAlarmEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TiltAlarmRaiseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="ClockSynchronisation" type="{http://Airspan.Netspan.WebServices}FtClockSourceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="PtpMasterEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="PtpDomain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PtpAnnounceRate" type="{http://Airspan.Netspan.WebServices}AnnounceRateTypesIbridge" minOccurs="0"/&gt;
+ *         &lt;element name="PtpSyncRate" type="{http://Airspan.Netspan.WebServices}SyncRateTypesIbridge" minOccurs="0"/&gt;
+ *         &lt;element name="PtpDelayReqRespRate" type="{http://Airspan.Netspan.WebServices}DelayRateTypesIbridge" minOccurs="0"/&gt;
+ *         &lt;element name="PtpLeaseDuration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PtpDscpTag" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UseIbBaseSettings" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkModulation" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridge" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkModulation" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridge" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}MatrixConfig" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}MatrixConfig" minOccurs="0"/&gt;
+ *         &lt;element name="ChannelBandwidth" type="{http://Airspan.Netspan.WebServices}IbTermRadioProfileBandwidth" minOccurs="0"/&gt;
+ *         &lt;element name="ChannelProfileListEntry" type="{http://Airspan.Netspan.WebServices}ChannelProfileListContainer" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -76,6 +77,7 @@ import javax.xml.bind.annotation.XmlType;
     "ptpSyncRate",
     "ptpDelayReqRespRate",
     "ptpLeaseDuration",
+    "ptpDscpTag",
     "ntpServerIpAddress1Enabled",
     "ntpServerIpAddress1",
     "useNms1",
@@ -101,21 +103,21 @@ public class IbTermRadioProfile {
     @XmlElement(name = "Name")
     protected String name;
     @XmlElementRef(name = "HardwareCategory", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<CategoriesIbTerm> hardwareCategory;
+    protected JAXBElement<IBridgeTermHardwareTypes> hardwareCategory;
     @XmlElementRef(name = "TiltProtectionEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> tiltProtectionEnabled;
+    protected JAXBElement<EnabledDisabledStates> tiltProtectionEnabled;
     @XmlElementRef(name = "TiltProtectionDelay", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> tiltProtectionDelay;
     @XmlElementRef(name = "TiltProtectionThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> tiltProtectionThreshold;
     @XmlElementRef(name = "TiltAlarmEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> tiltAlarmEnabled;
+    protected JAXBElement<EnabledDisabledStates> tiltAlarmEnabled;
     @XmlElementRef(name = "TiltAlarmRaiseThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> tiltAlarmRaiseThreshold;
     @XmlElementRef(name = "ClockSynchronisation", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<FTClockSourceTypes> clockSynchronisation;
+    protected JAXBElement<FtClockSourceTypes> clockSynchronisation;
     @XmlElementRef(name = "PtpMasterEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> ptpMasterEnabled;
+    protected JAXBElement<EnabledDisabledStates> ptpMasterEnabled;
     @XmlElementRef(name = "PtpDomain", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> ptpDomain;
     @XmlElementRef(name = "PtpAnnounceRate", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -126,6 +128,8 @@ public class IbTermRadioProfile {
     protected JAXBElement<String> ptpDelayReqRespRate;
     @XmlElementRef(name = "PtpLeaseDuration", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> ptpLeaseDuration;
+    @XmlElementRef(name = "PtpDscpTag", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> ptpDscpTag;
     @XmlElementRef(name = "NtpServerIpAddress1Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabledStates> ntpServerIpAddress1Enabled;
     @XmlElement(name = "NtpServerIpAddress1")
@@ -163,7 +167,7 @@ public class IbTermRadioProfile {
     @XmlElementRef(name = "ChannelBandwidth", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> channelBandwidth;
     @XmlElement(name = "ChannelProfileListEntry")
-    protected ArrayOfChannelProfileEntry channelProfileListEntry;
+    protected ChannelProfileListContainer channelProfileListEntry;
 
     /**
      * Gets the value of the name property.
@@ -194,10 +198,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link CategoriesIbTerm }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeTermHardwareTypes }{@code >}
      *     
      */
-    public JAXBElement<CategoriesIbTerm> getHardwareCategory() {
+    public JAXBElement<IBridgeTermHardwareTypes> getHardwareCategory() {
         return hardwareCategory;
     }
 
@@ -206,10 +210,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link CategoriesIbTerm }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeTermHardwareTypes }{@code >}
      *     
      */
-    public void setHardwareCategory(JAXBElement<CategoriesIbTerm> value) {
+    public void setHardwareCategory(JAXBElement<IBridgeTermHardwareTypes> value) {
         this.hardwareCategory = value;
     }
 
@@ -218,10 +222,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getTiltProtectionEnabled() {
+    public JAXBElement<EnabledDisabledStates> getTiltProtectionEnabled() {
         return tiltProtectionEnabled;
     }
 
@@ -230,10 +234,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setTiltProtectionEnabled(JAXBElement<EnabledDisabledValues> value) {
+    public void setTiltProtectionEnabled(JAXBElement<EnabledDisabledStates> value) {
         this.tiltProtectionEnabled = value;
     }
 
@@ -290,10 +294,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getTiltAlarmEnabled() {
+    public JAXBElement<EnabledDisabledStates> getTiltAlarmEnabled() {
         return tiltAlarmEnabled;
     }
 
@@ -302,10 +306,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setTiltAlarmEnabled(JAXBElement<EnabledDisabledValues> value) {
+    public void setTiltAlarmEnabled(JAXBElement<EnabledDisabledStates> value) {
         this.tiltAlarmEnabled = value;
     }
 
@@ -338,10 +342,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link FTClockSourceTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link FtClockSourceTypes }{@code >}
      *     
      */
-    public JAXBElement<FTClockSourceTypes> getClockSynchronisation() {
+    public JAXBElement<FtClockSourceTypes> getClockSynchronisation() {
         return clockSynchronisation;
     }
 
@@ -350,10 +354,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link FTClockSourceTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link FtClockSourceTypes }{@code >}
      *     
      */
-    public void setClockSynchronisation(JAXBElement<FTClockSourceTypes> value) {
+    public void setClockSynchronisation(JAXBElement<FtClockSourceTypes> value) {
         this.clockSynchronisation = value;
     }
 
@@ -362,10 +366,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getPtpMasterEnabled() {
+    public JAXBElement<EnabledDisabledStates> getPtpMasterEnabled() {
         return ptpMasterEnabled;
     }
 
@@ -374,10 +378,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setPtpMasterEnabled(JAXBElement<EnabledDisabledValues> value) {
+    public void setPtpMasterEnabled(JAXBElement<EnabledDisabledStates> value) {
         this.ptpMasterEnabled = value;
     }
 
@@ -499,6 +503,30 @@ public class IbTermRadioProfile {
      */
     public void setPtpLeaseDuration(JAXBElement<Integer> value) {
         this.ptpLeaseDuration = value;
+    }
+
+    /**
+     * Gets the value of the ptpDscpTag property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getPtpDscpTag() {
+        return ptpDscpTag;
+    }
+
+    /**
+     * Sets the value of the ptpDscpTag property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setPtpDscpTag(JAXBElement<Integer> value) {
+        this.ptpDscpTag = value;
     }
 
     /**
@@ -938,10 +966,10 @@ public class IbTermRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link ArrayOfChannelProfileEntry }
+     *     {@link ChannelProfileListContainer }
      *     
      */
-    public ArrayOfChannelProfileEntry getChannelProfileListEntry() {
+    public ChannelProfileListContainer getChannelProfileListEntry() {
         return channelProfileListEntry;
     }
 
@@ -950,10 +978,10 @@ public class IbTermRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link ArrayOfChannelProfileEntry }
+     *     {@link ChannelProfileListContainer }
      *     
      */
-    public void setChannelProfileListEntry(ArrayOfChannelProfileEntry value) {
+    public void setChannelProfileListEntry(ChannelProfileListContainer value) {
         this.channelProfileListEntry = value;
     }
 

@@ -12,37 +12,37 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="BandValuesWs">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="B1"/>
- *     &lt;enumeration value="B2"/>
- *     &lt;enumeration value="B3"/>
- *     &lt;enumeration value="B4"/>
- *     &lt;enumeration value="B5"/>
- *     &lt;enumeration value="B6"/>
- *     &lt;enumeration value="B7"/>
- *     &lt;enumeration value="B8"/>
- *     &lt;enumeration value="B9"/>
- *     &lt;enumeration value="B12"/>
- *     &lt;enumeration value="B13"/>
- *     &lt;enumeration value="B17"/>
- *     &lt;enumeration value="B18"/>
- *     &lt;enumeration value="B19"/>
- *     &lt;enumeration value="B20"/>
- *     &lt;enumeration value="B21"/>
- *     &lt;enumeration value="B25"/>
- *     &lt;enumeration value="B26"/>
- *     &lt;enumeration value="B28"/>
- *     &lt;enumeration value="B29"/>
- *     &lt;enumeration value="B30"/>
- *     &lt;enumeration value="B38"/>
- *     &lt;enumeration value="B39"/>
- *     &lt;enumeration value="B40"/>
- *     &lt;enumeration value="B41"/>
- *     &lt;enumeration value="B41H"/>
- *     &lt;enumeration value="B41L"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="BandValuesWs"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="B1"/&gt;
+ *     &lt;enumeration value="B2"/&gt;
+ *     &lt;enumeration value="B3"/&gt;
+ *     &lt;enumeration value="B4"/&gt;
+ *     &lt;enumeration value="B5"/&gt;
+ *     &lt;enumeration value="B6"/&gt;
+ *     &lt;enumeration value="B7"/&gt;
+ *     &lt;enumeration value="B8"/&gt;
+ *     &lt;enumeration value="B9"/&gt;
+ *     &lt;enumeration value="B12"/&gt;
+ *     &lt;enumeration value="B13"/&gt;
+ *     &lt;enumeration value="B17"/&gt;
+ *     &lt;enumeration value="B18"/&gt;
+ *     &lt;enumeration value="B19"/&gt;
+ *     &lt;enumeration value="B20"/&gt;
+ *     &lt;enumeration value="B21"/&gt;
+ *     &lt;enumeration value="B25"/&gt;
+ *     &lt;enumeration value="B26"/&gt;
+ *     &lt;enumeration value="B28"/&gt;
+ *     &lt;enumeration value="B29"/&gt;
+ *     &lt;enumeration value="B30"/&gt;
+ *     &lt;enumeration value="B38"/&gt;
+ *     &lt;enumeration value="B39"/&gt;
+ *     &lt;enumeration value="B40"/&gt;
+ *     &lt;enumeration value="B41"/&gt;
+ *     &lt;enumeration value="B41H"/&gt;
+ *     &lt;enumeration value="B41L"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

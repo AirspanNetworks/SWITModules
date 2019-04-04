@@ -17,16 +17,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesRelay" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}RelayHardwareTypes" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -43,7 +43,7 @@ public class RelaySystemDefaultProfileGet {
     protected List<String> name;
     @XmlElement(name = "HardwareCategory")
     @XmlSchemaType(name = "string")
-    protected List<CategoriesRelay> hardwareCategory;
+    protected List<RelayHardwareTypes> hardwareCategory;
 
     /**
      * Gets the value of the name property.
@@ -92,13 +92,13 @@ public class RelaySystemDefaultProfileGet {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link CategoriesRelay }
+     * {@link RelayHardwareTypes }
      * 
      * 
      */
-    public List<CategoriesRelay> getHardwareCategory() {
+    public List<RelayHardwareTypes> getHardwareCategory() {
         if (hardwareCategory == null) {
-            hardwareCategory = new ArrayList<CategoriesRelay>();
+            hardwareCategory = new ArrayList<RelayHardwareTypes>();
         }
         return this.hardwareCategory;
     }

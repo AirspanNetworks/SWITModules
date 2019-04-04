@@ -16,31 +16,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="iBridgeBasePnpDetailWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Hardware" type="{http://Airspan.Netspan.WebServices}IbBasePnpHardwareTypes" minOccurs="0"/>
- *         &lt;element name="PnpHardwareId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="PnpLatitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="PnpLongitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="PnpLatLongRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PnpSwImageName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="IsSwScheduled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SwSchedule" type="{http://Airspan.Netspan.WebServices}IBridgeBasePnpSwSchedule" minOccurs="0"/>
- *         &lt;element name="IsDownloadOnlySwScheduled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownloadOnlySwSchedule" type="{http://Airspan.Netspan.WebServices}IBridgeBasePnpSwSchedule" minOccurs="0"/>
- *         &lt;element name="SnmpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SnmpTimeoutInMilliSec" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="SnmpVersion" type="{http://Airspan.Netspan.WebServices}SnmpAgentVersion" minOccurs="0"/>
- *         &lt;element name="SnmpReadContext" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SnmpWriteContext" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Snmpv3Access" type="{http://Airspan.Netspan.WebServices}Snmpv3AccessTypes" minOccurs="0"/>
- *         &lt;element name="Snmpv3Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="iBridgeBasePnpDetailWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Hardware" type="{http://Airspan.Netspan.WebServices}IbBasePnpHardwareTypes" minOccurs="0"/&gt;
+ *         &lt;element name="PnpHardwareId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="PnpServiceState" type="{http://Airspan.Netspan.WebServices}IbBaseStates" minOccurs="0"/&gt;
+ *         &lt;element name="PnpLatitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="PnpLongitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="PnpLatLongRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PnpSwImageName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="IsSwScheduled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SwSchedule" type="{http://Airspan.Netspan.WebServices}IBridgeBasePnpSwSchedule" minOccurs="0"/&gt;
+ *         &lt;element name="IsDownloadOnlySwScheduled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownloadOnlySwSchedule" type="{http://Airspan.Netspan.WebServices}IBridgeBasePnpSwSchedule" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpTimeoutInMilliSec" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpVersion" type="{http://Airspan.Netspan.WebServices}SnmpAgentVersion" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpReadContext" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SnmpWriteContext" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Snmpv3Access" type="{http://Airspan.Netspan.WebServices}Snmpv3AccessTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Snmpv3Password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -49,6 +50,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "iBridgeBasePnpDetailWs", propOrder = {
     "hardware",
     "pnpHardwareId",
+    "pnpServiceState",
     "pnpLatitude",
     "pnpLongitude",
     "pnpLatLongRadius",
@@ -71,6 +73,8 @@ public class IBridgeBasePnpDetailWs {
     protected JAXBElement<IbBasePnpHardwareTypes> hardware;
     @XmlElement(name = "PnpHardwareId")
     protected String pnpHardwareId;
+    @XmlElementRef(name = "PnpServiceState", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<IbBaseStates> pnpServiceState;
     @XmlElementRef(name = "PnpLatitude", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<BigDecimal> pnpLatitude;
     @XmlElementRef(name = "PnpLongitude", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -148,6 +152,30 @@ public class IBridgeBasePnpDetailWs {
      */
     public void setPnpHardwareId(String value) {
         this.pnpHardwareId = value;
+    }
+
+    /**
+     * Gets the value of the pnpServiceState property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link IbBaseStates }{@code >}
+     *     
+     */
+    public JAXBElement<IbBaseStates> getPnpServiceState() {
+        return pnpServiceState;
+    }
+
+    /**
+     * Sets the value of the pnpServiceState property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link IbBaseStates }{@code >}
+     *     
+     */
+    public void setPnpServiceState(JAXBElement<IbBaseStates> value) {
+        this.pnpServiceState = value;
     }
 
     /**

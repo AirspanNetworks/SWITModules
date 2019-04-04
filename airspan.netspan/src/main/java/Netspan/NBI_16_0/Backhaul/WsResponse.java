@@ -15,16 +15,16 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="WsResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/>
- *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ErrorCode" type="{http://Airspan.Netspan.WebServices}ErrorCodes"/&gt;
+ *         &lt;element name="ErrorString" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -35,26 +35,27 @@ import javax.xml.bind.annotation.XmlType;
     "errorString"
 })
 @XmlSeeAlso({
-    ProfileResponse.class,
-    IbTermConfigGetResult.class,
-    IbBaseRadioProfileGetResult.class,
+    Ib440ConfigGetResult.class,
     NodeActionResult.class,
+    IbBaseConfigGetResult.class,
+    IbTermConfigGetResult.class,
+    NameResult.class,
+    IbBaseManagementProfileGetResult.class,
+    ProfileResponse.class,
+    IbBaseRadioProfileGetResult.class,
+    NodeListResult.class,
+    IBridgeBasePnpConfigGetResult.class,
+    IBridgeTermPnpConfigGetResult.class,
+    IbTermRadioProfileGetResult.class,
+    IBridgeBaseSystemDefaultProfileGetResult.class,
+    IBridgeTermSystemDefaultProfileGetResult.class,
+    IbBaseStateGetResult.class,
     RelayConfigGetResult.class,
+    RelayProfileGetResult.class,
     RelaySystemDefaultProfileGetResult.class,
     RelayPnpConfigGetResult.class,
-    NameResult.class,
-    IbBaseStateGetResult.class,
-    IBridgeBaseSystemDefaultProfileGetResult.class,
-    IbBaseManagementProfileGetResult.class,
-    NodeListResult.class,
-    RelayProfileGetResult.class,
-    IBridgeTermPnpConfigGetResult.class,
     RelayAdvancedProfileGetResult.class,
-    IBridgeBasePnpConfigGetResult.class,
-    IbBaseConfigGetResult.class,
-    Ib440ConfigGetResult.class,
-    IBridgeTermSystemDefaultProfileGetResult.class,
-    IbTermRadioProfileGetResult.class
+    Ib440ProfileGetResult.class
 })
 public class WsResponse {
 

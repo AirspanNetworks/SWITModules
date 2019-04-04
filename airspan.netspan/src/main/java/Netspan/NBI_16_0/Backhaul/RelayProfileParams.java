@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
@@ -18,76 +17,81 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayProfileParams">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FrameShift" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="StatsGranularityPeriod" type="{http://Airspan.Netspan.WebServices}GranularityPeriodRelay" minOccurs="0"/>
- *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="MimoSpectralEfficiencyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}SinrRanking"/>
- *         &lt;element name="DenbSinrThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSeThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="AllowedLocationRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="LocationAccuracyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSinrHystersis" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DenbSeHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DenbRsrpDomThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DenbRsrpDomHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DrmThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DrmHysteresis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="AutoBackoffScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AutoBackoffMaxScanEvents" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="EnbReportingInterval" type="{http://Airspan.Netspan.WebServices}ReportingIntervals" minOccurs="0"/>
- *         &lt;element name="ConnectedDeviceVciToTypeMatchingRules" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceVciToTypeList" minOccurs="0"/>
- *         &lt;element name="ConnectedDeviceTypeToApnMapping" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceTypeToApnList" minOccurs="0"/>
- *         &lt;element name="Rbv" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="FineAlignMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="FineAlignAvgPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DrmAveragePeriodForScanning" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DrmAveragePeriodForMonitoring" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IgnoreDenbBarring" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="PrimarySyncSource" type="{http://Airspan.Netspan.WebServices}PrimarySyncSourceTypes" minOccurs="0"/>
- *         &lt;element name="FailoverAction" type="{http://Airspan.Netspan.WebServices}FailoverActionTypes" minOccurs="0"/>
- *         &lt;element name="SfnInitialisationTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EnbBackhaulSecurity" type="{http://Airspan.Netspan.WebServices}BackhaulSecurityTypes" minOccurs="0"/>
- *         &lt;element name="MaintenanceWindowMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="TimeZone" type="{http://Airspan.Netspan.WebServices}TimeZonesRelay" minOccurs="0"/>
- *         &lt;element name="MaintenanceWindowStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MaintenanceWindowEndTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="MaxRandomDelay" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PeriodicReScanMode" type="{http://Airspan.Netspan.WebServices}PeriodicReScan" minOccurs="0"/>
- *         &lt;element name="PeriodicReScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PeriodicRescanDaily" type="{http://Airspan.Netspan.WebServices}PeriodicRescanDailyWs" minOccurs="0"/>
- *         &lt;element name="PeriodicRescanWeekly" type="{http://Airspan.Netspan.WebServices}PeriodicRescanWeeklyWs" minOccurs="0"/>
- *         &lt;element name="PeriodicRescanMonthly" type="{http://Airspan.Netspan.WebServices}PeriodicRescanMonthlyWs" minOccurs="0"/>
- *         &lt;element name="AutonomousReScanMode" type="{http://Airspan.Netspan.WebServices}AutonomousRescanModeValues" minOccurs="0"/>
- *         &lt;element name="UlPkdDataPriorityNtp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UlPkdDataPriorityNetwork" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UlPkdDataPriorityManagement" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="UlPkdDataPriorityBulkTransfer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MtuSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="PtpMasterEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="PtpAnnounceRate" type="{http://Airspan.Netspan.WebServices}RelayAnnounceRateValues" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayProfileParams"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FrameShift" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="StatsGranularityPeriod" type="{http://Airspan.Netspan.WebServices}GranularityPeriodRelay" minOccurs="0"/&gt;
+ *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MimoSpectralEfficiencyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}SinrRanking" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSeThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedLocationRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="LocationAccuracyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSortingAlgorithm" type="{http://Airspan.Netspan.WebServices}DenbSortingAlgorithmValuesWS" minOccurs="0"/&gt;
+ *         &lt;element name="DrmGroupingOffset" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSinrHystersis" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DenbSeHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DenbRsrpDomThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DenbRsrpDomHystersis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DrmThreshold" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DrmHysteresis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="AutoBackoffScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AutoBackoffMaxScanEvents" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EnbReportingInterval" type="{http://Airspan.Netspan.WebServices}ReportingIntervals" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedDeviceVciToTypeMatchingRules" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceVciToTypeList" minOccurs="0"/&gt;
+ *         &lt;element name="ConnectedDeviceTypeToApnMapping" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceTypeToApnList" minOccurs="0"/&gt;
+ *         &lt;element name="Rbv" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="FineAlignAvgPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DrmAveragePeriodForScanning" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DrmAveragePeriodForMonitoring" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="IgnoreDenbBarring" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="PrimarySyncSource" type="{http://Airspan.Netspan.WebServices}PrimarySyncSourceTypes" minOccurs="0"/&gt;
+ *         &lt;element name="FailoverAction" type="{http://Airspan.Netspan.WebServices}FailoverActionTypes" minOccurs="0"/&gt;
+ *         &lt;element name="SfnInitialisationTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EnbBackhaulSecurity" type="{http://Airspan.Netspan.WebServices}BackhaulSecurityTypes" minOccurs="0"/&gt;
+ *         &lt;element name="MaintenanceWindowMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TimeZone" type="{http://Airspan.Netspan.WebServices}TimeZonesRelay" minOccurs="0"/&gt;
+ *         &lt;element name="MaintenanceWindowStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MaintenanceWindowEndTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="MaxRandomDelay" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicReScanMode" type="{http://Airspan.Netspan.WebServices}PeriodicReScan" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicReScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicRescanDaily" type="{http://Airspan.Netspan.WebServices}PeriodicRescanDailyWs" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicRescanWeekly" type="{http://Airspan.Netspan.WebServices}PeriodicRescanWeeklyWs" minOccurs="0"/&gt;
+ *         &lt;element name="PeriodicRescanMonthly" type="{http://Airspan.Netspan.WebServices}PeriodicRescanMonthlyWs" minOccurs="0"/&gt;
+ *         &lt;element name="AutonomousReScanMode" type="{http://Airspan.Netspan.WebServices}AutonomousRescanModeValues" minOccurs="0"/&gt;
+ *         &lt;element name="UlPkdDataPriorityNtp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UlPkdDataPriorityNetwork" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UlPkdDataPriorityManagement" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="UlPkdDataPriorityBulkTransfer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MtuSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WifiMaxThroughputLimited" type="{http://Airspan.Netspan.WebServices}MaxWifiThroughputTypes" minOccurs="0"/&gt;
+ *         &lt;element name="WifiMaxThroughput" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="HourlyDailyEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="TimePersistency" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedTimePersistencyDelta" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -116,6 +120,8 @@ import javax.xml.bind.annotation.XmlType;
     "locationPersistancy",
     "allowedLocationRadius",
     "locationAccuracyThreshold",
+    "denbSortingAlgorithm",
+    "drmGroupingOffset",
     "denbSinrHystersis",
     "denbSeHystersis",
     "denbRsrpDomThreshold",
@@ -154,8 +160,11 @@ import javax.xml.bind.annotation.XmlType;
     "ulPkdDataPriorityManagement",
     "ulPkdDataPriorityBulkTransfer",
     "mtuSize",
-    "ptpMasterEnabled",
-    "ptpAnnounceRate"
+    "wifiMaxThroughputLimited",
+    "wifiMaxThroughput",
+    "hourlyDailyEnabled",
+    "timePersistency",
+    "allowedTimePersistencyDelta"
 })
 @XmlSeeAlso({
     RelayProfile.class
@@ -194,9 +203,8 @@ public class RelayProfileParams {
     protected JAXBElement<EnabledDisabledStates> nodeSshAccess;
     @XmlElementRef(name = "MimoSpectralEfficiencyThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mimoSpectralEfficiencyThreshold;
-    @XmlElement(name = "DenbSinrRanking", required = true, nillable = true)
-    @XmlSchemaType(name = "string")
-    protected SinrRanking denbSinrRanking;
+    @XmlElementRef(name = "DenbSinrRanking", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<SinrRanking> denbSinrRanking;
     @XmlElementRef(name = "DenbSinrThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> denbSinrThreshold;
     @XmlElementRef(name = "DenbSeThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -207,6 +215,10 @@ public class RelayProfileParams {
     protected JAXBElement<Integer> allowedLocationRadius;
     @XmlElementRef(name = "LocationAccuracyThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> locationAccuracyThreshold;
+    @XmlElementRef(name = "DenbSortingAlgorithm", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<DenbSortingAlgorithmValuesWS> denbSortingAlgorithm;
+    @XmlElementRef(name = "DrmGroupingOffset", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<BigDecimal> drmGroupingOffset;
     @XmlElementRef(name = "DenbSinrHystersis", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> denbSinrHystersis;
     @XmlElementRef(name = "DenbSeHystersis", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -283,10 +295,16 @@ public class RelayProfileParams {
     protected JAXBElement<Integer> ulPkdDataPriorityBulkTransfer;
     @XmlElementRef(name = "MtuSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mtuSize;
-    @XmlElementRef(name = "PtpMasterEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ptpMasterEnabled;
-    @XmlElementRef(name = "PtpAnnounceRate", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<String> ptpAnnounceRate;
+    @XmlElementRef(name = "WifiMaxThroughputLimited", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<MaxWifiThroughputTypes> wifiMaxThroughputLimited;
+    @XmlElementRef(name = "WifiMaxThroughput", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> wifiMaxThroughput;
+    @XmlElementRef(name = "HourlyDailyEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> hourlyDailyEnabled;
+    @XmlElementRef(name = "TimePersistency", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledDisabledStates> timePersistency;
+    @XmlElementRef(name = "AllowedTimePersistencyDelta", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> allowedTimePersistencyDelta;
 
     /**
      * Gets the value of the ntpServerIpAddress1Enabled property.
@@ -677,10 +695,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link SinrRanking }
+     *     {@link JAXBElement }{@code <}{@link SinrRanking }{@code >}
      *     
      */
-    public SinrRanking getDenbSinrRanking() {
+    public JAXBElement<SinrRanking> getDenbSinrRanking() {
         return denbSinrRanking;
     }
 
@@ -689,10 +707,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link SinrRanking }
+     *     {@link JAXBElement }{@code <}{@link SinrRanking }{@code >}
      *     
      */
-    public void setDenbSinrRanking(SinrRanking value) {
+    public void setDenbSinrRanking(JAXBElement<SinrRanking> value) {
         this.denbSinrRanking = value;
     }
 
@@ -814,6 +832,54 @@ public class RelayProfileParams {
      */
     public void setLocationAccuracyThreshold(JAXBElement<Integer> value) {
         this.locationAccuracyThreshold = value;
+    }
+
+    /**
+     * Gets the value of the denbSortingAlgorithm property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link DenbSortingAlgorithmValuesWS }{@code >}
+     *     
+     */
+    public JAXBElement<DenbSortingAlgorithmValuesWS> getDenbSortingAlgorithm() {
+        return denbSortingAlgorithm;
+    }
+
+    /**
+     * Sets the value of the denbSortingAlgorithm property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link DenbSortingAlgorithmValuesWS }{@code >}
+     *     
+     */
+    public void setDenbSortingAlgorithm(JAXBElement<DenbSortingAlgorithmValuesWS> value) {
+        this.denbSortingAlgorithm = value;
+    }
+
+    /**
+     * Gets the value of the drmGroupingOffset property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public JAXBElement<BigDecimal> getDrmGroupingOffset() {
+        return drmGroupingOffset;
+    }
+
+    /**
+     * Sets the value of the drmGroupingOffset property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link BigDecimal }{@code >}
+     *     
+     */
+    public void setDrmGroupingOffset(JAXBElement<BigDecimal> value) {
+        this.drmGroupingOffset = value;
     }
 
     /**
@@ -1729,51 +1795,123 @@ public class RelayProfileParams {
     }
 
     /**
-     * Gets the value of the ptpMasterEnabled property.
+     * Gets the value of the wifiMaxThroughputLimited property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link MaxWifiThroughputTypes }{@code >}
+     *     
+     */
+    public JAXBElement<MaxWifiThroughputTypes> getWifiMaxThroughputLimited() {
+        return wifiMaxThroughputLimited;
+    }
+
+    /**
+     * Sets the value of the wifiMaxThroughputLimited property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link MaxWifiThroughputTypes }{@code >}
+     *     
+     */
+    public void setWifiMaxThroughputLimited(JAXBElement<MaxWifiThroughputTypes> value) {
+        this.wifiMaxThroughputLimited = value;
+    }
+
+    /**
+     * Gets the value of the wifiMaxThroughput property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getWifiMaxThroughput() {
+        return wifiMaxThroughput;
+    }
+
+    /**
+     * Sets the value of the wifiMaxThroughput property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setWifiMaxThroughput(JAXBElement<Integer> value) {
+        this.wifiMaxThroughput = value;
+    }
+
+    /**
+     * Gets the value of the hourlyDailyEnabled property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public JAXBElement<Boolean> getHourlyDailyEnabled() {
+        return hourlyDailyEnabled;
+    }
+
+    /**
+     * Sets the value of the hourlyDailyEnabled property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public void setHourlyDailyEnabled(JAXBElement<Boolean> value) {
+        this.hourlyDailyEnabled = value;
+    }
+
+    /**
+     * Gets the value of the timePersistency property.
      * 
      * @return
      *     possible object is
      *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPtpMasterEnabled() {
-        return ptpMasterEnabled;
+    public JAXBElement<EnabledDisabledStates> getTimePersistency() {
+        return timePersistency;
     }
 
     /**
-     * Sets the value of the ptpMasterEnabled property.
+     * Sets the value of the timePersistency property.
      * 
      * @param value
      *     allowed object is
      *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setPtpMasterEnabled(JAXBElement<EnabledDisabledStates> value) {
-        this.ptpMasterEnabled = value;
+    public void setTimePersistency(JAXBElement<EnabledDisabledStates> value) {
+        this.timePersistency = value;
     }
 
     /**
-     * Gets the value of the ptpAnnounceRate property.
+     * Gets the value of the allowedTimePersistencyDelta property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public JAXBElement<String> getPtpAnnounceRate() {
-        return ptpAnnounceRate;
+    public JAXBElement<Integer> getAllowedTimePersistencyDelta() {
+        return allowedTimePersistencyDelta;
     }
 
     /**
-     * Sets the value of the ptpAnnounceRate property.
+     * Sets the value of the allowedTimePersistencyDelta property.
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
      *     
      */
-    public void setPtpAnnounceRate(JAXBElement<String> value) {
-        this.ptpAnnounceRate = value;
+    public void setAllowedTimePersistencyDelta(JAXBElement<Integer> value) {
+        this.allowedTimePersistencyDelta = value;
     }
 
 }

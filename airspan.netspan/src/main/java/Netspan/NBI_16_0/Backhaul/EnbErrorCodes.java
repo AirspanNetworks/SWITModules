@@ -12,12 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="EnbErrorCodes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NotSet"/>
- *     &lt;enumeration value="NoValidFrequency"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="EnbErrorCodes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="NotSet"/&gt;
+ *     &lt;enumeration value="NoValidFrequency"/&gt;
+ *     &lt;enumeration value="NoValidCsfb"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -28,7 +29,9 @@ public enum EnbErrorCodes {
     @XmlEnumValue("NotSet")
     NOT_SET("NotSet"),
     @XmlEnumValue("NoValidFrequency")
-    NO_VALID_FREQUENCY("NoValidFrequency");
+    NO_VALID_FREQUENCY("NoValidFrequency"),
+    @XmlEnumValue("NoValidCsfb")
+    NO_VALID_CSFB("NoValidCsfb");
     private final String value;
 
     EnbErrorCodes(String v) {

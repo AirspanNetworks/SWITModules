@@ -12,12 +12,12 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="Snmpv3AccessTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="ReadWrite"/>
- *     &lt;enumeration value="ReadOnly"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="Snmpv3AccessTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="ReadWrite"/&gt;
+ *     &lt;enumeration value="ReadOnly"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
