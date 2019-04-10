@@ -6,7 +6,7 @@
 	<version>1.0.25</version>
 	<name>dmtool</name>
 	<properties>
-		<jsystem.version>6.1.11-SNAPSHOT</jsystem.version>
+		<jsystem.version>6.1.11</jsystem.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<internal.maven.repo>http://asil-swit:9010/repository/airspan-public/</internal.maven.repo>
 	</properties>
