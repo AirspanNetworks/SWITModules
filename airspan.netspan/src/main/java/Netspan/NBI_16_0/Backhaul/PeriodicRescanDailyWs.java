@@ -15,17 +15,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="PeriodicRescanDailyWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="SelectedOption" type="{http://Airspan.Netspan.WebServices}PeriodicRescanOptionsDaily" minOccurs="0"/>
- *         &lt;element name="DailyOptionEveryXDay" type="{http://Airspan.Netspan.WebServices}DailyOptionEveryXDay" minOccurs="0"/>
- *         &lt;element name="DailyOptionEveryWeekDay" type="{http://Airspan.Netspan.WebServices}DailyOptionEveryWeekDay" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="PeriodicRescanDailyWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="SelectedOption" type="{http://Airspan.Netspan.WebServices}PeriodicRescanOptionsDaily" minOccurs="0"/&gt;
+ *         &lt;element name="DailyOptionEveryXDay" type="{http://Airspan.Netspan.WebServices}DailyOptionEveryXDay" minOccurs="0"/&gt;
+ *         &lt;element name="DailyOptionEveryWeekDay" type="{http://Airspan.Netspan.WebServices}DailyOptionEveryWeekDay" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 

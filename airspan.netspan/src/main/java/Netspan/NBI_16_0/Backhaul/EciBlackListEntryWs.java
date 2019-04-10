@@ -1,9 +1,10 @@
 
 package Netspan.NBI_16_0.Backhaul;
 
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -13,42 +14,42 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EciBlackListEntryWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Bit0" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit1" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit2" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit3" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit4" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit5" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit6" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit7" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit8" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit9" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit10" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit11" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit12" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit13" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit14" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit15" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit16" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit17" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit18" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit19" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit20" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit21" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit22" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit23" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit24" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit25" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit26" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *         &lt;element name="Bit27" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EciBlackListEntryWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Bit0" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit1" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit2" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit3" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit4" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit5" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit6" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit7" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit8" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit9" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit10" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit11" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit12" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit13" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit14" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit15" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit16" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit17" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit18" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit19" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit20" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit21" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit22" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit23" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit24" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit25" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit26" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bit27" type="{http://Airspan.Netspan.WebServices}EciBlaclListStatesWs" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -86,72 +87,72 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class EciBlackListEntryWs {
 
-    @XmlElement(name = "Bit0", required = true, nillable = true)
-    protected String bit0;
-    @XmlElement(name = "Bit1", required = true, nillable = true)
-    protected String bit1;
-    @XmlElement(name = "Bit2", required = true, nillable = true)
-    protected String bit2;
-    @XmlElement(name = "Bit3", required = true, nillable = true)
-    protected String bit3;
-    @XmlElement(name = "Bit4", required = true, nillable = true)
-    protected String bit4;
-    @XmlElement(name = "Bit5", required = true, nillable = true)
-    protected String bit5;
-    @XmlElement(name = "Bit6", required = true, nillable = true)
-    protected String bit6;
-    @XmlElement(name = "Bit7", required = true, nillable = true)
-    protected String bit7;
-    @XmlElement(name = "Bit8", required = true, nillable = true)
-    protected String bit8;
-    @XmlElement(name = "Bit9", required = true, nillable = true)
-    protected String bit9;
-    @XmlElement(name = "Bit10", required = true, nillable = true)
-    protected String bit10;
-    @XmlElement(name = "Bit11", required = true, nillable = true)
-    protected String bit11;
-    @XmlElement(name = "Bit12", required = true, nillable = true)
-    protected String bit12;
-    @XmlElement(name = "Bit13", required = true, nillable = true)
-    protected String bit13;
-    @XmlElement(name = "Bit14", required = true, nillable = true)
-    protected String bit14;
-    @XmlElement(name = "Bit15", required = true, nillable = true)
-    protected String bit15;
-    @XmlElement(name = "Bit16", required = true, nillable = true)
-    protected String bit16;
-    @XmlElement(name = "Bit17", required = true, nillable = true)
-    protected String bit17;
-    @XmlElement(name = "Bit18", required = true, nillable = true)
-    protected String bit18;
-    @XmlElement(name = "Bit19", required = true, nillable = true)
-    protected String bit19;
-    @XmlElement(name = "Bit20", required = true, nillable = true)
-    protected String bit20;
-    @XmlElement(name = "Bit21", required = true, nillable = true)
-    protected String bit21;
-    @XmlElement(name = "Bit22", required = true, nillable = true)
-    protected String bit22;
-    @XmlElement(name = "Bit23", required = true, nillable = true)
-    protected String bit23;
-    @XmlElement(name = "Bit24", required = true, nillable = true)
-    protected String bit24;
-    @XmlElement(name = "Bit25", required = true, nillable = true)
-    protected String bit25;
-    @XmlElement(name = "Bit26", required = true, nillable = true)
-    protected String bit26;
-    @XmlElement(name = "Bit27", required = true, nillable = true)
-    protected String bit27;
+    @XmlElementRef(name = "Bit0", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit0;
+    @XmlElementRef(name = "Bit1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit1;
+    @XmlElementRef(name = "Bit2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit2;
+    @XmlElementRef(name = "Bit3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit3;
+    @XmlElementRef(name = "Bit4", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit4;
+    @XmlElementRef(name = "Bit5", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit5;
+    @XmlElementRef(name = "Bit6", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit6;
+    @XmlElementRef(name = "Bit7", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit7;
+    @XmlElementRef(name = "Bit8", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit8;
+    @XmlElementRef(name = "Bit9", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit9;
+    @XmlElementRef(name = "Bit10", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit10;
+    @XmlElementRef(name = "Bit11", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit11;
+    @XmlElementRef(name = "Bit12", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit12;
+    @XmlElementRef(name = "Bit13", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit13;
+    @XmlElementRef(name = "Bit14", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit14;
+    @XmlElementRef(name = "Bit15", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit15;
+    @XmlElementRef(name = "Bit16", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit16;
+    @XmlElementRef(name = "Bit17", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit17;
+    @XmlElementRef(name = "Bit18", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit18;
+    @XmlElementRef(name = "Bit19", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit19;
+    @XmlElementRef(name = "Bit20", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit20;
+    @XmlElementRef(name = "Bit21", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit21;
+    @XmlElementRef(name = "Bit22", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit22;
+    @XmlElementRef(name = "Bit23", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit23;
+    @XmlElementRef(name = "Bit24", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit24;
+    @XmlElementRef(name = "Bit25", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit25;
+    @XmlElementRef(name = "Bit26", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit26;
+    @XmlElementRef(name = "Bit27", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> bit27;
 
     /**
      * Gets the value of the bit0 property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit0() {
+    public JAXBElement<String> getBit0() {
         return bit0;
     }
 
@@ -160,10 +161,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit0(String value) {
+    public void setBit0(JAXBElement<String> value) {
         this.bit0 = value;
     }
 
@@ -172,10 +173,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit1() {
+    public JAXBElement<String> getBit1() {
         return bit1;
     }
 
@@ -184,10 +185,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit1(String value) {
+    public void setBit1(JAXBElement<String> value) {
         this.bit1 = value;
     }
 
@@ -196,10 +197,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit2() {
+    public JAXBElement<String> getBit2() {
         return bit2;
     }
 
@@ -208,10 +209,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit2(String value) {
+    public void setBit2(JAXBElement<String> value) {
         this.bit2 = value;
     }
 
@@ -220,10 +221,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit3() {
+    public JAXBElement<String> getBit3() {
         return bit3;
     }
 
@@ -232,10 +233,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit3(String value) {
+    public void setBit3(JAXBElement<String> value) {
         this.bit3 = value;
     }
 
@@ -244,10 +245,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit4() {
+    public JAXBElement<String> getBit4() {
         return bit4;
     }
 
@@ -256,10 +257,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit4(String value) {
+    public void setBit4(JAXBElement<String> value) {
         this.bit4 = value;
     }
 
@@ -268,10 +269,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit5() {
+    public JAXBElement<String> getBit5() {
         return bit5;
     }
 
@@ -280,10 +281,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit5(String value) {
+    public void setBit5(JAXBElement<String> value) {
         this.bit5 = value;
     }
 
@@ -292,10 +293,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit6() {
+    public JAXBElement<String> getBit6() {
         return bit6;
     }
 
@@ -304,10 +305,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit6(String value) {
+    public void setBit6(JAXBElement<String> value) {
         this.bit6 = value;
     }
 
@@ -316,10 +317,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit7() {
+    public JAXBElement<String> getBit7() {
         return bit7;
     }
 
@@ -328,10 +329,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit7(String value) {
+    public void setBit7(JAXBElement<String> value) {
         this.bit7 = value;
     }
 
@@ -340,10 +341,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit8() {
+    public JAXBElement<String> getBit8() {
         return bit8;
     }
 
@@ -352,10 +353,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit8(String value) {
+    public void setBit8(JAXBElement<String> value) {
         this.bit8 = value;
     }
 
@@ -364,10 +365,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit9() {
+    public JAXBElement<String> getBit9() {
         return bit9;
     }
 
@@ -376,10 +377,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit9(String value) {
+    public void setBit9(JAXBElement<String> value) {
         this.bit9 = value;
     }
 
@@ -388,10 +389,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit10() {
+    public JAXBElement<String> getBit10() {
         return bit10;
     }
 
@@ -400,10 +401,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit10(String value) {
+    public void setBit10(JAXBElement<String> value) {
         this.bit10 = value;
     }
 
@@ -412,10 +413,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit11() {
+    public JAXBElement<String> getBit11() {
         return bit11;
     }
 
@@ -424,10 +425,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit11(String value) {
+    public void setBit11(JAXBElement<String> value) {
         this.bit11 = value;
     }
 
@@ -436,10 +437,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit12() {
+    public JAXBElement<String> getBit12() {
         return bit12;
     }
 
@@ -448,10 +449,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit12(String value) {
+    public void setBit12(JAXBElement<String> value) {
         this.bit12 = value;
     }
 
@@ -460,10 +461,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit13() {
+    public JAXBElement<String> getBit13() {
         return bit13;
     }
 
@@ -472,10 +473,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit13(String value) {
+    public void setBit13(JAXBElement<String> value) {
         this.bit13 = value;
     }
 
@@ -484,10 +485,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit14() {
+    public JAXBElement<String> getBit14() {
         return bit14;
     }
 
@@ -496,10 +497,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit14(String value) {
+    public void setBit14(JAXBElement<String> value) {
         this.bit14 = value;
     }
 
@@ -508,10 +509,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit15() {
+    public JAXBElement<String> getBit15() {
         return bit15;
     }
 
@@ -520,10 +521,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit15(String value) {
+    public void setBit15(JAXBElement<String> value) {
         this.bit15 = value;
     }
 
@@ -532,10 +533,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit16() {
+    public JAXBElement<String> getBit16() {
         return bit16;
     }
 
@@ -544,10 +545,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit16(String value) {
+    public void setBit16(JAXBElement<String> value) {
         this.bit16 = value;
     }
 
@@ -556,10 +557,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit17() {
+    public JAXBElement<String> getBit17() {
         return bit17;
     }
 
@@ -568,10 +569,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit17(String value) {
+    public void setBit17(JAXBElement<String> value) {
         this.bit17 = value;
     }
 
@@ -580,10 +581,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit18() {
+    public JAXBElement<String> getBit18() {
         return bit18;
     }
 
@@ -592,10 +593,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit18(String value) {
+    public void setBit18(JAXBElement<String> value) {
         this.bit18 = value;
     }
 
@@ -604,10 +605,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit19() {
+    public JAXBElement<String> getBit19() {
         return bit19;
     }
 
@@ -616,10 +617,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit19(String value) {
+    public void setBit19(JAXBElement<String> value) {
         this.bit19 = value;
     }
 
@@ -628,10 +629,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit20() {
+    public JAXBElement<String> getBit20() {
         return bit20;
     }
 
@@ -640,10 +641,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit20(String value) {
+    public void setBit20(JAXBElement<String> value) {
         this.bit20 = value;
     }
 
@@ -652,10 +653,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit21() {
+    public JAXBElement<String> getBit21() {
         return bit21;
     }
 
@@ -664,10 +665,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit21(String value) {
+    public void setBit21(JAXBElement<String> value) {
         this.bit21 = value;
     }
 
@@ -676,10 +677,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit22() {
+    public JAXBElement<String> getBit22() {
         return bit22;
     }
 
@@ -688,10 +689,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit22(String value) {
+    public void setBit22(JAXBElement<String> value) {
         this.bit22 = value;
     }
 
@@ -700,10 +701,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit23() {
+    public JAXBElement<String> getBit23() {
         return bit23;
     }
 
@@ -712,10 +713,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit23(String value) {
+    public void setBit23(JAXBElement<String> value) {
         this.bit23 = value;
     }
 
@@ -724,10 +725,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit24() {
+    public JAXBElement<String> getBit24() {
         return bit24;
     }
 
@@ -736,10 +737,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit24(String value) {
+    public void setBit24(JAXBElement<String> value) {
         this.bit24 = value;
     }
 
@@ -748,10 +749,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit25() {
+    public JAXBElement<String> getBit25() {
         return bit25;
     }
 
@@ -760,10 +761,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit25(String value) {
+    public void setBit25(JAXBElement<String> value) {
         this.bit25 = value;
     }
 
@@ -772,10 +773,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit26() {
+    public JAXBElement<String> getBit26() {
         return bit26;
     }
 
@@ -784,10 +785,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit26(String value) {
+    public void setBit26(JAXBElement<String> value) {
         this.bit26 = value;
     }
 
@@ -796,10 +797,10 @@ public class EciBlackListEntryWs {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public String getBit27() {
+    public JAXBElement<String> getBit27() {
         return bit27;
     }
 
@@ -808,10 +809,10 @@ public class EciBlackListEntryWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
      *     
      */
-    public void setBit27(String value) {
+    public void setBit27(JAXBElement<String> value) {
         this.bit27 = value;
     }
 

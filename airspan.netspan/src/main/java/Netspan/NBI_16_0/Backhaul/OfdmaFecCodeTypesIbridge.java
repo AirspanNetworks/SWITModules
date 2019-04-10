@@ -12,23 +12,23 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="OfdmaFecCodeTypesIbridge">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Dynamic"/>
- *     &lt;enumeration value="OfdmaQpskCtc12"/>
- *     &lt;enumeration value="OfdmaQpskCtc34"/>
- *     &lt;enumeration value="Ofdma16qamCtc12"/>
- *     &lt;enumeration value="Ofdma16qamCtc34"/>
- *     &lt;enumeration value="Ofdma64qamCtc12"/>
- *     &lt;enumeration value="Ofdma64qamCtc23"/>
- *     &lt;enumeration value="Ofdma64qamCtc34"/>
- *     &lt;enumeration value="Ofdma64qamCtc56"/>
- *     &lt;enumeration value="Ofdma256qamCtc12"/>
- *     &lt;enumeration value="Ofdma256qamCtc58"/>
- *     &lt;enumeration value="Ofdma256qamCtc34"/>
- *     &lt;enumeration value="Ofdma256qamCtc56"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="OfdmaFecCodeTypesIbridge"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Dynamic"/&gt;
+ *     &lt;enumeration value="OfdmaQpskCtc12"/&gt;
+ *     &lt;enumeration value="OfdmaQpskCtc34"/&gt;
+ *     &lt;enumeration value="Ofdma16qamCtc12"/&gt;
+ *     &lt;enumeration value="Ofdma16qamCtc34"/&gt;
+ *     &lt;enumeration value="Ofdma64qamCtc12"/&gt;
+ *     &lt;enumeration value="Ofdma64qamCtc23"/&gt;
+ *     &lt;enumeration value="Ofdma64qamCtc34"/&gt;
+ *     &lt;enumeration value="Ofdma64qamCtc56"/&gt;
+ *     &lt;enumeration value="Ofdma256qamCtc12"/&gt;
+ *     &lt;enumeration value="Ofdma256qamCtc58"/&gt;
+ *     &lt;enumeration value="Ofdma256qamCtc34"/&gt;
+ *     &lt;enumeration value="Ofdma256qamCtc56"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="MatrixConfig">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Dynamic"/>
- *     &lt;enumeration value="PreferMatrixA"/>
- *     &lt;enumeration value="PreferMatrixB"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="MatrixConfig"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Dynamic"/&gt;
+ *     &lt;enumeration value="PreferMatrixA"/&gt;
+ *     &lt;enumeration value="PreferMatrixB"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

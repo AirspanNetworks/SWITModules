@@ -12,17 +12,17 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="ConfigNames">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Low Interference Mode"/>
- *     &lt;enumeration value="Factory Mode"/>
- *     &lt;enumeration value="Optimized Mode A"/>
- *     &lt;enumeration value="Optimized Mode B"/>
- *     &lt;enumeration value="Optimized Mode C"/>
- *     &lt;enumeration value="Robust Mode"/>
- *     &lt;enumeration value="Commissioned Configuration"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="ConfigNames"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Low Interference Mode"/&gt;
+ *     &lt;enumeration value="Factory Mode"/&gt;
+ *     &lt;enumeration value="Optimized Mode A"/&gt;
+ *     &lt;enumeration value="Optimized Mode B"/&gt;
+ *     &lt;enumeration value="Optimized Mode C"/&gt;
+ *     &lt;enumeration value="Robust Mode"/&gt;
+ *     &lt;enumeration value="Commissioned Configuration"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

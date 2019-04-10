@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AutonomousRescanModeValues">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Disabled"/>
- *     &lt;enumeration value="Immediate"/>
- *     &lt;enumeration value="MaintenanceWindow"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AutonomousRescanModeValues"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Disabled"/&gt;
+ *     &lt;enumeration value="Immediate"/&gt;
+ *     &lt;enumeration value="MaintenanceWindow"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

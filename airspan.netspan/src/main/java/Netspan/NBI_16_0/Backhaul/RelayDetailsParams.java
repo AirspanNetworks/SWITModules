@@ -16,26 +16,31 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayDetailsParams">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ManagementModeOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="RelayProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CustomRelayProfileParameters" type="{http://Airspan.Netspan.WebServices}RelayProfileParams" minOccurs="0"/>
- *         &lt;element name="RelayAdvancedProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CustomRelayAdvancedProfileParameters" type="{http://Airspan.Netspan.WebServices}RelayAdvancedProfileParams" minOccurs="0"/>
- *         &lt;element name="IsPdclLocked" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *         &lt;element name="Pdcl" type="{http://Airspan.Netspan.WebServices}PdclList" minOccurs="0"/>
- *         &lt;element name="AllowedBandsPriority" type="{http://Airspan.Netspan.WebServices}BandPriorityValuesWs" minOccurs="0"/>
- *         &lt;element name="AllowedBands" type="{http://Airspan.Netspan.WebServices}AllowedBandWs" minOccurs="0"/>
- *         &lt;element name="LcdDimmingMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayDetailsParams"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ManagementModeOnly" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="SystemDefaultProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RelayProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CustomRelayProfileParameters" type="{http://Airspan.Netspan.WebServices}RelayProfileParams" minOccurs="0"/&gt;
+ *         &lt;element name="RelayAdvancedProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CustomRelayAdvancedProfileParameters" type="{http://Airspan.Netspan.WebServices}RelayAdvancedProfileParams" minOccurs="0"/&gt;
+ *         &lt;element name="IsPdclLocked" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="LedMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Pdcl" type="{http://Airspan.Netspan.WebServices}PdclList" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedBandsPriority" type="{http://Airspan.Netspan.WebServices}BandPriorityValuesWs" minOccurs="0"/&gt;
+ *         &lt;element name="AllowedBands" type="{http://Airspan.Netspan.WebServices}AllowedBandWs" minOccurs="0"/&gt;
+ *         &lt;element name="CaMode" type="{http://Airspan.Netspan.WebServices}CaModeValues" minOccurs="0"/&gt;
+ *         &lt;element name="IsSeGwInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="SeGwAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RelaySbaMode" type="{http://Airspan.Netspan.WebServices}RelaySbaValues" minOccurs="0"/&gt;
+ *         &lt;element name="BackhaulWifi" type="{http://Airspan.Netspan.WebServices}RelayBackhaulWifiMode" minOccurs="0"/&gt;
+ *         &lt;element name="BackhaulEthernet" type="{http://Airspan.Netspan.WebServices}RelayBackhaulEthernetMode" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -53,7 +58,12 @@ import javax.xml.bind.annotation.XmlType;
     "pdcl",
     "allowedBandsPriority",
     "allowedBands",
-    "lcdDimmingMode"
+    "caMode",
+    "isSeGwInterfaceEnabled",
+    "seGwAddress",
+    "relaySbaMode",
+    "backhaulWifi",
+    "backhaulEthernet"
 })
 @XmlSeeAlso({
     RelayDetailsPnp.class
@@ -82,8 +92,18 @@ public class RelayDetailsParams {
     protected JAXBElement<BandPriorityValuesWs> allowedBandsPriority;
     @XmlElement(name = "AllowedBands")
     protected AllowedBandWs allowedBands;
-    @XmlElementRef(name = "LcdDimmingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> lcdDimmingMode;
+    @XmlElementRef(name = "CaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<CaModeValues> caMode;
+    @XmlElementRef(name = "IsSeGwInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledDisabledStates> isSeGwInterfaceEnabled;
+    @XmlElement(name = "SeGwAddress")
+    protected String seGwAddress;
+    @XmlElementRef(name = "RelaySbaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<String> relaySbaMode;
+    @XmlElementRef(name = "BackhaulWifi", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<RelayBackhaulWifiMode> backhaulWifi;
+    @XmlElementRef(name = "BackhaulEthernet", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<RelayBackhaulEthernetMode> backhaulEthernet;
 
     /**
      * Gets the value of the managementModeOnly property.
@@ -350,27 +370,147 @@ public class RelayDetailsParams {
     }
 
     /**
-     * Gets the value of the lcdDimmingMode property.
+     * Gets the value of the caMode property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link CaModeValues }{@code >}
+     *     
+     */
+    public JAXBElement<CaModeValues> getCaMode() {
+        return caMode;
+    }
+
+    /**
+     * Sets the value of the caMode property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link CaModeValues }{@code >}
+     *     
+     */
+    public void setCaMode(JAXBElement<CaModeValues> value) {
+        this.caMode = value;
+    }
+
+    /**
+     * Gets the value of the isSeGwInterfaceEnabled property.
      * 
      * @return
      *     possible object is
      *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLcdDimmingMode() {
-        return lcdDimmingMode;
+    public JAXBElement<EnabledDisabledStates> getIsSeGwInterfaceEnabled() {
+        return isSeGwInterfaceEnabled;
     }
 
     /**
-     * Sets the value of the lcdDimmingMode property.
+     * Sets the value of the isSeGwInterfaceEnabled property.
      * 
      * @param value
      *     allowed object is
      *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setLcdDimmingMode(JAXBElement<EnabledDisabledStates> value) {
-        this.lcdDimmingMode = value;
+    public void setIsSeGwInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+        this.isSeGwInterfaceEnabled = value;
+    }
+
+    /**
+     * Gets the value of the seGwAddress property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSeGwAddress() {
+        return seGwAddress;
+    }
+
+    /**
+     * Sets the value of the seGwAddress property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSeGwAddress(String value) {
+        this.seGwAddress = value;
+    }
+
+    /**
+     * Gets the value of the relaySbaMode property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public JAXBElement<String> getRelaySbaMode() {
+        return relaySbaMode;
+    }
+
+    /**
+     * Sets the value of the relaySbaMode property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link String }{@code >}
+     *     
+     */
+    public void setRelaySbaMode(JAXBElement<String> value) {
+        this.relaySbaMode = value;
+    }
+
+    /**
+     * Gets the value of the backhaulWifi property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link RelayBackhaulWifiMode }{@code >}
+     *     
+     */
+    public JAXBElement<RelayBackhaulWifiMode> getBackhaulWifi() {
+        return backhaulWifi;
+    }
+
+    /**
+     * Sets the value of the backhaulWifi property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link RelayBackhaulWifiMode }{@code >}
+     *     
+     */
+    public void setBackhaulWifi(JAXBElement<RelayBackhaulWifiMode> value) {
+        this.backhaulWifi = value;
+    }
+
+    /**
+     * Gets the value of the backhaulEthernet property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link RelayBackhaulEthernetMode }{@code >}
+     *     
+     */
+    public JAXBElement<RelayBackhaulEthernetMode> getBackhaulEthernet() {
+        return backhaulEthernet;
+    }
+
+    /**
+     * Sets the value of the backhaulEthernet property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link RelayBackhaulEthernetMode }{@code >}
+     *     
+     */
+    public void setBackhaulEthernet(JAXBElement<RelayBackhaulEthernetMode> value) {
+        this.backhaulEthernet = value;
     }
 
 }

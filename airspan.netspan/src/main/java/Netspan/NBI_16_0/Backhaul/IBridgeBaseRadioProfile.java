@@ -16,89 +16,89 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="IBridgeBaseRadioProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesIbBase" minOccurs="0"/>
- *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="AntennaMode" type="{http://Airspan.Netspan.WebServices}SteerableAntennaTxModes" minOccurs="0"/>
- *         &lt;element name="AntennaGain" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="BsEirpTotalCombined" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RxTargetRssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="RfGain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="InitialRangingRxLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="FloodUnknownTraffic" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="Ft2FtLocalSwitching" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="BroadcastServiceClassName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="FbNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/>
- *         &lt;element name="FtNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModes" minOccurs="0"/>
- *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignOptions" minOccurs="0"/>
- *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}IbBaseRadioBandwidthValues" minOccurs="0"/>
- *         &lt;element name="BackhaulMode" type="{http://Airspan.Netspan.WebServices}BackhaulModes" minOccurs="0"/>
- *         &lt;element name="Range" type="{http://Airspan.Netspan.WebServices}RangeModes" minOccurs="0"/>
- *         &lt;element name="UplinkPermutation" type="{http://Airspan.Netspan.WebServices}UlPermutationTypes" minOccurs="0"/>
- *         &lt;element name="TddSplit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="MaxSisoZoneSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}IBridgeDlMimoModes" minOccurs="0"/>
- *         &lt;element name="UplinkMimo" type="{http://Airspan.Netspan.WebServices}IBridgeUlMimoModes" minOccurs="0"/>
- *         &lt;element name="FrameMode" type="{http://Airspan.Netspan.WebServices}IBridgeFrameModes" minOccurs="0"/>
- *         &lt;element name="Subchannels" type="{http://Airspan.Netspan.WebServices}Ib4x0PuscGroups" minOccurs="0"/>
- *         &lt;element name="CarrierSense" type="{http://Airspan.Netspan.WebServices}EnabledDisabledValues" minOccurs="0"/>
- *         &lt;element name="BackoffFrames" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="CarrierSenseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="SecurityMode" type="{http://Airspan.Netspan.WebServices}SecurityModes" minOccurs="0"/>
- *         &lt;element name="UplinkAdaptationEfficiencyMode" type="{http://Airspan.Netspan.WebServices}UlAdaptationEfficiencyModes" minOccurs="0"/>
- *         &lt;element name="DownlinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioDownlink" minOccurs="0"/>
- *         &lt;element name="DownlinkBroadcastMcs" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioBroadcastDownlink" minOccurs="0"/>
- *         &lt;element name="DownlinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkMatrixBThresholdPcinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkMatrixBAdditionalCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioUplink" minOccurs="0"/>
- *         &lt;element name="UplinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkMatrixBThresholdCinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="DownlinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Downlink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="UplinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/>
- *         &lt;element name="Uplink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IBridgeBaseRadioProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}IBridgeBaseHardwareTypes" minOccurs="0"/&gt;
+ *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaMode" type="{http://Airspan.Netspan.WebServices}SteerableAntennaTxModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="AntennaGain" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="BsEirpTotalCombined" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RxTargetRssi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="RfGain" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="InitialRangingRxLevel" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="FloodUnknownTraffic" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Ft2FtLocalSwitching" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="BroadcastServiceClassName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="FbNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="FtNullingMode" type="{http://Airspan.Netspan.WebServices}RxNullingModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="AutoAlignMode" type="{http://Airspan.Netspan.WebServices}AutoAlignOptionsWs" minOccurs="0"/&gt;
+ *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}IbBaseRadioBandwidthValues" minOccurs="0"/&gt;
+ *         &lt;element name="BackhaulMode" type="{http://Airspan.Netspan.WebServices}BackhaulModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Range" type="{http://Airspan.Netspan.WebServices}RangeModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkPermutation" type="{http://Airspan.Netspan.WebServices}UlPermutationTypesWs" minOccurs="0"/&gt;
+ *         &lt;element name="TddSplit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="MaxSisoZoneSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMimoMatrix" type="{http://Airspan.Netspan.WebServices}IBridgeDlMimoModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkMimo" type="{http://Airspan.Netspan.WebServices}IBridgeUlMimoModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="FrameMode" type="{http://Airspan.Netspan.WebServices}IBridgeFrameModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="Subchannels" type="{http://Airspan.Netspan.WebServices}Ib4x0PuscGroupsWs" minOccurs="0"/&gt;
+ *         &lt;element name="CarrierSense" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="BackoffFrames" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CarrierSenseThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="SecurityMode" type="{http://Airspan.Netspan.WebServices}IBridgeSecurityModesWs" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkAdaptationEfficiencyMode" type="{http://Airspan.Netspan.WebServices}IBridgeUlAdaptationEfficiencyModes" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioDownlinkWs" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkBroadcastMcs" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioBroadcastDownlinkWs" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMatrixBThresholdPcinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkMatrixBAdditionalCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkTraffic" type="{http://Airspan.Netspan.WebServices}OfdmaFecCodeTypesIbridgeRadioUplinkWs" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkCinrMargin" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkMatrixBThresholdCinr" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DownlinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Downlink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UplinkQpsk34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam12Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam12" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink16Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam23Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam23" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam34Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam34" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam56Enabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink256Qam56" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -186,7 +186,7 @@ public class IBridgeBaseRadioProfile {
     @XmlElement(name = "Name")
     protected String name;
     @XmlElementRef(name = "HardwareCategory", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<CategoriesIbBase> hardwareCategory;
+    protected JAXBElement<IBridgeBaseHardwareTypes> hardwareCategory;
     @XmlElementRef(name = "Frequency", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> frequency;
     @XmlElementRef(name = "AntennaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -204,47 +204,47 @@ public class IBridgeBaseRadioProfile {
     @XmlElementRef(name = "InitialRangingRxLevel", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> initialRangingRxLevel;
     @XmlElementRef(name = "FloodUnknownTraffic", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> floodUnknownTraffic;
+    protected JAXBElement<EnabledDisabledStates> floodUnknownTraffic;
     @XmlElementRef(name = "Ft2FtLocalSwitching", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> ft2FtLocalSwitching;
+    protected JAXBElement<EnabledDisabledStates> ft2FtLocalSwitching;
     @XmlElement(name = "BroadcastServiceClassName")
     protected String broadcastServiceClassName;
     @XmlElementRef(name = "FbNullingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<RxNullingModes> fbNullingMode;
+    protected JAXBElement<RxNullingModesWs> fbNullingMode;
     @XmlElementRef(name = "FtNullingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<RxNullingModes> ftNullingMode;
+    protected JAXBElement<RxNullingModesWs> ftNullingMode;
     @XmlElementRef(name = "AutoAlignMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<AutoAlignOptions> autoAlignMode;
+    protected JAXBElement<AutoAlignOptionsWs> autoAlignMode;
     @XmlElementRef(name = "Bandwidth", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> bandwidth;
     @XmlElementRef(name = "BackhaulMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<BackhaulModes> backhaulMode;
+    protected JAXBElement<BackhaulModesWs> backhaulMode;
     @XmlElementRef(name = "Range", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<RangeModes> range;
+    protected JAXBElement<RangeModesWs> range;
     @XmlElementRef(name = "UplinkPermutation", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<UlPermutationTypes> uplinkPermutation;
+    protected JAXBElement<UlPermutationTypesWs> uplinkPermutation;
     @XmlElementRef(name = "TddSplit", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> tddSplit;
     @XmlElementRef(name = "MaxSisoZoneSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maxSisoZoneSize;
     @XmlElementRef(name = "DownlinkMimoMatrix", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<IBridgeDlMimoModes> downlinkMimoMatrix;
+    protected JAXBElement<IBridgeDlMimoModesWs> downlinkMimoMatrix;
     @XmlElementRef(name = "UplinkMimo", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<IBridgeUlMimoModes> uplinkMimo;
+    protected JAXBElement<IBridgeUlMimoModesWs> uplinkMimo;
     @XmlElementRef(name = "FrameMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<IBridgeFrameModes> frameMode;
+    protected JAXBElement<IBridgeFrameModesWs> frameMode;
     @XmlElementRef(name = "Subchannels", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Ib4X0PuscGroups> subchannels;
+    protected JAXBElement<Ib4X0PuscGroupsWs> subchannels;
     @XmlElementRef(name = "CarrierSense", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledValues> carrierSense;
+    protected JAXBElement<EnabledDisabledStates> carrierSense;
     @XmlElementRef(name = "BackoffFrames", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> backoffFrames;
     @XmlElementRef(name = "CarrierSenseThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> carrierSenseThreshold;
     @XmlElementRef(name = "SecurityMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<SecurityModes> securityMode;
+    protected JAXBElement<IBridgeSecurityModesWs> securityMode;
     @XmlElementRef(name = "UplinkAdaptationEfficiencyMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<UlAdaptationEfficiencyModes> uplinkAdaptationEfficiencyMode;
+    protected JAXBElement<IBridgeUlAdaptationEfficiencyModes> uplinkAdaptationEfficiencyMode;
     @XmlElementRef(name = "DownlinkTraffic", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> downlinkTraffic;
     @XmlElementRef(name = "DownlinkBroadcastMcs", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -363,10 +363,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link CategoriesIbBase }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeBaseHardwareTypes }{@code >}
      *     
      */
-    public JAXBElement<CategoriesIbBase> getHardwareCategory() {
+    public JAXBElement<IBridgeBaseHardwareTypes> getHardwareCategory() {
         return hardwareCategory;
     }
 
@@ -375,10 +375,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link CategoriesIbBase }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeBaseHardwareTypes }{@code >}
      *     
      */
-    public void setHardwareCategory(JAXBElement<CategoriesIbBase> value) {
+    public void setHardwareCategory(JAXBElement<IBridgeBaseHardwareTypes> value) {
         this.hardwareCategory = value;
     }
 
@@ -579,10 +579,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getFloodUnknownTraffic() {
+    public JAXBElement<EnabledDisabledStates> getFloodUnknownTraffic() {
         return floodUnknownTraffic;
     }
 
@@ -591,10 +591,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setFloodUnknownTraffic(JAXBElement<EnabledDisabledValues> value) {
+    public void setFloodUnknownTraffic(JAXBElement<EnabledDisabledStates> value) {
         this.floodUnknownTraffic = value;
     }
 
@@ -603,10 +603,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getFt2FtLocalSwitching() {
+    public JAXBElement<EnabledDisabledStates> getFt2FtLocalSwitching() {
         return ft2FtLocalSwitching;
     }
 
@@ -615,10 +615,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setFt2FtLocalSwitching(JAXBElement<EnabledDisabledValues> value) {
+    public void setFt2FtLocalSwitching(JAXBElement<EnabledDisabledStates> value) {
         this.ft2FtLocalSwitching = value;
     }
 
@@ -651,10 +651,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link RxNullingModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RxNullingModesWs }{@code >}
      *     
      */
-    public JAXBElement<RxNullingModes> getFbNullingMode() {
+    public JAXBElement<RxNullingModesWs> getFbNullingMode() {
         return fbNullingMode;
     }
 
@@ -663,10 +663,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link RxNullingModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RxNullingModesWs }{@code >}
      *     
      */
-    public void setFbNullingMode(JAXBElement<RxNullingModes> value) {
+    public void setFbNullingMode(JAXBElement<RxNullingModesWs> value) {
         this.fbNullingMode = value;
     }
 
@@ -675,10 +675,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link RxNullingModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RxNullingModesWs }{@code >}
      *     
      */
-    public JAXBElement<RxNullingModes> getFtNullingMode() {
+    public JAXBElement<RxNullingModesWs> getFtNullingMode() {
         return ftNullingMode;
     }
 
@@ -687,10 +687,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link RxNullingModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RxNullingModesWs }{@code >}
      *     
      */
-    public void setFtNullingMode(JAXBElement<RxNullingModes> value) {
+    public void setFtNullingMode(JAXBElement<RxNullingModesWs> value) {
         this.ftNullingMode = value;
     }
 
@@ -699,10 +699,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link AutoAlignOptions }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AutoAlignOptionsWs }{@code >}
      *     
      */
-    public JAXBElement<AutoAlignOptions> getAutoAlignMode() {
+    public JAXBElement<AutoAlignOptionsWs> getAutoAlignMode() {
         return autoAlignMode;
     }
 
@@ -711,10 +711,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link AutoAlignOptions }{@code >}
+     *     {@link JAXBElement }{@code <}{@link AutoAlignOptionsWs }{@code >}
      *     
      */
-    public void setAutoAlignMode(JAXBElement<AutoAlignOptions> value) {
+    public void setAutoAlignMode(JAXBElement<AutoAlignOptionsWs> value) {
         this.autoAlignMode = value;
     }
 
@@ -747,10 +747,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link BackhaulModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link BackhaulModesWs }{@code >}
      *     
      */
-    public JAXBElement<BackhaulModes> getBackhaulMode() {
+    public JAXBElement<BackhaulModesWs> getBackhaulMode() {
         return backhaulMode;
     }
 
@@ -759,10 +759,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link BackhaulModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link BackhaulModesWs }{@code >}
      *     
      */
-    public void setBackhaulMode(JAXBElement<BackhaulModes> value) {
+    public void setBackhaulMode(JAXBElement<BackhaulModesWs> value) {
         this.backhaulMode = value;
     }
 
@@ -771,10 +771,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link RangeModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RangeModesWs }{@code >}
      *     
      */
-    public JAXBElement<RangeModes> getRange() {
+    public JAXBElement<RangeModesWs> getRange() {
         return range;
     }
 
@@ -783,10 +783,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link RangeModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link RangeModesWs }{@code >}
      *     
      */
-    public void setRange(JAXBElement<RangeModes> value) {
+    public void setRange(JAXBElement<RangeModesWs> value) {
         this.range = value;
     }
 
@@ -795,10 +795,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link UlPermutationTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link UlPermutationTypesWs }{@code >}
      *     
      */
-    public JAXBElement<UlPermutationTypes> getUplinkPermutation() {
+    public JAXBElement<UlPermutationTypesWs> getUplinkPermutation() {
         return uplinkPermutation;
     }
 
@@ -807,10 +807,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link UlPermutationTypes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link UlPermutationTypesWs }{@code >}
      *     
      */
-    public void setUplinkPermutation(JAXBElement<UlPermutationTypes> value) {
+    public void setUplinkPermutation(JAXBElement<UlPermutationTypesWs> value) {
         this.uplinkPermutation = value;
     }
 
@@ -867,10 +867,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeDlMimoModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeDlMimoModesWs }{@code >}
      *     
      */
-    public JAXBElement<IBridgeDlMimoModes> getDownlinkMimoMatrix() {
+    public JAXBElement<IBridgeDlMimoModesWs> getDownlinkMimoMatrix() {
         return downlinkMimoMatrix;
     }
 
@@ -879,10 +879,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeDlMimoModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeDlMimoModesWs }{@code >}
      *     
      */
-    public void setDownlinkMimoMatrix(JAXBElement<IBridgeDlMimoModes> value) {
+    public void setDownlinkMimoMatrix(JAXBElement<IBridgeDlMimoModesWs> value) {
         this.downlinkMimoMatrix = value;
     }
 
@@ -891,10 +891,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeUlMimoModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeUlMimoModesWs }{@code >}
      *     
      */
-    public JAXBElement<IBridgeUlMimoModes> getUplinkMimo() {
+    public JAXBElement<IBridgeUlMimoModesWs> getUplinkMimo() {
         return uplinkMimo;
     }
 
@@ -903,10 +903,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeUlMimoModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeUlMimoModesWs }{@code >}
      *     
      */
-    public void setUplinkMimo(JAXBElement<IBridgeUlMimoModes> value) {
+    public void setUplinkMimo(JAXBElement<IBridgeUlMimoModesWs> value) {
         this.uplinkMimo = value;
     }
 
@@ -915,10 +915,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeFrameModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeFrameModesWs }{@code >}
      *     
      */
-    public JAXBElement<IBridgeFrameModes> getFrameMode() {
+    public JAXBElement<IBridgeFrameModesWs> getFrameMode() {
         return frameMode;
     }
 
@@ -927,10 +927,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link IBridgeFrameModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeFrameModesWs }{@code >}
      *     
      */
-    public void setFrameMode(JAXBElement<IBridgeFrameModes> value) {
+    public void setFrameMode(JAXBElement<IBridgeFrameModesWs> value) {
         this.frameMode = value;
     }
 
@@ -939,10 +939,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Ib4X0PuscGroups }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Ib4X0PuscGroupsWs }{@code >}
      *     
      */
-    public JAXBElement<Ib4X0PuscGroups> getSubchannels() {
+    public JAXBElement<Ib4X0PuscGroupsWs> getSubchannels() {
         return subchannels;
     }
 
@@ -951,10 +951,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Ib4X0PuscGroups }{@code >}
+     *     {@link JAXBElement }{@code <}{@link Ib4X0PuscGroupsWs }{@code >}
      *     
      */
-    public void setSubchannels(JAXBElement<Ib4X0PuscGroups> value) {
+    public void setSubchannels(JAXBElement<Ib4X0PuscGroupsWs> value) {
         this.subchannels = value;
     }
 
@@ -963,10 +963,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledValues> getCarrierSense() {
+    public JAXBElement<EnabledDisabledStates> getCarrierSense() {
         return carrierSense;
     }
 
@@ -975,10 +975,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledValues }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
      *     
      */
-    public void setCarrierSense(JAXBElement<EnabledDisabledValues> value) {
+    public void setCarrierSense(JAXBElement<EnabledDisabledStates> value) {
         this.carrierSense = value;
     }
 
@@ -1035,10 +1035,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link SecurityModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeSecurityModesWs }{@code >}
      *     
      */
-    public JAXBElement<SecurityModes> getSecurityMode() {
+    public JAXBElement<IBridgeSecurityModesWs> getSecurityMode() {
         return securityMode;
     }
 
@@ -1047,10 +1047,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link SecurityModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeSecurityModesWs }{@code >}
      *     
      */
-    public void setSecurityMode(JAXBElement<SecurityModes> value) {
+    public void setSecurityMode(JAXBElement<IBridgeSecurityModesWs> value) {
         this.securityMode = value;
     }
 
@@ -1059,10 +1059,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link UlAdaptationEfficiencyModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeUlAdaptationEfficiencyModes }{@code >}
      *     
      */
-    public JAXBElement<UlAdaptationEfficiencyModes> getUplinkAdaptationEfficiencyMode() {
+    public JAXBElement<IBridgeUlAdaptationEfficiencyModes> getUplinkAdaptationEfficiencyMode() {
         return uplinkAdaptationEfficiencyMode;
     }
 
@@ -1071,10 +1071,10 @@ public class IBridgeBaseRadioProfile {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link UlAdaptationEfficiencyModes }{@code >}
+     *     {@link JAXBElement }{@code <}{@link IBridgeUlAdaptationEfficiencyModes }{@code >}
      *     
      */
-    public void setUplinkAdaptationEfficiencyMode(JAXBElement<UlAdaptationEfficiencyModes> value) {
+    public void setUplinkAdaptationEfficiencyMode(JAXBElement<IBridgeUlAdaptationEfficiencyModes> value) {
         this.uplinkAdaptationEfficiencyMode = value;
     }
 

@@ -12,13 +12,14 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="AccessDeviceTypesWs">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="Enb"/>
- *     &lt;enumeration value="Wifi"/>
- *     &lt;enumeration value="Blocked"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AccessDeviceTypesWs"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="Enb"/&gt;
+ *     &lt;enumeration value="Wifi"/&gt;
+ *     &lt;enumeration value="Blocked"/&gt;
+ *     &lt;enumeration value="Lan"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -31,7 +32,9 @@ public enum AccessDeviceTypesWs {
     @XmlEnumValue("Wifi")
     WIFI("Wifi"),
     @XmlEnumValue("Blocked")
-    BLOCKED("Blocked");
+    BLOCKED("Blocked"),
+    @XmlEnumValue("Lan")
+    LAN("Lan");
     private final String value;
 
     AccessDeviceTypesWs(String v) {

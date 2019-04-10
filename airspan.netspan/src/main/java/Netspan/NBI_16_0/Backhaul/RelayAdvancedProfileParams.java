@@ -16,20 +16,25 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="RelayAdvancedProfileParams">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="EciBlackListEntries" type="{http://Airspan.Netspan.WebServices}EciBlacklistValuesListContainer" minOccurs="0"/>
- *         &lt;element name="PowerCycleRescanInterval" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="WebGUIAccessEnabled" type="{http://Airspan.Netspan.WebServices}WebGuiAccessWs" minOccurs="0"/>
- *         &lt;element name="WifiDisableTemp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="EnodebDisableTemp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="TempHysteris" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RelayAdvancedProfileParams"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="EciBlackListEntries" type="{http://Airspan.Netspan.WebServices}EciBlacklistValuesListContainer" minOccurs="0"/&gt;
+ *         &lt;element name="PowerCycleRescanInterval" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WebGUIAccessEnabled" type="{http://Airspan.Netspan.WebServices}WebGuiAccessWs" minOccurs="0"/&gt;
+ *         &lt;element name="WifiDisableTemp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EnodebDisableTemp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="TempHysteris" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="CarrierAggregationRsrpThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WifiRssiThresholdExcellent" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WifiRssiThresholdGood" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="WifiRssiThresholdAcceptable" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PageTimeout" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +46,12 @@ import javax.xml.bind.annotation.XmlType;
     "webGUIAccessEnabled",
     "wifiDisableTemp",
     "enodebDisableTemp",
-    "tempHysteris"
+    "tempHysteris",
+    "carrierAggregationRsrpThreshold",
+    "wifiRssiThresholdExcellent",
+    "wifiRssiThresholdGood",
+    "wifiRssiThresholdAcceptable",
+    "pageTimeout"
 })
 @XmlSeeAlso({
     RelayAdvancedProfile.class
@@ -60,6 +70,16 @@ public class RelayAdvancedProfileParams {
     protected JAXBElement<Integer> enodebDisableTemp;
     @XmlElementRef(name = "TempHysteris", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> tempHysteris;
+    @XmlElementRef(name = "CarrierAggregationRsrpThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> carrierAggregationRsrpThreshold;
+    @XmlElementRef(name = "WifiRssiThresholdExcellent", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> wifiRssiThresholdExcellent;
+    @XmlElementRef(name = "WifiRssiThresholdGood", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> wifiRssiThresholdGood;
+    @XmlElementRef(name = "WifiRssiThresholdAcceptable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> wifiRssiThresholdAcceptable;
+    @XmlElementRef(name = "PageTimeout", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> pageTimeout;
 
     /**
      * Gets the value of the eciBlackListEntries property.
@@ -203,6 +223,126 @@ public class RelayAdvancedProfileParams {
      */
     public void setTempHysteris(JAXBElement<Integer> value) {
         this.tempHysteris = value;
+    }
+
+    /**
+     * Gets the value of the carrierAggregationRsrpThreshold property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getCarrierAggregationRsrpThreshold() {
+        return carrierAggregationRsrpThreshold;
+    }
+
+    /**
+     * Sets the value of the carrierAggregationRsrpThreshold property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setCarrierAggregationRsrpThreshold(JAXBElement<Integer> value) {
+        this.carrierAggregationRsrpThreshold = value;
+    }
+
+    /**
+     * Gets the value of the wifiRssiThresholdExcellent property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getWifiRssiThresholdExcellent() {
+        return wifiRssiThresholdExcellent;
+    }
+
+    /**
+     * Sets the value of the wifiRssiThresholdExcellent property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setWifiRssiThresholdExcellent(JAXBElement<Integer> value) {
+        this.wifiRssiThresholdExcellent = value;
+    }
+
+    /**
+     * Gets the value of the wifiRssiThresholdGood property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getWifiRssiThresholdGood() {
+        return wifiRssiThresholdGood;
+    }
+
+    /**
+     * Sets the value of the wifiRssiThresholdGood property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setWifiRssiThresholdGood(JAXBElement<Integer> value) {
+        this.wifiRssiThresholdGood = value;
+    }
+
+    /**
+     * Gets the value of the wifiRssiThresholdAcceptable property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getWifiRssiThresholdAcceptable() {
+        return wifiRssiThresholdAcceptable;
+    }
+
+    /**
+     * Sets the value of the wifiRssiThresholdAcceptable property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setWifiRssiThresholdAcceptable(JAXBElement<Integer> value) {
+        this.wifiRssiThresholdAcceptable = value;
+    }
+
+    /**
+     * Gets the value of the pageTimeout property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getPageTimeout() {
+        return pageTimeout;
+    }
+
+    /**
+     * Sets the value of the pageTimeout property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setPageTimeout(JAXBElement<Integer> value) {
+        this.pageTimeout = value;
     }
 
 }

@@ -12,13 +12,13 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="FailoverActionTypes">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="NoFailover"/>
- *     &lt;enumeration value="AlwaysRevert"/>
- *     &lt;enumeration value="RevertOnFailure"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="FailoverActionTypes"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="NoFailover"/&gt;
+ *     &lt;enumeration value="AlwaysRevert"/&gt;
+ *     &lt;enumeration value="RevertOnFailure"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */

@@ -12,14 +12,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CategoriesRelay">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *     &lt;enumeration value="IRelay"/>
- *     &lt;enumeration value="AirUnity"/>
- *     &lt;enumeration value="AirDensity"/>
- *     &lt;enumeration value="AirSpeedRelay"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CategoriesRelay"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *     &lt;enumeration value="IRelay"/&gt;
+ *     &lt;enumeration value="AirUnity"/&gt;
+ *     &lt;enumeration value="AirDensity"/&gt;
+ *     &lt;enumeration value="AirDensityFemto"/&gt;
+ *     &lt;enumeration value="AirSpeedRelay"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
@@ -33,6 +34,8 @@ public enum CategoriesRelay {
     AIR_UNITY("AirUnity"),
     @XmlEnumValue("AirDensity")
     AIR_DENSITY("AirDensity"),
+    @XmlEnumValue("AirDensityFemto")
+    AIR_DENSITY_FEMTO("AirDensityFemto"),
     @XmlEnumValue("AirSpeedRelay")
     AIR_SPEED_RELAY("AirSpeedRelay");
     private final String value;

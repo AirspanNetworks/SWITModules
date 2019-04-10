@@ -15,25 +15,26 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Ib440DetailsSetWs">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ManagedMode" type="{http://Airspan.Netspan.WebServices}NodeManagementModes" minOccurs="0"/>
- *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ConfigMode" type="{http://Airspan.Netspan.WebServices}ConfigNamesSet" minOccurs="0"/>
- *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}BsIb11acBandwidthValues" minOccurs="0"/>
- *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/>
- *         &lt;element name="IsQosEnabled" type="{http://Airspan.Netspan.WebServices}QosValues" minOccurs="0"/>
- *         &lt;element name="NtpServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Ib440DetailsSetWs"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ManagedMode" type="{http://Airspan.Netspan.WebServices}NodeManagementModes" minOccurs="0"/&gt;
+ *         &lt;element name="Site" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Region" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ConfigMode" type="{http://Airspan.Netspan.WebServices}ConfigNamesSet" minOccurs="0"/&gt;
+ *         &lt;element name="Frequency" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="Bandwidth" type="{http://Airspan.Netspan.WebServices}BsIb11acBandwidthValues" minOccurs="0"/&gt;
+ *         &lt;element name="TxPower" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="QosProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="NeId" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -49,8 +50,9 @@ import javax.xml.bind.annotation.XmlType;
     "frequency",
     "bandwidth",
     "txPower",
-    "isQosEnabled",
-    "ntpServerIpAddress"
+    "qosProfile",
+    "ntpServerIpAddress",
+    "neId"
 })
 public class Ib440DetailsSetWs {
 
@@ -72,10 +74,12 @@ public class Ib440DetailsSetWs {
     protected JAXBElement<String> bandwidth;
     @XmlElementRef(name = "TxPower", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> txPower;
-    @XmlElementRef(name = "IsQosEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<QosValues> isQosEnabled;
+    @XmlElement(name = "QosProfile")
+    protected String qosProfile;
     @XmlElement(name = "NtpServerIpAddress")
     protected String ntpServerIpAddress;
+    @XmlElement(name = "NeId")
+    protected String neId;
 
     /**
      * Gets the value of the name property.
@@ -294,27 +298,27 @@ public class Ib440DetailsSetWs {
     }
 
     /**
-     * Gets the value of the isQosEnabled property.
+     * Gets the value of the qosProfile property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link QosValues }{@code >}
+     *     {@link String }
      *     
      */
-    public JAXBElement<QosValues> getIsQosEnabled() {
-        return isQosEnabled;
+    public String getQosProfile() {
+        return qosProfile;
     }
 
     /**
-     * Sets the value of the isQosEnabled property.
+     * Sets the value of the qosProfile property.
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link QosValues }{@code >}
+     *     {@link String }
      *     
      */
-    public void setIsQosEnabled(JAXBElement<QosValues> value) {
-        this.isQosEnabled = value;
+    public void setQosProfile(String value) {
+        this.qosProfile = value;
     }
 
     /**
@@ -339,6 +343,30 @@ public class Ib440DetailsSetWs {
      */
     public void setNtpServerIpAddress(String value) {
         this.ntpServerIpAddress = value;
+    }
+
+    /**
+     * Gets the value of the neId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getNeId() {
+        return neId;
+    }
+
+    /**
+     * Sets the value of the neId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setNeId(String value) {
+        this.neId = value;
     }
 
 }
