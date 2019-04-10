@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.python.modules.re;
+
+import DMTool.Events.EventListener;
 import DMTool.Measurement.MeasurementCfg;
 import DMTool.Measurement.MeasurementCfgObject;
 import DMTool.Measurement.MeasurementCfgReport;
@@ -14,81 +17,75 @@ import jsystem.framework.report.Reporter;
 import jsystem.framework.system.SystemObjectImpl;
 
 public class DMtool extends SystemObjectImpl {
-	 private UeClientImpl uec;
-	 private boolean initialize = false;
-	 private boolean started = false;
-	 private DccStdOut out;
-	 private DeviceController dc;
-	 private agscUeImpl cltUE;
-	 private agscDbgImpl cltDB;
-	 private agscEvtImpl cltEVT;
-	 private DbgClient dbg;
-	 private EvtClient evc;
-	 private int PORT = 7772;
-	 private String ueIP;
+	private boolean initialize = false;
+	private boolean started = false;
+	private DccStdOut out;
+	private DeviceController dc;
+	private UeClientImpl uec;
+	private DbgClient dbg;
+	private EvtClient evc;
+	private Evt evt;
+	private int PORT = 7772;
+	private String ueIP;
 
-	 @Override
-	 public void init() throws Exception{
-	  if(ueIP == null){throw new Exception("ueIP==null");}
-	  init(5000);
-	 }
-	 
-	 public void init(int waitTime) {
-	  try {
-	   super.init();
-	   DccInitConfig dccinit = new DccInitConfig();
-	   out = new DccStdOut();
-	   dccinit.serverIp = ueIP;
-	   dccinit.serverPort = PORT;
-	   dccinit.consoleOutput = out;
-	   
-	   cltUE = new agscUeImpl();
-	   cltDB = new agscDbgImpl();
-	   cltEVT = new agscEvtImpl();
-	   
-	   uec = new UeClientImpl();
-	   dbg = new DbgClient();
-	  // evc = new EvtClient();
-	   dccinit.evt = evc;
-	   dc = new DeviceController(dccinit, true, this);
-	   
-	   cltUE.initialize(uec);
-	   cltDB.initialize(dbg);
-	   cltEVT.initialize(evc);
-	   
-	   Ue.UeInitialize(uec);
-	   Evt.EvtInitialize(evc);
-	   dc.startDc();
-	   Thread.sleep(waitTime);
-	  } catch (Exception e) {
-	   e.printStackTrace();
-	  }
-	  initialize = true;
-	  started = true;
-	 }
+	@Override
+	public void init() throws Exception {
+		if (ueIP == null) {
+			throw new Exception("ueIP==null");
+		}
+		init(5000);
+	}
+
+	public void init(int waitTime) {
+		try {
+			super.init();
+			DccInitConfig dccinit = new DccInitConfig();
+			out = new DccStdOut();
+			dccinit.serverIp = ueIP;
+			dccinit.serverPort = PORT;
+			dccinit.consoleOutput = out;
+			dc = new DeviceController(dccinit, true, this);
+			evt = new Evt();
+			evt.EvtInitialize(evc);
+			Ue.UeInitialize(uec);
+			Dbg.DbgInitialize(dbg);
+			dc.startDc();
+			Thread.sleep(waitTime);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		initialize = true;
+		started = true;
+	}
+
+	public void enableEvents(int[] eventIndexes) {
+		evt.SetEnable(eventIndexes, true);
+	}
 	
+	public void disableEvents() {
+		evt.DisableAll();
+	}
+
 	private synchronized void reconnect() {
-		if (started && initialize){
+		if (started && initialize) {
 			return;
-		}
-		else if(!started){
+		} else if (!started) {
 			init(5000);
-		}
-		else{
-			System.out.println(String.format("Reconnecting DM to %s" , ueIP));
+		} else {
+			System.out.println(String.format("Reconnecting DM to %s", ueIP));
 			close();
 			init(500);
-			System.out.println(String.format("Finished reconnecting DM to %s" , ueIP));
+			System.out.println(String.format("Finished reconnecting DM to %s", ueIP));
 		}
 	}
 
 	private synchronized void forcedReconnect() {
-		System.out.println(String.format("Reconnecting DM to %s" , ueIP));
+		System.out.println(String.format("Reconnecting DM to %s", ueIP));
 		close();
 		init(500);
-		System.out.println(String.format("Finished reconnecting DM to %s" , ueIP));
+		System.out.println(String.format("Finished reconnecting DM to %s", ueIP));
 	}
-	
+
 	public boolean isInitialize() {
 		return initialize;
 	}
@@ -129,14 +126,15 @@ public class DMtool extends SystemObjectImpl {
 		reconnect();
 		OutValue<Integer> status = new OutValue<Integer>(0);
 		OutValue<String> result = new OutValue<String>();
-		cltDB.Cli(command, status, result);
+		agscDbgImpl.Cli(command, status, result);
 		return result._value;
 	}
-	
-	public void addlistenertoEvents(EvtClient lis) {
+
+	public void addEventListener(EventListener lis) {
 		evc = lis;
+		evt.EvtInitialize(evc);
 	}
-	
+
 	private HashMap<String, String> getSibViaCli(int sibNumber) throws Exception {
 		reconnect();
 		HashMap<String, String> sibMap = new HashMap<>();
@@ -525,6 +523,5 @@ public class DMtool extends SystemObjectImpl {
 		}
 		return PLMNs;
 	}
-	
+
 }
-	

@@ -69,6 +69,8 @@ import java.lang.reflect.Method;
 public class DeviceController {
 
 	DMtool dm;
+	
+	Evt evt;
 
 	static final boolean DEBUG = false;
 
@@ -286,7 +288,9 @@ public class DeviceController {
 
 		Dbg.DbgInitialize(cfg.dbg);
 
-		Evt.EvtInitialize(cfg.evt);
+		evt = new Evt();
+		
+		evt.EvtInitialize(cfg.evt);
 
 		Cnx.CnxInitialize(cfg.cnx);
 
@@ -762,6 +766,18 @@ public class DeviceController {
 	void addDccClient(DccClient clt) {
 
 		_clients.put(clt.name, clt);
+
+	}
+	
+	public static void unRegisterClient(DccClient clt) {
+
+		_singleton.deleteDccClient(clt);
+
+	}
+	
+	void deleteDccClient(DccClient clt) {
+
+		_clients.remove(clt.name);
 
 	}
 
