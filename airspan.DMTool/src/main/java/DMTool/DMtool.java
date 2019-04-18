@@ -44,6 +44,7 @@ public class DMtool extends SystemObjectImpl {
 			dccinit.serverIp = ueIP;
 			dccinit.serverPort = PORT;
 			dccinit.consoleOutput = out;
+			uec = new UeClientImpl();
 			dc = new DeviceController(dccinit, true, this);
 			evt = new Evt();
 			evt.EvtInitialize(evc);
