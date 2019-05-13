@@ -17,6 +17,8 @@ import jsystem.framework.report.Reporter;
 import jsystem.framework.system.SystemObjectImpl;
 
 public class DMtool extends SystemObjectImpl {
+	
+	
 	private boolean initialize = false;
 	private boolean started = false;
 	private DccStdOut out;
