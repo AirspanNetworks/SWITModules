@@ -45,8 +45,14 @@ public class EventListener extends EvtClient {
 	
 	private void checkMatch(DmEvent dmEvent){
 		for(EventData event : expectedEvents){
+			System.out.println("Val1: "+ event.expectedPayload);
+			System.out.println("Val2: "+ dmEvent.getPayload());
 			String val1 = event.expectedPayload.toLowerCase().replace(" ", "");
 			String val2 = Util.shortToHex(dmEvent.getPayload()).toLowerCase().replace(" ", "");
+			System.out.println("Val1: "+ val1);
+			System.out.println("Size 1 : "+val1.length());
+			System.out.println("Val2: "+ val2);
+			System.out.println("Size 2 : "+val2.length());
 			if(val1.equals(val2)){
 				event.eventHappened = true;
 				event.data = dmEvent.toString();
