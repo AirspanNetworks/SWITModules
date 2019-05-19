@@ -8,6 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 
