@@ -27,7 +27,7 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="PacketTxRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DvCalculationMode" type="{http://Airspan.Netspan.WebServices}TwampSenderDvCalculationModeValues" minOccurs="0"/&gt;
  *         &lt;element name="TestDuration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="SkipDiscardUnsyncedReflectorTestPackets" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="SkipDiscardUnsyncedReflectorTestPackets" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Port" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="MaxReflectorUdpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;

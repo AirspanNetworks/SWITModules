@@ -33,11 +33,14 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="AirVelocity1200"/&gt;
  *     &lt;enumeration value="AirVelocity1000Outdoor"/&gt;
  *     &lt;enumeration value="AirVelocity100C"/&gt;
+ *     &lt;enumeration value="AirVelocity100"/&gt;
  *     &lt;enumeration value="AirSpeed1000"/&gt;
  *     &lt;enumeration value="AirSpeed1200R"/&gt;
  *     &lt;enumeration value="AirSpeed1200T"/&gt;
  *     &lt;enumeration value="AirSpeed1250Wired"/&gt;
  *     &lt;enumeration value="AirSpeed1300"/&gt;
+ *     &lt;enumeration value="AirSpeed1050"/&gt;
+ *     &lt;enumeration value="AirSpeed1030"/&gt;
  *     &lt;enumeration value="AirStrand1000T"/&gt;
  *     &lt;enumeration value="AirStrand1200T"/&gt;
  *     &lt;enumeration value="AirStrand1300"/&gt;
@@ -88,6 +91,8 @@ public enum PnpHardwareTypes {
     AIR_VELOCITY_1000_OUTDOOR("AirVelocity1000Outdoor"),
     @XmlEnumValue("AirVelocity100C")
     AIR_VELOCITY_100_C("AirVelocity100C"),
+    @XmlEnumValue("AirVelocity100")
+    AIR_VELOCITY_100("AirVelocity100"),
     @XmlEnumValue("AirSpeed1000")
     AIR_SPEED_1000("AirSpeed1000"),
     @XmlEnumValue("AirSpeed1200R")
@@ -98,6 +103,10 @@ public enum PnpHardwareTypes {
     AIR_SPEED_1250_WIRED("AirSpeed1250Wired"),
     @XmlEnumValue("AirSpeed1300")
     AIR_SPEED_1300("AirSpeed1300"),
+    @XmlEnumValue("AirSpeed1050")
+    AIR_SPEED_1050("AirSpeed1050"),
+    @XmlEnumValue("AirSpeed1030")
+    AIR_SPEED_1030("AirSpeed1030"),
     @XmlEnumValue("AirStrand1000T")
     AIR_STRAND_1000_T("AirStrand1000T"),
     @XmlEnumValue("AirStrand1200T")

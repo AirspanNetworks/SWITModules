@@ -23,7 +23,7 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="T304IratIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="T304Irat" type="{http://Airspan.Netspan.WebServices}T304IratValues" minOccurs="0"/&gt;
  *         &lt;element name="DualTransmissionModeCapabilityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="DualTransmissionModeCapability" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="DualTransmissionModeCapability" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NetworkControlOrderIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NetworkControlOrder" type="{http://Airspan.Netspan.WebServices}NetworkControlOrderValues" minOccurs="0"/&gt;
  *         &lt;element name="PreCsfbMeasurementTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;

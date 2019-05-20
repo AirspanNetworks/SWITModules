@@ -26,7 +26,7 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="IdleModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterFreq" minOccurs="0"/&gt;
  *         &lt;element name="IdleModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterBandListContainer" minOccurs="0"/&gt;
  *         &lt;element name="IdleModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityIdleModeInterEarfcnListContainer" minOccurs="0"/&gt;
- *         &lt;element name="IsThresholdBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsThresholdBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="IsThresholdBasedMeasurementDualMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedModeThresholdTriggerGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeTriggerGaps" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedModeThresholdStopGaps" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeStopGaps" minOccurs="0"/&gt;
@@ -34,37 +34,38 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="ConnectedModeInterFrequency" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeInterFreq" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedModeInterFrequencyPerBandList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeBandListContainer" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedModeInterFrequencyPerEarfcnList" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeFreqListContainer" minOccurs="0"/&gt;
- *         &lt;element name="IsQosBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="IsQosHoAccessAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="IsQosHoBwCapcityAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="IsQosHoRelayAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosBasedMeasurementEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosHoAccessAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosHoBwCapcityAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosHoRelayAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsQosHoRelayQualityAdminEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedModeQos" type="{http://Airspan.Netspan.WebServices}MobilityConnectedModeQosFreq" minOccurs="0"/&gt;
- *         &lt;element name="IsInterRatUtranCoverageBasedRedirectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatUtranCoverageBasedRedirectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterRatUtranCoverageBasedRedirection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranCoverageRedirection" minOccurs="0"/&gt;
- *         &lt;element name="FwdHoEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="IsInterRatUtranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="FwdHoEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatUtranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterRatUtranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatUtranReselection" minOccurs="0"/&gt;
  *         &lt;element name="InterRatUtranPriorityList" type="{http://Airspan.Netspan.WebServices}MobilityUtranPriorityListContainer" minOccurs="0"/&gt;
- *         &lt;element name="IsInterRatGeranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsInterRatGeranReselectionModeEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterRatGeranReselection" type="{http://Airspan.Netspan.WebServices}MobilityInterRatGeranReselection" minOccurs="0"/&gt;
  *         &lt;element name="InterRatGeranPriorityList" type="{http://Airspan.Netspan.WebServices}MobilityGeranPriorityListContainer" minOccurs="0"/&gt;
- *         &lt;element name="InterRatMeasConfigEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="InterRatMeasConfigEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterRatMeasConfigList" type="{http://Airspan.Netspan.WebServices}MobilityInterRatMeasCfgListContainer" minOccurs="0"/&gt;
- *         &lt;element name="CsfbUtranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbUtranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="CsfbUtranPriority" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="RimTowardsUtran" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="CsfbGeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="CsfbGeranMultipleArfcn" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="RimTowardsUtran" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbGeranEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbGeranMultipleArfcn" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="CsfbGeranBandForMultipleArfcn" type="{http://Airspan.Netspan.WebServices}Bands" minOccurs="0"/&gt;
  *         &lt;element name="CsfbGeranPriority" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="RimTowardsGeran" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="CsfbGeranCellOrder" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="CsfbCdma2kEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="RimTowardsGeran" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbGeranCellOrder" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbCdma2kEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="CsfbCdma2kPriority" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="AllowHOto3G" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="EnableSrvcc" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AllowHOto3G" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EnableSrvcc" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="SrvccType" type="{http://Airspan.Netspan.WebServices}SrvccTypes" minOccurs="0"/&gt;
- *         &lt;element name="SrvccOnly3GHO" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="SrvccOnly3GHO" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="RequestFrequencyBandList" type="{http://Airspan.Netspan.WebServices}MobilityReqFreqBandListContainer" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -92,6 +93,7 @@ import Netspan.API.Enums.EnabledStates;
     "isQosHoAccessAdminEnabled",
     "isQosHoBwCapcityAdminEnabled",
     "isQosHoRelayAdminEnabled",
+    "isQosHoRelayQualityAdminEnabled",
     "connectedModeQos",
     "isInterRatUtranCoverageBasedRedirectionModeEnabled",
     "interRatUtranCoverageBasedRedirection",
@@ -158,6 +160,8 @@ public class EnbMobilityProfileParams {
     protected JAXBElement<EnabledStates> isQosHoBwCapcityAdminEnabled;
     @XmlElementRef(name = "IsQosHoRelayAdminEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledStates> isQosHoRelayAdminEnabled;
+    @XmlElementRef(name = "IsQosHoRelayQualityAdminEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledStates> isQosHoRelayQualityAdminEnabled;
     @XmlElement(name = "ConnectedModeQos")
     protected MobilityConnectedModeQosFreq connectedModeQos;
     @XmlElementRef(name = "IsInterRatUtranCoverageBasedRedirectionModeEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -597,6 +601,30 @@ public class EnbMobilityProfileParams {
      */
     public void setIsQosHoRelayAdminEnabled(JAXBElement<EnabledStates> value) {
         this.isQosHoRelayAdminEnabled = value;
+    }
+
+    /**
+     * Gets the value of the isQosHoRelayQualityAdminEnabled property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public JAXBElement<EnabledStates> getIsQosHoRelayQualityAdminEnabled() {
+        return isQosHoRelayQualityAdminEnabled;
+    }
+
+    /**
+     * Sets the value of the isQosHoRelayQualityAdminEnabled property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public void setIsQosHoRelayQualityAdminEnabled(JAXBElement<EnabledStates> value) {
+        this.isQosHoRelayQualityAdminEnabled = value;
     }
 
     /**

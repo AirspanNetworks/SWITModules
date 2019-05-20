@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.PnpModes;
 import Netspan.API.Enums.SonAnrStates;
+import Netspan.API.Lte.LteSonDynIcic;
 
 
 /**
@@ -44,10 +45,10 @@ import Netspan.API.Enums.SonAnrStates;
  *         &lt;element name="RsiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RsiRangeList" type="{http://Airspan.Netspan.WebServices}RsiRangeListContainer" minOccurs="0"/&gt;
  *         &lt;element name="CSon" type="{http://Airspan.Netspan.WebServices}LteSonCSonWs" minOccurs="0"/&gt;
- *         &lt;element name="OptimizationMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="OptimizationMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="DynamicIcic" type="{http://Airspan.Netspan.WebServices}LteSonDynIcic" minOccurs="0"/&gt;
- *         &lt;element name="TpmMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="TpmMoMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TpmMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TpmMoMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;

@@ -7,31 +7,31 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CarrierAggregationModes.
+ * <p>Java class for PtpOverPublicInternetType.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="CarrierAggregationModes"&gt;
+ * &lt;simpleType name="PtpOverPublicInternetType"&gt;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
- *     &lt;enumeration value="Disable"/&gt;
- *     &lt;enumeration value="Contiguous"/&gt;
+ *     &lt;enumeration value="RegularDeployment"/&gt;
+ *     &lt;enumeration value="PublicInternetBH"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "CarrierAggregationModes")
+@XmlType(name = "PtpOverPublicInternetType")
 @XmlEnum
-public enum CarrierAggregationModes {
+public enum PtpOverPublicInternetType {
 
-    @XmlEnumValue("Disable")
-    DISABLE("Disable"),
-    @XmlEnumValue("Contiguous")
-    CONTIGUOUS("Contiguous");
+    @XmlEnumValue("RegularDeployment")
+    REGULAR_DEPLOYMENT("RegularDeployment"),
+    @XmlEnumValue("PublicInternetBH")
+    PUBLIC_INTERNET_BH("PublicInternetBH");
     private final String value;
 
-    CarrierAggregationModes(String v) {
+    PtpOverPublicInternetType(String v) {
         value = v;
     }
 
@@ -39,8 +39,8 @@ public enum CarrierAggregationModes {
         return value;
     }
 
-    public static CarrierAggregationModes fromValue(String v) {
-        for (CarrierAggregationModes c: CarrierAggregationModes.values()) {
+    public static PtpOverPublicInternetType fromValue(String v) {
+        for (PtpOverPublicInternetType c: PtpOverPublicInternetType.values()) {
             if (c.value.equals(v)) {
                 return c;
             }

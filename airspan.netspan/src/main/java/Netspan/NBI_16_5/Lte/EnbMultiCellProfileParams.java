@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
 import Netspan.API.Enums.EnabledStates;
+import Netspan.API.Lte.CarrierAggregationModes;
 
 
 /**
@@ -22,11 +23,11 @@ import Netspan.API.Enums.EnabledStates;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="CarrierAggMode" type="{http://Airspan.Netspan.WebServices}CarrierAggregationModes" minOccurs="0"/&gt;
- *         &lt;element name="IntraEnbLoadBalancingMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IntraEnbLoadBalancingMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="CompositeLoadDiffMax" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CompositeLoadDiffMin" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CalculationInterval" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="IntraEnbLoadBalancingConfigMeas" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IntraEnbLoadBalancingConfigMeas" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;

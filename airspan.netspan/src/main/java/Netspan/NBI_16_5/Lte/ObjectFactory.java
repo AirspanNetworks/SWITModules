@@ -8,17 +8,16 @@ import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.namespace.QName;
 
-import Netspan.API.Enums.CategoriesLte;
-import Netspan.API.Enums.CellBarringPolicies;
 import Netspan.API.Enums.ConnectedModeEventTypes;
 import Netspan.API.Enums.CsgModes;
 import Netspan.API.Enums.DicicSchemeType;
-import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnabledDisabledValues;
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.EnbStates;
 import Netspan.API.Enums.EnbTypes;
 import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
+import Netspan.API.Enums.NodeManagementModes;
 import Netspan.API.Enums.NrtHoTypes;
 import Netspan.API.Enums.PnpModes;
 import Netspan.API.Enums.SecurityProfileOptionalOrMandatory;
@@ -28,6 +27,8 @@ import Netspan.API.Enums.StopGapEventTypes;
 import Netspan.API.Enums.TriggerGapEventTypes;
 import Netspan.API.Enums.TriggerQuantityTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
+import Netspan.API.Lte.CarrierAggregationModes;
+import Netspan.API.Lte.LteSonDynIcic;
 
 
 /**
@@ -274,6 +275,10 @@ public class ObjectFactory {
     private final static QName _UplinkLinkAdaptationWsCellEfficiencyFactor_QNAME = new QName("http://Airspan.Netspan.WebServices", "CellEfficiencyFactor");
     private final static QName _UplinkLinkAdaptationWsMinimalUplinkGrantAllocationSizeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "MinimalUplinkGrantAllocationSizeIsDefault");
     private final static QName _UplinkLinkAdaptationWsMinimalUplinkGrantAllocationSize_QNAME = new QName("http://Airspan.Netspan.WebServices", "MinimalUplinkGrantAllocationSize");
+    private final static QName _UplinkLinkAdaptationWsUplink64QamSupportEnableIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "Uplink64QamSupportEnableIsDefault");
+    private final static QName _UplinkLinkAdaptationWsUplink64QamSupportEnable_QNAME = new QName("http://Airspan.Netspan.WebServices", "Uplink64QamSupportEnable");
+    private final static QName _UplinkLinkAdaptationWsUplink64QamTargetMcsIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "Uplink64QamTargetMcsIsDefault");
+    private final static QName _UplinkLinkAdaptationWsUplink64QamTargetMcs_QNAME = new QName("http://Airspan.Netspan.WebServices", "Uplink64QamTargetMcs");
     private final static QName _ConnectionControlWsT300IsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "T300IsDefault");
     private final static QName _ConnectionControlWsT300_QNAME = new QName("http://Airspan.Netspan.WebServices", "T300");
     private final static QName _ConnectionControlWsT301IsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "T301IsDefault");
@@ -632,6 +637,10 @@ public class ObjectFactory {
     private final static QName _RlcModeWsQci9RlcSnLength_QNAME = new QName("http://Airspan.Netspan.WebServices", "Qci9RlcSnLength");
     private final static QName _RlcModeWsQci9PdcpSnLengthIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "Qci9PdcpSnLengthIsDefault");
     private final static QName _RlcModeWsQci9PdcpSnLength_QNAME = new QName("http://Airspan.Netspan.WebServices", "Qci9PdcpSnLength");
+    private final static QName _QosBasedHoWsRelayQualityVoltePercentageIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "RelayQualityVoltePercentageIsDefault");
+    private final static QName _QosBasedHoWsRelayQualityVoltePercentage_QNAME = new QName("http://Airspan.Netspan.WebServices", "RelayQualityVoltePercentage");
+    private final static QName _QosBasedHoWsRelayQualityUserIpTypeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "RelayQualityUserIpTypeIsDefault");
+    private final static QName _QosBasedHoWsRelayQualityUserIpType_QNAME = new QName("http://Airspan.Netspan.WebServices", "RelayQualityUserIpType");
     private final static QName _AutomaticUplinkGrantWsAutomaticUplinkGrantIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "AutomaticUplinkGrantIsDefault");
     private final static QName _AutomaticUplinkGrantWsAutomaticUplinkGrant_QNAME = new QName("http://Airspan.Netspan.WebServices", "AutomaticUplinkGrant");
     private final static QName _AutomaticUplinkGrantWsAutomaticGrantPeriodIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "AutomaticGrantPeriodIsDefault");
@@ -690,6 +699,10 @@ public class ObjectFactory {
     private final static QName _PtpWsPdvHoldOverThresholdTdd_QNAME = new QName("http://Airspan.Netspan.WebServices", "PdvHoldOverThresholdTdd");
     private final static QName _PtpWsPdvHoldOverThresholdFddIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "PdvHoldOverThresholdFddIsDefault");
     private final static QName _PtpWsPdvHoldOverThresholdFdd_QNAME = new QName("http://Airspan.Netspan.WebServices", "PdvHoldOverThresholdFdd");
+    private final static QName _PtpWsPtpTimeToLockTimerIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "PtpTimeToLockTimerIsDefault");
+    private final static QName _PtpWsPtpTimeToLockTimer_QNAME = new QName("http://Airspan.Netspan.WebServices", "PtpTimeToLockTimer");
+    private final static QName _PtpWsPtpOverPublicInternetIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "PtpOverPublicInternetIsDefault");
+    private final static QName _PtpWsPtpOverPublicInternet_QNAME = new QName("http://Airspan.Netspan.WebServices", "PtpOverPublicInternet");
     private final static QName _ClockMngrWsStratumGnssIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "StratumGnssIsDefault");
     private final static QName _ClockMngrWsStratumGnss_QNAME = new QName("http://Airspan.Netspan.WebServices", "StratumGnss");
     private final static QName _ClockMngrWsStratumPtpIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "StratumPtpIsDefault");
@@ -890,6 +903,14 @@ public class ObjectFactory {
     private final static QName _SynchronizationWsLastUlSymSuppression_QNAME = new QName("http://Airspan.Netspan.WebServices", "LastUlSymSuppression");
     private final static QName _NetworkingWsMtuIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "MtuIsDefault");
     private final static QName _NetworkingWsMtu_QNAME = new QName("http://Airspan.Netspan.WebServices", "Mtu");
+    private final static QName _NetworkingWsOverwriteDlTcpMaximumSegmentSizeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "OverwriteDlTcpMaximumSegmentSizeIsDefault");
+    private final static QName _NetworkingWsOverwriteDlTcpMaximumSegmentSize_QNAME = new QName("http://Airspan.Netspan.WebServices", "OverwriteDlTcpMaximumSegmentSize");
+    private final static QName _NetworkingWsDlTcpMaximumSegmentSizeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "DlTcpMaximumSegmentSizeIsDefault");
+    private final static QName _NetworkingWsDlTcpMaximumSegmentSize_QNAME = new QName("http://Airspan.Netspan.WebServices", "DlTcpMaximumSegmentSize");
+    private final static QName _NetworkingWsOverwriteUlTcpMaximumSegmentSizeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "OverwriteUlTcpMaximumSegmentSizeIsDefault");
+    private final static QName _NetworkingWsOverwriteUlTcpMaximumSegmentSize_QNAME = new QName("http://Airspan.Netspan.WebServices", "OverwriteUlTcpMaximumSegmentSize");
+    private final static QName _NetworkingWsUlTcpMaximumSegmentSizeIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "UlTcpMaximumSegmentSizeIsDefault");
+    private final static QName _NetworkingWsUlTcpMaximumSegmentSize_QNAME = new QName("http://Airspan.Netspan.WebServices", "UlTcpMaximumSegmentSize");
     private final static QName _NetworkingWsSctpHBeatIntervalIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "SctpHBeatIntervalIsDefault");
     private final static QName _NetworkingWsSctpHBeatInterval_QNAME = new QName("http://Airspan.Netspan.WebServices", "SctpHBeatInterval");
     private final static QName _NetworkingWsSgwDownTimerIsDefault_QNAME = new QName("http://Airspan.Netspan.WebServices", "SgwDownTimerIsDefault");
@@ -1052,26 +1073,6 @@ public class ObjectFactory {
     private final static QName _AuPnpDetailWsIsSwScheduled_QNAME = new QName("http://Airspan.Netspan.WebServices", "IsSwScheduled");
     private final static QName _AuPnpDetailWsIsDownloadOnlySwScheduled_QNAME = new QName("http://Airspan.Netspan.WebServices", "IsDownloadOnlySwScheduled");
     private final static QName _EciBlackListEntryWsBit0_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit0");
-    private final static QName _EciBlackListEntryWsBit1_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit1");
-    private final static QName _EciBlackListEntryWsBit2_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit2");
-    private final static QName _EciBlackListEntryWsBit3_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit3");
-    private final static QName _EciBlackListEntryWsBit4_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit4");
-    private final static QName _EciBlackListEntryWsBit5_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit5");
-    private final static QName _EciBlackListEntryWsBit6_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit6");
-    private final static QName _EciBlackListEntryWsBit7_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit7");
-    private final static QName _EciBlackListEntryWsBit8_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit8");
-    private final static QName _EciBlackListEntryWsBit9_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit9");
-    private final static QName _EciBlackListEntryWsBit10_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit10");
-    private final static QName _EciBlackListEntryWsBit11_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit11");
-    private final static QName _EciBlackListEntryWsBit12_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit12");
-    private final static QName _EciBlackListEntryWsBit13_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit13");
-    private final static QName _EciBlackListEntryWsBit14_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit14");
-    private final static QName _EciBlackListEntryWsBit15_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit15");
-    private final static QName _EciBlackListEntryWsBit16_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit16");
-    private final static QName _EciBlackListEntryWsBit17_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit17");
-    private final static QName _EciBlackListEntryWsBit18_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit18");
-    private final static QName _EciBlackListEntryWsBit19_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit19");
-    private final static QName _EciBlackListEntryWsBit20_QNAME = new QName("http://Airspan.Netspan.WebServices", "Bit20");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: Netspan.NBI_16_5.Lte
@@ -1502,6 +1503,38 @@ public class ObjectFactory {
      */
     public CbsdCpiDataSetResponse createCbsdCpiDataSetResponse() {
         return new CbsdCpiDataSetResponse();
+    }
+
+    /**
+     * Create an instance of {@link CbsdReregistration }
+     * 
+     */
+    public CbsdReregistration createCbsdReregistration() {
+        return new CbsdReregistration();
+    }
+
+    /**
+     * Create an instance of {@link CbsdReregistrationResponse }
+     * 
+     */
+    public CbsdReregistrationResponse createCbsdReregistrationResponse() {
+        return new CbsdReregistrationResponse();
+    }
+
+    /**
+     * Create an instance of {@link CbsdFrequencyReallocation }
+     * 
+     */
+    public CbsdFrequencyReallocation createCbsdFrequencyReallocation() {
+        return new CbsdFrequencyReallocation();
+    }
+
+    /**
+     * Create an instance of {@link CbsdFrequencyReallocationResponse }
+     * 
+     */
+    public CbsdFrequencyReallocationResponse createCbsdFrequencyReallocationResponse() {
+        return new CbsdFrequencyReallocationResponse();
     }
 
     /**
@@ -4369,6 +4402,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link EaidsParams }
+     * 
+     */
+    public EaidsParams createEaidsParams() {
+        return new EaidsParams();
+    }
+
+    /**
      * Create an instance of {@link EnbRadioProfileParams }
      * 
      */
@@ -5726,6 +5767,14 @@ public class ObjectFactory {
      */
     public AutomaticUplinkGrantWs createAutomaticUplinkGrantWs() {
         return new AutomaticUplinkGrantWs();
+    }
+
+    /**
+     * Create an instance of {@link QosBasedHoWs }
+     * 
+     */
+    public QosBasedHoWs createQosBasedHoWs() {
+        return new QosBasedHoWs();
     }
 
     /**
@@ -8115,6 +8164,42 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "MinimalUplinkGrantAllocationSize", scope = UplinkLinkAdaptationWs.class)
     public JAXBElement<Integer> createUplinkLinkAdaptationWsMinimalUplinkGrantAllocationSize(Integer value) {
         return new JAXBElement<Integer>(_UplinkLinkAdaptationWsMinimalUplinkGrantAllocationSize_QNAME, Integer.class, UplinkLinkAdaptationWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Uplink64QamSupportEnableIsDefault", scope = UplinkLinkAdaptationWs.class)
+    public JAXBElement<Boolean> createUplinkLinkAdaptationWsUplink64QamSupportEnableIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_UplinkLinkAdaptationWsUplink64QamSupportEnableIsDefault_QNAME, Boolean.class, UplinkLinkAdaptationWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Uplink64QamSupportEnable", scope = UplinkLinkAdaptationWs.class)
+    public JAXBElement<EnabledStates> createUplinkLinkAdaptationWsUplink64QamSupportEnable(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_UplinkLinkAdaptationWsUplink64QamSupportEnable_QNAME, EnabledStates.class, UplinkLinkAdaptationWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Uplink64QamTargetMcsIsDefault", scope = UplinkLinkAdaptationWs.class)
+    public JAXBElement<Boolean> createUplinkLinkAdaptationWsUplink64QamTargetMcsIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_UplinkLinkAdaptationWsUplink64QamTargetMcsIsDefault_QNAME, Boolean.class, UplinkLinkAdaptationWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Uplink64QamTargetMcs", scope = UplinkLinkAdaptationWs.class)
+    public JAXBElement<Integer> createUplinkLinkAdaptationWsUplink64QamTargetMcs(Integer value) {
+        return new JAXBElement<Integer>(_UplinkLinkAdaptationWsUplink64QamTargetMcs_QNAME, Integer.class, UplinkLinkAdaptationWs.class, value);
     }
 
     /**
@@ -12783,6 +12868,42 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      * 
      */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "RelayQualityVoltePercentageIsDefault", scope = QosBasedHoWs.class)
+    public JAXBElement<Boolean> createQosBasedHoWsRelayQualityVoltePercentageIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_QosBasedHoWsRelayQualityVoltePercentageIsDefault_QNAME, Boolean.class, QosBasedHoWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "RelayQualityVoltePercentage", scope = QosBasedHoWs.class)
+    public JAXBElement<Integer> createQosBasedHoWsRelayQualityVoltePercentage(Integer value) {
+        return new JAXBElement<Integer>(_QosBasedHoWsRelayQualityVoltePercentage_QNAME, Integer.class, QosBasedHoWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "RelayQualityUserIpTypeIsDefault", scope = QosBasedHoWs.class)
+    public JAXBElement<Boolean> createQosBasedHoWsRelayQualityUserIpTypeIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_QosBasedHoWsRelayQualityUserIpTypeIsDefault_QNAME, Boolean.class, QosBasedHoWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link IPTypes }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "RelayQualityUserIpType", scope = QosBasedHoWs.class)
+    public JAXBElement<IPTypes> createQosBasedHoWsRelayQualityUserIpType(IPTypes value) {
+        return new JAXBElement<IPTypes>(_QosBasedHoWsRelayQualityUserIpType_QNAME, IPTypes.class, QosBasedHoWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "AutomaticUplinkGrantIsDefault", scope = AutomaticUplinkGrantWs.class)
     public JAXBElement<Boolean> createAutomaticUplinkGrantWsAutomaticUplinkGrantIsDefault(Boolean value) {
         return new JAXBElement<Boolean>(_AutomaticUplinkGrantWsAutomaticUplinkGrantIsDefault_QNAME, Boolean.class, AutomaticUplinkGrantWs.class, value);
@@ -13299,6 +13420,42 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PdvHoldOverThresholdFdd", scope = PtpWs.class)
     public JAXBElement<Integer> createPtpWsPdvHoldOverThresholdFdd(Integer value) {
         return new JAXBElement<Integer>(_PtpWsPdvHoldOverThresholdFdd_QNAME, Integer.class, PtpWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PtpTimeToLockTimerIsDefault", scope = PtpWs.class)
+    public JAXBElement<Boolean> createPtpWsPtpTimeToLockTimerIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_PtpWsPtpTimeToLockTimerIsDefault_QNAME, Boolean.class, PtpWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PtpTimeToLockTimer", scope = PtpWs.class)
+    public JAXBElement<Integer> createPtpWsPtpTimeToLockTimer(Integer value) {
+        return new JAXBElement<Integer>(_PtpWsPtpTimeToLockTimer_QNAME, Integer.class, PtpWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PtpOverPublicInternetIsDefault", scope = PtpWs.class)
+    public JAXBElement<Boolean> createPtpWsPtpOverPublicInternetIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_PtpWsPtpOverPublicInternetIsDefault_QNAME, Boolean.class, PtpWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link PtpOverPublicInternetType }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PtpOverPublicInternet", scope = PtpWs.class)
+    public JAXBElement<PtpOverPublicInternetType> createPtpWsPtpOverPublicInternet(PtpOverPublicInternetType value) {
+        return new JAXBElement<PtpOverPublicInternetType>(_PtpWsPtpOverPublicInternet_QNAME, PtpOverPublicInternetType.class, PtpWs.class, value);
     }
 
     /**
@@ -15123,6 +15280,78 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      * 
      */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "OverwriteDlTcpMaximumSegmentSizeIsDefault", scope = NetworkingWs.class)
+    public JAXBElement<Boolean> createNetworkingWsOverwriteDlTcpMaximumSegmentSizeIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_NetworkingWsOverwriteDlTcpMaximumSegmentSizeIsDefault_QNAME, Boolean.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "OverwriteDlTcpMaximumSegmentSize", scope = NetworkingWs.class)
+    public JAXBElement<EnabledStates> createNetworkingWsOverwriteDlTcpMaximumSegmentSize(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_NetworkingWsOverwriteDlTcpMaximumSegmentSize_QNAME, EnabledStates.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "DlTcpMaximumSegmentSizeIsDefault", scope = NetworkingWs.class)
+    public JAXBElement<Boolean> createNetworkingWsDlTcpMaximumSegmentSizeIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_NetworkingWsDlTcpMaximumSegmentSizeIsDefault_QNAME, Boolean.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "DlTcpMaximumSegmentSize", scope = NetworkingWs.class)
+    public JAXBElement<Integer> createNetworkingWsDlTcpMaximumSegmentSize(Integer value) {
+        return new JAXBElement<Integer>(_NetworkingWsDlTcpMaximumSegmentSize_QNAME, Integer.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "OverwriteUlTcpMaximumSegmentSizeIsDefault", scope = NetworkingWs.class)
+    public JAXBElement<Boolean> createNetworkingWsOverwriteUlTcpMaximumSegmentSizeIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_NetworkingWsOverwriteUlTcpMaximumSegmentSizeIsDefault_QNAME, Boolean.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "OverwriteUlTcpMaximumSegmentSize", scope = NetworkingWs.class)
+    public JAXBElement<EnabledStates> createNetworkingWsOverwriteUlTcpMaximumSegmentSize(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(_NetworkingWsOverwriteUlTcpMaximumSegmentSize_QNAME, EnabledStates.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "UlTcpMaximumSegmentSizeIsDefault", scope = NetworkingWs.class)
+    public JAXBElement<Boolean> createNetworkingWsUlTcpMaximumSegmentSizeIsDefault(Boolean value) {
+        return new JAXBElement<Boolean>(_NetworkingWsUlTcpMaximumSegmentSizeIsDefault_QNAME, Boolean.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "UlTcpMaximumSegmentSize", scope = NetworkingWs.class)
+    public JAXBElement<Integer> createNetworkingWsUlTcpMaximumSegmentSize(Integer value) {
+        return new JAXBElement<Integer>(_NetworkingWsUlTcpMaximumSegmentSize_QNAME, Integer.class, NetworkingWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
+     * 
+     */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "SctpHBeatIntervalIsDefault", scope = NetworkingWs.class)
     public JAXBElement<Boolean> createNetworkingWsSctpHBeatIntervalIsDefault(Boolean value) {
         return new JAXBElement<Boolean>(_NetworkingWsSctpHBeatIntervalIsDefault_QNAME, Boolean.class, NetworkingWs.class, value);
@@ -16583,7 +16812,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit1", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit1(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit1_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit1"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16592,7 +16821,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit2", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit2(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit2_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit2"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16601,7 +16830,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit3", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit3(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit3_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit3"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16610,7 +16839,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit4", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit4(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit4_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit4"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16619,7 +16848,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit5", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit5(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit5_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit5"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16628,7 +16857,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit6", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit6(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit6_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit6"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16637,7 +16866,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit7", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit7(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit7_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit7"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16646,7 +16875,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit8", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit8(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit8_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit8"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16655,7 +16884,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit9", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit9(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit9_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit9"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16664,7 +16893,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit10", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit10(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit10_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit10"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16673,7 +16902,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit11", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit11(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit11_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit11"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16682,7 +16911,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit12", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit12(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit12_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit12"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16691,7 +16920,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit13", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit13(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit13_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit13"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16700,7 +16929,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit14", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit14(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit14_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit14"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16709,7 +16938,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit15", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit15(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit15_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit15"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16718,7 +16947,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit16", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit16(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit16_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit16"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16727,7 +16956,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit17", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit17(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit17_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit17"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16736,7 +16965,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit18", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit18(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit18_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit18"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16745,7 +16974,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit19", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit19(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit19_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit19"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -16754,7 +16983,7 @@ public class ObjectFactory {
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "Bit20", scope = EciBlackListEntryWs.class)
     public JAXBElement<String> createEciBlackListEntryWsBit20(String value) {
-        return new JAXBElement<String>(_EciBlackListEntryWsBit20_QNAME, String.class, EciBlackListEntryWs.class, value);
+        return new JAXBElement<String>(new QName("http://Airspan.Netspan.WebServices", "Bit20"), String.class, EciBlackListEntryWs.class, value);
     }
 
     /**
@@ -18249,15 +18478,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "TrackingAreaCode", scope = LteCellSetWs.class)
     public JAXBElement<Integer> createLteCellSetWsTrackingAreaCode(Integer value) {
         return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "TrackingAreaCode"), Integer.class, LteCellSetWs.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "EmergencyAreaId", scope = LteCellSetWs.class)
-    public JAXBElement<Integer> createLteCellSetWsEmergencyAreaId(Integer value) {
-        return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "EmergencyAreaId"), Integer.class, LteCellSetWs.class, value);
     }
 
     /**
@@ -23052,6 +23272,15 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
      * 
      */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsQosHoRelayQualityAdminEnabled", scope = EnbMobilityProfileParams.class)
+    public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsQosHoRelayQualityAdminEnabled(EnabledStates value) {
+        return new JAXBElement<EnabledStates>(new QName("http://Airspan.Netspan.WebServices", "IsQosHoRelayQualityAdminEnabled"), EnabledStates.class, EnbMobilityProfileParams.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}}
+     * 
+     */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "IsInterRatUtranCoverageBasedRedirectionModeEnabled", scope = EnbMobilityProfileParams.class)
     public JAXBElement<EnabledStates> createEnbMobilityProfileParamsIsInterRatUtranCoverageBasedRedirectionModeEnabled(EnabledStates value) {
         return new JAXBElement<EnabledStates>(new QName("http://Airspan.Netspan.WebServices", "IsInterRatUtranCoverageBasedRedirectionModeEnabled"), EnabledStates.class, EnbMobilityProfileParams.class, value);
@@ -23889,6 +24118,15 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
      * 
      */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CellId", scope = LteCellGetWs.class)
+    public JAXBElement<Integer> createLteCellGetWsCellId(Integer value) {
+        return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "CellId"), Integer.class, LteCellGetWs.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
+     * 
+     */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "CellIdForEci", scope = LteCellGetWs.class)
     public JAXBElement<Integer> createLteCellGetWsCellIdForEci(Integer value) {
         return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "CellIdForEci"), Integer.class, LteCellGetWs.class, value);
@@ -23946,15 +24184,6 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "TrackingAreaCode", scope = LteCellGetWs.class)
     public JAXBElement<Integer> createLteCellGetWsTrackingAreaCode(Integer value) {
         return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "TrackingAreaCode"), Integer.class, LteCellGetWs.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Integer }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "EmergencyAreaId", scope = LteCellGetWs.class)
-    public JAXBElement<Integer> createLteCellGetWsEmergencyAreaId(Integer value) {
-        return new JAXBElement<Integer>(new QName("http://Airspan.Netspan.WebServices", "EmergencyAreaId"), Integer.class, LteCellGetWs.class, value);
     }
 
     /**
@@ -25713,6 +25942,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link PtpPhaseCorrectionUsages }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "PtpPhaseCorrectionUsage", scope = EnbSyncProfileParams.class)
+    public JAXBElement<PtpPhaseCorrectionUsages> createEnbSyncProfileParamsPtpPhaseCorrectionUsage(PtpPhaseCorrectionUsages value) {
+        return new JAXBElement<PtpPhaseCorrectionUsages>(new QName("http://Airspan.Netspan.WebServices", "PtpPhaseCorrectionUsage"), PtpPhaseCorrectionUsages.class, EnbSyncProfileParams.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Boolean }{@code >}}
      * 
      */
@@ -27297,12 +27535,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverType }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link HandoverTypes }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Airspan.Netspan.WebServices", name = "HandoverType", scope = LteNbrConfig.class)
-    public JAXBElement<HandoverType> createLteNbrConfigHandoverType(HandoverType value) {
-        return new JAXBElement<HandoverType>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverType.class, LteNbrConfig.class, value);
+    public JAXBElement<HandoverTypes> createLteNbrConfigHandoverType(HandoverTypes value) {
+        return new JAXBElement<HandoverTypes>(new QName("http://Airspan.Netspan.WebServices", "HandoverType"), HandoverTypes.class, LteNbrConfig.class, value);
     }
 
     /**

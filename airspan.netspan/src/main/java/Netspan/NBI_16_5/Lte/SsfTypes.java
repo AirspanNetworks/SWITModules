@@ -15,6 +15,7 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;simpleType name="SsfTypes"&gt;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *     &lt;enumeration value="SSF5"/&gt;
+ *     &lt;enumeration value="SSF6"/&gt;
  *     &lt;enumeration value="SSF7"/&gt;
  *   &lt;/restriction&gt;
  * &lt;/simpleType&gt;
@@ -27,6 +28,8 @@ public enum SsfTypes {
 
     @XmlEnumValue("SSF5")
     SSF_5("SSF5"),
+    @XmlEnumValue("SSF6")
+    SSF_6("SSF6"),
     @XmlEnumValue("SSF7")
     SSF_7("SSF7");
     private final String value;

@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for HandoverType.
+ * <p>Java class for HandoverTypes.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * <p>
  * <pre>
- * &lt;simpleType name="HandoverType"&gt;
+ * &lt;simpleType name="HandoverTypes"&gt;
  *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *     &lt;enumeration value="S1Only"/&gt;
  *     &lt;enumeration value="TriggerX2"/&gt;
@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType(name = "HandoverType")
+@XmlType(name = "HandoverTypes")
 @XmlEnum
 public enum HandoverTypes {
 

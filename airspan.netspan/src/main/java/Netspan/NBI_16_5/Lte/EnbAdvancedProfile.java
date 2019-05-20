@@ -8,8 +8,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.CategoriesLte;
-
 
 /**
  * <p>Java class for EnbAdvancedProfile complex type.
@@ -49,6 +47,7 @@ import Netspan.API.Enums.CategoriesLte;
  *         &lt;element name="VolteConfiguration" type="{http://Airspan.Netspan.WebServices}VolteConfigurationWs" minOccurs="0"/&gt;
  *         &lt;element name="AlternativeBackhaul" type="{http://Airspan.Netspan.WebServices}AlternativeBhWs" minOccurs="0"/&gt;
  *         &lt;element name="AutomaticUplinkGrant" type="{http://Airspan.Netspan.WebServices}AutomaticUplinkGrantWs" minOccurs="0"/&gt;
+ *         &lt;element name="QosBasedHo" type="{http://Airspan.Netspan.WebServices}QosBasedHoWs" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -86,7 +85,8 @@ import Netspan.API.Enums.CategoriesLte;
     "enbUeTrace",
     "volteConfiguration",
     "alternativeBackhaul",
-    "automaticUplinkGrant"
+    "automaticUplinkGrant",
+    "qosBasedHo"
 })
 public class EnbAdvancedProfile {
 
@@ -146,6 +146,8 @@ public class EnbAdvancedProfile {
     protected AlternativeBhWs alternativeBackhaul;
     @XmlElement(name = "AutomaticUplinkGrant")
     protected AutomaticUplinkGrantWs automaticUplinkGrant;
+    @XmlElement(name = "QosBasedHo")
+    protected QosBasedHoWs qosBasedHo;
 
     /**
      * Gets the value of the name property.
@@ -817,6 +819,30 @@ public class EnbAdvancedProfile {
      */
     public void setAutomaticUplinkGrant(AutomaticUplinkGrantWs value) {
         this.automaticUplinkGrant = value;
+    }
+
+    /**
+     * Gets the value of the qosBasedHo property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link QosBasedHoWs }
+     *     
+     */
+    public QosBasedHoWs getQosBasedHo() {
+        return qosBasedHo;
+    }
+
+    /**
+     * Sets the value of the qosBasedHo property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link QosBasedHoWs }
+     *     
+     */
+    public void setQosBasedHo(QosBasedHoWs value) {
+        this.qosBasedHo = value;
     }
 
 }

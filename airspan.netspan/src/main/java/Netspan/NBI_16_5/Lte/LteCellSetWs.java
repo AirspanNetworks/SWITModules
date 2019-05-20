@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.CellBarringPolicies;
 import Netspan.API.Enums.CsgModes;
 
 
@@ -28,7 +27,7 @@ import Netspan.API.Enums.CsgModes;
  *         &lt;element name="PhysicalLayerIdentity" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="TrackingAreaCode" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="EmergencyAreaId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EmergencyAreaIds" type="{http://Airspan.Netspan.WebServices}EaidsParams" minOccurs="0"/&gt;
  *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CellAdvancedConfigurationProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -106,7 +105,7 @@ import Netspan.API.Enums.CsgModes;
     "physicalLayerIdentity",
     "prachRsi",
     "trackingAreaCode",
-    "emergencyAreaId",
+    "emergencyAreaIds",
     "prachFreqOffset",
     "cellAdvancedConfigurationProfile",
     "radioProfile",
@@ -183,8 +182,8 @@ public class LteCellSetWs {
     protected JAXBElement<Integer> prachRsi;
     @XmlElementRef(name = "TrackingAreaCode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> trackingAreaCode;
-    @XmlElementRef(name = "EmergencyAreaId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Integer> emergencyAreaId;
+    @XmlElement(name = "EmergencyAreaIds")
+    protected EaidsParams emergencyAreaIds;
     @XmlElementRef(name = "PrachFreqOffset", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> prachFreqOffset;
     @XmlElement(name = "CellAdvancedConfigurationProfile")
@@ -453,27 +452,27 @@ public class LteCellSetWs {
     }
 
     /**
-     * Gets the value of the emergencyAreaId property.
+     * Gets the value of the emergencyAreaIds property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link EaidsParams }
      *     
      */
-    public JAXBElement<Integer> getEmergencyAreaId() {
-        return emergencyAreaId;
+    public EaidsParams getEmergencyAreaIds() {
+        return emergencyAreaIds;
     }
 
     /**
-     * Sets the value of the emergencyAreaId property.
+     * Sets the value of the emergencyAreaIds property.
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link EaidsParams }
      *     
      */
-    public void setEmergencyAreaId(JAXBElement<Integer> value) {
-        this.emergencyAreaId = value;
+    public void setEmergencyAreaIds(EaidsParams value) {
+        this.emergencyAreaIds = value;
     }
 
     /**

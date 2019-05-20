@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.CellBarringPolicies;
 import Netspan.API.Enums.CsgModes;
 
 
@@ -23,6 +22,7 @@ import Netspan.API.Enums.CsgModes;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="CellNumber" type="{http://Airspan.Netspan.WebServices}EnbCellNumber" minOccurs="0"/&gt;
+ *         &lt;element name="CellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CellIdForEci" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CellIdentity28Bit" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="PhysicalLayerCellGroup" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
@@ -30,7 +30,7 @@ import Netspan.API.Enums.CsgModes;
  *         &lt;element name="PhysicalCellId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="PrachRsi" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="TrackingAreaCode" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="EmergencyAreaId" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="EmergencyAreaIds" type="{http://Airspan.Netspan.WebServices}EaidsParams" minOccurs="0"/&gt;
  *         &lt;element name="PrachFreqOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CellAdvancedConfigurationProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="RadioProfile" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -104,6 +104,7 @@ import Netspan.API.Enums.CsgModes;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "LteCellGetWs", propOrder = {
     "cellNumber",
+    "cellId",
     "cellIdForEci",
     "cellIdentity28Bit",
     "physicalLayerCellGroup",
@@ -111,7 +112,7 @@ import Netspan.API.Enums.CsgModes;
     "physicalCellId",
     "prachRsi",
     "trackingAreaCode",
-    "emergencyAreaId",
+    "emergencyAreaIds",
     "prachFreqOffset",
     "cellAdvancedConfigurationProfile",
     "radioProfile",
@@ -179,6 +180,8 @@ public class LteCellGetWs {
 
     @XmlElementRef(name = "CellNumber", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> cellNumber;
+    @XmlElementRef(name = "CellId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> cellId;
     @XmlElementRef(name = "CellIdForEci", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> cellIdForEci;
     @XmlElementRef(name = "CellIdentity28Bit", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -193,8 +196,8 @@ public class LteCellGetWs {
     protected JAXBElement<Integer> prachRsi;
     @XmlElementRef(name = "TrackingAreaCode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> trackingAreaCode;
-    @XmlElementRef(name = "EmergencyAreaId", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<Integer> emergencyAreaId;
+    @XmlElement(name = "EmergencyAreaIds")
+    protected EaidsParams emergencyAreaIds;
     @XmlElementRef(name = "PrachFreqOffset", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> prachFreqOffset;
     @XmlElement(name = "CellAdvancedConfigurationProfile")
@@ -342,6 +345,30 @@ public class LteCellGetWs {
      */
     public void setCellNumber(JAXBElement<String> value) {
         this.cellNumber = value;
+    }
+
+    /**
+     * Gets the value of the cellId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getCellId() {
+        return cellId;
+    }
+
+    /**
+     * Sets the value of the cellId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setCellId(JAXBElement<Integer> value) {
+        this.cellId = value;
     }
 
     /**
@@ -513,27 +540,27 @@ public class LteCellGetWs {
     }
 
     /**
-     * Gets the value of the emergencyAreaId property.
+     * Gets the value of the emergencyAreaIds property.
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link EaidsParams }
      *     
      */
-    public JAXBElement<Integer> getEmergencyAreaId() {
-        return emergencyAreaId;
+    public EaidsParams getEmergencyAreaIds() {
+        return emergencyAreaIds;
     }
 
     /**
-     * Sets the value of the emergencyAreaId property.
+     * Sets the value of the emergencyAreaIds property.
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     {@link EaidsParams }
      *     
      */
-    public void setEmergencyAreaId(JAXBElement<Integer> value) {
-        this.emergencyAreaId = value;
+    public void setEmergencyAreaIds(EaidsParams value) {
+        this.emergencyAreaIds = value;
     }
 
     /**

@@ -10,8 +10,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.CategoriesLte;
-
 
 /**
  * <p>Java class for anonymous complex type.

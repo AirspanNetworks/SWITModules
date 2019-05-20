@@ -28,7 +28,7 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="HomeEnbDefaultConfig" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbDefaultConfig" minOccurs="0"/&gt;
  *         &lt;element name="HomeEnbBandList" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbBandListContainer" minOccurs="0"/&gt;
  *         &lt;element name="HomeEnbEarfcnList" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbEarfcnListContainer" minOccurs="0"/&gt;
- *         &lt;element name="UtraEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="UtraEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="UtraArfcnList" type="{http://Airspan.Netspan.WebServices}NeighbourUtraEarfcnListContainer" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;

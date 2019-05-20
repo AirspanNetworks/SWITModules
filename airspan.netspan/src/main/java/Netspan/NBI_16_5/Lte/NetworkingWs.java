@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for NetworkingWs complex type.
@@ -20,6 +22,14 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="MtuIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Mtu" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="OverwriteDlTcpMaximumSegmentSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="OverwriteDlTcpMaximumSegmentSize" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="DlTcpMaximumSegmentSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="DlTcpMaximumSegmentSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="OverwriteUlTcpMaximumSegmentSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="OverwriteUlTcpMaximumSegmentSize" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="UlTcpMaximumSegmentSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
+ *         &lt;element name="UlTcpMaximumSegmentSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="SctpHBeatIntervalIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="SctpHBeatInterval" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="SgwDownTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -54,6 +64,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "NetworkingWs", propOrder = {
     "mtuIsDefault",
     "mtu",
+    "overwriteDlTcpMaximumSegmentSizeIsDefault",
+    "overwriteDlTcpMaximumSegmentSize",
+    "dlTcpMaximumSegmentSizeIsDefault",
+    "dlTcpMaximumSegmentSize",
+    "overwriteUlTcpMaximumSegmentSizeIsDefault",
+    "overwriteUlTcpMaximumSegmentSize",
+    "ulTcpMaximumSegmentSizeIsDefault",
+    "ulTcpMaximumSegmentSize",
     "sctpHBeatIntervalIsDefault",
     "sctpHBeatInterval",
     "sgwDownTimerIsDefault",
@@ -83,6 +101,22 @@ public class NetworkingWs {
     protected JAXBElement<Boolean> mtuIsDefault;
     @XmlElementRef(name = "Mtu", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mtu;
+    @XmlElementRef(name = "OverwriteDlTcpMaximumSegmentSizeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> overwriteDlTcpMaximumSegmentSizeIsDefault;
+    @XmlElementRef(name = "OverwriteDlTcpMaximumSegmentSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledStates> overwriteDlTcpMaximumSegmentSize;
+    @XmlElementRef(name = "DlTcpMaximumSegmentSizeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> dlTcpMaximumSegmentSizeIsDefault;
+    @XmlElementRef(name = "DlTcpMaximumSegmentSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> dlTcpMaximumSegmentSize;
+    @XmlElementRef(name = "OverwriteUlTcpMaximumSegmentSizeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> overwriteUlTcpMaximumSegmentSizeIsDefault;
+    @XmlElementRef(name = "OverwriteUlTcpMaximumSegmentSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<EnabledStates> overwriteUlTcpMaximumSegmentSize;
+    @XmlElementRef(name = "UlTcpMaximumSegmentSizeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Boolean> ulTcpMaximumSegmentSizeIsDefault;
+    @XmlElementRef(name = "UlTcpMaximumSegmentSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<Integer> ulTcpMaximumSegmentSize;
     @XmlElementRef(name = "SctpHBeatIntervalIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> sctpHBeatIntervalIsDefault;
     @XmlElementRef(name = "SctpHBeatInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -174,6 +208,198 @@ public class NetworkingWs {
      */
     public void setMtu(JAXBElement<Integer> value) {
         this.mtu = value;
+    }
+
+    /**
+     * Gets the value of the overwriteDlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public JAXBElement<Boolean> getOverwriteDlTcpMaximumSegmentSizeIsDefault() {
+        return overwriteDlTcpMaximumSegmentSizeIsDefault;
+    }
+
+    /**
+     * Sets the value of the overwriteDlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public void setOverwriteDlTcpMaximumSegmentSizeIsDefault(JAXBElement<Boolean> value) {
+        this.overwriteDlTcpMaximumSegmentSizeIsDefault = value;
+    }
+
+    /**
+     * Gets the value of the overwriteDlTcpMaximumSegmentSize property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public JAXBElement<EnabledStates> getOverwriteDlTcpMaximumSegmentSize() {
+        return overwriteDlTcpMaximumSegmentSize;
+    }
+
+    /**
+     * Sets the value of the overwriteDlTcpMaximumSegmentSize property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public void setOverwriteDlTcpMaximumSegmentSize(JAXBElement<EnabledStates> value) {
+        this.overwriteDlTcpMaximumSegmentSize = value;
+    }
+
+    /**
+     * Gets the value of the dlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public JAXBElement<Boolean> getDlTcpMaximumSegmentSizeIsDefault() {
+        return dlTcpMaximumSegmentSizeIsDefault;
+    }
+
+    /**
+     * Sets the value of the dlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public void setDlTcpMaximumSegmentSizeIsDefault(JAXBElement<Boolean> value) {
+        this.dlTcpMaximumSegmentSizeIsDefault = value;
+    }
+
+    /**
+     * Gets the value of the dlTcpMaximumSegmentSize property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getDlTcpMaximumSegmentSize() {
+        return dlTcpMaximumSegmentSize;
+    }
+
+    /**
+     * Sets the value of the dlTcpMaximumSegmentSize property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setDlTcpMaximumSegmentSize(JAXBElement<Integer> value) {
+        this.dlTcpMaximumSegmentSize = value;
+    }
+
+    /**
+     * Gets the value of the overwriteUlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public JAXBElement<Boolean> getOverwriteUlTcpMaximumSegmentSizeIsDefault() {
+        return overwriteUlTcpMaximumSegmentSizeIsDefault;
+    }
+
+    /**
+     * Sets the value of the overwriteUlTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public void setOverwriteUlTcpMaximumSegmentSizeIsDefault(JAXBElement<Boolean> value) {
+        this.overwriteUlTcpMaximumSegmentSizeIsDefault = value;
+    }
+
+    /**
+     * Gets the value of the overwriteUlTcpMaximumSegmentSize property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public JAXBElement<EnabledStates> getOverwriteUlTcpMaximumSegmentSize() {
+        return overwriteUlTcpMaximumSegmentSize;
+    }
+
+    /**
+     * Sets the value of the overwriteUlTcpMaximumSegmentSize property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
+     *     
+     */
+    public void setOverwriteUlTcpMaximumSegmentSize(JAXBElement<EnabledStates> value) {
+        this.overwriteUlTcpMaximumSegmentSize = value;
+    }
+
+    /**
+     * Gets the value of the ulTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public JAXBElement<Boolean> getUlTcpMaximumSegmentSizeIsDefault() {
+        return ulTcpMaximumSegmentSizeIsDefault;
+    }
+
+    /**
+     * Sets the value of the ulTcpMaximumSegmentSizeIsDefault property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Boolean }{@code >}
+     *     
+     */
+    public void setUlTcpMaximumSegmentSizeIsDefault(JAXBElement<Boolean> value) {
+        this.ulTcpMaximumSegmentSizeIsDefault = value;
+    }
+
+    /**
+     * Gets the value of the ulTcpMaximumSegmentSize property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public JAXBElement<Integer> getUlTcpMaximumSegmentSize() {
+        return ulTcpMaximumSegmentSize;
+    }
+
+    /**
+     * Sets the value of the ulTcpMaximumSegmentSize property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link Integer }{@code >}
+     *     
+     */
+    public void setUlTcpMaximumSegmentSize(JAXBElement<Integer> value) {
+        this.ulTcpMaximumSegmentSize = value;
     }
 
     /**

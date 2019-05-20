@@ -10,8 +10,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
-import Netspan.API.Enums.CategoriesLte;
-
 
 /**
  * <p>Java class for anonymous complex type.
@@ -25,6 +23,7 @@ import Netspan.API.Enums.CategoriesLte;
  *       &lt;sequence&gt;
  *         &lt;element name="Name" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded" minOccurs="0"/&gt;
  *         &lt;element name="HardwareCategory" type="{http://Airspan.Netspan.WebServices}CategoriesLte" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="ProfileType" type="{http://Airspan.Netspan.WebServices}ProfileTypes"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,7 +35,8 @@ import Netspan.API.Enums.CategoriesLte;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "name",
-    "hardwareCategory"
+    "hardwareCategory",
+    "profileType"
 })
 @XmlRootElement(name = "SecurityProfileGet")
 public class SecurityProfileGet {
@@ -46,6 +46,9 @@ public class SecurityProfileGet {
     @XmlElement(name = "HardwareCategory")
     @XmlSchemaType(name = "string")
     protected List<CategoriesLte> hardwareCategory;
+    @XmlElement(name = "ProfileType", required = true, nillable = true)
+    @XmlSchemaType(name = "string")
+    protected ProfileTypes profileType;
 
     /**
      * Gets the value of the name property.
@@ -103,6 +106,30 @@ public class SecurityProfileGet {
             hardwareCategory = new ArrayList<CategoriesLte>();
         }
         return this.hardwareCategory;
+    }
+
+    /**
+     * Gets the value of the profileType property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ProfileTypes }
+     *     
+     */
+    public ProfileTypes getProfileType() {
+        return profileType;
+    }
+
+    /**
+     * Sets the value of the profileType property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ProfileTypes }
+     *     
+     */
+    public void setProfileType(ProfileTypes value) {
+        this.profileType = value;
     }
 
 }

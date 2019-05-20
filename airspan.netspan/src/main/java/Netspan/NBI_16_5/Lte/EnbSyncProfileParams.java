@@ -34,13 +34,14 @@ import Netspan.API.Enums.EnabledStates;
  *         &lt;element name="SyncRateInMsgPerSec" type="{http://Airspan.Netspan.WebServices}SyncRateValues" minOccurs="0"/&gt;
  *         &lt;element name="DelayRequestResponseRateInMsgPerSec" type="{http://Airspan.Netspan.WebServices}DelayRateValues" minOccurs="0"/&gt;
  *         &lt;element name="LeaseDurationInSec" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
+ *         &lt;element name="PtpPhaseCorrectionUsage" type="{http://Airspan.Netspan.WebServices}PtpPhaseCorrectionUsages" minOccurs="0"/&gt;
  *         &lt;element name="NlmIntraFreqScanMode" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NlmScanAllBands" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NlmIntraFreqScanList" type="{http://Airspan.Netspan.WebServices}NlmIntraFreqScanListContainer" minOccurs="0"/&gt;
  *         &lt;element name="NlmNtpServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="NlmS1Sync" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NlmPlmnSync" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="RevertiveMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="RevertiveMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -63,6 +64,7 @@ import Netspan.API.Enums.EnabledStates;
     "syncRateInMsgPerSec",
     "delayRequestResponseRateInMsgPerSec",
     "leaseDurationInSec",
+    "ptpPhaseCorrectionUsage",
     "nlmIntraFreqScanMode",
     "nlmScanAllBands",
     "nlmIntraFreqScanList",
@@ -100,6 +102,8 @@ public class EnbSyncProfileParams {
     protected JAXBElement<String> delayRequestResponseRateInMsgPerSec;
     @XmlElementRef(name = "LeaseDurationInSec", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> leaseDurationInSec;
+    @XmlElementRef(name = "PtpPhaseCorrectionUsage", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
+    protected JAXBElement<PtpPhaseCorrectionUsages> ptpPhaseCorrectionUsage;
     @XmlElementRef(name = "NlmIntraFreqScanMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nlmIntraFreqScanMode;
     @XmlElementRef(name = "NlmScanAllBands", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -401,6 +405,30 @@ public class EnbSyncProfileParams {
      */
     public void setLeaseDurationInSec(JAXBElement<Integer> value) {
         this.leaseDurationInSec = value;
+    }
+
+    /**
+     * Gets the value of the ptpPhaseCorrectionUsage property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link JAXBElement }{@code <}{@link PtpPhaseCorrectionUsages }{@code >}
+     *     
+     */
+    public JAXBElement<PtpPhaseCorrectionUsages> getPtpPhaseCorrectionUsage() {
+        return ptpPhaseCorrectionUsage;
+    }
+
+    /**
+     * Sets the value of the ptpPhaseCorrectionUsage property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link JAXBElement }{@code <}{@link PtpPhaseCorrectionUsages }{@code >}
+     *     
+     */
+    public void setPtpPhaseCorrectionUsage(JAXBElement<PtpPhaseCorrectionUsages> value) {
+        this.ptpPhaseCorrectionUsage = value;
     }
 
     /**
