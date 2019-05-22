@@ -158,4 +158,6 @@ public interface ITrafficGenerator {
 	void removeStreams(ArrayList<String> streamList);
 
 	ArrayList<ArrayList<StreamParams>> getResultsAfterTest(ArrayList<ArrayList<StreamParams>> listOfStreamList2);
+	
+	public ArrayList<Long> getMeanByFile(ArrayList<String> streamList);
 }
