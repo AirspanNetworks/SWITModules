@@ -1662,5 +1662,6 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 	@Override
 	public ArrayList<Long> getMeanByFile(ArrayList<String> streamList){
 		System.out.println("Function getMeanByFile not implemented in STCChassis");
+		return null;
 	}
 }
