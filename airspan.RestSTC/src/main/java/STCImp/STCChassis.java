@@ -1658,4 +1658,10 @@ public class STCChassis extends SystemObjectImpl implements ITrafficGenerator {
 			ArrayList<ArrayList<StreamParams>> listOfStreamList2) {
 		return listOfStreamList2;
 	}
+	
+	@Override
+	public boolean copyAllResultFiles(ArrayList<String> streamList){
+		System.out.println("Function copyAllResultFiles not implemented in STCChassis");
+		return true;
+	}
 }
