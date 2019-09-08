@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.python.modules.re;
-
 import DMTool.Events.EventListener;
 import DMTool.Measurement.MeasurementCfg;
 import DMTool.Measurement.MeasurementCfgObject;
