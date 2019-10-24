@@ -30,6 +30,7 @@ import Netspan.API.Enums.TriggerGapEventTypes;
 import Netspan.API.Enums.TriggerQuantityTypes;
 import Netspan.API.Enums.X2ControlStateTypes;
 import Netspan.API.Lte.CarrierAggregationModes;
+import Netspan.API.Lte.LteSonDynIcic;
 
 
 /**

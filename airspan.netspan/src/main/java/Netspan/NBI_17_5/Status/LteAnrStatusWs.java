@@ -8,8 +8,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.DiscoveredByValues;
+import Netspan.API.Enums.EnbTypes;
 import Netspan.API.Enums.HandoverType;
 import Netspan.API.Enums.HoControlStateTypes;
+import Netspan.API.Enums.NghCellStatus;
 import Netspan.API.Enums.X2ControlStateTypes;
 
 

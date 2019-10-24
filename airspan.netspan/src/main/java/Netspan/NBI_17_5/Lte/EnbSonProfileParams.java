@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.PnpModes;
 import Netspan.API.Enums.SonAnrStates;
+import Netspan.API.Lte.LteSonDynIcic;
 
 
 /**
