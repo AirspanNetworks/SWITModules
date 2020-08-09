@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for MacWs complex type.
@@ -35,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="MaxVolteDlHarqTxIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="MaxVolteDlHarqTx" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Mac256QamIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Mac256Qam" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Mac256Qam" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -102,7 +104,7 @@ public class MacWs {
     @XmlElementRef(name = "Mac256QamIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> mac256QamIsDefault;
     @XmlElementRef(name = "Mac256Qam", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> mac256Qam;
+    protected JAXBElement<EnabledStates> mac256Qam;
 
     /**
      * Gets the value of the maxHarqTxForUlIsDefault property.
@@ -517,10 +519,10 @@ public class MacWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMac256Qam() {
+    public JAXBElement<EnabledStates> getMac256Qam() {
         return mac256Qam;
     }
 
@@ -529,10 +531,10 @@ public class MacWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMac256Qam(JAXBElement<EnabledDisabledStates> value) {
+    public void setMac256Qam(JAXBElement<EnabledStates> value) {
         this.mac256Qam = value;
     }
 

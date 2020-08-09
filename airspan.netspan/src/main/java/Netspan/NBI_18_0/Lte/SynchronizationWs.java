@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for SynchronizationWs complex type.
@@ -21,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="WimaxCoexistenceFrameShiftNsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="WimaxCoexistenceFrameShiftNs" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="LastUlSymSuppressionIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="LastUlSymSuppression" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LastUlSymSuppression" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -46,7 +48,7 @@ public class SynchronizationWs {
     @XmlElementRef(name = "LastUlSymSuppressionIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> lastUlSymSuppressionIsDefault;
     @XmlElementRef(name = "LastUlSymSuppression", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> lastUlSymSuppression;
+    protected JAXBElement<EnabledStates> lastUlSymSuppression;
 
     /**
      * Gets the value of the wimaxCoexistenceFrameShiftNsIsDefault property.
@@ -125,10 +127,10 @@ public class SynchronizationWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLastUlSymSuppression() {
+    public JAXBElement<EnabledStates> getLastUlSymSuppression() {
         return lastUlSymSuppression;
     }
 
@@ -137,10 +139,10 @@ public class SynchronizationWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLastUlSymSuppression(JAXBElement<EnabledDisabledStates> value) {
+    public void setLastUlSymSuppression(JAXBElement<EnabledStates> value) {
         this.lastUlSymSuppression = value;
     }
 

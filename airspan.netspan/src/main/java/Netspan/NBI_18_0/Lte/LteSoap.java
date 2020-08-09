@@ -1523,9 +1523,9 @@ public interface LteSoap {
         @WebParam(name = "Action", targetNamespace = "http://Airspan.Netspan.WebServices")
         Netspan.NBI_18_0.Lte.WiFiAction action,
         @WebParam(name = "Radio2Dot4GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        Netspan.NBI_18_0.Lte.EnabledDisabledStates radio2Dot4GHz,
+        Netspan.API.Enums.EnabledStates radio2Dot4GHz,
         @WebParam(name = "Radio5GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        Netspan.NBI_18_0.Lte.EnabledDisabledStates radio5GHz,
+        Netspan.API.Enums.EnabledStates radio5GHz,
         @WebParam(name = "Credentials", targetNamespace = "http://Airspan.Netspan.WebServices", header = true)
         Credentials credentials
     );
@@ -2249,9 +2249,9 @@ public interface LteSoap {
         @WebParam(name = "Action", targetNamespace = "http://Airspan.Netspan.WebServices")
         Netspan.NBI_18_0.Lte.WiFiAction action,
         @WebParam(name = "Radio2Dot4GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        Netspan.NBI_18_0.Lte.EnabledDisabledStates radio2Dot4GHz,
+        Netspan.API.Enums.EnabledStates radio2Dot4GHz,
         @WebParam(name = "Radio5GHz", targetNamespace = "http://Airspan.Netspan.WebServices")
-        Netspan.NBI_18_0.Lte.EnabledDisabledStates radio5GHz,
+        Netspan.API.Enums.EnabledStates radio5GHz,
         @WebParam(name = "Credentials", targetNamespace = "http://Airspan.Netspan.WebServices", header = true)
         Credentials credentials
     );

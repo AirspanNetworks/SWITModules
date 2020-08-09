@@ -10,6 +10,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for AuDetailsWs complex type.
@@ -30,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="NbifEventAlarmForwarding" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NbifEventAlarmForwarding" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -77,7 +79,7 @@ public class AuDetailsWs {
     @XmlElementRef(name = "Accuracy", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> accuracy;
     @XmlElementRef(name = "NbifEventAlarmForwarding", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nbifEventAlarmForwarding;
+    protected JAXBElement<EnabledStates> nbifEventAlarmForwarding;
 
     /**
      * Gets the value of the name property.
@@ -300,10 +302,10 @@ public class AuDetailsWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNbifEventAlarmForwarding() {
+    public JAXBElement<EnabledStates> getNbifEventAlarmForwarding() {
         return nbifEventAlarmForwarding;
     }
 
@@ -312,10 +314,10 @@ public class AuDetailsWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNbifEventAlarmForwarding(JAXBElement<EnabledDisabledStates> value) {
+    public void setNbifEventAlarmForwarding(JAXBElement<EnabledStates> value) {
         this.nbifEventAlarmForwarding = value;
     }
 

@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for UeCapabilityWs complex type.
@@ -19,15 +21,15 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="ReduceUeCapabilitySignallingFormatIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ReduceUeCapabilitySignallingFormat" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ReduceUeCapabilitySignallingFormat" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="SkipFallbackCaBandCombinationsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="SkipFallbackCaBandCombinations" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="SkipFallbackCaBandCombinations" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="RequestedMaximumCcsDlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RequestedMaximumCcsDl" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="RequestedMaximumCcsUlIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RequestedMaximumCcsUl" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="ReduceIntraNonContiguousCaBandCombinationsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ReduceIntraNonContiguousCaBandCombinations" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ReduceIntraNonContiguousCaBandCombinations" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -54,11 +56,11 @@ public class UeCapabilityWs {
     @XmlElementRef(name = "ReduceUeCapabilitySignallingFormatIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> reduceUeCapabilitySignallingFormatIsDefault;
     @XmlElementRef(name = "ReduceUeCapabilitySignallingFormat", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> reduceUeCapabilitySignallingFormat;
+    protected JAXBElement<EnabledStates> reduceUeCapabilitySignallingFormat;
     @XmlElementRef(name = "SkipFallbackCaBandCombinationsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> skipFallbackCaBandCombinationsIsDefault;
     @XmlElementRef(name = "SkipFallbackCaBandCombinations", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> skipFallbackCaBandCombinations;
+    protected JAXBElement<EnabledStates> skipFallbackCaBandCombinations;
     @XmlElementRef(name = "RequestedMaximumCcsDlIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> requestedMaximumCcsDlIsDefault;
     @XmlElementRef(name = "RequestedMaximumCcsDl", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -70,7 +72,7 @@ public class UeCapabilityWs {
     @XmlElementRef(name = "ReduceIntraNonContiguousCaBandCombinationsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> reduceIntraNonContiguousCaBandCombinationsIsDefault;
     @XmlElementRef(name = "ReduceIntraNonContiguousCaBandCombinations", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> reduceIntraNonContiguousCaBandCombinations;
+    protected JAXBElement<EnabledStates> reduceIntraNonContiguousCaBandCombinations;
 
     /**
      * Gets the value of the reduceUeCapabilitySignallingFormatIsDefault property.
@@ -101,10 +103,10 @@ public class UeCapabilityWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getReduceUeCapabilitySignallingFormat() {
+    public JAXBElement<EnabledStates> getReduceUeCapabilitySignallingFormat() {
         return reduceUeCapabilitySignallingFormat;
     }
 
@@ -113,10 +115,10 @@ public class UeCapabilityWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setReduceUeCapabilitySignallingFormat(JAXBElement<EnabledDisabledStates> value) {
+    public void setReduceUeCapabilitySignallingFormat(JAXBElement<EnabledStates> value) {
         this.reduceUeCapabilitySignallingFormat = value;
     }
 
@@ -149,10 +151,10 @@ public class UeCapabilityWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSkipFallbackCaBandCombinations() {
+    public JAXBElement<EnabledStates> getSkipFallbackCaBandCombinations() {
         return skipFallbackCaBandCombinations;
     }
 
@@ -161,10 +163,10 @@ public class UeCapabilityWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSkipFallbackCaBandCombinations(JAXBElement<EnabledDisabledStates> value) {
+    public void setSkipFallbackCaBandCombinations(JAXBElement<EnabledStates> value) {
         this.skipFallbackCaBandCombinations = value;
     }
 
@@ -293,10 +295,10 @@ public class UeCapabilityWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getReduceIntraNonContiguousCaBandCombinations() {
+    public JAXBElement<EnabledStates> getReduceIntraNonContiguousCaBandCombinations() {
         return reduceIntraNonContiguousCaBandCombinations;
     }
 
@@ -305,10 +307,10 @@ public class UeCapabilityWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setReduceIntraNonContiguousCaBandCombinations(JAXBElement<EnabledDisabledStates> value) {
+    public void setReduceIntraNonContiguousCaBandCombinations(JAXBElement<EnabledStates> value) {
         this.reduceIntraNonContiguousCaBandCombinations = value;
     }
 

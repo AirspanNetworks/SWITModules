@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for RlcModeWs complex type.
@@ -21,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci1" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci1PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci1PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci1PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci1RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci1RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci1PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -29,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci2IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci2" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci2PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci2PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci2PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci2RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci2RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci2PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -37,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci3IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci3" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci3PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci3PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci3PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci3RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci3RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci3PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -45,7 +47,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci4IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci4" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci4PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci4PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci4PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci4RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci4RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci4PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -53,7 +55,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci5IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci5" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci5PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci5PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci5PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci5RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci5RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci5PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -61,7 +63,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci6IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci6" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci6PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci6PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci6PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci6RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci6RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci6PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -69,7 +71,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci7IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci7" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci7PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci7PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci7PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci7RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci7RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci7PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -77,7 +79,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci8IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci8" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci8PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci8PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci8PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci8RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci8RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci8PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -85,7 +87,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci9IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci9" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci9PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci9PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci9PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci9RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci9RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci9PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -95,7 +97,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci65IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci65" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci65PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci65PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci65PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci65RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci65RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci65PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -103,7 +105,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci66IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci66" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci66PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci66PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci66PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci66RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci66RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci66PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -111,7 +113,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci69IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci69" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci69PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci69PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci69PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci69RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci69RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci69PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -119,7 +121,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci70IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci70" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci70PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci70PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci70PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci70RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci70RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci70PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -127,7 +129,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci75IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci75" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci75PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci75PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci75PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci75RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci75RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci75PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -135,7 +137,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Qci79IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci79" type="{http://Airspan.Netspan.WebServices}AckMode" minOccurs="0"/&gt;
  *         &lt;element name="Qci79PdcpStatusReportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Qci79PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci79PdcpStatusReportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Qci79RlcSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Qci79RlcSnLength" type="{http://Airspan.Netspan.WebServices}QciRlcSnLengthBits" minOccurs="0"/&gt;
  *         &lt;element name="Qci79PdcpSnLengthIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -282,7 +284,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci1PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci1PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci1PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci1PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci1PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci1RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci1RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci1RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -298,7 +300,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci2PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci2PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci2PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci2PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci2PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci2RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci2RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci2RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -314,7 +316,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci3PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci3PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci3PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci3PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci3PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci3RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci3RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci3RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -330,7 +332,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci4PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci4PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci4PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci4PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci4PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci4RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci4RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci4RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -346,7 +348,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci5PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci5PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci5PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci5PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci5PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci5RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci5RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci5RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -362,7 +364,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci6PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci6PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci6PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci6PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci6PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci6RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci6RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci6RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -378,7 +380,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci7PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci7PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci7PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci7PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci7PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci7RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci7RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci7RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -394,7 +396,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci8PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci8PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci8PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci8PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci8PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci8RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci8RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci8RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -410,7 +412,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci9PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci9PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci9PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci9PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci9PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci9RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci9RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci9RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -430,7 +432,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci65PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci65PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci65PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci65PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci65PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci65RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci65RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci65RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -446,7 +448,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci66PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci66PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci66PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci66PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci66PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci66RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci66RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci66RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -462,7 +464,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci69PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci69PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci69PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci69PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci69PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci69RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci69RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci69RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -478,7 +480,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci70PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci70PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci70PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci70PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci70PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci70RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci70RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci70RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -494,7 +496,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci75PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci75PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci75PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci75PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci75PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci75RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci75RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci75RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -510,7 +512,7 @@ public class RlcModeWs {
     @XmlElementRef(name = "Qci79PdcpStatusReportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci79PdcpStatusReportEnableIsDefault;
     @XmlElementRef(name = "Qci79PdcpStatusReportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci79PdcpStatusReportEnable;
+    protected JAXBElement<EnabledStates> qci79PdcpStatusReportEnable;
     @XmlElementRef(name = "Qci79RlcSnLengthIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> qci79RlcSnLengthIsDefault;
     @XmlElementRef(name = "Qci79RlcSnLength", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -597,10 +599,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci1PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci1PdcpStatusReportEnable() {
         return qci1PdcpStatusReportEnable;
     }
 
@@ -609,10 +611,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci1PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci1PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci1PdcpStatusReportEnable = value;
     }
 
@@ -789,10 +791,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci2PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci2PdcpStatusReportEnable() {
         return qci2PdcpStatusReportEnable;
     }
 
@@ -801,10 +803,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci2PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci2PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci2PdcpStatusReportEnable = value;
     }
 
@@ -981,10 +983,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci3PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci3PdcpStatusReportEnable() {
         return qci3PdcpStatusReportEnable;
     }
 
@@ -993,10 +995,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci3PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci3PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci3PdcpStatusReportEnable = value;
     }
 
@@ -1173,10 +1175,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci4PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci4PdcpStatusReportEnable() {
         return qci4PdcpStatusReportEnable;
     }
 
@@ -1185,10 +1187,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci4PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci4PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci4PdcpStatusReportEnable = value;
     }
 
@@ -1365,10 +1367,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci5PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci5PdcpStatusReportEnable() {
         return qci5PdcpStatusReportEnable;
     }
 
@@ -1377,10 +1379,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci5PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci5PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci5PdcpStatusReportEnable = value;
     }
 
@@ -1557,10 +1559,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci6PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci6PdcpStatusReportEnable() {
         return qci6PdcpStatusReportEnable;
     }
 
@@ -1569,10 +1571,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci6PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci6PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci6PdcpStatusReportEnable = value;
     }
 
@@ -1749,10 +1751,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci7PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci7PdcpStatusReportEnable() {
         return qci7PdcpStatusReportEnable;
     }
 
@@ -1761,10 +1763,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci7PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci7PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci7PdcpStatusReportEnable = value;
     }
 
@@ -1941,10 +1943,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci8PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci8PdcpStatusReportEnable() {
         return qci8PdcpStatusReportEnable;
     }
 
@@ -1953,10 +1955,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci8PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci8PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci8PdcpStatusReportEnable = value;
     }
 
@@ -2133,10 +2135,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci9PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci9PdcpStatusReportEnable() {
         return qci9PdcpStatusReportEnable;
     }
 
@@ -2145,10 +2147,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci9PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci9PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci9PdcpStatusReportEnable = value;
     }
 
@@ -2373,10 +2375,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci65PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci65PdcpStatusReportEnable() {
         return qci65PdcpStatusReportEnable;
     }
 
@@ -2385,10 +2387,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci65PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci65PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci65PdcpStatusReportEnable = value;
     }
 
@@ -2565,10 +2567,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci66PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci66PdcpStatusReportEnable() {
         return qci66PdcpStatusReportEnable;
     }
 
@@ -2577,10 +2579,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci66PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci66PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci66PdcpStatusReportEnable = value;
     }
 
@@ -2757,10 +2759,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci69PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci69PdcpStatusReportEnable() {
         return qci69PdcpStatusReportEnable;
     }
 
@@ -2769,10 +2771,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci69PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci69PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci69PdcpStatusReportEnable = value;
     }
 
@@ -2949,10 +2951,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci70PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci70PdcpStatusReportEnable() {
         return qci70PdcpStatusReportEnable;
     }
 
@@ -2961,10 +2963,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci70PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci70PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci70PdcpStatusReportEnable = value;
     }
 
@@ -3141,10 +3143,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci75PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci75PdcpStatusReportEnable() {
         return qci75PdcpStatusReportEnable;
     }
 
@@ -3153,10 +3155,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci75PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci75PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci75PdcpStatusReportEnable = value;
     }
 
@@ -3333,10 +3335,10 @@ public class RlcModeWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci79PdcpStatusReportEnable() {
+    public JAXBElement<EnabledStates> getQci79PdcpStatusReportEnable() {
         return qci79PdcpStatusReportEnable;
     }
 
@@ -3345,10 +3347,10 @@ public class RlcModeWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci79PdcpStatusReportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci79PdcpStatusReportEnable(JAXBElement<EnabledStates> value) {
         this.qci79PdcpStatusReportEnable = value;
     }
 

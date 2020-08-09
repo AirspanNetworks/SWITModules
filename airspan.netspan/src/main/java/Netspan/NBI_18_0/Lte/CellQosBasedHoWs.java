@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for CellQosBasedHoWs complex type.
@@ -19,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="PreferredVolteIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="PreferredVolte" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="PreferredVolte" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="TimeoutFromLastMsgIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="TimeoutFromLastMsg" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="VolteSwitchMaxSuccessIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -54,7 +56,7 @@ public class CellQosBasedHoWs {
     @XmlElementRef(name = "PreferredVolteIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> preferredVolteIsDefault;
     @XmlElementRef(name = "PreferredVolte", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> preferredVolte;
+    protected JAXBElement<EnabledStates> preferredVolte;
     @XmlElementRef(name = "TimeoutFromLastMsgIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> timeoutFromLastMsgIsDefault;
     @XmlElementRef(name = "TimeoutFromLastMsg", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -101,10 +103,10 @@ public class CellQosBasedHoWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPreferredVolte() {
+    public JAXBElement<EnabledStates> getPreferredVolte() {
         return preferredVolte;
     }
 
@@ -113,10 +115,10 @@ public class CellQosBasedHoWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPreferredVolte(JAXBElement<EnabledDisabledStates> value) {
+    public void setPreferredVolte(JAXBElement<EnabledStates> value) {
         this.preferredVolte = value;
     }
 

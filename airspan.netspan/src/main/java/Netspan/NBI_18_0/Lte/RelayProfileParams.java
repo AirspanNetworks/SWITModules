@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for RelayProfileParams complex type.
@@ -20,29 +22,29 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="WifiPreferredUi" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="WifiPreferredUi" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="WifiPreferredBand" type="{http://Airspan.Netspan.WebServices}WifiPreferredBand" minOccurs="0"/&gt;
- *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress1Enabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NtpServerIpAddress1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UseNms1" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress2Enabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NtpServerIpAddress2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UseNms2" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress3Enabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NtpServerIpAddress3" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UseNms3" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NtpServerIpAddress4Enabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NtpServerIpAddress4" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="UseNms4" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="FrameShiftNs" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="StatsGranularityPeriod" type="{http://Airspan.Netspan.WebServices}GranularityPeriodRelay" minOccurs="0"/&gt;
- *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NodeSshAccess" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="MaxNumberOfCandidatesPerBand" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}SinrRanking" minOccurs="0"/&gt;
  *         &lt;element name="Priority2DenbSinrRanking" type="{http://Airspan.Netspan.WebServices}Priority2SinrRanking" minOccurs="0"/&gt;
  *         &lt;element name="DenbSinrThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DenbSeThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LocationPersistancy" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="AllowedLocationRadius" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="LocationAccuracyThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DenbSortingAlgorithm" type="{http://Airspan.Netspan.WebServices}DenbSortingAlgorithmValuesWS" minOccurs="0"/&gt;
@@ -55,7 +57,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="DrmHysteresis" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="AutoBackoffScanPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="AutoBackoffMaxScanEvents" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EnbReportingEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="EnbReportingInterval" type="{http://Airspan.Netspan.WebServices}ReportingIntervals" minOccurs="0"/&gt;
  *         &lt;element name="ShareRelayIpv6PdnConnectionMode" type="{http://Airspan.Netspan.WebServices}ApnShareModesWs" minOccurs="0"/&gt;
  *         &lt;element name="ConnectedDeviceTypeToApnMapping" type="{http://Airspan.Netspan.WebServices}ConnectedDeviceTypeToApnList" minOccurs="0"/&gt;
@@ -71,7 +73,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="FailoverAction" type="{http://Airspan.Netspan.WebServices}FailoverActionTypes" minOccurs="0"/&gt;
  *         &lt;element name="SfnInitialisationTime" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="EnbBackhaulSecurity" type="{http://Airspan.Netspan.WebServices}BackhaulSecurityTypes" minOccurs="0"/&gt;
- *         &lt;element name="MaintenanceWindowMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="MaintenanceWindowMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="TimeZone" type="{http://Airspan.Netspan.WebServices}TimeZonesRelay" minOccurs="0"/&gt;
  *         &lt;element name="MaintenanceWindowStartTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="MaintenanceWindowEndTime" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -90,16 +92,16 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="WifiMaxThroughputLimited" type="{http://Airspan.Netspan.WebServices}MaxWifiThroughputTypes" minOccurs="0"/&gt;
  *         &lt;element name="WifiMaxThroughput" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="HourlyDailyEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="TimePersistency" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TimePersistency" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="AllowedTimePersistencyDelta" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="LocationLockAlertThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="LocationLockAlarmThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="LocationLockStopServiceAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LocationLockStopServiceAdmin" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="LocationLockMaxRtdError" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="LocationLockAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LocationLockAdmin" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="LocationLockMaxCellsFingerprint" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="LocationLockMaxCellCandidateListSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="Qci1BearerDetectionMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Qci1BearerDetectionMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="DonorBasedRankMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabled" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -196,29 +198,29 @@ import javax.xml.bind.annotation.XmlType;
 public class RelayProfileParams {
 
     @XmlElementRef(name = "WifiPreferredUi", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> wifiPreferredUi;
+    protected JAXBElement<EnabledStates> wifiPreferredUi;
     @XmlElementRef(name = "WifiPreferredBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> wifiPreferredBand;
     @XmlElementRef(name = "NtpServerIpAddress1Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ntpServerIpAddress1Enabled;
+    protected JAXBElement<EnabledStates> ntpServerIpAddress1Enabled;
     @XmlElement(name = "NtpServerIpAddress1")
     protected String ntpServerIpAddress1;
     @XmlElementRef(name = "UseNms1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> useNms1;
     @XmlElementRef(name = "NtpServerIpAddress2Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ntpServerIpAddress2Enabled;
+    protected JAXBElement<EnabledStates> ntpServerIpAddress2Enabled;
     @XmlElement(name = "NtpServerIpAddress2")
     protected String ntpServerIpAddress2;
     @XmlElementRef(name = "UseNms2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> useNms2;
     @XmlElementRef(name = "NtpServerIpAddress3Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ntpServerIpAddress3Enabled;
+    protected JAXBElement<EnabledStates> ntpServerIpAddress3Enabled;
     @XmlElement(name = "NtpServerIpAddress3")
     protected String ntpServerIpAddress3;
     @XmlElementRef(name = "UseNms3", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> useNms3;
     @XmlElementRef(name = "NtpServerIpAddress4Enabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ntpServerIpAddress4Enabled;
+    protected JAXBElement<EnabledStates> ntpServerIpAddress4Enabled;
     @XmlElement(name = "NtpServerIpAddress4")
     protected String ntpServerIpAddress4;
     @XmlElementRef(name = "UseNms4", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -228,7 +230,7 @@ public class RelayProfileParams {
     @XmlElementRef(name = "StatsGranularityPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> statsGranularityPeriod;
     @XmlElementRef(name = "NodeSshAccess", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nodeSshAccess;
+    protected JAXBElement<EnabledStates> nodeSshAccess;
     @XmlElementRef(name = "MaxNumberOfCandidatesPerBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> maxNumberOfCandidatesPerBand;
     @XmlElementRef(name = "DenbSinrRanking", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -240,7 +242,7 @@ public class RelayProfileParams {
     @XmlElementRef(name = "DenbSeThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> denbSeThreshold;
     @XmlElementRef(name = "LocationPersistancy", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> locationPersistancy;
+    protected JAXBElement<EnabledStates> locationPersistancy;
     @XmlElementRef(name = "AllowedLocationRadius", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> allowedLocationRadius;
     @XmlElementRef(name = "LocationAccuracyThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -266,7 +268,7 @@ public class RelayProfileParams {
     @XmlElementRef(name = "AutoBackoffMaxScanEvents", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> autoBackoffMaxScanEvents;
     @XmlElementRef(name = "EnbReportingEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> enbReportingEnabled;
+    protected JAXBElement<EnabledStates> enbReportingEnabled;
     @XmlElementRef(name = "EnbReportingInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> enbReportingInterval;
     @XmlElementRef(name = "ShareRelayIpv6PdnConnectionMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -298,7 +300,7 @@ public class RelayProfileParams {
     @XmlElementRef(name = "EnbBackhaulSecurity", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<BackhaulSecurityTypes> enbBackhaulSecurity;
     @XmlElementRef(name = "MaintenanceWindowMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> maintenanceWindowMode;
+    protected JAXBElement<EnabledStates> maintenanceWindowMode;
     @XmlElementRef(name = "TimeZone", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<TimeZonesRelay> timeZone;
     @XmlElement(name = "MaintenanceWindowStartTime")
@@ -336,7 +338,7 @@ public class RelayProfileParams {
     @XmlElementRef(name = "HourlyDailyEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> hourlyDailyEnabled;
     @XmlElementRef(name = "TimePersistency", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> timePersistency;
+    protected JAXBElement<EnabledStates> timePersistency;
     @XmlElementRef(name = "AllowedTimePersistencyDelta", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> allowedTimePersistencyDelta;
     @XmlElementRef(name = "LocationLockAlertThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -344,17 +346,17 @@ public class RelayProfileParams {
     @XmlElementRef(name = "LocationLockAlarmThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> locationLockAlarmThreshold;
     @XmlElementRef(name = "LocationLockStopServiceAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> locationLockStopServiceAdmin;
+    protected JAXBElement<EnabledStates> locationLockStopServiceAdmin;
     @XmlElementRef(name = "LocationLockMaxRtdError", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> locationLockMaxRtdError;
     @XmlElementRef(name = "LocationLockAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> locationLockAdmin;
+    protected JAXBElement<EnabledStates> locationLockAdmin;
     @XmlElementRef(name = "LocationLockMaxCellsFingerprint", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> locationLockMaxCellsFingerprint;
     @XmlElementRef(name = "LocationLockMaxCellCandidateListSize", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> locationLockMaxCellCandidateListSize;
     @XmlElementRef(name = "Qci1BearerDetectionMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> qci1BearerDetectionMode;
+    protected JAXBElement<EnabledStates> qci1BearerDetectionMode;
     @XmlElementRef(name = "DonorBasedRankMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnabledDisabled> donorBasedRankMode;
 
@@ -363,10 +365,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getWifiPreferredUi() {
+    public JAXBElement<EnabledStates> getWifiPreferredUi() {
         return wifiPreferredUi;
     }
 
@@ -375,10 +377,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setWifiPreferredUi(JAXBElement<EnabledDisabledStates> value) {
+    public void setWifiPreferredUi(JAXBElement<EnabledStates> value) {
         this.wifiPreferredUi = value;
     }
 
@@ -411,10 +413,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNtpServerIpAddress1Enabled() {
+    public JAXBElement<EnabledStates> getNtpServerIpAddress1Enabled() {
         return ntpServerIpAddress1Enabled;
     }
 
@@ -423,10 +425,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNtpServerIpAddress1Enabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setNtpServerIpAddress1Enabled(JAXBElement<EnabledStates> value) {
         this.ntpServerIpAddress1Enabled = value;
     }
 
@@ -483,10 +485,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNtpServerIpAddress2Enabled() {
+    public JAXBElement<EnabledStates> getNtpServerIpAddress2Enabled() {
         return ntpServerIpAddress2Enabled;
     }
 
@@ -495,10 +497,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNtpServerIpAddress2Enabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setNtpServerIpAddress2Enabled(JAXBElement<EnabledStates> value) {
         this.ntpServerIpAddress2Enabled = value;
     }
 
@@ -555,10 +557,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNtpServerIpAddress3Enabled() {
+    public JAXBElement<EnabledStates> getNtpServerIpAddress3Enabled() {
         return ntpServerIpAddress3Enabled;
     }
 
@@ -567,10 +569,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNtpServerIpAddress3Enabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setNtpServerIpAddress3Enabled(JAXBElement<EnabledStates> value) {
         this.ntpServerIpAddress3Enabled = value;
     }
 
@@ -627,10 +629,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNtpServerIpAddress4Enabled() {
+    public JAXBElement<EnabledStates> getNtpServerIpAddress4Enabled() {
         return ntpServerIpAddress4Enabled;
     }
 
@@ -639,10 +641,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNtpServerIpAddress4Enabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setNtpServerIpAddress4Enabled(JAXBElement<EnabledStates> value) {
         this.ntpServerIpAddress4Enabled = value;
     }
 
@@ -747,10 +749,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNodeSshAccess() {
+    public JAXBElement<EnabledStates> getNodeSshAccess() {
         return nodeSshAccess;
     }
 
@@ -759,10 +761,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNodeSshAccess(JAXBElement<EnabledDisabledStates> value) {
+    public void setNodeSshAccess(JAXBElement<EnabledStates> value) {
         this.nodeSshAccess = value;
     }
 
@@ -891,10 +893,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLocationPersistancy() {
+    public JAXBElement<EnabledStates> getLocationPersistancy() {
         return locationPersistancy;
     }
 
@@ -903,10 +905,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLocationPersistancy(JAXBElement<EnabledDisabledStates> value) {
+    public void setLocationPersistancy(JAXBElement<EnabledStates> value) {
         this.locationPersistancy = value;
     }
 
@@ -1203,10 +1205,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getEnbReportingEnabled() {
+    public JAXBElement<EnabledStates> getEnbReportingEnabled() {
         return enbReportingEnabled;
     }
 
@@ -1215,10 +1217,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setEnbReportingEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setEnbReportingEnabled(JAXBElement<EnabledStates> value) {
         this.enbReportingEnabled = value;
     }
 
@@ -1587,10 +1589,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getMaintenanceWindowMode() {
+    public JAXBElement<EnabledStates> getMaintenanceWindowMode() {
         return maintenanceWindowMode;
     }
 
@@ -1599,10 +1601,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setMaintenanceWindowMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setMaintenanceWindowMode(JAXBElement<EnabledStates> value) {
         this.maintenanceWindowMode = value;
     }
 
@@ -2043,10 +2045,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTimePersistency() {
+    public JAXBElement<EnabledStates> getTimePersistency() {
         return timePersistency;
     }
 
@@ -2055,10 +2057,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTimePersistency(JAXBElement<EnabledDisabledStates> value) {
+    public void setTimePersistency(JAXBElement<EnabledStates> value) {
         this.timePersistency = value;
     }
 
@@ -2139,10 +2141,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLocationLockStopServiceAdmin() {
+    public JAXBElement<EnabledStates> getLocationLockStopServiceAdmin() {
         return locationLockStopServiceAdmin;
     }
 
@@ -2151,10 +2153,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLocationLockStopServiceAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setLocationLockStopServiceAdmin(JAXBElement<EnabledStates> value) {
         this.locationLockStopServiceAdmin = value;
     }
 
@@ -2187,10 +2189,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLocationLockAdmin() {
+    public JAXBElement<EnabledStates> getLocationLockAdmin() {
         return locationLockAdmin;
     }
 
@@ -2199,10 +2201,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLocationLockAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setLocationLockAdmin(JAXBElement<EnabledStates> value) {
         this.locationLockAdmin = value;
     }
 
@@ -2259,10 +2261,10 @@ public class RelayProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getQci1BearerDetectionMode() {
+    public JAXBElement<EnabledStates> getQci1BearerDetectionMode() {
         return qci1BearerDetectionMode;
     }
 
@@ -2271,10 +2273,10 @@ public class RelayProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setQci1BearerDetectionMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setQci1BearerDetectionMode(JAXBElement<EnabledStates> value) {
         this.qci1BearerDetectionMode = value;
     }
 

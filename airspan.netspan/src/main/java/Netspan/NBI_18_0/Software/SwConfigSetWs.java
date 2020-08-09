@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Software.RequestType;
+
 
 /**
  * <p>Java class for SwConfigSetWs complex type.

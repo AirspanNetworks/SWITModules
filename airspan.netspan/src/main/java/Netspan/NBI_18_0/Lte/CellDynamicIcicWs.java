@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for CellDynamicIcicWs complex type.
@@ -70,7 +72,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="KNghCappingIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="KNghCapping" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="NonContiguousCERIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="NonContiguousCER" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NonContiguousCER" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="UnmanagedIntThresholdIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="UnmanagedIntThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CERMetricHystIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -251,7 +253,7 @@ public class CellDynamicIcicWs {
     @XmlElementRef(name = "NonContiguousCERIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nonContiguousCERIsDefault;
     @XmlElementRef(name = "NonContiguousCER", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nonContiguousCER;
+    protected JAXBElement<EnabledStates> nonContiguousCER;
     @XmlElementRef(name = "UnmanagedIntThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> unmanagedIntThresholdIsDefault;
     @XmlElementRef(name = "UnmanagedIntThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -1494,10 +1496,10 @@ public class CellDynamicIcicWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNonContiguousCER() {
+    public JAXBElement<EnabledStates> getNonContiguousCER() {
         return nonContiguousCER;
     }
 
@@ -1506,10 +1508,10 @@ public class CellDynamicIcicWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNonContiguousCER(JAXBElement<EnabledDisabledStates> value) {
+    public void setNonContiguousCER(JAXBElement<EnabledStates> value) {
         this.nonContiguousCER = value;
     }
 

@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for anonymous complex type.
@@ -21,8 +23,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="NodeName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Action" type="{http://Airspan.Netspan.WebServices}WiFiAction"/&gt;
- *         &lt;element name="Radio2Dot4GHz" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates"/&gt;
- *         &lt;element name="Radio5GHz" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates"/&gt;
+ *         &lt;element name="Radio2Dot4GHz" type="{http://Airspan.Netspan.WebServices}EnabledStates"/&gt;
+ *         &lt;element name="Radio5GHz" type="{http://Airspan.Netspan.WebServices}EnabledStates"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -48,10 +50,10 @@ public class RelayEnbWiFiActionSet {
     protected WiFiAction action;
     @XmlElement(name = "Radio2Dot4GHz", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates radio2Dot4GHz;
+    protected EnabledStates radio2Dot4GHz;
     @XmlElement(name = "Radio5GHz", required = true, nillable = true)
     @XmlSchemaType(name = "string")
-    protected EnabledDisabledStates radio5GHz;
+    protected EnabledStates radio5GHz;
 
     /**
      * Gets the value of the nodeName property.
@@ -106,10 +108,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getRadio2Dot4GHz() {
+    public EnabledStates getRadio2Dot4GHz() {
         return radio2Dot4GHz;
     }
 
@@ -118,10 +120,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setRadio2Dot4GHz(EnabledDisabledStates value) {
+    public void setRadio2Dot4GHz(EnabledStates value) {
         this.radio2Dot4GHz = value;
     }
 
@@ -130,10 +132,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @return
      *     possible object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public EnabledDisabledStates getRadio5GHz() {
+    public EnabledStates getRadio5GHz() {
         return radio5GHz;
     }
 
@@ -142,10 +144,10 @@ public class RelayEnbWiFiActionSet {
      * 
      * @param value
      *     allowed object is
-     *     {@link EnabledDisabledStates }
+     *     {@link EnabledStates }
      *     
      */
-    public void setRadio5GHz(EnabledDisabledStates value) {
+    public void setRadio5GHz(EnabledStates value) {
         this.radio5GHz = value;
     }
 

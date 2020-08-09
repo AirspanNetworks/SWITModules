@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for CellDynamicCfiWs complex type.
@@ -19,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="ControlChannelOverloadOptimizationIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ControlChannelOverloadOptimization" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ControlChannelOverloadOptimization" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="ChannelFormatIndicatorIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="ChannelFormatIndicator" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="CfiMonitoringIntervalIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -66,7 +68,7 @@ public class CellDynamicCfiWs {
     @XmlElementRef(name = "ControlChannelOverloadOptimizationIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> controlChannelOverloadOptimizationIsDefault;
     @XmlElementRef(name = "ControlChannelOverloadOptimization", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> controlChannelOverloadOptimization;
+    protected JAXBElement<EnabledStates> controlChannelOverloadOptimization;
     @XmlElementRef(name = "ChannelFormatIndicatorIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> channelFormatIndicatorIsDefault;
     @XmlElementRef(name = "ChannelFormatIndicator", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -125,10 +127,10 @@ public class CellDynamicCfiWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getControlChannelOverloadOptimization() {
+    public JAXBElement<EnabledStates> getControlChannelOverloadOptimization() {
         return controlChannelOverloadOptimization;
     }
 
@@ -137,10 +139,10 @@ public class CellDynamicCfiWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setControlChannelOverloadOptimization(JAXBElement<EnabledDisabledStates> value) {
+    public void setControlChannelOverloadOptimization(JAXBElement<EnabledStates> value) {
         this.controlChannelOverloadOptimization = value;
     }
 

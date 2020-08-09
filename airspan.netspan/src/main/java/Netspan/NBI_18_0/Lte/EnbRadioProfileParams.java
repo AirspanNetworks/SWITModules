@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for EnbRadioProfileParams complex type.
@@ -43,9 +45,9 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="SfrMinMcsCellCenter" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="SsfType" type="{http://Airspan.Netspan.WebServices}SsfTypes" minOccurs="0"/&gt;
  *         &lt;element name="AddlSpectrumEmission" type="{http://Airspan.Netspan.WebServices}AddlSpectrumEmissions" minOccurs="0"/&gt;
- *         &lt;element name="EcidMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EcidMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="EcidTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="OtdoaMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="OtdoaMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="OtdoaPrsBw" type="{http://Airspan.Netspan.WebServices}OtdoaPrsBandwidthsWs" minOccurs="0"/&gt;
  *         &lt;element name="OtdaPrsPeriodicity" type="{http://Airspan.Netspan.WebServices}OtdoaPeriodicitiesWs" minOccurs="0"/&gt;
  *         &lt;element name="OtdaPrsOffset" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
@@ -149,11 +151,11 @@ public class EnbRadioProfileParams {
     @XmlElementRef(name = "AddlSpectrumEmission", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<AddlSpectrumEmissions> addlSpectrumEmission;
     @XmlElementRef(name = "EcidMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> ecidMode;
+    protected JAXBElement<EnabledStates> ecidMode;
     @XmlElementRef(name = "EcidTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> ecidTimer;
     @XmlElementRef(name = "OtdoaMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> otdoaMode;
+    protected JAXBElement<EnabledStates> otdoaMode;
     @XmlElementRef(name = "OtdoaPrsBw", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> otdoaPrsBw;
     @XmlElementRef(name = "OtdaPrsPeriodicity", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -726,10 +728,10 @@ public class EnbRadioProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getEcidMode() {
+    public JAXBElement<EnabledStates> getEcidMode() {
         return ecidMode;
     }
 
@@ -738,10 +740,10 @@ public class EnbRadioProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setEcidMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setEcidMode(JAXBElement<EnabledStates> value) {
         this.ecidMode = value;
     }
 
@@ -774,10 +776,10 @@ public class EnbRadioProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getOtdoaMode() {
+    public JAXBElement<EnabledStates> getOtdoaMode() {
         return otdoaMode;
     }
 
@@ -786,10 +788,10 @@ public class EnbRadioProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setOtdoaMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setOtdoaMode(JAXBElement<EnabledStates> value) {
         this.otdoaMode = value;
     }
 

@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for EnbNeighbourProfileParams complex type.
@@ -26,7 +28,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="HomeEnbDefaultConfig" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbDefaultConfig" minOccurs="0"/&gt;
  *         &lt;element name="HomeEnbBandList" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbBandListContainer" minOccurs="0"/&gt;
  *         &lt;element name="HomeEnbEarfcnList" type="{http://Airspan.Netspan.WebServices}NeighbourHomeEnbEarfcnListContainer" minOccurs="0"/&gt;
- *         &lt;element name="UtraEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="UtraEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="UtraArfcnList" type="{http://Airspan.Netspan.WebServices}NeighbourUtraEarfcnListContainer" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -65,7 +67,7 @@ public class EnbNeighbourProfileParams {
     @XmlElement(name = "HomeEnbEarfcnList")
     protected NeighbourHomeEnbEarfcnListContainer homeEnbEarfcnList;
     @XmlElementRef(name = "UtraEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> utraEnabled;
+    protected JAXBElement<EnabledStates> utraEnabled;
     @XmlElement(name = "UtraArfcnList")
     protected NeighbourUtraEarfcnListContainer utraArfcnList;
 
@@ -218,10 +220,10 @@ public class EnbNeighbourProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUtraEnabled() {
+    public JAXBElement<EnabledStates> getUtraEnabled() {
         return utraEnabled;
     }
 
@@ -230,10 +232,10 @@ public class EnbNeighbourProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUtraEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setUtraEnabled(JAXBElement<EnabledStates> value) {
         this.utraEnabled = value;
     }
 

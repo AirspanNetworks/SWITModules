@@ -9,8 +9,10 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.PnpModes;
 import Netspan.API.Enums.SonAnrStates;
+import Netspan.API.Lte.LteSonDynIcic;
 
 
 /**
@@ -43,10 +45,10 @@ import Netspan.API.Enums.SonAnrStates;
  *         &lt;element name="RsiEnabled" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RsiRangeList" type="{http://Airspan.Netspan.WebServices}RsiRangeListContainer" minOccurs="0"/&gt;
  *         &lt;element name="CSon" type="{http://Airspan.Netspan.WebServices}LteSonCSonWs" minOccurs="0"/&gt;
- *         &lt;element name="OptimizationMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="OptimizationMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="DynamicIcic" type="{http://Airspan.Netspan.WebServices}LteSonDynIcic" minOccurs="0"/&gt;
- *         &lt;element name="TpmMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
- *         &lt;element name="TpmMoMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TpmMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="TpmMoMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="IsDynamicAcBarringIndicatorCpuLoad" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="IsDynamicAcBarringIndicatorS1Load" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="IsDynamicAcBarringIndicatorGbrPrbLoad" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -190,13 +192,13 @@ public class EnbSonProfileParams {
     @XmlElement(name = "CSon")
     protected LteSonCSonWs cSon;
     @XmlElementRef(name = "OptimizationMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> optimizationMode;
+    protected JAXBElement<EnabledStates> optimizationMode;
     @XmlElement(name = "DynamicIcic")
     protected LteSonDynIcic dynamicIcic;
     @XmlElementRef(name = "TpmMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> tpmMode;
+    protected JAXBElement<EnabledStates> tpmMode;
     @XmlElementRef(name = "TpmMoMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> tpmMoMode;
+    protected JAXBElement<EnabledStates> tpmMoMode;
     @XmlElementRef(name = "IsDynamicAcBarringIndicatorCpuLoad", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> isDynamicAcBarringIndicatorCpuLoad;
     @XmlElementRef(name = "IsDynamicAcBarringIndicatorS1Load", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -745,10 +747,10 @@ public class EnbSonProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getOptimizationMode() {
+    public JAXBElement<EnabledStates> getOptimizationMode() {
         return optimizationMode;
     }
 
@@ -757,10 +759,10 @@ public class EnbSonProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setOptimizationMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setOptimizationMode(JAXBElement<EnabledStates> value) {
         this.optimizationMode = value;
     }
 
@@ -793,10 +795,10 @@ public class EnbSonProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTpmMode() {
+    public JAXBElement<EnabledStates> getTpmMode() {
         return tpmMode;
     }
 
@@ -805,10 +807,10 @@ public class EnbSonProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTpmMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setTpmMode(JAXBElement<EnabledStates> value) {
         this.tpmMode = value;
     }
 
@@ -817,10 +819,10 @@ public class EnbSonProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getTpmMoMode() {
+    public JAXBElement<EnabledStates> getTpmMoMode() {
         return tpmMoMode;
     }
 
@@ -829,10 +831,10 @@ public class EnbSonProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setTpmMoMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setTpmMoMode(JAXBElement<EnabledStates> value) {
         this.tpmMoMode = value;
     }
 

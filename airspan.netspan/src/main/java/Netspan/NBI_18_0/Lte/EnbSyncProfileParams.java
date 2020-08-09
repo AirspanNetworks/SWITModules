@@ -9,6 +9,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for EnbSyncProfileParams complex type.
@@ -40,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="NlmPrimary" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NlmS1Sync" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NlmPlmnSync" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="RevertiveMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="RevertiveMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -119,7 +121,7 @@ public class EnbSyncProfileParams {
     @XmlElementRef(name = "NlmPlmnSync", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> nlmPlmnSync;
     @XmlElementRef(name = "RevertiveMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> revertiveMode;
+    protected JAXBElement<EnabledStates> revertiveMode;
 
     /**
      * Gets the value of the clockSourceList property.
@@ -606,10 +608,10 @@ public class EnbSyncProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getRevertiveMode() {
+    public JAXBElement<EnabledStates> getRevertiveMode() {
         return revertiveMode;
     }
 
@@ -618,10 +620,10 @@ public class EnbSyncProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setRevertiveMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setRevertiveMode(JAXBElement<EnabledStates> value) {
         this.revertiveMode = value;
     }
 

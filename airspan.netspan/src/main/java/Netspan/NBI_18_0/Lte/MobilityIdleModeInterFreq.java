@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for MobilityIdleModeInterFreq complex type.
@@ -30,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="IsQQualMinr9NotPresent" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="QQualMinr9" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="QOffsetFreq" type="{http://Airspan.Netspan.WebServices}OffsetFreq" minOccurs="0"/&gt;
- *         &lt;element name="ImmciMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ImmciMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -82,7 +84,7 @@ public class MobilityIdleModeInterFreq {
     @XmlElementRef(name = "QOffsetFreq", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> qOffsetFreq;
     @XmlElementRef(name = "ImmciMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> immciMode;
+    protected JAXBElement<EnabledStates> immciMode;
 
     /**
      * Gets the value of the qRxLevelMin property.
@@ -377,10 +379,10 @@ public class MobilityIdleModeInterFreq {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getImmciMode() {
+    public JAXBElement<EnabledStates> getImmciMode() {
         return immciMode;
     }
 
@@ -389,10 +391,10 @@ public class MobilityIdleModeInterFreq {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setImmciMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setImmciMode(JAXBElement<EnabledStates> value) {
         this.immciMode = value;
     }
 

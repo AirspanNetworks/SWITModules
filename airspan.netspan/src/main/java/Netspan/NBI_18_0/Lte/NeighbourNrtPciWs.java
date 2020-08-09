@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.NrtHoTypes;
 
 
@@ -22,7 +23,7 @@ import Netspan.API.Enums.NrtHoTypes;
  *       &lt;sequence&gt;
  *         &lt;element name="PciStart" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="PciEnd" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="AllowX2" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AllowX2" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="HoType" type="{http://Airspan.Netspan.WebServices}NrtHoTypes" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
@@ -46,7 +47,7 @@ public class NeighbourNrtPciWs {
     @XmlElementRef(name = "PciEnd", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> pciEnd;
     @XmlElementRef(name = "AllowX2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> allowX2;
+    protected JAXBElement<EnabledStates> allowX2;
     @XmlElementRef(name = "HoType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<NrtHoTypes> hoType;
 
@@ -103,10 +104,10 @@ public class NeighbourNrtPciWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAllowX2() {
+    public JAXBElement<EnabledStates> getAllowX2() {
         return allowX2;
     }
 
@@ -115,10 +116,10 @@ public class NeighbourNrtPciWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAllowX2(JAXBElement<EnabledDisabledStates> value) {
+    public void setAllowX2(JAXBElement<EnabledStates> value) {
         this.allowX2 = value;
     }
 

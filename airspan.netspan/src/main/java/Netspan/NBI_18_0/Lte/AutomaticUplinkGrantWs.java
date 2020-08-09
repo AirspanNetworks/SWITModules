@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for AutomaticUplinkGrantWs complex type.
@@ -19,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="AutomaticUplinkGrantIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="AutomaticUplinkGrant" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="AutomaticUplinkGrant" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="AutomaticGrantPeriodIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="AutomaticGrantPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="NumberOfParticipatingUeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -50,7 +52,7 @@ public class AutomaticUplinkGrantWs {
     @XmlElementRef(name = "AutomaticUplinkGrantIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> automaticUplinkGrantIsDefault;
     @XmlElementRef(name = "AutomaticUplinkGrant", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> automaticUplinkGrant;
+    protected JAXBElement<EnabledStates> automaticUplinkGrant;
     @XmlElementRef(name = "AutomaticGrantPeriodIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> automaticGrantPeriodIsDefault;
     @XmlElementRef(name = "AutomaticGrantPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -93,10 +95,10 @@ public class AutomaticUplinkGrantWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getAutomaticUplinkGrant() {
+    public JAXBElement<EnabledStates> getAutomaticUplinkGrant() {
         return automaticUplinkGrant;
     }
 
@@ -105,10 +107,10 @@ public class AutomaticUplinkGrantWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setAutomaticUplinkGrant(JAXBElement<EnabledDisabledStates> value) {
+    public void setAutomaticUplinkGrant(JAXBElement<EnabledStates> value) {
         this.automaticUplinkGrant = value;
     }
 

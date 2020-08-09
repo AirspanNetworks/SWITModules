@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for InterRatMobilityPerPlmnGroupWs complex type.
@@ -20,9 +22,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="PlmnList" type="{http://Airspan.Netspan.WebServices}PlmnsContainer" minOccurs="0"/&gt;
- *         &lt;element name="CsfbToUtran" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbToUtran" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="UtranCsfbPriority" type="{http://Airspan.Netspan.WebServices}CsfbPriority" minOccurs="0"/&gt;
- *         &lt;element name="CsfbToGeran" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="CsfbToGeran" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="GeranCsfbPriority" type="{http://Airspan.Netspan.WebServices}CsfbPriority" minOccurs="0"/&gt;
  *         &lt;element name="PrimaryGeranBand" type="{http://Airspan.Netspan.WebServices}Bands" minOccurs="0"/&gt;
  *         &lt;element name="UtranPriorityList" type="{http://Airspan.Netspan.WebServices}PerPlmnUtranPriorityListContainer" minOccurs="0"/&gt;
@@ -51,11 +53,11 @@ public class InterRatMobilityPerPlmnGroupWs {
     @XmlElement(name = "PlmnList")
     protected PlmnsContainer plmnList;
     @XmlElementRef(name = "CsfbToUtran", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbToUtran;
+    protected JAXBElement<EnabledStates> csfbToUtran;
     @XmlElementRef(name = "UtranCsfbPriority", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> utranCsfbPriority;
     @XmlElementRef(name = "CsfbToGeran", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> csfbToGeran;
+    protected JAXBElement<EnabledStates> csfbToGeran;
     @XmlElementRef(name = "GeranCsfbPriority", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> geranCsfbPriority;
     @XmlElementRef(name = "PrimaryGeranBand", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -94,10 +96,10 @@ public class InterRatMobilityPerPlmnGroupWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbToUtran() {
+    public JAXBElement<EnabledStates> getCsfbToUtran() {
         return csfbToUtran;
     }
 
@@ -106,10 +108,10 @@ public class InterRatMobilityPerPlmnGroupWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbToUtran(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbToUtran(JAXBElement<EnabledStates> value) {
         this.csfbToUtran = value;
     }
 
@@ -142,10 +144,10 @@ public class InterRatMobilityPerPlmnGroupWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getCsfbToGeran() {
+    public JAXBElement<EnabledStates> getCsfbToGeran() {
         return csfbToGeran;
     }
 
@@ -154,10 +156,10 @@ public class InterRatMobilityPerPlmnGroupWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setCsfbToGeran(JAXBElement<EnabledDisabledStates> value) {
+    public void setCsfbToGeran(JAXBElement<EnabledStates> value) {
         this.csfbToGeran = value;
     }
 

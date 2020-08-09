@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for MobilityIdleFreqWs complex type.
@@ -20,7 +22,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="PresenceAntennaPort1IsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="PresenceAntennaPort1" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="PresenceAntennaPort1" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NeighCellConfigIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NeighCellConfig" type="{http://Airspan.Netspan.WebServices}NeighbourCellConfig" minOccurs="0"/&gt;
  *         &lt;element name="TreselectionEutraSfMediumIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -55,7 +57,7 @@ public class MobilityIdleFreqWs {
     @XmlElementRef(name = "PresenceAntennaPort1IsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> presenceAntennaPort1IsDefault;
     @XmlElementRef(name = "PresenceAntennaPort1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> presenceAntennaPort1;
+    protected JAXBElement<EnabledStates> presenceAntennaPort1;
     @XmlElementRef(name = "NeighCellConfigIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> neighCellConfigIsDefault;
     @XmlElementRef(name = "NeighCellConfig", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -98,10 +100,10 @@ public class MobilityIdleFreqWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getPresenceAntennaPort1() {
+    public JAXBElement<EnabledStates> getPresenceAntennaPort1() {
         return presenceAntennaPort1;
     }
 
@@ -110,10 +112,10 @@ public class MobilityIdleFreqWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setPresenceAntennaPort1(JAXBElement<EnabledDisabledStates> value) {
+    public void setPresenceAntennaPort1(JAXBElement<EnabledStates> value) {
         this.presenceAntennaPort1 = value;
     }
 

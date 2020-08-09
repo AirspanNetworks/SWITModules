@@ -10,6 +10,7 @@ import javax.xml.namespace.QName;
 import Netspan.API.Enums.HardwareCategory;
 import Netspan.API.Enums.ImageType;
 import Netspan.API.Enums.ServerProtocolType;
+import Netspan.API.Software.RequestType;
 
 
 /**

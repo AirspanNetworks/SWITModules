@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for CsfbWs complex type.
@@ -21,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="T304IratIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="T304Irat" type="{http://Airspan.Netspan.WebServices}T304IratValues" minOccurs="0"/&gt;
  *         &lt;element name="DualTransmissionModeCapabilityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="DualTransmissionModeCapability" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="DualTransmissionModeCapability" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="NetworkControlOrderIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="NetworkControlOrder" type="{http://Airspan.Netspan.WebServices}NetworkControlOrderValues" minOccurs="0"/&gt;
  *         &lt;element name="PreCsfbMeasurementTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -82,7 +84,7 @@ public class CsfbWs {
     @XmlElementRef(name = "DualTransmissionModeCapabilityIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> dualTransmissionModeCapabilityIsDefault;
     @XmlElementRef(name = "DualTransmissionModeCapability", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> dualTransmissionModeCapability;
+    protected JAXBElement<EnabledStates> dualTransmissionModeCapability;
     @XmlElementRef(name = "NetworkControlOrderIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> networkControlOrderIsDefault;
     @XmlElementRef(name = "NetworkControlOrder", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -197,10 +199,10 @@ public class CsfbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getDualTransmissionModeCapability() {
+    public JAXBElement<EnabledStates> getDualTransmissionModeCapability() {
         return dualTransmissionModeCapability;
     }
 
@@ -209,10 +211,10 @@ public class CsfbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setDualTransmissionModeCapability(JAXBElement<EnabledDisabledStates> value) {
+    public void setDualTransmissionModeCapability(JAXBElement<EnabledStates> value) {
         this.dualTransmissionModeCapability = value;
     }
 

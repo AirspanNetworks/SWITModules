@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for SmartUpLinkSchedulerWs complex type.
@@ -19,9 +21,9 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="EnableSusIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="EnableSus" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="EnableSus" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="ManSubRegionCfgIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ManSubRegionCfg" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ManSubRegionCfg" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="UlAllocSubRegionIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="UlAllocSubRegion" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="SubRegionDrawPeriodicityIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -54,11 +56,11 @@ public class SmartUpLinkSchedulerWs {
     @XmlElementRef(name = "EnableSusIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> enableSusIsDefault;
     @XmlElementRef(name = "EnableSus", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> enableSus;
+    protected JAXBElement<EnabledStates> enableSus;
     @XmlElementRef(name = "ManSubRegionCfgIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> manSubRegionCfgIsDefault;
     @XmlElementRef(name = "ManSubRegionCfg", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> manSubRegionCfg;
+    protected JAXBElement<EnabledStates> manSubRegionCfg;
     @XmlElementRef(name = "UlAllocSubRegionIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> ulAllocSubRegionIsDefault;
     @XmlElementRef(name = "UlAllocSubRegion", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -101,10 +103,10 @@ public class SmartUpLinkSchedulerWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getEnableSus() {
+    public JAXBElement<EnabledStates> getEnableSus() {
         return enableSus;
     }
 
@@ -113,10 +115,10 @@ public class SmartUpLinkSchedulerWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setEnableSus(JAXBElement<EnabledDisabledStates> value) {
+    public void setEnableSus(JAXBElement<EnabledStates> value) {
         this.enableSus = value;
     }
 
@@ -149,10 +151,10 @@ public class SmartUpLinkSchedulerWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getManSubRegionCfg() {
+    public JAXBElement<EnabledStates> getManSubRegionCfg() {
         return manSubRegionCfg;
     }
 
@@ -161,10 +163,10 @@ public class SmartUpLinkSchedulerWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setManSubRegionCfg(JAXBElement<EnabledDisabledStates> value) {
+    public void setManSubRegionCfg(JAXBElement<EnabledStates> value) {
         this.manSubRegionCfg = value;
     }
 

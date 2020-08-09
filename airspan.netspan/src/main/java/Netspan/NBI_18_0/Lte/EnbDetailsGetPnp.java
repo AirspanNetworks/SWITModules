@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
 import Netspan.API.Enums.X2ControlStateTypes;
 
 
@@ -34,7 +35,7 @@ import Netspan.API.Enums.X2ControlStateTypes;
  *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="Altitude" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Accuracy" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="NbifEventAlarmForwarding" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="NbifEventAlarmForwarding" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="ENodeBType" type="{http://Airspan.Netspan.WebServices}EnbTypesWs" minOccurs="0"/&gt;
  *         &lt;element name="HeNodeBName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="ENodeBID" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
@@ -80,43 +81,43 @@ import Netspan.API.Enums.X2ControlStateTypes;
  *         &lt;element name="InterfaceToUseForManagement" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="ManagementIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="ManagementSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsS1CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForS1C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="S1CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="S1CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsS1UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsS1UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForS1U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="S1UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="S1USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsX2CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2CInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForX2C" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="X2CIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="X2CSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsX2UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsX2UInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForX2U" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="X2UIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="X2USubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsCallTraceInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsCallTraceInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForCallTrace" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="CallTraceIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="CallTraceSubNetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsPtpSlaveInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsPtpSlaveInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForPtpSlave" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="PtpSlaveIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="PtpSlaveSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsCSonServerInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsCSonServerInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForCSonServer" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="CSonServerIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="CSonServerSubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsM2InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsM2InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForM2" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="M2IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="M2SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsM1InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsM1InterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForM1" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="M1IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="M1SubnetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="IsTwampSenderInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="IsTwampSenderInterfaceEnabled" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="InterfaceToUseForTwampSender" type="{http://Airspan.Netspan.WebServices}InterfaceTypes" minOccurs="0"/&gt;
  *         &lt;element name="TwampSenderIpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="TwampSenderSubNetMask" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
@@ -260,7 +261,7 @@ public class EnbDetailsGetPnp {
     @XmlElementRef(name = "Accuracy", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> accuracy;
     @XmlElementRef(name = "NbifEventAlarmForwarding", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> nbifEventAlarmForwarding;
+    protected JAXBElement<EnabledStates> nbifEventAlarmForwarding;
     @XmlElementRef(name = "ENodeBType", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<EnbTypesWs> eNodeBType;
     @XmlElement(name = "HeNodeBName")
@@ -352,7 +353,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "ManagementSubnetMask")
     protected String managementSubnetMask;
     @XmlElementRef(name = "IsS1CInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isS1CInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isS1CInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForS1C", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForS1C;
     @XmlElement(name = "S1CIpAddress")
@@ -360,7 +361,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "S1CSubnetMask")
     protected String s1CSubnetMask;
     @XmlElementRef(name = "IsS1UInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isS1UInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isS1UInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForS1U", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForS1U;
     @XmlElement(name = "S1UIpAddress")
@@ -368,7 +369,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "S1USubnetMask")
     protected String s1USubnetMask;
     @XmlElementRef(name = "IsX2CInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isX2CInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isX2CInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForX2C", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForX2C;
     @XmlElement(name = "X2CIpAddress")
@@ -376,7 +377,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "X2CSubnetMask")
     protected String x2CSubnetMask;
     @XmlElementRef(name = "IsX2UInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isX2UInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isX2UInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForX2U", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForX2U;
     @XmlElement(name = "X2UIpAddress")
@@ -384,7 +385,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "X2USubnetMask")
     protected String x2USubnetMask;
     @XmlElementRef(name = "IsCallTraceInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isCallTraceInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isCallTraceInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForCallTrace", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForCallTrace;
     @XmlElement(name = "CallTraceIpAddress")
@@ -392,7 +393,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "CallTraceSubNetMask")
     protected String callTraceSubNetMask;
     @XmlElementRef(name = "IsPtpSlaveInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isPtpSlaveInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isPtpSlaveInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForPtpSlave", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForPtpSlave;
     @XmlElement(name = "PtpSlaveIpAddress")
@@ -400,7 +401,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "PtpSlaveSubnetMask")
     protected String ptpSlaveSubnetMask;
     @XmlElementRef(name = "IsCSonServerInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isCSonServerInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isCSonServerInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForCSonServer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForCSonServer;
     @XmlElement(name = "CSonServerIpAddress")
@@ -408,7 +409,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "CSonServerSubnetMask")
     protected String cSonServerSubnetMask;
     @XmlElementRef(name = "IsM2InterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isM2InterfaceEnabled;
+    protected JAXBElement<EnabledStates> isM2InterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForM2", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForM2;
     @XmlElement(name = "M2IpAddress")
@@ -416,7 +417,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "M2SubnetMask")
     protected String m2SubnetMask;
     @XmlElementRef(name = "IsM1InterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isM1InterfaceEnabled;
+    protected JAXBElement<EnabledStates> isM1InterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForM1", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForM1;
     @XmlElement(name = "M1IpAddress")
@@ -424,7 +425,7 @@ public class EnbDetailsGetPnp {
     @XmlElement(name = "M1SubnetMask")
     protected String m1SubnetMask;
     @XmlElementRef(name = "IsTwampSenderInterfaceEnabled", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> isTwampSenderInterfaceEnabled;
+    protected JAXBElement<EnabledStates> isTwampSenderInterfaceEnabled;
     @XmlElementRef(name = "InterfaceToUseForTwampSender", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<String> interfaceToUseForTwampSender;
     @XmlElement(name = "TwampSenderIpAddress")
@@ -663,10 +664,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getNbifEventAlarmForwarding() {
+    public JAXBElement<EnabledStates> getNbifEventAlarmForwarding() {
         return nbifEventAlarmForwarding;
     }
 
@@ -675,10 +676,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setNbifEventAlarmForwarding(JAXBElement<EnabledDisabledStates> value) {
+    public void setNbifEventAlarmForwarding(JAXBElement<EnabledStates> value) {
         this.nbifEventAlarmForwarding = value;
     }
 
@@ -1772,10 +1773,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsS1CInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsS1CInterfaceEnabled() {
         return isS1CInterfaceEnabled;
     }
 
@@ -1784,10 +1785,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsS1CInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsS1CInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isS1CInterfaceEnabled = value;
     }
 
@@ -1868,10 +1869,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsS1UInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsS1UInterfaceEnabled() {
         return isS1UInterfaceEnabled;
     }
 
@@ -1880,10 +1881,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsS1UInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsS1UInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isS1UInterfaceEnabled = value;
     }
 
@@ -1964,10 +1965,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsX2CInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsX2CInterfaceEnabled() {
         return isX2CInterfaceEnabled;
     }
 
@@ -1976,10 +1977,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsX2CInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsX2CInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isX2CInterfaceEnabled = value;
     }
 
@@ -2060,10 +2061,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsX2UInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsX2UInterfaceEnabled() {
         return isX2UInterfaceEnabled;
     }
 
@@ -2072,10 +2073,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsX2UInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsX2UInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isX2UInterfaceEnabled = value;
     }
 
@@ -2156,10 +2157,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsCallTraceInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsCallTraceInterfaceEnabled() {
         return isCallTraceInterfaceEnabled;
     }
 
@@ -2168,10 +2169,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsCallTraceInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsCallTraceInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isCallTraceInterfaceEnabled = value;
     }
 
@@ -2252,10 +2253,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsPtpSlaveInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsPtpSlaveInterfaceEnabled() {
         return isPtpSlaveInterfaceEnabled;
     }
 
@@ -2264,10 +2265,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsPtpSlaveInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsPtpSlaveInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isPtpSlaveInterfaceEnabled = value;
     }
 
@@ -2348,10 +2349,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsCSonServerInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsCSonServerInterfaceEnabled() {
         return isCSonServerInterfaceEnabled;
     }
 
@@ -2360,10 +2361,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsCSonServerInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsCSonServerInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isCSonServerInterfaceEnabled = value;
     }
 
@@ -2444,10 +2445,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsM2InterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsM2InterfaceEnabled() {
         return isM2InterfaceEnabled;
     }
 
@@ -2456,10 +2457,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsM2InterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsM2InterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isM2InterfaceEnabled = value;
     }
 
@@ -2540,10 +2541,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsM1InterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsM1InterfaceEnabled() {
         return isM1InterfaceEnabled;
     }
 
@@ -2552,10 +2553,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsM1InterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsM1InterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isM1InterfaceEnabled = value;
     }
 
@@ -2636,10 +2637,10 @@ public class EnbDetailsGetPnp {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getIsTwampSenderInterfaceEnabled() {
+    public JAXBElement<EnabledStates> getIsTwampSenderInterfaceEnabled() {
         return isTwampSenderInterfaceEnabled;
     }
 
@@ -2648,10 +2649,10 @@ public class EnbDetailsGetPnp {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setIsTwampSenderInterfaceEnabled(JAXBElement<EnabledDisabledStates> value) {
+    public void setIsTwampSenderInterfaceEnabled(JAXBElement<EnabledStates> value) {
         this.isTwampSenderInterfaceEnabled = value;
     }
 

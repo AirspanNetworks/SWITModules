@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for ClockMngrWs complex type.
@@ -33,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="RebootTimerIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RebootTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="ForceTimeSyncIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ForceTimeSync" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ForceTimeSync" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="PtpSyncSrcDisqualificationThresholdIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="PtpSyncSrcDisqualificationThreshold" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="PtpSyncSrcPromotionThresholdIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -226,7 +228,7 @@ public class ClockMngrWs {
     @XmlElementRef(name = "ForceTimeSyncIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> forceTimeSyncIsDefault;
     @XmlElementRef(name = "ForceTimeSync", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> forceTimeSync;
+    protected JAXBElement<EnabledStates> forceTimeSync;
     @XmlElementRef(name = "PtpSyncSrcDisqualificationThresholdIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> ptpSyncSrcDisqualificationThresholdIsDefault;
     @XmlElementRef(name = "PtpSyncSrcDisqualificationThreshold", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -725,10 +727,10 @@ public class ClockMngrWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getForceTimeSync() {
+    public JAXBElement<EnabledStates> getForceTimeSync() {
         return forceTimeSync;
     }
 
@@ -737,10 +739,10 @@ public class ClockMngrWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setForceTimeSync(JAXBElement<EnabledDisabledStates> value) {
+    public void setForceTimeSync(JAXBElement<EnabledStates> value) {
         this.forceTimeSync = value;
     }
 

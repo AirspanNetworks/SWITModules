@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for UeHandlingEnbWs complex type.
@@ -21,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="MaxUeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="MaxUe" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Sr80RachModeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Sr80RachMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Sr80RachMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -46,7 +48,7 @@ public class UeHandlingEnbWs {
     @XmlElementRef(name = "Sr80RachModeIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> sr80RachModeIsDefault;
     @XmlElementRef(name = "Sr80RachMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> sr80RachMode;
+    protected JAXBElement<EnabledStates> sr80RachMode;
 
     /**
      * Gets the value of the maxUeIsDefault property.
@@ -125,10 +127,10 @@ public class UeHandlingEnbWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSr80RachMode() {
+    public JAXBElement<EnabledStates> getSr80RachMode() {
         return sr80RachMode;
     }
 
@@ -137,10 +139,10 @@ public class UeHandlingEnbWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSr80RachMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setSr80RachMode(JAXBElement<EnabledStates> value) {
         this.sr80RachMode = value;
     }
 

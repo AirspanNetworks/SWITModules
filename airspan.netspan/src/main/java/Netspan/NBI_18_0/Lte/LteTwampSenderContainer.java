@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for LteTwampSenderContainer complex type.
@@ -25,7 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="PacketTxRate" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DvCalculationMode" type="{http://Airspan.Netspan.WebServices}TwampSenderDvCalculationModeValues" minOccurs="0"/&gt;
  *         &lt;element name="TestDuration" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="SkipDiscardUnsyncedReflectorTestPackets" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="SkipDiscardUnsyncedReflectorTestPackets" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="IpAddress" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *         &lt;element name="Port" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="MaxReflectorUdpPort" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
@@ -75,7 +77,7 @@ public class LteTwampSenderContainer {
     @XmlElementRef(name = "TestDuration", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> testDuration;
     @XmlElementRef(name = "SkipDiscardUnsyncedReflectorTestPackets", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> skipDiscardUnsyncedReflectorTestPackets;
+    protected JAXBElement<EnabledStates> skipDiscardUnsyncedReflectorTestPackets;
     @XmlElement(name = "IpAddress")
     protected String ipAddress;
     @XmlElementRef(name = "Port", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -242,10 +244,10 @@ public class LteTwampSenderContainer {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getSkipDiscardUnsyncedReflectorTestPackets() {
+    public JAXBElement<EnabledStates> getSkipDiscardUnsyncedReflectorTestPackets() {
         return skipDiscardUnsyncedReflectorTestPackets;
     }
 
@@ -254,10 +256,10 @@ public class LteTwampSenderContainer {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setSkipDiscardUnsyncedReflectorTestPackets(JAXBElement<EnabledDisabledStates> value) {
+    public void setSkipDiscardUnsyncedReflectorTestPackets(JAXBElement<EnabledStates> value) {
         this.skipDiscardUnsyncedReflectorTestPackets = value;
     }
 

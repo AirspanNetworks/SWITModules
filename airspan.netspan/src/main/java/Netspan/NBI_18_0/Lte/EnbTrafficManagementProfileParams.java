@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for EnbTrafficManagementProfileParams complex type.
@@ -19,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="LoadSheddingMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="LoadSheddingMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="MonitorInterval" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="StepDown" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="StepUp" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
@@ -29,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="UeOverloadHysteresis" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="DataInactivityTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Qci1And2InactivityTimer" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
- *         &lt;element name="VolteMutingRedirectionMode" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="VolteMutingRedirectionMode" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="MutingDetectionPeriod" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="RedirectionEarfcn" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
@@ -62,7 +64,7 @@ import javax.xml.bind.annotation.XmlType;
 public class EnbTrafficManagementProfileParams {
 
     @XmlElementRef(name = "LoadSheddingMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> loadSheddingMode;
+    protected JAXBElement<EnabledStates> loadSheddingMode;
     @XmlElementRef(name = "MonitorInterval", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> monitorInterval;
     @XmlElementRef(name = "StepDown", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -82,7 +84,7 @@ public class EnbTrafficManagementProfileParams {
     @XmlElementRef(name = "Qci1And2InactivityTimer", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> qci1And2InactivityTimer;
     @XmlElementRef(name = "VolteMutingRedirectionMode", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> volteMutingRedirectionMode;
+    protected JAXBElement<EnabledStates> volteMutingRedirectionMode;
     @XmlElementRef(name = "MutingDetectionPeriod", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Integer> mutingDetectionPeriod;
     @XmlElementRef(name = "RedirectionEarfcn", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -93,10 +95,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getLoadSheddingMode() {
+    public JAXBElement<EnabledStates> getLoadSheddingMode() {
         return loadSheddingMode;
     }
 
@@ -105,10 +107,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setLoadSheddingMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setLoadSheddingMode(JAXBElement<EnabledStates> value) {
         this.loadSheddingMode = value;
     }
 
@@ -333,10 +335,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getVolteMutingRedirectionMode() {
+    public JAXBElement<EnabledStates> getVolteMutingRedirectionMode() {
         return volteMutingRedirectionMode;
     }
 
@@ -345,10 +347,10 @@ public class EnbTrafficManagementProfileParams {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setVolteMutingRedirectionMode(JAXBElement<EnabledDisabledStates> value) {
+    public void setVolteMutingRedirectionMode(JAXBElement<EnabledStates> value) {
         this.volteMutingRedirectionMode = value;
     }
 

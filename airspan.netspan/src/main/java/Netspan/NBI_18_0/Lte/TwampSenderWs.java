@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for TwampSenderWs complex type.
@@ -22,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="SenderPacketTimeoutIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="SenderPacketTimeout" type="{http://www.w3.org/2001/XMLSchema}decimal" minOccurs="0"/&gt;
  *         &lt;element name="ZeroPaddingAdminIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="ZeroPaddingAdmin" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="ZeroPaddingAdmin" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="RtdMetricIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="RtdMetric" type="{http://Airspan.Netspan.WebServices}TwampAverageTypes" minOccurs="0"/&gt;
  *         &lt;element name="DelayMetricIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
@@ -95,7 +97,7 @@ public class TwampSenderWs {
     @XmlElementRef(name = "ZeroPaddingAdminIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> zeroPaddingAdminIsDefault;
     @XmlElementRef(name = "ZeroPaddingAdmin", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> zeroPaddingAdmin;
+    protected JAXBElement<EnabledStates> zeroPaddingAdmin;
     @XmlElementRef(name = "RtdMetricIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> rtdMetricIsDefault;
     @XmlElementRef(name = "RtdMetric", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -222,10 +224,10 @@ public class TwampSenderWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getZeroPaddingAdmin() {
+    public JAXBElement<EnabledStates> getZeroPaddingAdmin() {
         return zeroPaddingAdmin;
     }
 
@@ -234,10 +236,10 @@ public class TwampSenderWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setZeroPaddingAdmin(JAXBElement<EnabledDisabledStates> value) {
+    public void setZeroPaddingAdmin(JAXBElement<EnabledStates> value) {
         this.zeroPaddingAdmin = value;
     }
 

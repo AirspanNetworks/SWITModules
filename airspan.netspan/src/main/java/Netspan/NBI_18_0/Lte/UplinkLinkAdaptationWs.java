@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElementRef;
 import javax.xml.bind.annotation.XmlType;
 
+import Netspan.API.Enums.EnabledStates;
+
 
 /**
  * <p>Java class for UplinkLinkAdaptationWs complex type.
@@ -27,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="MinimalUplinkGrantAllocationSizeIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="MinimalUplinkGrantAllocationSize" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="Uplink64QamSupportEnableIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
- *         &lt;element name="Uplink64QamSupportEnable" type="{http://Airspan.Netspan.WebServices}EnabledDisabledStates" minOccurs="0"/&gt;
+ *         &lt;element name="Uplink64QamSupportEnable" type="{http://Airspan.Netspan.WebServices}EnabledStates" minOccurs="0"/&gt;
  *         &lt;element name="Uplink64QamTargetMcsIsDefault" type="{http://www.w3.org/2001/XMLSchema}boolean" minOccurs="0"/&gt;
  *         &lt;element name="Uplink64QamTargetMcs" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
@@ -74,7 +76,7 @@ public class UplinkLinkAdaptationWs {
     @XmlElementRef(name = "Uplink64QamSupportEnableIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> uplink64QamSupportEnableIsDefault;
     @XmlElementRef(name = "Uplink64QamSupportEnable", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
-    protected JAXBElement<EnabledDisabledStates> uplink64QamSupportEnable;
+    protected JAXBElement<EnabledStates> uplink64QamSupportEnable;
     @XmlElementRef(name = "Uplink64QamTargetMcsIsDefault", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
     protected JAXBElement<Boolean> uplink64QamTargetMcsIsDefault;
     @XmlElementRef(name = "Uplink64QamTargetMcs", namespace = "http://Airspan.Netspan.WebServices", type = JAXBElement.class, required = false)
@@ -301,10 +303,10 @@ public class UplinkLinkAdaptationWs {
      * 
      * @return
      *     possible object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public JAXBElement<EnabledDisabledStates> getUplink64QamSupportEnable() {
+    public JAXBElement<EnabledStates> getUplink64QamSupportEnable() {
         return uplink64QamSupportEnable;
     }
 
@@ -313,10 +315,10 @@ public class UplinkLinkAdaptationWs {
      * 
      * @param value
      *     allowed object is
-     *     {@link JAXBElement }{@code <}{@link EnabledDisabledStates }{@code >}
+     *     {@link JAXBElement }{@code <}{@link EnabledStates }{@code >}
      *     
      */
-    public void setUplink64QamSupportEnable(JAXBElement<EnabledDisabledStates> value) {
+    public void setUplink64QamSupportEnable(JAXBElement<EnabledStates> value) {
         this.uplink64QamSupportEnable = value;
     }
 
